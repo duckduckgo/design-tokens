@@ -1,0 +1,16 @@
+{
+  "name": "tokens-poc",
+  "version": "1.0.0",
+  "main": "config.js",
+  "type": "module",
+  "scripts": {
+    "test": "test",
+    "build": "npx style-dictionary build"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "style-dictionary": "^4.3.0"
+  }
+}
