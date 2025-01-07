@@ -35,7 +35,6 @@ const spacing = {
     2: { $value: "8px" },
     1: { $value: "4px" },
     "0_5": { $value: "2px" },
-    other: { $value: "calc(32 * var(--sds-base-px-in-rem))" },
   },
 };
 
