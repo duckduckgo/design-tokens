@@ -7,8 +7,8 @@
     "build": "npm run lint && npm run build:tsc && npm run build:dictionary",
     "build:dictionary": "style-dictionary build --config style-dictionary.config.js --verbose",
     "build:tsc": "tsc",
-    "lint": "eslint src && prettier src --check",
-    "lint:fix": "eslint src --fix && prettier src --write",
+    "lint": "eslint src style-dictionary.config.js && prettier src style-dictionary.config.js --check",
+    "lint:fix": "eslint src style-dictionary.config.js --fix && prettier src style-dictionary.config.js --write",
     "test": "test"
   },
   "author": "",

@@ -7,7 +7,6 @@ export default tseslint.config(
     ...ddgConfig,
     ...tseslint.configs.recommended,
     {
-        files: ["**/*.js|ts"],
         languageOptions: {
             globals: {
                 ...globals.browser,
