@@ -4,9 +4,8 @@
   "main": "config.js",
   "type": "module",
   "scripts": {
-    "build": "npm run lint && npm run build:tsc && npm run build:dictionary",
+    "build": "npm run lint && tsc --noEmit && npm run build:dictionary",
     "build:dictionary": "style-dictionary build --config style-dictionary.config.js --verbose",
-    "build:tsc": "tsc",
     "lint": "eslint src style-dictionary.config.js && prettier src style-dictionary.config.js --check",
     "lint:fix": "eslint src style-dictionary.config.js --fix && prettier src style-dictionary.config.js --write",
     "test": "test"

@@ -17,7 +17,7 @@ const defaultOptions = {
 };
 
 export default {
-    source: ['dist/properties/**/*.{js,json}'],
+    source: ['src/properties/**/*.{js,json}'],
     log: {
         warnings: logWarningLevels.warn, // 'warn' | 'error' | 'disabled'
         verbosity: logVerbosityLevels.default, // 'default' | 'silent' | 'verbose'
