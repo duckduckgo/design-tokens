@@ -1,4 +1,6 @@
-const spacing = {
+import { DesignToken } from 'style-dictionary/types';
+
+const spacing: DesignToken = {
   $type: "dimension",
   sp: {
     320: { $value: "1280px" },

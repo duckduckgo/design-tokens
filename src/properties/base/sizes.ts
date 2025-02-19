@@ -1,4 +1,6 @@
-const sizes = {
+import { DesignToken } from 'style-dictionary/types';
+
+const sizes: DesignToken = {
   $type: "dimension",
   sp: {
     320: { $value: "1280px" },

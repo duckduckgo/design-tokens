@@ -1,5 +1,8 @@
-const colors = {
+import { DesignToken } from 'style-dictionary/types';
+
+const colors: DesignToken = {
   $type: "color",
+  undo: 'none',
   color: {
     white: { $value: "#ffffff" },
     "white-at": {

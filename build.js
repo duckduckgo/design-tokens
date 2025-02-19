@@ -8,7 +8,7 @@ import {
 } from "style-dictionary/enums";
 
 const dictionary = new StyleDictionary({
-  source: ["src/properties/**/*.{js,json}"],
+  source: ["dist/properties/**/*.{js,json}"],
   log: {
     warnings: logWarningLevels.warn, // 'warn' | 'error' | 'disabled'
     verbosity: logVerbosityLevels.default, // 'default' | 'silent' | 'verbose'
