@@ -4,15 +4,27 @@
   "main": "config.js",
   "type": "module",
   "scripts": {
-    "build": "npm run tsc && node build.js",
-    "test": "test",
-    "tsc": "tsc"
+    "build": "npm run lint && npm run build:tsc && npm run build:dictionary",
+    "build:dictionary": "style-dictionary build --config style-dictionary.config.js --verbose",
+    "build:tsc": "tsc",
+    "lint": "eslint src && prettier src --check",
+    "lint:fix": "eslint src --fix && prettier src --write",
+    "test": "test"
   },
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "@duckduckgo/eslint-config": "github:duckduckgo/eslint-config",
+    "eslint": "^9.20.1",
+    "prettier": "^3.5.1",
     "style-dictionary": "^4.3.0",
-    "typescript": "^5.7.3"
+    "typescript": "^5.7.3",
+    "typescript-eslint": "^8.24.1"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "printWidth": 140,
+    "tabWidth": 4
   }
 }

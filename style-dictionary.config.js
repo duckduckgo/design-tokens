@@ -1,4 +1,3 @@
-import StyleDictionary from "style-dictionary";
 import {
   formats,
   transformGroups,
@@ -7,7 +6,7 @@ import {
   logWarningLevels,
 } from "style-dictionary/enums";
 
-const dictionary = new StyleDictionary({
+export default {
   source: ["dist/properties/**/*.{js,json}"],
   log: {
     warnings: logWarningLevels.warn, // 'warn' | 'error' | 'disabled'
@@ -56,6 +55,4 @@ const dictionary = new StyleDictionary({
       ],
     },
   },
-});
-
-dictionary.buildAllPlatforms();
+};
