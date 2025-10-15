@@ -2,6 +2,8 @@
 
 A repo to generate style variables for all the things. But we're starting with static-pages. Tokens act as our single source of truth. They can be transformed and formatted to meet the needs of any platform (Web, Android, iOS, etc). A single change to a property file can be transformed and compiled for consumption by any platform using our tokens.
 
+[Style Dictionary Docs](https://styledictionary.com/reference/api/)
+
 ## Table of Contents
 
 - [DuckDuckGo Design Tokens](#duckduckgo-design-tokens)
