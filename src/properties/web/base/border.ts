@@ -1,7 +1,7 @@
 import { DesignToken } from 'style-dictionary/types';
 
 const border: DesignToken = {
-    $type: 'dimesions',
+    $type: 'dimension',
     undo: 'none',
     border: {
         radius: {
