@@ -4,8 +4,25 @@ A repo to generate style variables for all the things. But we're starting with s
 
 ## Table of Contents
 
+- [DuckDuckGo Design Tokens](#duckduckgo-design-tokens)
+  - [Table of Contents](#table-of-contents)
+  - [Getting started](#getting-started)
+  - [What is a Design Token?](#what-is-a-design-token)
+  - [Token Types](#token-types)
+    - [Option Tokens](#option-tokens)
+    - [Semantic Tokens](#semantic-tokens)
+    - [Component Tokens](#component-tokens)
+  - [Naming Approach](#naming-approach)
+    - [Option \& Semantic Tokens](#option--semantic-tokens)
+    - [Component Tokens](#component-tokens-1)
+      - [Prefixes](#prefixes)
+  - [Creating Tokens](#creating-tokens)
+  - [Release Process](#release-process)
+
 
 ## Getting started
+
+Recommended node version: v22
 
 ```bash
 npm i
@@ -18,7 +35,6 @@ Then check out what is output to `build` folder
 ## What is a Design Token?
 
 **Top level answer:** A key-value pair representing a design decision in code.
-
 
 ## Token Types
 
@@ -33,6 +49,7 @@ These are primitive values represented by context-agnostic names. This token typ
 Semantic tokens have a contextual name that communicates their intended purpose. These types of tokens often inherit option tokens.
 
 Examples
+
 - `sds-color-primary`
 - `spds-color-disabled-text-color`
 - `bds-color-page-background`
@@ -60,6 +77,7 @@ These values are set in the configs. Each platform/repo has its own prefix.
 - Desktop browsers: bds
 
 ## Creating Tokens
+
 <incoming>
 
 ## Release Process
