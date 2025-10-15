@@ -5,29 +5,32 @@ const border: DesignToken = {
     undo: 'none',
     border: {
         radius: {
-            xs: {
+            x01: {
                 $value: '4px',
             },
-            sm: {
+            x02: {
                 $value: '8px',
             },
-            base: {
+            x03: {
                 $value: '12px',
             },
-            md: {
+            x04: {
                 $value: '16px',
             },
-            lg: {
+            x05: {
                 $value: '20px',
             },
-            xl: {
-                $value: '30px',
+            x06: {
+                $value: '24px',
             },
-            xxl: {
-                $value: '40px',
+            x07: {
+                $value: '28px',
+            },
+            x08: {
+                $value: '32px',
             },
             full: {
-                $value: '100%',
+                $value: '999px',
             },
         },
         width: {
