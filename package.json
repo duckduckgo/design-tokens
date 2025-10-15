@@ -1,29 +1,30 @@
 {
-  "name": "tokens-poc",
-  "version": "1.0.0",
-  "main": "config.js",
-  "type": "module",
-  "scripts": {
-    "build": "npm run lint && tsc && npm run build:dictionary",
-    "build:dictionary": "style-dictionary build --config style-dictionary.config.js --verbose",
-    "lint": "eslint src style-dictionary.config.js && prettier src style-dictionary.config.js --check",
-    "lint:fix": "eslint src style-dictionary.config.js --fix && prettier src style-dictionary.config.js --write",
-    "test": "test"
-  },
-  "author": "",
-  "license": "ISC",
-  "description": "",
-  "devDependencies": {
-    "@duckduckgo/eslint-config": "github:duckduckgo/eslint-config",
-    "eslint": "^9.20.1",
-    "prettier": "^3.5.1",
-    "style-dictionary": "^4.3.0",
-    "typescript": "^5.7.3",
-    "typescript-eslint": "^8.24.1"
-  },
-  "prettier": {
-    "singleQuote": true,
-    "printWidth": 140,
-    "tabWidth": 4
-  }
+    "name": "tokens-poc",
+    "version": "0.0.1",
+    "main": "config.js",
+    "type": "module",
+    "node": "22",
+    "scripts": {
+        "build": "npm run lint && tsc && npm run build:dictionary",
+        "build:dictionary": "style-dictionary build --config serp-style-dictionary.config.js && style-dictionary build --config static-pages-dictionary.config.js && style-dictionary build --config desktop-browser-dictionary.config.js",
+        "lint": "eslint src serp-style-dictionary.config.js static-pages-dictionary.config.js desktop-browser-dictionary.config.js && prettier src serp-style-dictionary.config.js static-pages-dictionary.config.js desktop-browser-dictionary.config.js --check",
+        "lint:fix": "eslint src style-dictionary.config.js --fix && prettier src style-dictionary.config.js --write",
+        "test": "test"
+    },
+    "author": "",
+    "license": "ISC",
+    "description": "",
+    "devDependencies": {
+        "@duckduckgo/eslint-config": "github:duckduckgo/eslint-config",
+        "eslint": "^9.20.1",
+        "prettier": "^3.5.1",
+        "style-dictionary": "^4.3.0",
+        "typescript": "^5.7.3",
+        "typescript-eslint": "^8.24.1"
+    },
+    "prettier": {
+        "singleQuote": true,
+        "printWidth": 140,
+        "tabWidth": 4
+    }
 }

@@ -17,49 +17,23 @@ const defaultOptions = {
 };
 
 export default {
-    source: ['dist/properties/**/*.{js,json}'],
+    source: [
+        'dist/properties/base/*.{js,json}',
+        'dist/properties/web/base/sizes.{js,json}',
+        'dist/properties/web/base/colors.{js,json}',
+        'dist/properties/web/base/*.{js,json}',
+        'dist/properties/web/serp/*.{js,json}',
+        'dist/properties/web/serp/**/*.{js,json}',
+    ],
     log: {
         warnings: logWarningLevels.warn, // 'warn' | 'error' | 'disabled'
-        verbosity: logVerbosityLevels.default, // 'default' | 'silent' | 'verbose'
+        verbosity: logVerbosityLevels.verbose, // 'default' | 'silent' | 'verbose'
         errors: {
             brokenReferences: logBrokenReferenceLevels.throw, // 'throw' | 'console'
         },
     },
-    // include: ["src/properties/base/*.js"],
     platforms: {
-        scss: {
-            prefix: 'spds',
-            transformGroup: transformGroups.scss,
-            buildPath: 'build/',
-            files: [
-                {
-                    destination: 'static-pages/tokens.scss',
-                    format: formats.scssVariables,
-                },
-            ],
-            options: {
-                ...defaultOptions,
-            },
-        },
-        css: {
-            prefix: 'bds',
-            transformGroup: transformGroups.css,
-            buildPath: 'build/',
-            files: [
-                {
-                    destination: 'desktop-browsers/tokens.css',
-                    format: formats.cssVariables,
-                    options: {
-                        outputReferences: true,
-                        showFileHeader: true,
-                    },
-                },
-            ],
-            options: {
-                ...defaultOptions,
-            },
-        },
-        web: {
+        serp: {
             prefix: 'sds',
             transformGroup: transformGroups.css,
             buildPath: 'build/',
