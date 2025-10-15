@@ -18,10 +18,11 @@ const defaultOptions = {
 
 export default {
     source: [
-        'dist/properties/base/*.{js,json}',
+        'dist/properties/global/*.{js,json}',
         'dist/properties/web/base/sizes.{js,json}',
         'dist/properties/web/base/colors.{js,json}',
         'dist/properties/web/base/*.{js,json}',
+        'dist/properties/web/components/*.{js,json}',
         'dist/properties/web/static-pages/*.{js,json}',
     ],
     log: {

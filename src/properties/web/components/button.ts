@@ -54,7 +54,7 @@ const button: DesignToken = {
         primary: {
             rest: {
                 backgroundColor: {
-                    $value: 'red',
+                    $value: '{color.primary}',
                     dark: {
                         $value: 'red',
                     },
