@@ -224,6 +224,15 @@ const button: DesignToken = {
             },
         },
     },
+    display: {
+        fontSize: {
+            button: {
+                '01': { $value: '18px' },
+                '02': { $value: '{display.fontSize.body.04}' },
+                '03': { $value: '{display.fontSize.body.05}' },
+            },
+        },
+    },
 };
 
 export default button;

@@ -19,7 +19,6 @@ const font: DesignToken = {
                 '03': { $value: '20px' },
                 '04': { $value: '16px' },
                 '05': { $value: '14px' },
-                '06': { $value: '12px' },
             },
         },
     },
