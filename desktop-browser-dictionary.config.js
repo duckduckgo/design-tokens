@@ -34,7 +34,7 @@ export default {
     },
     platforms: {
         css: {
-            prefix: 'bds',
+            prefix: 'sds',
             transformGroup: transformGroups.css,
             buildPath: 'build/',
             files: [
