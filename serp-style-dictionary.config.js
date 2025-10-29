@@ -11,6 +11,7 @@ const defaultOptions = {
         // prettier-ignore
         return [
         ...messages,
+        `Source: https://dub.duckduckgo.com/duckduckgo/design-tokens`,
         `Last updated: ${date.toLocaleString('en-US', options)}`,
       ];
     },
