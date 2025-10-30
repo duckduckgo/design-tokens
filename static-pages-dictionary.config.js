@@ -11,6 +11,7 @@ const defaultOptions = {
         // prettier-ignore
         return [
         ...messages,
+        `Source: https://dub.duckduckgo.com/duckduckgo/design-tokens`,
         `Last updated: ${date.toLocaleString('en-US', options)}`,
       ];
     },
@@ -35,12 +36,12 @@ export default {
     platforms: {
         staticPages: {
             prefix: 'sds',
-            transformGroup: transformGroups.scss,
+            transformGroup: transformGroups.css,
             buildPath: 'build/',
             files: [
                 {
                     destination: 'static-pages/tokens.scss',
-                    format: formats.scssVariables,
+                    format: formats.cssVariables,
                 },
                 {
                     destination: 'static-pages/tokens.json',
