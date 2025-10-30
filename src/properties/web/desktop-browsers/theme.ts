@@ -1,5 +1,5 @@
 import { DesignToken } from 'style-dictionary/types';
-
+// This is from a JSON output from Figma. May not be final values.
 const themeColors: DesignToken = {
     $type: 'color',
     undo: 'none',

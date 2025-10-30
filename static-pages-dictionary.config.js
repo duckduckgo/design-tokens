@@ -35,8 +35,8 @@ export default {
     },
     platforms: {
         staticPages: {
-            prefix: 'sds',
-            transformGroup: transformGroups.css,
+            prefix: 'ds',
+            transformGroup: transformGroups.scss,
             buildPath: 'build/',
             files: [
                 {
