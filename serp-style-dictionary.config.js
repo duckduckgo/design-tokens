@@ -37,7 +37,7 @@ export default {
     },
     platforms: {
         serp: {
-            prefix: 'sds',
+            prefix: 'ds',
             transformGroup: transformGroups.css,
             buildPath: 'build/',
             files: [

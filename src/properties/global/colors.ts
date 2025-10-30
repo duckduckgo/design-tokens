@@ -6,6 +6,9 @@ const colors: DesignToken = {
     color: {
         white: { $value: '#ffffff' },
         'white-at': {
+            1: {
+                $value: 'rgba(255, 255, 255, .01)',
+            },
             3: {
                 $value: 'rgba(255, 255, 255, .03)',
             },
@@ -36,14 +39,26 @@ const colors: DesignToken = {
             42: {
                 $value: 'rgba(255, 255, 255, .42)',
             },
+            48: {
+                $value: 'rgba(255, 255, 255, .48)',
+            },
             50: {
                 $value: 'rgba(255, 255, 255, .50)',
+            },
+            54: {
+                $value: 'rgba(255, 255, 255, .54)',
             },
             60: {
                 $value: 'rgba(255, 255, 255, .60)',
             },
+            66: {
+                $value: 'rgba(255, 255, 255, .66)',
+            },
             72: {
                 $value: 'rgba(255, 255, 255, .72)',
+            },
+            78: {
+                $value: 'rgba(255, 255, 255, .78)',
             },
             80: {
                 $value: 'rgba(255, 255, 255, .80)',
@@ -62,6 +77,9 @@ const colors: DesignToken = {
             $value: '#000000',
         },
         'black-at': {
+            1: {
+                $value: 'rgba(0, 0, 0, .01)',
+            },
             3: {
                 $value: 'rgba(0, 0, 0, .03)',
             },
@@ -92,14 +110,26 @@ const colors: DesignToken = {
             42: {
                 $value: 'rgba(0, 0, 0, .42)',
             },
+            48: {
+                $value: 'rgba(0, 0, 0, .48)',
+            },
             50: {
                 $value: 'rgba(0, 0, 0, .50)',
+            },
+            54: {
+                $value: 'rgba(0, 0, 0, .54)',
             },
             60: {
                 $value: 'rgba(0, 0, 0, .60)',
             },
+            66: {
+                $value: 'rgba(0, 0, 0, .66)',
+            },
             72: {
                 $value: 'rgba(0, 0, 0, .72)',
+            },
+            78: {
+                $value: 'rgba(0, 0, 0, .78)',
             },
             80: {
                 $value: 'rgba(0, 0, 0, .80)',
