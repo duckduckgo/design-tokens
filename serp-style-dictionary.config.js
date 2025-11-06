@@ -1,4 +1,5 @@
 import { formats, transformGroups, logBrokenReferenceLevels, logVerbosityLevels, logWarningLevels } from 'style-dictionary/enums';
+import themedJsonFormat from './src/formats/themed-json.js';
 
 const defaultOptions = {
     fileHeader: async (messages) => {
@@ -19,15 +20,16 @@ const defaultOptions = {
 
 export default {
     source: [
-        'dist/properties/global/*.{js,json}',
-        'dist/properties/web/base/sizes.{js,json}',
-        'dist/properties/web/base/colors.{js,json}',
-        'dist/properties/web/base/*.{js,json}',
-        'dist/properties/web/serp/*.{js,json}',
-        'dist/properties/web/components/*.{js,json}',
-        'dist/properties/web/serp/*.{js,json}',
-        'dist/properties/web/serp/**/*.{js,json}',
+        'dist/properties/web/base/sds-colors.{js,json}',
+        'dist/properties/web/base/sds-semantic.{js,json}',
+        'dist/properties/web/base/sds-spacing.{js,json}',
+        'dist/properties/web/base/sds-typography.{js,json}',
     ],
+    hooks: {
+        formats: {
+            'themed-json': themedJsonFormat,
+        },
+    },
     log: {
         warnings: logWarningLevels.warn, // 'warn' | 'error' | 'disabled'
         verbosity: logVerbosityLevels.verbose, // 'default' | 'silent' | 'verbose'
@@ -55,6 +57,14 @@ export default {
                     options: {
                         outputReferences: true,
                         showFileHeader: true,
+                    },
+                },
+                {
+                    destination: 'serp/tokens-themes.json',
+                    format: 'themed-json',
+                    options: {
+                        outputReferences: false,
+                        showFileHeader: false,
                     },
                 },
             ],

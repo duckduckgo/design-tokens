@@ -13,7 +13,6 @@ Tech Design:
 
 ## Steps to test this PR:
 
-
 ---
 
 [Software Engineering Expectations](https://app.asana.com/0/59792373528535/199064865822552)

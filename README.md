@@ -7,20 +7,19 @@ A repo to generate style variables for all the things. But we're starting with s
 ## Table of Contents
 
 - [DuckDuckGo Design Tokens](#duckduckgo-design-tokens)
-  - [Table of Contents](#table-of-contents)
-  - [Getting started](#getting-started)
-  - [What is a Design Token?](#what-is-a-design-token)
-  - [Token Types](#token-types)
-    - [Option Tokens](#option-tokens)
-    - [Semantic Tokens](#semantic-tokens)
-    - [Component Tokens](#component-tokens)
-  - [Naming Approach](#naming-approach)
-    - [Option \& Semantic Tokens](#option--semantic-tokens)
-    - [Component Tokens](#component-tokens-1)
-      - [Prefixes](#prefixes)
-  - [Creating Tokens](#creating-tokens)
-  - [Release Process](#release-process)
-
+    - [Table of Contents](#table-of-contents)
+    - [Getting started](#getting-started)
+    - [What is a Design Token?](#what-is-a-design-token)
+    - [Token Types](#token-types)
+        - [Option Tokens](#option-tokens)
+        - [Semantic Tokens](#semantic-tokens)
+        - [Component Tokens](#component-tokens)
+    - [Naming Approach](#naming-approach)
+        - [Option \& Semantic Tokens](#option--semantic-tokens)
+        - [Component Tokens](#component-tokens-1)
+            - [Prefixes](#prefixes)
+    - [Creating Tokens](#creating-tokens)
+    - [Release Process](#release-process)
 
 ## Getting started
 
