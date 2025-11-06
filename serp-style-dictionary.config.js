@@ -1,22 +1,6 @@
 import { formats, transformGroups, logBrokenReferenceLevels, logVerbosityLevels, logWarningLevels } from 'style-dictionary/enums';
 import themedJsonFormat from './src/formats/themed-json.js';
-
-const defaultOptions = {
-    fileHeader: async (messages) => {
-        const date = new Date();
-        const options = {
-            dateStyle: 'long',
-            timeStyle: 'long',
-        };
-
-        // prettier-ignore
-        return [
-        ...messages,
-        `Source: https://dub.duckduckgo.com/duckduckgo/design-tokens`,
-        `Last updated: ${date.toLocaleString('en-US', options)}`,
-      ];
-    },
-};
+import fileHeader from './dist/utils/file-header.js';
 
 export default {
     source: [
@@ -69,7 +53,7 @@ export default {
                 },
             ],
             options: {
-                ...defaultOptions,
+                ...fileHeader,
             },
         },
     },

@@ -1,21 +1,5 @@
 import { formats, transformGroups, logBrokenReferenceLevels, logVerbosityLevels, logWarningLevels } from 'style-dictionary/enums';
-
-const defaultOptions = {
-    fileHeader: async (messages) => {
-        const date = new Date();
-        const options = {
-            dateStyle: 'long',
-            timeStyle: 'long',
-        };
-
-        // prettier-ignore
-        return [
-        ...messages,
-        `Last updated: ${date.toLocaleString('en-US', options)}`,
-      ];
-    },
-};
-
+import fileHeader from './dist/utils/file-header.js';
 export default {
     source: [
         'dist/properties/global/*.{js,json}',
@@ -34,7 +18,7 @@ export default {
     },
     platforms: {
         css: {
-            prefix: 'sds',
+            prefix: 'ds',
             transformGroup: transformGroups.css,
             buildPath: 'build/',
             files: [
@@ -48,7 +32,7 @@ export default {
                 },
             ],
             options: {
-                ...defaultOptions,
+                ...fileHeader,
             },
         },
     },
