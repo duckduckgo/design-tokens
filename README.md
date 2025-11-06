@@ -1,5 +1,7 @@
 # DuckDuckGo Design Tokens
 
+[![version-v0.0.0](https://img.shields.io/badge/version-v0.0.0-8a2be2.svg)](https://dub.duckduckgo.com/duckduckgo/design-tokens)
+
 A repo to generate style variables for all the things. But we're starting with static-pages. Tokens act as our single source of truth. They can be transformed and formatted to meet the needs of any platform (Web, Android, iOS, etc). A single change to a property file can be transformed and compiled for consumption by any platform using our tokens.
 
 [Style Dictionary Docs](https://styledictionary.com/reference/api/)
@@ -7,19 +9,19 @@ A repo to generate style variables for all the things. But we're starting with s
 ## Table of Contents
 
 - [DuckDuckGo Design Tokens](#duckduckgo-design-tokens)
-    - [Table of Contents](#table-of-contents)
-    - [Getting started](#getting-started)
-    - [What is a Design Token?](#what-is-a-design-token)
-    - [Token Types](#token-types)
-        - [Option Tokens](#option-tokens)
-        - [Semantic Tokens](#semantic-tokens)
-        - [Component Tokens](#component-tokens)
-    - [Naming Approach](#naming-approach)
-        - [Option \& Semantic Tokens](#option--semantic-tokens)
-        - [Component Tokens](#component-tokens-1)
-            - [Prefixes](#prefixes)
-    - [Creating Tokens](#creating-tokens)
-    - [Release Process](#release-process)
+  - [Table of Contents](#table-of-contents)
+  - [Getting started](#getting-started)
+  - [What is a Design Token?](#what-is-a-design-token)
+  - [Token Types](#token-types)
+    - [Option Tokens](#option-tokens)
+    - [Semantic Tokens](#semantic-tokens)
+    - [Component Tokens](#component-tokens)
+  - [Naming Approach](#naming-approach)
+    - [Option \& Semantic Tokens](#option--semantic-tokens)
+    - [Component Tokens](#component-tokens-1)
+      - [Prefixes](#prefixes)
+  - [Creating Tokens](#creating-tokens)
+  - [Release Process](#release-process)
 
 ## Getting started
 
