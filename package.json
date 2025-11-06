@@ -1,6 +1,6 @@
 {
-    "name": "tokens-poc",
-    "version": "0.0.1",
+    "name": "design-tokens",
+    "version": "0.0.0",
     "main": "config.js",
     "type": "module",
     "node": "22",
