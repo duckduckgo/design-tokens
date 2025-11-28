@@ -83,6 +83,16 @@ These values are set in the configs. Each platform/repo has its own prefix.
 
 <incoming>
 
+### Desktop Browsers
+
+The Desktop Browsers' theme colors (`src/properties/desktop-browsers/theme.ts`) are automatically generated from an export of the Global Colors & Styles theme in Figma.
+
+To re-generate this file, obtain a Figma JSON export (e.g. `theme-variables.json`) and then run:
+
+```
+node scripts/convert-figma-theme-export-to-tokens.ts --input theme-variables.json --output src/properties/web/desktop-browsers/theme.ts
+```
+
 ## Release Process
 
 NOTE: Do these steps _after_ you've commited the last of the changes for your release.

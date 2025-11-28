@@ -6,9 +6,9 @@
     "node": "22",
     "scripts": {
         "build": "npm run lint && tsc && npm run build:dictionary",
-        "build:dictionary": "style-dictionary build --config serp-style-dictionary.config.js && style-dictionary build --config static-pages-dictionary.config.js && style-dictionary build --config desktop-browser-dictionary.config.js",
-        "lint": "eslint src serp-style-dictionary.config.js static-pages-dictionary.config.js desktop-browser-dictionary.config.js && prettier src serp-style-dictionary.config.js static-pages-dictionary.config.js desktop-browser-dictionary.config.js --check",
-        "lint:fix": "eslint src style-dictionary.config.js --fix && prettier src style-dictionary.config.js --write",
+        "build:dictionary": "style-dictionary build --config serp-style-dictionary.config.js && style-dictionary build --config static-pages-dictionary.config.js && style-dictionary build --config desktop-browsers-dictionary.config.js",
+        "lint": "eslint src scripts serp-style-dictionary.config.js static-pages-dictionary.config.js desktop-browsers-dictionary.config.js && prettier src scripts serp-style-dictionary.config.js static-pages-dictionary.config.js desktop-browsers-dictionary.config.js --check",
+        "lint:fix": "eslint src scripts serp-style-dictionary.config.js static-pages-dictionary.config.js desktop-browsers-dictionary.config.js --fix && prettier src scripts serp-style-dictionary.config.js static-pages-dictionary.config.js desktop-browsers-dictionary.config.js --write",
         "test": "test"
     },
     "author": "",
@@ -16,6 +16,9 @@
     "description": "",
     "devDependencies": {
         "@duckduckgo/eslint-config": "github:duckduckgo/eslint-config",
+        "@types/node": "^24.10.1",
+        "commander": "^14.0.2",
+        "es-toolkit": "^1.42.0",
         "eslint": "^9.20.1",
         "prettier": "^3.5.1",
         "style-dictionary": "^4.3.0",

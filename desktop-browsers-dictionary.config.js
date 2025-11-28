@@ -1,14 +1,7 @@
 import { formats, transformGroups, logBrokenReferenceLevels, logVerbosityLevels, logWarningLevels } from 'style-dictionary/enums';
-import fileHeader from './dist/utils/file-header.js';
+import fileHeader from './dist/src/utils/file-header.js';
 export default {
-    source: [
-        'dist/properties/global/*.{js,json}',
-        'dist/properties/web/base/sizes.{js,json}',
-        'dist/properties/web/base/colors.{js,json}',
-        'dist/properties/web/base/*.{js,json}',
-        'dist/properties/web/components/*.{js,json}',
-        'dist/properties/web/desktop-browsers/*.{js,json}',
-    ],
+    source: ['dist/src/properties/web/base/sds-colors.js', 'dist/src/properties/web/desktop-browsers/theme.js'],
     log: {
         warnings: logWarningLevels.warn, // 'warn' | 'error' | 'disabled'
         verbosity: logVerbosityLevels.verbose, // 'default' | 'silent' | 'verbose'
