@@ -95,15 +95,5 @@ node scripts/convert-figma-theme-export-to-tokens.ts --input theme-variables.jso
 
 ## Release Process
 
-NOTE: Do these steps _after_ you've commited the last of the changes for your release.
-
-- `npm run lint:js && npm run lint:styles && npm test` Address any errors before proceeding
-- Search project for current version number `0.0.x`
-- Update `README.md` badge links
-- Update `package.json` version
-- Update `CHANGELOG.md` with overview of new material in the version (copy previous entry, update date, and Announcement and Changes fields)
-- `npm i` to update the `package-lock.json`
-- `git add -A`
-- `git commit -m "chore: Release v0.0.x"`
-- `git tag -a v0.0.x -m "Release v0.0.x"`
-- `git push --follow-tags`
+1. Navigate to https://github.com/duckduckgo/design-tokens/actions/workflows/release.yml
+2. Click _Run workflow_ and type in the version number to release. For example, `1.0.0`
