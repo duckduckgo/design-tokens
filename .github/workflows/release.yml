@@ -1,0 +1,106 @@
+name: Release
+
+on:
+    workflow_dispatch:
+        inputs:
+            version:
+                description: 'Version number (e.g. 1.0.0)'
+                required: true
+
+jobs:
+    release:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v4
+
+            - name: Setup Node.js
+              uses: actions/setup-node@v4
+              with:
+                  node-version: '22'
+                  cache: 'npm'
+
+            - name: Configure Git
+              run: |
+                  git config user.name "github-actions[bot]"
+                  git config user.email "github-actions[bot]@users.noreply.github.com"
+
+            - name: Generate changelog from commits
+              id: changelog
+              run: |
+                  # Get the most recent tag
+                  LATEST_TAG=$(git tag --sort=-v:refname | head -n 1)
+
+                  if [ -n "$LATEST_TAG" ]; then
+                    # Get commits made since tag was created
+                    SINCE_DATE=$(git show -s --format=%ci "$LATEST_TAG")
+                    CHANGELOG=$(git log main --since "$SINCE_DATE" --pretty='format:* %s')
+                  else
+                    # No previous tags, get all commits
+                    CHANGELOG=$(git log main --pretty='format:* %s')
+                  fi
+
+                  # Save to output (handle multiline)
+                  echo "changelog<<EOF" >> $GITHUB_OUTPUT
+                  echo "$CHANGELOG" >> $GITHUB_OUTPUT
+                  echo "EOF" >> $GITHUB_OUTPUT
+
+            - name: Update package.json version
+              run: npm version ${{ inputs.version }} --no-git-tag-version
+
+            - name: Commit version bump
+              run: |
+                  git add package.json package-lock.json
+                  git commit -m "Bump version to ${{ inputs.version }}"
+                  git push origin main
+
+            - name: Get or create releases branch
+              run: |
+                  git fetch origin releases || true
+                  if git rev-parse --verify origin/releases >/dev/null 2>&1; then
+                    git checkout releases
+                    git pull origin releases
+                  else
+                    git checkout --orphan releases
+                    git rm -rf . || true
+                  fi
+
+            - name: Clean and copy files from main
+              run: |
+                  # Remove everything except .git
+                  find . -mindepth 1 -maxdepth 1 ! -name '.git' -exec rm -rf {} +
+
+                  # Copy all files from main
+                  git checkout main -- .
+
+            - name: Install dependencies and build
+              run: |
+                  npm ci
+                  npm run build
+
+            - name: Commit release
+              run: |
+                  git add -A
+                  git add -f build
+                  git commit -m "v${{ inputs.version }}"
+
+            - name: Push releases branch
+              run: |
+                  git push origin releases
+
+            - name: Create and push tag
+              run: |
+                  git tag "v${{ inputs.version }}"
+                  git push origin "v${{ inputs.version }}"
+
+            - name: Create GitHub Release
+              uses: actions/create-release@v1
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+              with:
+                  tag_name: v${{ inputs.version }}
+                  body: |
+                      ${{ steps.changelog.outputs.changelog }}
+                  draft: false
+                  prerelease: false
