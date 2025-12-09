@@ -81,7 +81,7 @@ async function formatOutput(tokens: NestedTokens): Promise<string> {
     // Add prefix and $type
     const nestedTokens = {
         $type: 'color',
-        color: {
+        'color-theme': {
             ...tokens,
         },
     };

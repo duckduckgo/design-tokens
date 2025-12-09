@@ -1,6 +1,6 @@
 # DuckDuckGo Design Tokens
 
-[![version-v0.0.0](https://img.shields.io/badge/version-v0.0.0-8a2be2.svg)](https://dub.duckduckgo.com/duckduckgo/design-tokens)
+![GitHub Release](https://img.shields.io/github/v/release/duckduckgo/design-tokens)
 
 A repo to generate style variables for all the things. But we're starting with static-pages. Tokens act as our single source of truth. They can be transformed and formatted to meet the needs of any platform (Web, Android, iOS, etc). A single change to a property file can be transformed and compiled for consumption by any platform using our tokens.
 
