@@ -6,7 +6,7 @@ import { DesignToken } from 'style-dictionary/types';
 
 const theme: DesignToken = {
     $type: 'color',
-    color: {
+    'color-theme': {
         default: {
             light: {
                 surface: {
