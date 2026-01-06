@@ -4,16 +4,11 @@ import { readFile, writeFile, mkdir } from 'fs/promises';
 import { resolve, dirname } from 'path';
 import * as prettier from 'prettier';
 import { Command } from 'commander';
-import { camelCase, words, union } from 'es-toolkit';
+import { camelCase, words } from 'es-toolkit';
 import { set } from 'es-toolkit/compat';
 
-interface FigmaThemeMode {
-    [variableName: string]: string; // e.g., "DefaultSurfacePrimary": "#f2f2f2"
-}
-
 interface FigmaTheme {
-    Light: FigmaThemeMode;
-    Dark: FigmaThemeMode;
+    [variableName: string]: string; // e.g., "DarkAccentAltContentPrimary": "#ccdaff"
 }
 
 interface FigmaExport {
@@ -42,32 +37,31 @@ function processFigmaExport(figmaExport: FigmaExport): NestedTokens {
     // Process each theme (Default, CoolGray, etc.)
     for (const themeName of Object.keys(figmaExport)) {
         const theme = figmaExport[themeName];
-        const lightMode = theme.Light;
-        const darkMode = theme.Dark;
 
-        // Process the variables in both modes
-        for (const variableName of union(Object.keys(lightMode), Object.keys(darkMode))) {
-            // Check if variable name starts with the theme name
-            if (!variableName.startsWith(themeName)) {
-                console.warn(`Warning: Variable "${variableName}" doesn't start with theme "${themeName}"`);
+        // Process each variable in the theme
+        for (const variableName of Object.keys(theme)) {
+            // Variable names are prefixed with mode (e.g., "DarkAccentPrimary", "LightAccentPrimary")
+            let mode: 'light' | 'dark';
+            let nameWithoutMode: string;
+
+            if (variableName.startsWith('Dark')) {
+                mode = 'dark';
+                nameWithoutMode = variableName.substring('Dark'.length);
+            } else if (variableName.startsWith('Light')) {
+                mode = 'light';
+                nameWithoutMode = variableName.substring('Light'.length);
+            } else {
+                console.warn(`Warning: Variable "${variableName}" doesn't start with "Dark" or "Light"`);
                 continue;
             }
 
-            // Remove the theme prefix from the variable name (e.g., "CoolGraySurfacePrimary" -> "SurfacePrimary")
-            const nameWithoutTheme = variableName.substring(themeName.length);
+            // Split the remaining name into parts (e.g., "AccentPrimary" -> ["accent", "primary"])
+            const parts = words(nameWithoutMode).map((word) => word.toLowerCase());
 
-            // Split the remaining name into parts (e.g., "SurfacePrimary" -> ["surface", "primary"])
-            const parts = words(nameWithoutTheme).map((word) => word.toLowerCase());
-
-            // Set the light value
-            const lightValue = lightMode[variableName];
-            const lightPath = [camelCase(themeName), 'light', ...parts];
-            set(result, lightPath, { $value: lightValue });
-
-            // Set the dark value
-            const darkValue = darkMode[variableName];
-            const darkPath = [camelCase(themeName), 'dark', ...parts];
-            set(result, darkPath, { $value: darkValue });
+            // Set the value
+            const value = theme[variableName];
+            const path = [camelCase(themeName), mode, ...parts];
+            set(result, path, { $value: value });
         }
     }
 
@@ -152,14 +146,6 @@ async function main() {
         const themeNames = Object.keys(figmaExport);
         if (themeNames.length === 0) {
             throw new Error('Input JSON contains no themes');
-        }
-
-        // Validate each theme has Light and Dark modes
-        for (const themeName of themeNames) {
-            const theme = figmaExport[themeName];
-            if (!theme.Light || !theme.Dark) {
-                throw new Error(`Theme "${themeName}" is missing Light or Dark mode`);
-            }
         }
 
         // Process and transform tokens
