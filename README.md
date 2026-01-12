@@ -1,6 +1,6 @@
 # DuckDuckGo Design Tokens
 
-![GitHub Release](https://img.shields.io/github/v/release/duckduckgo/design-tokens)
+![GitHub Release](https://img.shields.io/github/v/release/duckduckgo/design-tokens?color=8a2be2)
 
 A repo to generate style variables for all the things. But we're starting with static-pages. Tokens act as our single source of truth. They can be transformed and formatted to meet the needs of any platform (Web, Android, iOS, etc). A single change to a property file can be transformed and compiled for consumption by any platform using our tokens.
 
@@ -18,9 +18,10 @@ A repo to generate style variables for all the things. But we're starting with s
     - [Component Tokens](#component-tokens)
   - [Naming Approach](#naming-approach)
     - [Option \& Semantic Tokens](#option--semantic-tokens)
+      - [Prefix](#prefix)
     - [Component Tokens](#component-tokens-1)
-      - [Prefixes](#prefixes)
   - [Creating Tokens](#creating-tokens)
+    - [Desktop Browsers](#desktop-browsers)
   - [Release Process](#release-process)
 
 ## Getting started
@@ -67,17 +68,20 @@ These are hyper-specific tokens relating to a single component and its various v
 
 `prefix-property-variant` or `prefix-property-variant-modifier`
 
+**Examples:**
+- `ds-color-white`
+- `ds-color-mandarin-400`
+- `ds-radius-x04`
+- `ds-font-family-display`
+
+#### Prefix
+
+The dedicated prefix for our design system values is `ds`
+
 ### Component Tokens
 
 `prefix-component-variant-state-property`
 
-#### Prefixes
-
-These values are set in the configs. Each platform/repo has its own prefix.
-
-- SERP: sds
-- Static-pages: spds
-- Desktop browsers: bds
 
 ## Creating Tokens
 
