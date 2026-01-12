@@ -4,10 +4,10 @@ import fileHeader from './dist/src/utils/file-header.js';
 
 export default {
     source: [
-        'dist/src/properties/web/base/sds-colors.{js,json}',
-        'dist/src/properties/web/base/sds-semantic.{js,json}',
-        'dist/src/properties/web/base/sds-spacing.{js,json}',
-        'dist/src/properties/web/base/sds-typography.{js,json}',
+        'dist/src/properties/web/serp/sds-colors.{js,json}',
+        'dist/src/properties/web/serp/sds-semantic.{js,json}',
+        'dist/src/properties/web/serp/sds-spacing.{js,json}',
+        'dist/src/properties/web/serp/sds-typography.{js,json}',
     ],
     hooks: {
         formats: {

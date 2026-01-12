@@ -1,5 +1,6 @@
 import { DesignToken } from 'style-dictionary/types';
 
+// Current naming and colors before rebrand
 const sdsSemanticColors: DesignToken = {
     $type: 'color',
     'color-background': {
