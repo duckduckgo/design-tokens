@@ -1,7 +1,14 @@
-import { formats, transformGroups, logBrokenReferenceLevels, logVerbosityLevels, logWarningLevels } from 'style-dictionary/enums';
+import { transformGroups, logBrokenReferenceLevels, logVerbosityLevels, logWarningLevels } from 'style-dictionary/enums';
+import cssVariablesShadowDom from './src/formats/css-variables-shadow-dom.js';
 import fileHeader from './dist/src/utils/file-header.js';
+
 export default {
     source: ['dist/src/properties/web/base/sds-colors.js', 'dist/src/properties/web/desktop-browsers/theme.js'],
+    hooks: {
+        formats: {
+            'css/variables-shadow-dom': cssVariablesShadowDom,
+        },
+    },
     log: {
         warnings: logWarningLevels.warn, // 'warn' | 'error' | 'disabled'
         verbosity: logVerbosityLevels.verbose, // 'default' | 'silent' | 'verbose'
@@ -17,7 +24,7 @@ export default {
             files: [
                 {
                     destination: 'desktop-browsers/tokens.css',
-                    format: formats.cssVariables,
+                    format: 'css/variables-shadow-dom',
                     options: {
                         outputReferences: true,
                         showFileHeader: true,
