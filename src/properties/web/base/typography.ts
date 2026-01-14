@@ -184,10 +184,10 @@ const typography: DesignToken = {
                 $value: '{font.letterSpacing.normal}',
             },
             lineHeight: {
-                $value: '12px',
+                $value: '16px',
             },
             size: {
-                $value: '16px',
+                $value: '12px',
             },
             weight: {
                 $value: '{font.weight.normal}',
