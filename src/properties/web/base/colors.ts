@@ -102,6 +102,25 @@ const colors: DesignToken = {
             90: { $value: '#3E0E47' },
             100: { $value: '#230829' },
         },
+        blossom0At: {
+            24: { $value: 'rgba(251, 247, 255, 0.24)' },
+            60: { $value: 'rgba(251, 247, 255, 0.60)' },
+        },
+        blossom40At: {
+            12: { $value: 'rgba(193, 158, 219, 0.12)' },
+            20: { $value: 'rgba(193, 158, 219, 0.20)' },
+        },
+        blossom80At: {
+            12: { $value: 'rgba(82, 26, 97, 0.12)' },
+            18: { $value: 'rgba(82, 26, 97, 0.18)' },
+            20: { $value: 'rgba(82, 26, 97, 0.20)' },
+            21: { $value: 'rgba(82, 26, 97, 0.21)' },
+            27: { $value: 'rgba(82, 26, 97, 0.27)' },
+            39: { $value: 'rgba(82, 26, 97, 0.39)' },
+            57: { $value: 'rgba(82, 26, 97, 0.57)' },
+            69: { $value: 'rgba(82, 26, 97, 0.69)' },
+            81: { $value: 'rgba(82, 26, 97, 0.81)' },
+        },
         blossom100At: {
             1: { $value: 'rgba(35, 8, 41, 0.01)' },
             3: { $value: 'rgba(35, 8, 41, 0.03)' },
@@ -130,10 +149,18 @@ const colors: DesignToken = {
         lilypad40At: {
             12: { $value: 'rgba(132, 187, 168, 0.12)' }, // accent alt glow secondary for lilypad light motif
             20: { $value: 'rgba(132, 187, 168, 0.20)' }, // accent alt glow primary for lilypad light motif
+            24: { $value: 'rgba(132, 187, 168, 0.24)' },
+            60: { $value: 'rgba(132, 187, 168, 0.60)' },
         },
         lilypad60At: {
+            9: { $value: 'rgba(36, 122, 100, 0.09)' },
             12: { $value: 'rgba(36, 122, 100, 0.12)' }, // accent glow secondary for lilypad light motif
+            18: { $value: 'rgba(36, 122, 100, 0.18)' },
             20: { $value: 'rgba(36, 122, 100, 0.20)' }, // accent glow primary for lilypad light motif
+            30: { $value: 'rgba(36, 122, 100, 0.30)' },
+            48: { $value: 'rgba(36, 122, 100, 0.48)' },
+            60: { $value: 'rgba(36, 122, 100, 0.60)' },
+            72: { $value: 'rgba(36, 122, 100, 0.72)' },
         },
         lilypad100At: {
             1: { $value: 'rgba(8, 33, 25, 0.01)' },
@@ -159,6 +186,14 @@ const colors: DesignToken = {
             80: { $value: '#671907' },
             90: { $value: '#47140B' },
             100: { $value: '#290E0A' },
+        },
+        mandarin0At: {
+            24: { $value: 'rgba(255, 240, 249, 0.24)' },
+            60: { $value: 'rgba(255, 240, 249, 0.60)' },
+        },
+        mandarin40At: {
+            12: { $value: 'rgba(255, 141, 92, 0.12)' }, // accent glow secondary for mandarin light motif
+            20: { $value: 'rgba(255, 141, 92, 0.20)' }, // accent glow primary for mandarin light motif
         },
         mandarin50At: {
             9: { $value: 'rgba(240, 95, 43, 0.09)' },
@@ -195,6 +230,19 @@ const colors: DesignToken = {
             90: { $value: '#331705' },
             100: { $value: '#1A0B03' },
         },
+        pollen0At: {
+            24: { $value: 'rgba(255, 253, 240, 0.24)' },
+            60: { $value: 'rgba(255, 253, 240, 0.60)' },
+        },
+        pollen30At: {
+            18: { $value: 'rgba(254, 218, 123, 0.18)' },
+            21: { $value: 'rgba(254, 218, 123, 0.21)' },
+            27: { $value: 'rgba(254, 218, 123, 0.27)' },
+            39: { $value: 'rgba(254, 218, 123, 0.39)' },
+            57: { $value: 'rgba(254, 218, 123, 0.57)' },
+            69: { $value: 'rgba(254, 218, 123, 0.69)' },
+            81: { $value: 'rgba(254, 218, 123, 0.81)' },
+        },
         pollen40At: {
             12: { $value: 'rgba(255, 197, 66, 0.12)' }, // accent glow secondary for pollen light motif
             20: { $value: 'rgba(255, 197, 66, 0.20)' }, // accent glow primary for pollen light motif
@@ -229,7 +277,9 @@ const colors: DesignToken = {
             100: { $value: '#09192D' },
         },
         pondwater0At: {
+            24: { $value: 'rgba(245, 251, 254, 0.24)' },
             50: { $value: 'rbga(245, 251, 254, 0.50)' },
+            60: { $value: 'rbga(245, 251, 254, 0.60)' },
             70: { $value: 'rbga(245, 251, 254, 0.70)' },
         },
         pondwater20At: {
@@ -241,8 +291,14 @@ const colors: DesignToken = {
             20: { $value: 'rgba(119, 182, 232, 0.20)' }, // accent alt glow primary for default light theme and pondwater light motif
         },
         pondwater60At: {
+            9: { $value: 'rgba(16, 116, 204, 0.09)' },
             12: { $value: 'rgba(16, 116, 204, 0.12)' }, // accent glow secondary for default light theme and pondwater light motif
+            18: { $value: 'rgba(16, 116, 204, 0.18)' },
             20: { $value: 'rgba(16, 116, 204, 0.20)' }, // accent glow primary for default light theme and pondwater light motif
+            30: { $value: 'rgba(16, 116, 204, 0.30)' },
+            48: { $value: 'rgba(16, 116, 204, 0.48)' },
+            60: { $value: 'rgba(16, 116, 204, 0.60)' },
+            72: { $value: 'rgba(16, 116, 204, 0.72)' },
         },
         pondwater100At: {
             1: { $value: 'rgba(9, 25, 45, 0.01)' },
