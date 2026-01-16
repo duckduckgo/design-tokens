@@ -1,0 +1,272 @@
+import { DesignToken } from 'style-dictionary/types';
+
+// Base colors for rebrand
+const colors: DesignToken = {
+    $type: 'color',
+    color: {
+        // Neutrals
+        black: { $value: '#000000' },
+        blackAt: {
+            1: { $value: 'rgba(0, 0, 0, 0.01)' },
+            3: { $value: 'rgba(0, 0, 0, 0.03)' },
+            5: { $value: 'rgba(0, 0, 0, 0.05)' }, // this might change!
+            6: { $value: 'rgba(0, 0, 0, 0.06)' },
+            8: { $value: 'rgba(0, 0, 0, 0.08)' }, // this might change!
+            9: { $value: 'rgba(0, 0, 0, 0.09)' },
+            12: { $value: 'rgba(0, 0, 0, 0.12)' },
+            16: { $value: 'rgba(0, 0, 0, 0.16)' },
+            18: { $value: 'rgba(0, 0, 0, 0.18)' },
+            24: { $value: 'rgba(0, 0, 0, 0.24)' },
+            30: { $value: 'rgba(0, 0, 0, 0.30)' },
+            36: { $value: 'rgba(0, 0, 0, 0.36)' },
+            42: { $value: 'rgba(0, 0, 0, 0.42)' },
+            48: { $value: 'rgba(0, 0, 0, 0.48)' },
+            54: { $value: 'rgba(0, 0, 0, 0.54)' },
+            60: { $value: 'rgba(0, 0, 0, 0.60)' },
+            66: { $value: 'rgba(0, 0, 0, 0.66)' },
+            72: { $value: 'rgba(0, 0, 0, 0.72)' },
+            78: { $value: 'rgba(0, 0, 0, 0.78)' },
+            84: { $value: 'rgba(0, 0, 0, 0.84)' },
+            90: { $value: 'rgba(0, 0, 0, 0.90)' },
+            96: { $value: 'rgba(0, 0, 0, 0.96)' },
+        },
+        white: { $value: '#ffffff' },
+        whiteAt: {
+            1: { $value: 'rgba(255, 255, 255, 0.01)' },
+            3: { $value: 'rgba(255, 255, 255, 0.03)' },
+            5: { $value: 'rgba(255, 255, 255, 0.05)' }, // this might change!
+            6: { $value: 'rgba(255, 255, 255, 0.06)' },
+            9: { $value: 'rgba(255, 255, 255, 0.09)' },
+            12: { $value: 'rgba(255, 255, 255, 0.12)' },
+            18: { $value: 'rgba(255, 255, 255, 0.18)' },
+            24: { $value: 'rgba(255, 255, 255, 0.24)' },
+            30: { $value: 'rgba(255, 255, 255, 0.30)' },
+            36: { $value: 'rgba(255, 255, 255, 0.36)' },
+            42: { $value: 'rgba(255, 255, 255, 0.42)' },
+            48: { $value: 'rgba(255, 255, 255, 0.48)' },
+            50: { $value: 'rgba(255, 255, 255, 0.50)' },
+            54: { $value: 'rgba(255, 255, 255, 0.54)' },
+            60: { $value: 'rgba(255, 255, 255, 0.60)' },
+            66: { $value: 'rgba(255, 255, 255, 0.66)' },
+            70: { $value: 'rgba(255, 255, 255, 0.70)' },
+            80: { $value: 'rgba(255, 255, 255, 0.80)' },
+            84: { $value: 'rgba(255, 255, 255, 0.84)' },
+            90: { $value: 'rgba(255, 255, 255, 0.90)' },
+            96: { $value: 'rgba(255, 255, 255, 0.96)' },
+        },
+        gray: {
+            0: { $value: '#fcfcfc' },
+            10: { $value: '#f5f5f5' },
+            20: { $value: '#e5e5e5' },
+            30: { $value: '#c5c5c5' },
+            40: { $value: '#aaaaaa' },
+            50: { $value: '#888888' },
+            60: { $value: '#686868' },
+            70: { $value: '#484848' },
+            80: { $value: '#383838' },
+            90: { $value: '#282828' },
+            100: { $value: '#181818' },
+            // Gray gets an extra value for the 111 color, which is used as dark mode background color
+            111: { $value: '#111111' },
+        },
+        gray0At: {
+            24: { $value: 'rgba(252, 252, 252, 0.24)' },
+            32: { $value: 'rgba(252, 252, 252, 0.32)' },
+        },
+        // Eggshell values are to be used similarly to the gray values, treat as warm neutrals
+        eggshell: {
+            0: { $value: '#FBFAF9' },
+            10: { $value: '#F7F5F2' },
+            20: { $value: '#ECEBE7' },
+            30: { $value: '#C7C4C1' },
+            40: { $value: '#B0ACAB' },
+            // The darker values are the same as the gray at this time. Likely candidates for refinement.
+            50: { $value: '#888888' },
+            60: { $value: '#686868' },
+            70: { $value: '#484848' },
+            80: { $value: '#383838' },
+            90: { $value: '#282828' },
+            100: { $value: '#181818' },
+        },
+        // Colors
+        blossom: {
+            0: { $value: '#FBF7FF' },
+            10: { $value: '#F5EDFF' },
+            20: { $value: '#EADAFD' },
+            30: { $value: '#EADAFD' },
+            40: { $value: '#C19EDB' },
+            50: { $value: '#9F6EB8' },
+            60: { $value: '#7D4794' },
+            70: { $value: '#682A7A' },
+            80: { $value: '#521A61' },
+            90: { $value: '#3E0E47' },
+            100: { $value: '#230829' },
+        },
+        blossom100At: {
+            1: { $value: 'rgba(35, 8, 41, 0.01)' },
+            3: { $value: 'rgba(35, 8, 41, 0.03)' },
+            6: { $value: 'rgba(35, 8, 41, 0.06)' },
+            9: { $value: 'rgba(35, 8, 41, 0.09)' },
+            12: { $value: 'rgba(35, 8, 41, 0.12)' },
+            16: { $value: 'rgba(35, 8, 41, 0.16)' },
+            36: { $value: 'rgba(35, 8, 41, 0.36)' },
+            60: { $value: 'rgba(35, 8, 41, 0.60)' },
+            84: { $value: 'rgba(35, 8, 41, 0.84)' },
+            96: { $value: 'rgba(35, 8, 41, 0.96)' },
+        },
+        lilypad: {
+            0: { $value: '#F8FCF9' },
+            10: { $value: '#E2F3E9' },
+            20: { $value: '#CFEBDA' },
+            30: { $value: '#AED5C2' },
+            40: { $value: '#84BBA8' },
+            50: { $value: '#589D88' },
+            60: { $value: '#247A64' },
+            70: { $value: '#11604D' },
+            80: { $value: '#0A4739' },
+            90: { $value: '#052F25' },
+            100: { $value: '#082119' },
+        },
+        lilypad40At: {
+            12: { $value: 'rgba(132, 187, 168, 0.12)' }, // accent alt glow secondary for lilypad light motif
+            20: { $value: 'rgba(132, 187, 168, 0.20)' }, // accent alt glow primary for lilypad light motif
+        },
+        lilypad60At: {
+            12: { $value: 'rgba(36, 122, 100, 0.12)' }, // accent glow secondary for lilypad light motif
+            20: { $value: 'rgba(36, 122, 100, 0.20)' }, // accent glow primary for lilypad light motif
+        },
+        lilypad100At: {
+            1: { $value: 'rgba(8, 33, 25, 0.01)' },
+            3: { $value: 'rgba(8, 33, 25, 0.03)' },
+            6: { $value: 'rgba(8, 33, 25, 0.06)' },
+            9: { $value: 'rgba(8, 33, 25, 0.09)' },
+            12: { $value: 'rgba(8, 33, 25, 0.12)' },
+            16: { $value: 'rgba(8, 33, 25, 0.16)' },
+            36: { $value: 'rgba(8, 33, 25, 0.36)' },
+            60: { $value: 'rgba(8, 33, 25, 0.60)' },
+            84: { $value: 'rgba(8, 33, 25, 0.84)' },
+            96: { $value: 'rgba(8, 33, 25, 0.96)' },
+        },
+        mandarin: {
+            0: { $value: '#FFFAF9' },
+            10: { $value: '#FFEBE5' },
+            20: { $value: '#FFDACC' },
+            30: { $value: '#FFB294' },
+            40: { $value: '#FF8D5C' },
+            50: { $value: '#F05F2B' },
+            60: { $value: '#CC3B0A' },
+            70: { $value: '#9E2B08' },
+            80: { $value: '#671907' },
+            90: { $value: '#47140B' },
+            100: { $value: '#290E0A' },
+        },
+        mandarin50At: {
+            9: { $value: 'rgba(240, 95, 43, 0.09)' },
+            12: { $value: 'rgba(240, 95, 43, 0.12)' }, // accent glow secondary for mandarin light motif
+            18: { $value: 'rgba(240, 95, 43, 0.18)' },
+            20: { $value: 'rgba(240, 95, 43, 0.20)' }, // accent glow primary for mandarin light motif
+            30: { $value: 'rgba(240, 95, 43, 0.30)' },
+            48: { $value: 'rgba(240, 95, 43, 0.48)' },
+            60: { $value: 'rgba(240, 95, 43, 0.60)' },
+            72: { $value: 'rgba(240, 95, 43, 0.72)' },
+        },
+        mandarin100At: {
+            1: { $value: 'rgba(41, 14, 10, 0.01)' },
+            3: { $value: 'rgba(41, 14, 10, 0.03)' },
+            6: { $value: 'rgba(41, 14, 10, 0.06)' },
+            9: { $value: 'rgba(41, 14, 10, 0.09)' },
+            12: { $value: 'rgba(41, 14, 10, 0.12)' },
+            16: { $value: 'rgba(41, 14, 10, 0.16)' },
+            36: { $value: 'rgba(41, 14, 10, 0.36)' },
+            60: { $value: 'rgba(41, 14, 10, 0.60)' },
+            84: { $value: 'rgba(41, 14, 10, 0.84)' },
+            96: { $value: 'rgba(41, 14, 10, 0.96)' },
+        },
+        pollen: {
+            0: { $value: '#FFFDF0' },
+            10: { $value: '#FEF7D9' },
+            20: { $value: '#FFF1B5' },
+            30: { $value: '#FEDA7B' },
+            40: { $value: '#FFC542' },
+            50: { $value: '#FAAE19' },
+            60: { $value: '#F09918' },
+            70: { $value: '#AB6111' },
+            80: { $value: '#66320A' },
+            90: { $value: '#331705' },
+            100: { $value: '#1A0B03' },
+        },
+        pollen40At: {
+            12: { $value: 'rgba(255, 197, 66, 0.12)' }, // accent glow secondary for pollen light motif
+            20: { $value: 'rgba(255, 197, 66, 0.20)' }, // accent glow primary for pollen light motif
+        },
+        pollen50At: {
+            12: { $value: 'rgba(250, 174, 25, 0.12)' }, // accent-alt glow secondary for pollen light motif
+            20: { $value: 'rgba(250, 174, 25, 0.20)' }, // accent-alt glow primary for pollen light motif
+        },
+        pollen100At: {
+            1: { $value: 'rgba(26, 11, 3, 0.01)' },
+            3: { $value: 'rgba(26, 11, 3, 0.03)' },
+            6: { $value: 'rgba(26, 11, 3, 0.06)' },
+            9: { $value: 'rgba(26, 11, 3, 0.09)' },
+            12: { $value: 'rgba(26, 11, 3, 0.12)' },
+            16: { $value: 'rgba(26, 11, 3, 0.16)' },
+            36: { $value: 'rgba(26, 11, 3, 0.36)' },
+            60: { $value: 'rgba(26, 11, 3, 0.60)' },
+            84: { $value: 'rgba(26, 11, 3, 0.84)' },
+            96: { $value: 'rgba(26, 11, 3, 0.96)' },
+        },
+        pondwater: {
+            0: { $value: '#F5FBFE' },
+            10: { $value: '#E6F6FF' },
+            20: { $value: '#CBECFF' },
+            30: { $value: '#A1CFF7' },
+            40: { $value: '#77B6E8' },
+            50: { $value: '#4393E5' },
+            60: { $value: '#1074CC' },
+            70: { $value: '#05579E' },
+            80: { $value: '#0D3C73' },
+            90: { $value: '#0F2747' },
+            100: { $value: '#09192D' },
+        },
+        pondwater40At: {
+            12: { $value: 'rgba(119, 182, 232, 0.12)' }, // accent alt glow secondary for default light theme and pondwater light motif
+            20: { $value: 'rgba(119, 182, 232, 0.20)' }, // accent alt glow primary for default light theme and pondwater light motif
+        },
+        pondwater60At: {
+            12: { $value: 'rgba(16, 116, 204, 0.12)' }, // accent glow secondary for default light theme and pondwater light motif
+            20: { $value: 'rgba(16, 116, 204, 0.20)' }, // accent glow primary for default light theme and pondwater light motif
+        },
+        pondwater100At: {
+            1: { $value: 'rgba(9, 25, 45, 0.01)' },
+            3: { $value: 'rgba(9, 25, 45, 0.03)' },
+            6: { $value: 'rgba(9, 25, 45, 0.06)' },
+            9: { $value: 'rgba(9, 25, 45, 0.09)' },
+            12: { $value: 'rgba(9, 25, 45, 0.12)' },
+            16: { $value: 'rgba(9, 25, 45, 0.16)' },
+            36: { $value: 'rgba(9, 25, 45, 0.36)' },
+            60: { $value: 'rgba(9, 25, 45, 0.60)' },
+            84: { $value: 'rgba(9, 25, 45, 0.84)' },
+            96: { $value: 'rgba(9, 25, 45, 0.96)' },
+        },
+        red: {
+            0: { $value: '#FEF9FA' },
+            10: { $value: '#FCECF0' },
+            20: { $value: '#FAD8DC' },
+            30: { $value: '#F7AAAD' },
+            40: { $value: '#F68E8F' },
+            50: { $value: '#EC434F' },
+            60: { $value: '#CA2B3D' },
+            70: { $value: '#A02231' },
+            80: { $value: '#671421' },
+            90: { $value: '#46111C' },
+            100: { $value: '#2A0C14' },
+        },
+        red50At: {
+            12: { $value: 'rgba(236, 67, 79, 0.12)' }, // accent glow secondary for destructive use case
+            20: { $value: 'rgba(236, 67, 79, 0.20)' }, // accent glow primary for destructive use case
+        },
+        green40: { $value: '#39B25E' }, // status green
+    },
+};
+
+export default colors;

@@ -3,9 +3,9 @@ import fileHeader from './dist/src/utils/file-header.js';
 
 export default {
     source: [
-        'dist/src/properties/global/*.{js,json}',
         'dist/src/properties/web/base/colors.{js,json}',
         'dist/src/properties/web/base/*.{js,json}',
+        'dist/src/properties/web/theme/*.{js,json}',
         'dist/src/properties/web/components/*.{js,json}',
         'dist/src/properties/web/static-pages/*.{js,json}',
     ],
