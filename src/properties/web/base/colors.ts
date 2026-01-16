@@ -228,6 +228,14 @@ const colors: DesignToken = {
             90: { $value: '#0F2747' },
             100: { $value: '#09192D' },
         },
+        pondwater0At: {
+            50: { $value: 'rbga(245, 251, 254, 0.50)' },
+            70: { $value: 'rbga(245, 251, 254, 0.70)' },
+        },
+        pondwater20At: {
+            12: { $value: 'rgba(203, 236, 255, 0.12)' },
+            20: { $value: 'rgba(203, 236, 255, 0.20)' },
+        },
         pondwater40At: {
             12: { $value: 'rgba(119, 182, 232, 0.12)' }, // accent alt glow secondary for default light theme and pondwater light motif
             20: { $value: 'rgba(119, 182, 232, 0.20)' }, // accent alt glow primary for default light theme and pondwater light motif
@@ -244,7 +252,9 @@ const colors: DesignToken = {
             12: { $value: 'rgba(9, 25, 45, 0.12)' },
             16: { $value: 'rgba(9, 25, 45, 0.16)' },
             36: { $value: 'rgba(9, 25, 45, 0.36)' },
+            50: { $value: 'rgba(9, 25, 45, 0.50)' },
             60: { $value: 'rgba(9, 25, 45, 0.60)' },
+            70: { $value: 'rgba(9, 25, 45, 0.70)' },
             84: { $value: 'rgba(9, 25, 45, 0.84)' },
             96: { $value: 'rgba(9, 25, 45, 0.96)' },
         },
