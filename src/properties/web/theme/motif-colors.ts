@@ -728,13 +728,13 @@ const motifColors: DesignToken = {
             },
             control: {
                 fillPrimary: {
-                    $value: '{color.pondwater60At.6}',
-                },
-                fillSecondary: {
                     $value: '{color.pondwater60At.9}',
                 },
-                fillTertiary: {
+                fillSecondary: {
                     $value: '{color.pondwater60At.12}',
+                },
+                fillTertiary: {
+                    $value: '{color.pondwater60At.18}',
                 },
                 borderPrimary: {
                     $value: '{color.pondwater60At.30}',
@@ -1249,314 +1249,314 @@ const motifColors: DesignToken = {
                 },
             },
         },
-        /// **** I stopped here! ****
         pollenDark: {
             surface: {
                 backdrop: {
-                    $value: '{color.white}',
+                    $value: '{color.gray.111}',
                 },
                 canvas: {
-                    $value: '{color.eggshell.0}',
+                    $value: '{color.pollen.100}',
                 },
                 primary: {
-                    $value: '{color.eggshell.20}',
+                    $value: '{color.pollen.100}',
                 },
                 secondary: {
-                    $value: '{color.eggshell.10}',
+                    $value: '{color.pollen.90}',
                 },
                 tertiary: {
-                    $value: '{color.white}',
+                    $value: '{color.pollen.80}',
                 },
                 // decorations are used for things like shadows, hr lines
                 decoration: {
                     primary: {
-                        $value: '{color.blackAt.6}',
+                        $value: '{color.whiteAt.6}',
                     },
                     secondary: {
-                        $value: '{color.blackAt.12}',
+                        $value: '{color.whiteAt.12}',
                     },
                     tertiary: {
-                        $value: '{color.blackAt.16}',
+                        $value: '{color.whiteAt.24}',
                     },
                 },
             },
             container: {
                 primaryBackgroundColor: {
-                    $value: '{color.blackAt.1}',
+                    $value: '{color.pollen0At.3}',
                 },
                 secondaryBackgroundColor: {
-                    $value: '{color.blackAt.3}',
+                    $value: '{color.pollen0At.6}',
                 },
                 tertiaryBackgroundColor: {
-                    $value: '{color.blackAt.6}',
+                    $value: '{color.pollen0At.9}',
                 },
                 primaryBorderColor: {
-                    $value: '{color.blackAt.6}',
+                    $value: '{color.pollen0At.6}',
                 },
                 secondaryBorderColor: {
-                    $value: '{color.blackAt.9}',
+                    $value: '{color.pollen0At.9}',
                 },
                 tertiaryBorderColor: {
-                    $value: '{color.blackAt.12}',
+                    $value: '{color.pollen0At.12}',
                 },
             },
             text: {
                 primary: {
-                    $value: '{color.blackAt.96}',
+                    $value: '{color.pollen.0}',
                 },
                 secondary: {
-                    $value: '{color.blackAt.60}',
+                    $value: '{color.pollen0At.60}',
                 },
                 tertiary: {
-                    $value: '{color.blackAt.36}',
+                    $value: '{color.pollen0At.36}',
                 },
             },
             icons: {
                 primary: {
-                    $value: '{color.blackAt.84}',
+                    $value: '{color.pollen.0}',
                 },
                 secondary: {
-                    $value: '{color.blackAt.60}',
+                    $value: '{color.pollen0At.60}', // may change
                 },
                 tertiary: {
-                    $value: '{color.blackAt.36}',
+                    $value: '{color.pollen0At.36}', // may change
                 },
             },
             accent: {
-                primary: { $value: '{color.pondwater.60}' },
-                secondary: { $value: '{color.pondwater.70}' },
-                tertiary: { $value: '{color.pondwater.80}' },
-                quaternary: { $value: '{color.gray.111}' },
-                glowPrimary: { $value: '{color.pondwater60At.20}' },
-                glowSecondary: { $value: '{color.pondwater60At.12}' },
-                textPrimary: { $value: '{color.pondwater.60}' },
-                textSecondary: { $value: '{color.pondwater.70}' },
-                textTertiary: { $value: '{color.pondwater.80}' },
-                contentPrimary: { $value: '{color.white}' },
-                contentSecondary: { $value: '{color.whiteAt.70}' },
-                contentTertiary: { $value: '{color.whiteAt.50}' },
+                // Yes, this is correct. pollen buttons will use pollen colors
+                primary: { $value: '{color.pollen.30}' },
+                secondary: { $value: '{color.pollen.40}' },
+                tertiary: { $value: '{color.pollen.50}' },
+                quaternary: { $value: '{color.pollen.60}' },
+                glowPrimary: { $value: '{color.pollen40At.20}' },
+                glowSecondary: { $value: '{color.pollen40At.12}' },
+                textPrimary: { $value: '{color.pollen.30}' },
+                textSecondary: { $value: '{color.pollen.40}' },
+                textTertiary: { $value: '{color.pollen.50}' },
+                contentPrimary: { $value: '{color.pollen.100}' },
+                contentSecondary: { $value: '{color.pollen100At.70}' },
+                contentTertiary: { $value: '{color.pollen100At.50}' },
             },
             accentAlt: {
-                primary: { $value: '{color.pondwater.10}' },
-                secondary: { $value: '{color.pondwater.20}' },
-                tertiary: { $value: '{color.pondwater.30}' },
-                glowPrimary: { $value: '{color.pondwater40At.20}' },
-                glowSecondary: { $value: '{color.pondwater40At.12}' },
-                textPrimary: { $value: '{color.pondwater.70}' },
-                textSecondary: { $value: '{color.pondwater.80}' },
-                textTertiary: { $value: '{color.pondwater.90}' },
-                contentPrimary: { $value: '{color.pondwater.70}' },
-                contentSecondary: { $value: '{color.whiteAt.80}' },
-                contentTertiary: { $value: '{color.whiteAt.90}' },
+                primary: { $value: '{color.pollen.60}' },
+                secondary: { $value: '{color.pollen.70}' },
+                tertiary: { $value: '{color.pollen.80}' },
+                glowPrimary: { $value: '{color.pollen30At.20}' }, // this will change
+                glowSecondary: { $value: '{color.pollen30At.12}' }, // this will change
+                textPrimary: { $value: '{color.pollen.20}' },
+                textSecondary: { $value: '{color.pollen.30}' },
+                textTertiary: { $value: '{color.pollen.40}' },
+                contentPrimary: { $value: '{color.pollen.0}' },
+                contentSecondary: { $value: '{color.pollen0At.70}' },
+                contentTertiary: { $value: '{color.pollen0At.50}' },
             },
             control: {
                 fillPrimary: {
-                    $value: '{color.blackAt.6}',
+                    $value: '{color.pollen10At.12}',
                 },
                 fillSecondary: {
-                    $value: '{color.blackAt.9}',
+                    $value: '{color.pollen10At.18}',
                 },
                 fillTertiary: {
-                    $value: '{color.blackAt.12}',
+                    $value: '{color.pollen10At.24}',
                 },
                 borderPrimary: {
-                    $value: '{color.blackAt.30}',
+                    $value: '{color.pollen10At.36}',
                 },
                 borderSecondary: {
-                    $value: '{color.blackAt.48}',
+                    $value: '{color.pollen10At.64}',
                 },
                 borderTertiary: {
-                    $value: '{color.blackAt.60}',
+                    $value: '{color.pollen10At.72}',
                 },
                 borderQuaternary: {
-                    $value: '{color.blackAt.72}',
+                    $value: '{color.pollen10At.80}',
                 },
             },
             controlRaised: {
                 fillPrimary: {
-                    $value: '{color.gray.0}',
+                    $value: '{color.pollen0At.18}',
                 },
                 backdrop: {
-                    $value: '{color.blackAt.9}',
+                    $value: '{color.whiteAt.12}',
                 },
             },
             highlight: {
                 primary: {
-                    $value: '{color.gray0At.24}',
+                    $value: '{color.pollen0At.12}',
                 },
             },
             tone: {
                 brighten: {
-                    $value: `{color.gray0At.32}`,
+                    $value: `{color.pollen10At.6}`,
                 },
                 darken: {
-                    $value: `{color.blackAt.3}`,
+                    $value: `{color.blackAt.12}`,
                 },
             },
             shadow: {
                 primary: {
-                    $value: '{color.blackAt.5}',
+                    $value: '{color.blackAt.16}',
                 },
                 secondary: {
-                    $value: '{color.blackAt.8}',
+                    $value: '{color.blackAt.24}',
                 },
                 tertiary: {
-                    $value: '{color.blackAt.16}',
+                    $value: '{color.blackAt.32}',
                 },
             },
         },
         pondwaterDark: {
             surface: {
                 backdrop: {
-                    $value: '{color.white}',
+                    $value: '{color.gray.111}',
                 },
                 canvas: {
-                    $value: '{color.eggshell.0}',
+                    $value: '{color.pondwater.100}',
                 },
                 primary: {
-                    $value: '{color.eggshell.20}',
+                    $value: '{color.pondwater.100}',
                 },
                 secondary: {
-                    $value: '{color.eggshell.10}',
+                    $value: '{color.pondwater.90}',
                 },
                 tertiary: {
-                    $value: '{color.white}',
+                    $value: '{color.pondwater.80}',
                 },
                 // decorations are used for things like shadows, hr lines
                 decoration: {
                     primary: {
-                        $value: '{color.blackAt.6}',
+                        $value: '{color.whiteAt.6}',
                     },
                     secondary: {
-                        $value: '{color.blackAt.12}',
+                        $value: '{color.whiteAt.12}',
                     },
                     tertiary: {
-                        $value: '{color.blackAt.16}',
+                        $value: '{color.whiteAt.24}',
                     },
                 },
             },
             container: {
                 primaryBackgroundColor: {
-                    $value: '{color.blackAt.1}',
+                    $value: '{color.pondwater0At.3}',
                 },
                 secondaryBackgroundColor: {
-                    $value: '{color.blackAt.3}',
+                    $value: '{color.pondwater0At.6}',
                 },
                 tertiaryBackgroundColor: {
-                    $value: '{color.blackAt.6}',
+                    $value: '{color.pondwater0At.9}',
                 },
                 primaryBorderColor: {
-                    $value: '{color.blackAt.6}',
+                    $value: '{color.pondwater0At.6}',
                 },
                 secondaryBorderColor: {
-                    $value: '{color.blackAt.9}',
+                    $value: '{color.pondwater0At.9}',
                 },
                 tertiaryBorderColor: {
-                    $value: '{color.blackAt.12}',
+                    $value: '{color.pondwater0At.12}',
                 },
             },
             text: {
                 primary: {
-                    $value: '{color.blackAt.96}',
+                    $value: '{color.pondwater.0}',
                 },
                 secondary: {
-                    $value: '{color.blackAt.60}',
+                    $value: '{color.pondwater0At.60}',
                 },
                 tertiary: {
-                    $value: '{color.blackAt.36}',
+                    $value: '{color.pondwater0At.36}',
                 },
             },
             icons: {
                 primary: {
-                    $value: '{color.blackAt.84}',
+                    $value: '{color.pondwater.0}',
                 },
                 secondary: {
-                    $value: '{color.blackAt.60}',
+                    $value: '{color.pondwater0At.60}',
                 },
                 tertiary: {
-                    $value: '{color.blackAt.36}',
+                    $value: '{color.pondwater0At.36}',
                 },
             },
             accent: {
+                primary: { $value: '{color.pondwater.30}' },
+                secondary: { $value: '{color.pondwater.40}' },
+                tertiary: { $value: '{color.pondwater.50}' },
+                quaternary: { $value: '{color.pondwater.60}' },
+                glowPrimary: { $value: '{color.pondwater40At.20}' },
+                glowSecondary: { $value: '{color.pondwater40At.12}' },
+                textPrimary: { $value: '{color.pondwater.30}' },
+                textSecondary: { $value: '{color.pondwater.40}' },
+                textTertiary: { $value: '{color.pondwater.50}' },
+                contentPrimary: { $value: '{color.pondwater.100}' },
+                contentSecondary: { $value: '{color.pondwater100At.70}' },
+                contentTertiary: { $value: '{color.pondwater100At.50}' },
+            },
+            accentAlt: {
                 primary: { $value: '{color.pondwater.60}' },
                 secondary: { $value: '{color.pondwater.70}' },
                 tertiary: { $value: '{color.pondwater.80}' },
-                quaternary: { $value: '{color.gray.111}' },
-                glowPrimary: { $value: '{color.pondwater60At.20}' },
-                glowSecondary: { $value: '{color.pondwater60At.12}' },
-                textPrimary: { $value: '{color.pondwater.60}' },
-                textSecondary: { $value: '{color.pondwater.70}' },
-                textTertiary: { $value: '{color.pondwater.80}' },
-                contentPrimary: { $value: '{color.white}' },
-                contentSecondary: { $value: '{color.whiteAt.70}' },
-                contentTertiary: { $value: '{color.whiteAt.50}' },
-            },
-            accentAlt: {
-                primary: { $value: '{color.pondwater.10}' },
-                secondary: { $value: '{color.pondwater.20}' },
-                tertiary: { $value: '{color.pondwater.30}' },
-                glowPrimary: { $value: '{color.pondwater40At.20}' },
-                glowSecondary: { $value: '{color.pondwater40At.12}' },
-                textPrimary: { $value: '{color.pondwater.70}' },
-                textSecondary: { $value: '{color.pondwater.80}' },
-                textTertiary: { $value: '{color.pondwater.90}' },
-                contentPrimary: { $value: '{color.pondwater.70}' },
-                contentSecondary: { $value: '{color.whiteAt.80}' },
-                contentTertiary: { $value: '{color.whiteAt.90}' },
+                glowPrimary: { $value: '{color.pondwater20At.20}' },
+                glowSecondary: { $value: '{color.pondwater20At.12}' },
+                textPrimary: { $value: '{color.pondwater.20}' },
+                textSecondary: { $value: '{color.pondwater.30}' },
+                textTertiary: { $value: '{color.pondwater.40}' },
+                contentPrimary: { $value: '{color.pondwater.0}' },
+                contentSecondary: { $value: '{color.pondwater0At.70}' },
+                contentTertiary: { $value: '{color.pondwater0At.50}' },
             },
             control: {
                 fillPrimary: {
-                    $value: '{color.blackAt.6}',
+                    $value: '{color.pondwater10At.12}',
                 },
                 fillSecondary: {
-                    $value: '{color.blackAt.9}',
+                    $value: '{color.pondwater10At.18}',
                 },
                 fillTertiary: {
-                    $value: '{color.blackAt.12}',
+                    $value: '{color.pondwater10At.24}',
                 },
                 borderPrimary: {
-                    $value: '{color.blackAt.30}',
+                    $value: '{color.pondwater10At.36}',
                 },
                 borderSecondary: {
-                    $value: '{color.blackAt.48}',
+                    $value: '{color.pondwater10At.64}',
                 },
                 borderTertiary: {
-                    $value: '{color.blackAt.60}',
+                    $value: '{color.pondwater10At.72}',
                 },
                 borderQuaternary: {
-                    $value: '{color.blackAt.72}',
+                    $value: '{color.pondwater10At.80}',
                 },
             },
             controlRaised: {
                 fillPrimary: {
-                    $value: '{color.gray.0}',
+                    $value: '{color.pondwater0At.18}',
                 },
                 backdrop: {
-                    $value: '{color.blackAt.9}',
+                    $value: '{color.whiteAt.12}',
                 },
             },
             highlight: {
                 primary: {
-                    $value: '{color.gray0At.24}',
+                    $value: '{color.pondwater0At.12}',
                 },
             },
             tone: {
                 brighten: {
-                    $value: `{color.gray0At.32}`,
+                    $value: `{color.pondwater10At.6}`,
                 },
                 darken: {
-                    $value: `{color.blackAt.3}`,
+                    $value: `{color.blackAt.12}`,
                 },
             },
             shadow: {
                 primary: {
-                    $value: '{color.blackAt.5}',
+                    $value: '{color.blackAt.16}',
                 },
                 secondary: {
-                    $value: '{color.blackAt.8}',
+                    $value: '{color.blackAt.24}',
                 },
                 tertiary: {
-                    $value: '{color.blackAt.16}',
+                    $value: '{color.blackAt.32}',
                 },
             },
         },
