@@ -6,6 +6,7 @@ const themeColors: DesignToken = {
     // The difference between a theme and a motif is that a theme will typically apply to whole page
     // and a motif will typically apply to a specific component or section of a page
     // motifs will still have light and dark styling
+    // These are the names of the Theme values in Figma, the aim is to use these sparingly, mostly to be referenced by global page styles or component styles
     theme: {
         light: {
             surface: {

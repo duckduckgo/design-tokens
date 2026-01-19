@@ -849,10 +849,10 @@ const motifColors: DesignToken = {
                     $value: '{color.blossom.0}',
                 },
                 secondary: {
-                    $value: '{color.blossom0At.60}',
+                    $value: '{color.blossom0At.48}',
                 },
                 tertiary: {
-                    $value: '{color.blossom0At.36}',
+                    $value: '{color.blossom0At.24}',
                 },
             },
             accent: {
@@ -873,8 +873,8 @@ const motifColors: DesignToken = {
                 primary: { $value: '{color.blossom.60}' },
                 secondary: { $value: '{color.blossom.70}' },
                 tertiary: { $value: '{color.blossom.80}' },
-                glowPrimary: { $value: '{color.blossom40At.20}' }, // this will change
-                glowSecondary: { $value: '{color.blossom40At.12}' }, // this will change
+                glowPrimary: { $value: '{color.blossom30At.20}' },
+                glowSecondary: { $value: '{color.blossom30At.12}' },
                 textPrimary: { $value: '{color.blossom.20}' },
                 textSecondary: { $value: '{color.blossom.30}' },
                 textTertiary: { $value: '{color.blossom.40}' },
@@ -1004,10 +1004,10 @@ const motifColors: DesignToken = {
                     $value: '{color.lilypad.0}',
                 },
                 secondary: {
-                    $value: '{color.lilypad0At.60}', // may change
+                    $value: '{color.lilypad0At.48}',
                 },
                 tertiary: {
-                    $value: '{color.lilypad0At.36}', // may change
+                    $value: '{color.lilypad0At.24}',
                 },
             },
             accent: {
@@ -1159,14 +1159,14 @@ const motifColors: DesignToken = {
                     $value: '{color.mandarin.0}',
                 },
                 secondary: {
-                    $value: '{color.mandarin0At.60}', // may change
+                    $value: '{color.mandarin0At.48}',
                 },
                 tertiary: {
-                    $value: '{color.mandarin0At.36}', // may change
+                    $value: '{color.mandarin0At.24}',
                 },
             },
             accent: {
-                // Yes, this is correct. Mandarin buttons will use pollen colors
+                // Yes, this is correct. Mandarin buttons will use pollen colors in dark mode
                 primary: { $value: '{color.pollen.30}' },
                 secondary: { $value: '{color.pollen.40}' },
                 tertiary: { $value: '{color.pollen.50}' },
@@ -1315,10 +1315,10 @@ const motifColors: DesignToken = {
                     $value: '{color.pollen.0}',
                 },
                 secondary: {
-                    $value: '{color.pollen0At.60}', // may change
+                    $value: '{color.pollen0At.48}', // may change
                 },
                 tertiary: {
-                    $value: '{color.pollen0At.36}', // may change
+                    $value: '{color.pollen0At.24}', // may change
                 },
             },
             accent: {
@@ -1471,10 +1471,10 @@ const motifColors: DesignToken = {
                     $value: '{color.pondwater.0}',
                 },
                 secondary: {
-                    $value: '{color.pondwater0At.60}',
+                    $value: '{color.pondwater0At.48}',
                 },
                 tertiary: {
-                    $value: '{color.pondwater0At.36}',
+                    $value: '{color.pondwater0At.24}',
                 },
             },
             accent: {

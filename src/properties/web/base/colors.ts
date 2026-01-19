@@ -9,24 +9,19 @@ const colors: DesignToken = {
         blackAt: {
             1: { $value: 'rgba(0, 0, 0, 0.01)' },
             3: { $value: 'rgba(0, 0, 0, 0.03)' },
-            5: { $value: 'rgba(0, 0, 0, 0.05)' }, // this might change!
+            5: { $value: 'rgba(0, 0, 0, 0.05)' },
             6: { $value: 'rgba(0, 0, 0, 0.06)' },
-            8: { $value: 'rgba(0, 0, 0, 0.08)' }, // this might change!
+            8: { $value: 'rgba(0, 0, 0, 0.08)' },
             9: { $value: 'rgba(0, 0, 0, 0.09)' },
             12: { $value: 'rgba(0, 0, 0, 0.12)' },
             16: { $value: 'rgba(0, 0, 0, 0.16)' },
-            18: { $value: 'rgba(0, 0, 0, 0.18)' },
             24: { $value: 'rgba(0, 0, 0, 0.24)' },
             30: { $value: 'rgba(0, 0, 0, 0.30)' },
             32: { $value: 'rgba(0, 0, 0, 0.32)' },
             36: { $value: 'rgba(0, 0, 0, 0.36)' },
-            42: { $value: 'rgba(0, 0, 0, 0.42)' },
             48: { $value: 'rgba(0, 0, 0, 0.48)' },
-            54: { $value: 'rgba(0, 0, 0, 0.54)' },
             60: { $value: 'rgba(0, 0, 0, 0.60)' },
-            66: { $value: 'rgba(0, 0, 0, 0.66)' },
             72: { $value: 'rgba(0, 0, 0, 0.72)' },
-            78: { $value: 'rgba(0, 0, 0, 0.78)' },
             84: { $value: 'rgba(0, 0, 0, 0.84)' },
             90: { $value: 'rgba(0, 0, 0, 0.90)' },
             96: { $value: 'rgba(0, 0, 0, 0.96)' },
@@ -35,27 +30,19 @@ const colors: DesignToken = {
         whiteAt: {
             1: { $value: 'rgba(255, 255, 255, 0.01)' },
             3: { $value: 'rgba(255, 255, 255, 0.03)' },
-            5: { $value: 'rgba(255, 255, 255, 0.05)' }, // this might change!
             6: { $value: 'rgba(255, 255, 255, 0.06)' },
             9: { $value: 'rgba(255, 255, 255, 0.09)' },
             12: { $value: 'rgba(255, 255, 255, 0.12)' },
             18: { $value: 'rgba(255, 255, 255, 0.18)' },
             24: { $value: 'rgba(255, 255, 255, 0.24)' },
-            30: { $value: 'rgba(255, 255, 255, 0.30)' },
             36: { $value: 'rgba(255, 255, 255, 0.36)' },
-            42: { $value: 'rgba(255, 255, 255, 0.42)' },
-            48: { $value: 'rgba(255, 255, 255, 0.48)' },
             50: { $value: 'rgba(255, 255, 255, 0.50)' },
-            54: { $value: 'rgba(255, 255, 255, 0.54)' },
             60: { $value: 'rgba(255, 255, 255, 0.60)' },
             64: { $value: 'rgba(255, 255, 255, 0.64)' },
-            66: { $value: 'rgba(255, 255, 255, 0.66)' },
             70: { $value: 'rgba(255, 255, 255, 0.70)' },
             72: { $value: 'rgba(255, 255, 255, 0.72)' },
             80: { $value: 'rgba(255, 255, 255, 0.80)' },
-            84: { $value: 'rgba(255, 255, 255, 0.84)' },
             90: { $value: 'rgba(255, 255, 255, 0.90)' },
-            96: { $value: 'rgba(255, 255, 255, 0.96)' },
         },
         gray: {
             0: { $value: '#fcfcfc' },
@@ -96,7 +83,7 @@ const colors: DesignToken = {
             0: { $value: '#FBF7FF' },
             10: { $value: '#F5EDFF' },
             20: { $value: '#EADAFD' },
-            30: { $value: '#EADAFD' },
+            30: { $value: '#D3B9EB' },
             40: { $value: '#C19EDB' },
             50: { $value: '#9F6EB8' },
             60: { $value: '#7D4794' },
@@ -113,6 +100,7 @@ const colors: DesignToken = {
             18: { $value: 'rgba(251, 247, 255, 0.18)' },
             24: { $value: 'rgba(251, 247, 255, 0.24)' },
             36: { $value: 'rgba(251, 247, 255, 0.36)' },
+            48: { $value: 'rgba(251, 247, 255, 0.48)' },
             50: { $value: 'rgba(251, 247, 255, 0.50)' },
             60: { $value: 'rgba(251, 247, 255, 0.60)' },
             70: { $value: 'rgba(251, 247, 255, 0.70)' },
@@ -126,6 +114,10 @@ const colors: DesignToken = {
             64: { $value: 'rgba(245, 237, 255, 0.64)' },
             72: { $value: 'rgba(245, 237, 255, 0.72)' },
             80: { $value: 'rgba(245, 237, 255, 0.80)' },
+        },
+        blossom30At: {
+            12: { $value: 'rgba(211, 185, 235, 0.12)' },
+            20: { $value: 'rgba(211, 185, 235, 0.20)' },
         },
         blossom40At: {
             12: { $value: 'rgba(193, 158, 219, 0.12)' },
@@ -177,6 +169,7 @@ const colors: DesignToken = {
             18: { $value: 'rgba(248, 252, 249, 0.18)' },
             24: { $value: 'rgba(248, 252, 249, 0.24)' },
             36: { $value: 'rgba(248, 252, 249, 0.36)' },
+            48: { $value: 'rgba(248, 252, 249, 0.48)' },
             50: { $value: 'rgba(248, 252, 249, 0.50)' },
             60: { $value: 'rgba(248, 252, 249, 0.60)' },
             70: { $value: 'rgba(248, 252, 249, 0.70)' },
@@ -196,16 +189,14 @@ const colors: DesignToken = {
             20: { $value: 'rgba(174, 213, 194, 0.20)' },
         },
         lilypad40At: {
-            12: { $value: 'rgba(132, 187, 168, 0.12)' }, // accent alt glow secondary for lilypad light motif
-            20: { $value: 'rgba(132, 187, 168, 0.20)' }, // accent alt glow primary for lilypad light motif
-            24: { $value: 'rgba(132, 187, 168, 0.24)' },
-            60: { $value: 'rgba(132, 187, 168, 0.60)' },
+            12: { $value: 'rgba(132, 187, 168, 0.12)' },
+            20: { $value: 'rgba(132, 187, 168, 0.20)' },
         },
         lilypad60At: {
             9: { $value: 'rgba(36, 122, 100, 0.09)' },
-            12: { $value: 'rgba(36, 122, 100, 0.12)' }, // accent glow secondary for lilypad light motif
+            12: { $value: 'rgba(36, 122, 100, 0.12)' },
             18: { $value: 'rgba(36, 122, 100, 0.18)' },
-            20: { $value: 'rgba(36, 122, 100, 0.20)' }, // accent glow primary for lilypad light motif
+            20: { $value: 'rgba(36, 122, 100, 0.20)' },
             30: { $value: 'rgba(36, 122, 100, 0.30)' },
             48: { $value: 'rgba(36, 122, 100, 0.48)' },
             60: { $value: 'rgba(36, 122, 100, 0.60)' },
@@ -246,6 +237,7 @@ const colors: DesignToken = {
             18: { $value: 'rgba(255, 240, 249, 0.18)' },
             24: { $value: 'rgba(255, 240, 249, 0.24)' },
             36: { $value: 'rgba(255, 240, 249, 0.36)' },
+            48: { $value: 'rgba(255, 240, 249, 0.48)' },
             50: { $value: 'rgba(255, 240, 249, 0.50)' },
             60: { $value: 'rgba(255, 240, 249, 0.60)' },
             70: { $value: 'rgba(255, 240, 249, 0.70)' },
@@ -265,14 +257,14 @@ const colors: DesignToken = {
             20: { $value: 'rgba(255, 178, 148, 0.20)' },
         },
         mandarin40At: {
-            12: { $value: 'rgba(255, 141, 92, 0.12)' }, // accent glow secondary for mandarin light motif
-            20: { $value: 'rgba(255, 141, 92, 0.20)' }, // accent glow primary for mandarin light motif
+            12: { $value: 'rgba(255, 141, 92, 0.12)' },
+            20: { $value: 'rgba(255, 141, 92, 0.20)' },
         },
         mandarin50At: {
             9: { $value: 'rgba(240, 95, 43, 0.09)' },
-            12: { $value: 'rgba(240, 95, 43, 0.12)' }, // accent glow secondary for mandarin light motif
+            12: { $value: 'rgba(240, 95, 43, 0.12)' },
             18: { $value: 'rgba(240, 95, 43, 0.18)' },
-            20: { $value: 'rgba(240, 95, 43, 0.20)' }, // accent glow primary for mandarin light motif
+            20: { $value: 'rgba(240, 95, 43, 0.20)' },
             30: { $value: 'rgba(240, 95, 43, 0.30)' },
             48: { $value: 'rgba(240, 95, 43, 0.48)' },
             60: { $value: 'rgba(240, 95, 43, 0.60)' },
@@ -286,9 +278,7 @@ const colors: DesignToken = {
             12: { $value: 'rgba(41, 14, 10, 0.12)' },
             16: { $value: 'rgba(41, 14, 10, 0.16)' },
             36: { $value: 'rgba(41, 14, 10, 0.36)' },
-            50: { $value: 'rgba(41, 14, 10, 0.50)' },
             60: { $value: 'rgba(41, 14, 10, 0.60)' },
-            70: { $value: 'rgba(41, 14, 10, 0.70)' },
             84: { $value: 'rgba(41, 14, 10, 0.84)' },
             96: { $value: 'rgba(41, 14, 10, 0.96)' },
         },
@@ -313,6 +303,7 @@ const colors: DesignToken = {
             18: { $value: 'rgba(255, 253, 240, 0.18)' },
             24: { $value: 'rgba(255, 253, 240, 0.24)' },
             36: { $value: 'rgba(255, 253, 240, 0.36)' },
+            48: { $value: 'rgba(255, 253, 240, 0.48)' },
             50: { $value: 'rgba(255, 253, 240, 0.50)' },
             60: { $value: 'rgba(255, 253, 240, 0.60)' },
             70: { $value: 'rgba(255, 253, 240, 0.70)' },
@@ -339,12 +330,12 @@ const colors: DesignToken = {
             81: { $value: 'rgba(254, 218, 123, 0.81)' },
         },
         pollen40At: {
-            12: { $value: 'rgba(255, 197, 66, 0.12)' }, // accent glow secondary for pollen light motif
-            20: { $value: 'rgba(255, 197, 66, 0.20)' }, // accent glow primary for pollen light motif
+            12: { $value: 'rgba(255, 197, 66, 0.12)' },
+            20: { $value: 'rgba(255, 197, 66, 0.20)' },
         },
         pollen50At: {
-            12: { $value: 'rgba(250, 174, 25, 0.12)' }, // accent-alt glow secondary for pollen light motif
-            20: { $value: 'rgba(250, 174, 25, 0.20)' }, // accent-alt glow primary for pollen light motif
+            12: { $value: 'rgba(250, 174, 25, 0.12)' },
+            20: { $value: 'rgba(250, 174, 25, 0.20)' },
         },
         pollen100At: {
             1: { $value: 'rgba(26, 11, 3, 0.01)' },
@@ -381,6 +372,7 @@ const colors: DesignToken = {
             18: { $value: 'rgba(245, 251, 254, 0.18)' },
             24: { $value: 'rgba(245, 251, 254, 0.24)' },
             36: { $value: 'rgba(245, 251, 254, 0.36)' },
+            48: { $value: 'rgba(245, 251, 254, 0.48)' },
             50: { $value: 'rbga(245, 251, 254, 0.50)' },
             60: { $value: 'rbga(245, 251, 254, 0.60)' },
             70: { $value: 'rbga(245, 251, 254, 0.70)' },
@@ -399,19 +391,15 @@ const colors: DesignToken = {
             12: { $value: 'rgba(203, 236, 255, 0.12)' },
             20: { $value: 'rgba(203, 236, 255, 0.20)' },
         },
-        pondwater30At: {
-            12: { $value: 'rgba(155, 213, 254, 0.12)' },
-            20: { $value: 'rgba(155, 213, 254, 0.20)' },
-        },
         pondwater40At: {
-            12: { $value: 'rgba(119, 182, 232, 0.12)' }, // accent alt glow secondary for default light theme and pondwater light motif
-            20: { $value: 'rgba(119, 182, 232, 0.20)' }, // accent alt glow primary for default light theme and pondwater light motif
+            12: { $value: 'rgba(119, 182, 232, 0.12)' },
+            20: { $value: 'rgba(119, 182, 232, 0.20)' },
         },
         pondwater60At: {
             9: { $value: 'rgba(16, 116, 204, 0.09)' },
-            12: { $value: 'rgba(16, 116, 204, 0.12)' }, // accent glow secondary for default light theme and pondwater light motif
+            12: { $value: 'rgba(16, 116, 204, 0.12)' },
             18: { $value: 'rgba(16, 116, 204, 0.18)' },
-            20: { $value: 'rgba(16, 116, 204, 0.20)' }, // accent glow primary for default light theme and pondwater light motif
+            20: { $value: 'rgba(16, 116, 204, 0.20)' },
             30: { $value: 'rgba(16, 116, 204, 0.30)' },
             48: { $value: 'rgba(16, 116, 204, 0.48)' },
             60: { $value: 'rgba(16, 116, 204, 0.60)' },
@@ -424,12 +412,8 @@ const colors: DesignToken = {
             9: { $value: 'rgba(9, 25, 45, 0.09)' },
             12: { $value: 'rgba(9, 25, 45, 0.12)' },
             16: { $value: 'rgba(9, 25, 45, 0.16)' },
-            36: { $value: 'rgba(9, 25, 45, 0.36)' },
             50: { $value: 'rgba(9, 25, 45, 0.50)' },
-            60: { $value: 'rgba(9, 25, 45, 0.60)' },
             70: { $value: 'rgba(9, 25, 45, 0.70)' },
-            84: { $value: 'rgba(9, 25, 45, 0.84)' },
-            96: { $value: 'rgba(9, 25, 45, 0.96)' },
         },
         red: {
             0: { $value: '#FEF9FA' },
@@ -445,8 +429,8 @@ const colors: DesignToken = {
             100: { $value: '#2A0C14' },
         },
         red50At: {
-            12: { $value: 'rgba(236, 67, 79, 0.12)' }, // accent glow secondary for destructive use case
-            20: { $value: 'rgba(236, 67, 79, 0.20)' }, // accent glow primary for destructive use case
+            12: { $value: 'rgba(236, 67, 79, 0.12)' },
+            20: { $value: 'rgba(236, 67, 79, 0.20)' },
         },
         green40: { $value: '#39B25E' }, // status green
     },
