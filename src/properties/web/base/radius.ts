@@ -2,7 +2,7 @@ import { DesignToken } from 'style-dictionary/types';
 
 // Definitions for rebrand
 const radius: DesignToken = {
-    $type: 'radius',
+    $type: 'border',
     radius: {
         full: {
             $value: '999px',

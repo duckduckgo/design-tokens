@@ -20,6 +20,7 @@ const font: DesignToken = {
             },
         },
         weight: {
+            $type: 'number',
             normal: {
                 $value: '400',
             },
@@ -31,6 +32,7 @@ const font: DesignToken = {
             },
         },
         letterSpacing: {
+            $type: 'dimension',
             narrow: {
                 $value: '-1px',
             },
