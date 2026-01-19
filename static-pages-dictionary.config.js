@@ -11,7 +11,7 @@ export default {
     ],
     log: {
         warnings: logWarningLevels.warn, // 'warn' | 'error' | 'disabled'
-        verbosity: logVerbosityLevels.verbose, // 'default' | 'silent' | 'verbose'
+        verbosity: logVerbosityLevels.default, // 'default' | 'silent' | 'verbose'
         errors: {
             brokenReferences: logBrokenReferenceLevels.throw, // 'throw' | 'console'
         },
@@ -25,6 +25,9 @@ export default {
                 {
                     destination: 'static-pages/tokens.scss',
                     format: formats.cssVariables,
+                    options: {
+                        outputReferences: true,
+                    },
                 },
                 {
                     destination: 'static-pages/tokens.json',
