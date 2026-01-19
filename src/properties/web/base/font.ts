@@ -32,13 +32,13 @@ const font: DesignToken = {
         },
         letterSpacing: {
             narrow: {
-                $value: '-1',
+                $value: '-1px',
             },
             normal: {
                 $value: '0',
             },
             wide: {
-                $value: '2',
+                $value: '2px',
             },
         },
     },
