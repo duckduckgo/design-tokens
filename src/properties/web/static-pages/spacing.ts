@@ -1,9 +1,8 @@
 import { DesignToken } from 'style-dictionary/types';
 
-const sizes: DesignToken = {
+const spacing: DesignToken = {
     $type: 'dimension',
     space: {
-        $type: 'dimension',
         x_5: {
             $value: '2px',
         },
@@ -139,4 +138,4 @@ const sizes: DesignToken = {
     },
 };
 
-export default sizes;
+export default spacing;

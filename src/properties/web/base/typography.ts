@@ -2,7 +2,6 @@ import { DesignToken } from 'style-dictionary/types';
 
 // Definitions for DuckSans + rebrand
 const typography: DesignToken = {
-    $type: 'typography',
     typography: {
         // Headings
         'title-01': {
