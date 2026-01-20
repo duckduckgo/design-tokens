@@ -41,21 +41,27 @@ const themeColors: DesignToken = {
             container: {
                 primaryBackgroundColor: {
                     $value: '{color.blackAt.1}',
+                    comment: 'Maps to Fill-Primary',
                 },
                 secondaryBackgroundColor: {
                     $value: '{color.blackAt.3}',
+                    comment: 'Maps to Fill-Secondary',
                 },
                 tertiaryBackgroundColor: {
                     $value: '{color.blackAt.6}',
+                    comment: 'Maps to Fill-Tertiary',
                 },
                 primaryBorderColor: {
                     $value: '{color.blackAt.6}',
+                    comment: 'Maps to Border-Primary',
                 },
                 secondaryBorderColor: {
                     $value: '{color.blackAt.9}',
+                    comment: 'Maps to Border-Secondary',
                 },
                 tertiaryBorderColor: {
                     $value: '{color.blackAt.12}',
+                    comment: 'Maps to Border-Tertiary',
                 },
             },
             text: {
@@ -84,15 +90,15 @@ const themeColors: DesignToken = {
                 primary: { $value: '{color.pondwater.60}' },
                 secondary: { $value: '{color.pondwater.70}' },
                 tertiary: { $value: '{color.pondwater.80}' },
-                quaternary: { $value: '{color.gray.111}' },
+                quaternary: { $value: '{color.pondwater.90}' },
                 glowPrimary: { $value: '{color.pondwater.60At.20}' },
                 glowSecondary: { $value: '{color.pondwater.60At.12}' },
-                textPrimary: { $value: '{color.pondwater.60}' },
-                textSecondary: { $value: '{color.pondwater.70}' },
-                textTertiary: { $value: '{color.pondwater.80}' },
-                contentPrimary: { $value: '{color.white}' },
-                contentSecondary: { $value: '{color.whiteAt.72}' },
-                contentTertiary: { $value: '{color.whiteAt.48}' },
+                primaryTextColor: { $value: '{color.pondwater.60}', comment: 'For standalone text elements on surface or containers' },
+                secondaryTextColor: { $value: '{color.pondwater.70}', comment: 'For standalone text elements on surface or containers' },
+                tertiaryTextColor: { $value: '{color.pondwater.80}', comment: 'For standalone text elements on surface or containers' },
+                primaryContentColor: { $value: '{color.white}', comment: 'For text elements on top of accent backgrounds' },
+                secondaryContentColor: { $value: '{color.whiteAt.72}', comment: 'For text elements on top of accent backgrounds' },
+                tertiaryContentColor: { $value: '{color.whiteAt.48}', comment: 'For text elements on top of accent backgrounds' },
             },
             accentAlt: {
                 primary: { $value: '{color.pondwater.10}' },
@@ -100,38 +106,38 @@ const themeColors: DesignToken = {
                 tertiary: { $value: '{color.pondwater.30}' },
                 glowPrimary: { $value: '{color.pondwater.40At.20}' },
                 glowSecondary: { $value: '{color.pondwater.40At.12}' },
-                textPrimary: { $value: '{color.pondwater.70}' },
-                textSecondary: { $value: '{color.pondwater.80}' },
-                textTertiary: { $value: '{color.pondwater.90}' },
-                contentPrimary: { $value: '{color.pondwater.90}' },
-                contentSecondary: { $value: '{color.pondwater.90At.72}' },
-                contentTertiary: { $value: '{color.pondwater.90At.48}' },
+                primaryTextColor: { $value: '{color.pondwater.70}', comment: 'For standalone text elements on surface or containers' },
+                secondaryTextColor: { $value: '{color.pondwater.80}', comment: 'For standalone text elements on surface or containers' },
+                tertiaryTextColor: { $value: '{color.pondwater.90}', comment: 'For standalone text elements on surface or containers' },
+                primaryContentColor: { $value: '{color.pondwater.90}', comment: 'For text elements on top of accent backgrounds' },
+                secondaryContentColor: { $value: '{color.pondwater.90At.72}', comment: 'For text elements on top of accent backgrounds' },
+                tertiaryContentColor: { $value: '{color.pondwater.90At.48}', comment: 'For text elements on top of accent backgrounds' },
             },
             control: {
-                fillPrimary: {
+                primaryBackgroundColor: {
                     $value: '{color.blackAt.6}',
                 },
-                fillSecondary: {
+                secondaryBackgroundColor: {
                     $value: '{color.blackAt.9}',
                 },
-                fillTertiary: {
+                tertiaryBackgroundColor: {
                     $value: '{color.blackAt.12}',
                 },
-                borderPrimary: {
+                primaryBorderColor: {
                     $value: '{color.blackAt.30}',
                 },
-                borderSecondary: {
+                secondaryBorderColor: {
                     $value: '{color.blackAt.48}',
                 },
-                borderTertiary: {
+                tertiaryBorderColor: {
                     $value: '{color.blackAt.60}',
                 },
-                borderQuaternary: {
+                quaternaryBorderColor: {
                     $value: '{color.blackAt.72}',
                 },
             },
             controlRaised: {
-                fillPrimary: {
+                primaryBackgroundColor: {
                     $value: '{color.gray.0}',
                 },
                 backdrop: {
@@ -146,19 +152,21 @@ const themeColors: DesignToken = {
             tone: {
                 brighten: {
                     $value: `{color.gray0At.32}`,
+                    comment: 'Maps to Tint-Primary',
                 },
                 darken: {
                     $value: `{color.blackAt.3}`,
+                    comment: 'Maps to Shade-Primary',
                 },
             },
             shadow: {
-                primary: {
+                primaryColor: {
                     $value: '{color.blackAt.6}',
                 },
-                secondary: {
+                secondaryColor: {
                     $value: '{color.blackAt.8}',
                 },
-                tertiary: {
+                tertiaryColor: {
                     $value: '{color.blackAt.16}',
                 },
             },
@@ -178,22 +186,22 @@ const themeColors: DesignToken = {
                 glowSecondary: {
                     $value: `{color.red.50At.12}`,
                 },
-                textPrimary: {
+                primaryTextColor: {
                     $value: `{color.red.50}`,
                 },
-                textSecondary: {
+                secondaryTextColor: {
                     $value: `{color.red.60}`,
                 },
-                textTertiary: {
+                tertiaryTextColor: {
                     $value: `{color.red.70}`,
                 },
-                contentPrimary: {
+                primaryContentColor: {
                     $value: `{color.white}`,
                 },
-                contentSecondary: {
+                secondaryContentColor: {
                     $value: `{color.whiteAt.90}`,
                 },
-                contentTertiary: {
+                tertiaryContentColor: {
                     $value: `{color.whiteAt.60}`,
                 },
             },
@@ -282,12 +290,12 @@ const themeColors: DesignToken = {
                 quaternary: { $value: '{color.pondwater.60}' },
                 glowPrimary: { $value: '{color.pondwater.40At.20}' },
                 glowSecondary: { $value: '{color.pondwater.40At.12}' },
-                textPrimary: { $value: '{color.pondwater.30}' },
-                textSecondary: { $value: '{color.pondwater.40}' },
-                textTertiary: { $value: '{color.pondwater.50}' },
-                contentPrimary: { $value: '{color.pondwater.100}' },
-                contentSecondary: { $value: '{color.pondwater.100At.72}' },
-                contentTertiary: { $value: '{color.pondwater.100At.48}' },
+                primaryTextColor: { $value: '{color.pondwater.30}' },
+                secondaryTextColor: { $value: '{color.pondwater.40}' },
+                tertiaryTextColor: { $value: '{color.pondwater.50}' },
+                primaryContentColor: { $value: '{color.pondwater.100}' },
+                secondaryContentColor: { $value: '{color.pondwater.100At.72}' },
+                tertiaryContentColor: { $value: '{color.pondwater.100At.48}' },
             },
             accentAlt: {
                 primary: { $value: '{color.pondwater.60}' },
@@ -295,38 +303,38 @@ const themeColors: DesignToken = {
                 tertiary: { $value: '{color.pondwater.80}' },
                 glowPrimary: { $value: '{color.pondwater.20At.20}' },
                 glowSecondary: { $value: '{color.pondwater.20At.12}' },
-                textPrimary: { $value: '{color.pondwater.20}' },
-                textSecondary: { $value: '{color.pondwater.30}' },
-                textTertiary: { $value: '{color.pondwater.40}' },
-                contentPrimary: { $value: '{color.pondwater.0}' },
-                contentSecondary: { $value: '{color.pondwater.0At.72}' },
-                contentTertiary: { $value: '{color.pondwater.0At.48}' },
+                primaryTextColor: { $value: '{color.pondwater.20}' },
+                secondaryTextColor: { $value: '{color.pondwater.30}' },
+                tertiaryTextColor: { $value: '{color.pondwater.40}' },
+                primaryContentColor: { $value: '{color.pondwater.0}' },
+                secondaryContentColor: { $value: '{color.pondwater.0At.72}' },
+                tertiaryContentColor: { $value: '{color.pondwater.0At.48}' },
             },
             control: {
-                fillPrimary: {
+                primaryBackgroundColor: {
                     $value: '{color.whiteAt.12}',
                 },
-                fillSecondary: {
+                secondaryBackgroundColor: {
                     $value: '{color.whiteAt.18}',
                 },
-                fillTertiary: {
+                tertiaryBackgroundColor: {
                     $value: '{color.whiteAt.24}',
                 },
-                borderPrimary: {
+                primaryBorderColor: {
                     $value: '{color.whiteAt.36}',
                 },
-                borderSecondary: {
+                secondaryBorderColor: {
                     $value: '{color.whiteAt.64}',
                 },
-                borderTertiary: {
+                tertiaryBorderColor: {
                     $value: '{color.whiteAt.72}',
                 },
-                borderQuaternary: {
+                quaternaryBorderColor: {
                     $value: '{color.whiteAt.80}',
                 },
             },
             controlRaised: {
-                fillPrimary: {
+                primaryBackgroundColor: {
                     $value: '{color.whiteAt.18}',
                 },
                 backdrop: {
@@ -347,13 +355,13 @@ const themeColors: DesignToken = {
                 },
             },
             shadow: {
-                primary: {
+                primaryColor: {
                     $value: '{color.blackAt.16}',
                 },
-                secondary: {
+                secondaryColor: {
                     $value: '{color.blackAt.24}',
                 },
-                tertiary: {
+                tertiaryColor: {
                     $value: '{color.blackAt.32}',
                 },
             },
@@ -373,22 +381,22 @@ const themeColors: DesignToken = {
                 glowSecondary: {
                     $value: `{color.red.50At.12}`,
                 },
-                textPrimary: {
+                primaryTextColor: {
                     $value: `{color.red.50}`,
                 },
-                textSecondary: {
+                secondaryTextColor: {
                     $value: `{color.red.60}`,
                 },
-                textTertiary: {
+                tertiaryTextColor: {
                     $value: `{color.red.70}`,
                 },
-                contentPrimary: {
+                primaryContentColor: {
                     $value: `{color.black}`,
                 },
-                contentSecondary: {
+                secondaryContentColor: {
                     $value: `{color.blackAt.90}`,
                 },
-                contentTertiary: {
+                tertiaryContentColor: {
                     $value: `{color.blackAt.60}`,
                 },
             },
