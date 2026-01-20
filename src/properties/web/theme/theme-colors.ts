@@ -91,7 +91,7 @@ const themeColors: DesignToken = {
                 textSecondary: { $value: '{color.pondwater.70}' },
                 textTertiary: { $value: '{color.pondwater.80}' },
                 contentPrimary: { $value: '{color.white}' },
-                contentSecondary: { $value: '{color.whiteAt.70}' },
+                contentSecondary: { $value: '{color.whiteAt.72}' },
                 contentTertiary: { $value: '{color.whiteAt.50}' },
             },
             accentAlt: {
@@ -153,7 +153,7 @@ const themeColors: DesignToken = {
             },
             shadow: {
                 primary: {
-                    $value: '{color.blackAt.5}',
+                    $value: '{color.blackAt.6}',
                 },
                 secondary: {
                     $value: '{color.blackAt.8}',
@@ -286,8 +286,8 @@ const themeColors: DesignToken = {
                 textSecondary: { $value: '{color.pondwater.40}' },
                 textTertiary: { $value: '{color.pondwater.50}' },
                 contentPrimary: { $value: '{color.pondwater.100}' },
-                contentSecondary: { $value: '{color.pondwater.100At.70}' },
-                contentTertiary: { $value: '{color.pondwater.100At.50}' },
+                contentSecondary: { $value: '{color.pondwater.100At.72}' },
+                contentTertiary: { $value: '{color.pondwater.100At.48}' },
             },
             accentAlt: {
                 primary: { $value: '{color.pondwater.60}' },
@@ -299,8 +299,8 @@ const themeColors: DesignToken = {
                 textSecondary: { $value: '{color.pondwater.30}' },
                 textTertiary: { $value: '{color.pondwater.40}' },
                 contentPrimary: { $value: '{color.pondwater.0}' },
-                contentSecondary: { $value: '{color.pondwater.0At.70}' },
-                contentTertiary: { $value: '{color.pondwater.0At.50}' },
+                contentSecondary: { $value: '{color.pondwater.0At.72}' },
+                contentTertiary: { $value: '{color.pondwater.0At.48}' },
             },
             control: {
                 fillPrimary: {

@@ -11,7 +11,7 @@ export default {
     ],
     log: {
         warnings: logWarningLevels.warn, // 'warn' | 'error' | 'disabled'
-        verbosity: logVerbosityLevels.default, // 'default' | 'silent' | 'verbose'
+        verbosity: logVerbosityLevels.verbose, // 'default' | 'silent' | 'verbose'
         errors: {
             brokenReferences: logBrokenReferenceLevels.throw, // 'throw' | 'console'
         },
