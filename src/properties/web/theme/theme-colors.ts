@@ -92,7 +92,7 @@ const themeColors: DesignToken = {
                 textTertiary: { $value: '{color.pondwater.80}' },
                 contentPrimary: { $value: '{color.white}' },
                 contentSecondary: { $value: '{color.whiteAt.72}' },
-                contentTertiary: { $value: '{color.whiteAt.50}' },
+                contentTertiary: { $value: '{color.whiteAt.48}' },
             },
             accentAlt: {
                 primary: { $value: '{color.pondwater.10}' },
@@ -103,9 +103,9 @@ const themeColors: DesignToken = {
                 textPrimary: { $value: '{color.pondwater.70}' },
                 textSecondary: { $value: '{color.pondwater.80}' },
                 textTertiary: { $value: '{color.pondwater.90}' },
-                contentPrimary: { $value: '{color.pondwater.70}' },
-                contentSecondary: { $value: '{color.whiteAt.80}' },
-                contentTertiary: { $value: '{color.whiteAt.90}' },
+                contentPrimary: { $value: '{color.pondwater.90}' },
+                contentSecondary: { $value: '{color.pondwater.90At.72}' },
+                contentTertiary: { $value: '{color.pondwater.90At.48}' },
             },
             control: {
                 fillPrimary: {
