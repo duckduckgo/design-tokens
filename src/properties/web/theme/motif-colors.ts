@@ -619,10 +619,10 @@ const motifColors: DesignToken = {
                 primaryColor: {
                     $value: '{color.blackAt.6}',
                 },
-                secondary: {
+                secondaryColor: {
                     $value: '{color.blackAt.8}',
                 },
-                tertiary: {
+                tertiaryColor: {
                     $value: '{color.blackAt.16}',
                 },
             },
