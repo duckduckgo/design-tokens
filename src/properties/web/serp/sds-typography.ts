@@ -1,5 +1,6 @@
 import { DesignToken } from 'style-dictionary/types';
 
+// Current naming and typography before rebrand
 const sdsTypography: DesignToken = {
     font: {
         family: {

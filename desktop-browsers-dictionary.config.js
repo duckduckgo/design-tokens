@@ -3,7 +3,7 @@ import cssVariablesShadowDom from './src/formats/css-variables-shadow-dom.js';
 import fileHeader from './dist/src/utils/file-header.js';
 
 export default {
-    source: ['dist/src/properties/web/base/sds-colors.js', 'dist/src/properties/web/desktop-browsers/theme.js'],
+    source: ['dist/src/properties/web/serp/sds-colors.js', 'dist/src/properties/web/desktop-browsers/theme.js'],
     hooks: {
         formats: {
             'css/variables-shadow-dom': cssVariablesShadowDom,

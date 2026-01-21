@@ -1,5 +1,6 @@
 import { DesignToken } from 'style-dictionary/types';
 
+// Current naming and colors before rebrand
 const sdsColors: DesignToken = {
     $type: 'color',
     'color-palette': {
