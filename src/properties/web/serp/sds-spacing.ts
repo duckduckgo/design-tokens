@@ -1,5 +1,6 @@
 import { DesignToken } from 'style-dictionary/types';
 
+// Current naming and spacing before rebrand
 const sdsSpacing: DesignToken = {
     base: {
         'font-size-value': {
