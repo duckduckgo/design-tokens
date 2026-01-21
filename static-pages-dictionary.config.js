@@ -1,7 +1,13 @@
 import { formats, transformGroups, logBrokenReferenceLevels, logVerbosityLevels, logWarningLevels } from 'style-dictionary/enums';
+import themeColorsClasses from './src/formats/sp-theme-colors-classes.js';
 import fileHeader from './dist/src/utils/file-header.js';
 
 export default {
+    hooks: {
+        formats: {
+            'theme-colors-classes': themeColorsClasses,
+        },
+    },
     source: [
         'dist/src/properties/web/base/colors.{js,json}',
         'dist/src/properties/web/base/*.{js,json}',
@@ -32,6 +38,14 @@ export default {
                 {
                     destination: 'static-pages/tokens.json',
                     format: formats.jsonFlat,
+                },
+                {
+                    destination: 'static-pages/theme-colors.scss',
+                    format: 'theme-colors-classes',
+                    options: {
+                        outputReferences: true,
+                        showFileHeader: true,
+                    },
                 },
             ],
             options: {
