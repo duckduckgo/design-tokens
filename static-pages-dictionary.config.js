@@ -14,6 +14,7 @@ export default {
         'dist/src/properties/web/theme/*.{js,json}',
         'dist/src/properties/web/components/*.{js,json}',
         'dist/src/properties/web/static-pages/*.{js,json}',
+        'dist/src/properties/web/static-pages/**/*.{js,json}',
     ],
     log: {
         warnings: logWarningLevels.warn, // 'warn' | 'error' | 'disabled'
