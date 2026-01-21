@@ -9,6 +9,9 @@ const spacing: DesignToken = {
         x01: {
             $value: '4px',
         },
+        x1_5: {
+            $value: '6px',
+        },
         x02: {
             $value: '8px',
         },

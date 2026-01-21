@@ -233,6 +233,60 @@ const typography: DesignToken = {
                 $value: 'uppercase',
             },
         },
+        // Button labels
+        buttonLabel: {
+            '01': {
+                fontFamily: {
+                    $value: '{font.family.product}',
+                },
+                letterSpacing: {
+                    $value: '{font.letterSpacing.normal}',
+                },
+                lineHeight: {
+                    $value: '20px',
+                },
+                size: {
+                    $value: '18px',
+                },
+                weight: {
+                    $value: '{font.weight.semibold}',
+                },
+            },
+            '02': {
+                fontFamily: {
+                    $value: '{font.family.product}',
+                },
+                letterSpacing: {
+                    $value: '{font.letterSpacing.normal}',
+                },
+                lineHeight: {
+                    $value: '16px',
+                },
+                size: {
+                    $value: '16px',
+                },
+                weight: {
+                    $value: '{font.weight.bold}',
+                },
+            },
+            '03': {
+                fontFamily: {
+                    $value: '{font.family.product}',
+                },
+                letterSpacing: {
+                    $value: '{font.letterSpacing.normal}',
+                },
+                lineHeight: {
+                    $value: '16px',
+                },
+                size: {
+                    $value: '14px',
+                },
+                weight: {
+                    $value: '{font.weight.bold}',
+                },
+            },
+        },
     },
 };
 
