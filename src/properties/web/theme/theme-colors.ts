@@ -41,27 +41,27 @@ const themeColors: DesignToken = {
             container: {
                 primaryBackgroundColor: {
                     $value: '{color.blackAt.1}',
-                    comment: 'Maps to Fill-Primary',
+                    comment: 'Maps to Fill-Primary in Figma',
                 },
                 secondaryBackgroundColor: {
                     $value: '{color.blackAt.3}',
-                    comment: 'Maps to Fill-Secondary',
+                    comment: 'Maps to Fill-Secondary in Figma',
                 },
                 tertiaryBackgroundColor: {
                     $value: '{color.blackAt.6}',
-                    comment: 'Maps to Fill-Tertiary',
+                    comment: 'Maps to Fill-Tertiary in Figma',
                 },
                 primaryBorderColor: {
                     $value: '{color.blackAt.6}',
-                    comment: 'Maps to Border-Primary',
+                    comment: 'Maps to Border-Primary in Figma',
                 },
                 secondaryBorderColor: {
                     $value: '{color.blackAt.9}',
-                    comment: 'Maps to Border-Secondary',
+                    comment: 'Maps to Border-Secondary in Figma',
                 },
                 tertiaryBorderColor: {
                     $value: '{color.blackAt.12}',
-                    comment: 'Maps to Border-Tertiary',
+                    comment: 'Maps to Border-Tertiary in Figma',
                 },
             },
             text: {
@@ -152,11 +152,11 @@ const themeColors: DesignToken = {
             tone: {
                 brighten: {
                     $value: `{color.gray0At.32}`,
-                    comment: 'Maps to Tint-Primary',
+                    comment: 'Maps to Tint-Primary in Figma',
                 },
                 darken: {
                     $value: `{color.blackAt.3}`,
-                    comment: 'Maps to Shade-Primary',
+                    comment: 'Maps to Shade-Primary in Figma',
                 },
             },
             shadow: {
