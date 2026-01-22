@@ -69,7 +69,7 @@ const themeColors: DesignToken = {
                     $value: '{color.blackAt.96}',
                 },
                 secondary: {
-                    $value: '{color.blackAt.60}',
+                    $value: '{color.blackAt.66}',
                 },
                 tertiary: {
                     $value: '{color.blackAt.36}',
@@ -266,7 +266,7 @@ const themeColors: DesignToken = {
                     $value: '{color.white}',
                 },
                 secondary: {
-                    $value: '{color.whiteAt.60}',
+                    $value: '{color.whiteAt.66}',
                 },
                 tertiary: {
                     $value: '{color.whiteAt.36}',
