@@ -62,7 +62,7 @@ const motifColors: DesignToken = {
                     $value: '{color.blossom.100At.96}',
                 },
                 secondary: {
-                    $value: '{color.blossom.100At.60}',
+                    $value: '{color.blossom.100At.66}',
                 },
                 tertiary: {
                     $value: '{color.blossom.100At.36}',
@@ -217,7 +217,7 @@ const motifColors: DesignToken = {
                     $value: '{color.lilypad.100At.96}',
                 },
                 secondary: {
-                    $value: '{color.lilypad.100At.60}',
+                    $value: '{color.lilypad.100At.66}',
                 },
                 tertiary: {
                     $value: '{color.lilypad.100At.36}',
@@ -372,7 +372,7 @@ const motifColors: DesignToken = {
                     $value: '{color.mandarin.100At.96}',
                 },
                 secondary: {
-                    $value: '{color.mandarin.100At.60}',
+                    $value: '{color.mandarin.100At.66}',
                 },
                 tertiary: {
                     $value: '{color.mandarin.100At.36}',
@@ -527,7 +527,7 @@ const motifColors: DesignToken = {
                     $value: '{color.pollen.100At.96}',
                 },
                 secondary: {
-                    $value: '{color.pollen.100At.60}',
+                    $value: '{color.pollen.100At.66}',
                 },
                 tertiary: {
                     $value: '{color.pollen.100At.36}',
@@ -554,9 +554,9 @@ const motifColors: DesignToken = {
                 primaryTextColor: { $value: '{color.pollen.70}' },
                 secondaryTextColor: { $value: '{color.pollen.80}' },
                 tertiaryTextColor: { $value: '{color.pollen.90}' },
-                primaryContentColor: { $value: '{color.white}' },
-                secondaryContentColor: { $value: '{color.whiteAt.72}' },
-                tertiaryContentColor: { $value: '{color.whiteAt.48}' },
+                primaryContentColor: { $value: '{color.pollen.80}' },
+                secondaryContentColor: { $value: '{color.pollen.80At.72}' },
+                tertiaryContentColor: { $value: '{color.pollen.80At.48}' },
             },
             accentAlt: {
                 primary: { $value: '{color.pollen.10}' },
@@ -679,24 +679,24 @@ const motifColors: DesignToken = {
             },
             text: {
                 primary: {
-                    $value: '{color.blackAt.96}',
+                    $value: '{color.pondwater.100At.96}',
                 },
                 secondary: {
-                    $value: '{color.blackAt.60}',
+                    $value: '{color.pondwater.100At.66}',
                 },
                 tertiary: {
-                    $value: '{color.blackAt.36}',
+                    $value: '{color.pondwater.100At.36}',
                 },
             },
             icons: {
                 primary: {
-                    $value: '{color.blackAt.84}',
+                    $value: '{color.pondwater.100At.96}',
                 },
                 secondary: {
-                    $value: '{color.blackAt.60}',
+                    $value: '{color.pondwater.100At.60}',
                 },
                 tertiary: {
-                    $value: '{color.blackAt.36}',
+                    $value: '{color.pondwater.100At.36}',
                 },
             },
             accent: {
@@ -838,7 +838,7 @@ const motifColors: DesignToken = {
                     $value: '{color.blossom.0}',
                 },
                 secondary: {
-                    $value: '{color.blossom.0At.60}',
+                    $value: '{color.blossom.0At.66}',
                 },
                 tertiary: {
                     $value: '{color.blossom.0At.36}',
@@ -993,7 +993,7 @@ const motifColors: DesignToken = {
                     $value: '{color.lilypad.0}',
                 },
                 secondary: {
-                    $value: '{color.lilypad.0At.60}',
+                    $value: '{color.lilypad.0At.66}',
                 },
                 tertiary: {
                     $value: '{color.lilypad.0At.36}',
@@ -1148,7 +1148,7 @@ const motifColors: DesignToken = {
                     $value: '{color.mandarin.0}',
                 },
                 secondary: {
-                    $value: '{color.mandarin.0At.60}',
+                    $value: '{color.mandarin.0At.66}',
                 },
                 tertiary: {
                     $value: '{color.mandarin.0At.36}',
@@ -1304,7 +1304,7 @@ const motifColors: DesignToken = {
                     $value: '{color.pollen.0}',
                 },
                 secondary: {
-                    $value: '{color.pollen.0At.60}',
+                    $value: '{color.pollen.0At.66}',
                 },
                 tertiary: {
                     $value: '{color.pollen.0At.36}',
@@ -1460,7 +1460,7 @@ const motifColors: DesignToken = {
                     $value: '{color.pondwater.0}',
                 },
                 secondary: {
-                    $value: '{color.pondwater.0At.60}',
+                    $value: '{color.pondwater.0At.66}',
                 },
                 tertiary: {
                     $value: '{color.pondwater.0At.36}',
