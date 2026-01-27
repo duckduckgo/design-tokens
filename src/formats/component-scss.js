@@ -3,6 +3,14 @@
  */
 import { fileHeader, formattedVariables } from 'style-dictionary/utils';
 
+/**
+ * Convert kebab-case to camelCase
+ * e.g., 'icon-button' -> 'iconButton'
+ */
+function kebabToCamel(str) {
+    return str.replace(/-([a-z])/g, (_, letter) => letter.toUpperCase());
+}
+
 export default async function componentScss({ dictionary, file, options, platform }) {
     const header = await fileHeader({ file });
 
@@ -12,9 +20,14 @@ export default async function componentScss({ dictionary, file, options, platfor
         throw new Error('component-scss format requires componentName option');
     }
 
+    // Convert kebab-case to camelCase for token path matching
+    // Token paths use camelCase (from object keys), but componentName may be kebab-case (from filename)
+    const componentNameCamel = kebabToCamel(componentName);
+
     // Filter tokens where the first path segment matches the component name
     // e.g., ['button', 'xxs', 'borderRadius'] for component 'button'
-    const componentTokens = dictionary.allTokens.filter((token) => token.path[0] === componentName);
+    // or ['iconButton', 'xxs', 'padding'] for component 'icon-button'
+    const componentTokens = dictionary.allTokens.filter((token) => token.path[0] === componentName || token.path[0] === componentNameCamel);
 
     if (componentTokens.length === 0) {
         // Return empty class if no tokens found

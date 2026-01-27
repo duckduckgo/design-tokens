@@ -54,9 +54,9 @@ Semantic tokens have a contextual name that communicates their intended purpose.
 
 Examples
 
-- `sds-color-primary`
-- `spds-color-disabled-text-color`
-- `bds-color-page-background`
+- `ds-color-primary`
+- `ds-color-disabled-text-color`
+- `ds-color-page-background`
 
 ### Component Tokens
 
