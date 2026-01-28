@@ -1,8 +1,8 @@
 /**
  * Do not edit directly, this file was auto-generated.
  * Source: https://github.com/duckduckgo/design-tokens
- * Version: 0.7.0
- * Last updated: January 27, 2026 at 02:16 AM
+ * Version: 0.8.0
+ * Last updated: January 28, 2026 at 09:13 PM
  */
 
 :root {
@@ -275,6 +275,13 @@
   --ds-color-pollen-30-at-72: rgba(255, 216, 133, 0.72);
   --ds-color-pollen-40-at-12: rgba(255, 201, 92, 0.12);
   --ds-color-pollen-40-at-20: rgba(255, 201, 92, 0.20);
+  --ds-color-pollen-40-at-28: rgba(255, 201, 92, 0.28);
+  --ds-color-pollen-40-at-30: rgba(255, 201, 92, 0.30);
+  --ds-color-pollen-40-at-40: rgba(255, 201, 92, 0.40);
+  --ds-color-pollen-40-at-48: rgba(255, 201, 92, 0.48);
+  --ds-color-pollen-40-at-56: rgba(255, 201, 92, 0.56);
+  --ds-color-pollen-40-at-60: rgba(255, 201, 92, 0.60);
+  --ds-color-pollen-40-at-72: rgba(255, 201, 92, 0.72);
   --ds-color-pollen-50-at-12: rgba(250, 179, 65, 0.12);
   --ds-color-pollen-50-at-20: rgba(250, 179, 65, 0.20);
   --ds-color-pollen-80-at-48: rgba(120, 59, 19, 0.48);
@@ -703,13 +710,13 @@
   --ds-motif-pollen-light-accent-alt-primary-content-color: #47210A;
   --ds-motif-pollen-light-accent-alt-secondary-content-color: rgba(71, 33, 10, 0.72);
   --ds-motif-pollen-light-accent-alt-tertiary-content-color: rgba(71, 33, 10, 0.48);
-  --ds-motif-pollen-light-control-primary-background-color: rgba(255, 216, 133, 0.09);
-  --ds-motif-pollen-light-control-secondary-background-color: rgba(255, 216, 133, 0.12);
-  --ds-motif-pollen-light-control-tertiary-background-color: rgba(255, 216, 133, 0.18);
-  --ds-motif-pollen-light-control-primary-border-color: rgba(255, 216, 133, 0.30);
-  --ds-motif-pollen-light-control-secondary-border-color: rgba(255, 216, 133, 0.48);
-  --ds-motif-pollen-light-control-tertiary-border-color: rgba(255, 216, 133, 0.60);
-  --ds-motif-pollen-light-control-quaternary-border-color: rgba(255, 216, 133, 0.72);
+  --ds-motif-pollen-light-control-primary-background-color: rgba(255, 201, 92, 0.28);
+  --ds-motif-pollen-light-control-secondary-background-color: rgba(255, 201, 92, 0.40);
+  --ds-motif-pollen-light-control-tertiary-background-color: rgba(255, 201, 92, 0.56);
+  --ds-motif-pollen-light-control-primary-border-color: rgba(255, 201, 92, 0.30);
+  --ds-motif-pollen-light-control-secondary-border-color: rgba(255, 201, 92, 0.48);
+  --ds-motif-pollen-light-control-tertiary-border-color: rgba(255, 201, 92, 0.60);
+  --ds-motif-pollen-light-control-quaternary-border-color: rgba(255, 201, 92, 0.72);
   --ds-motif-pollen-light-control-raised-primary-background-color: #FFFBF0;
   --ds-motif-pollen-light-control-raised-backdrop: rgba(0, 0, 0, 0.09);
   --ds-motif-pollen-light-highlight-primary: rgba(255, 251, 240, 0.24);
