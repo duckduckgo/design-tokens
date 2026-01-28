@@ -4,6 +4,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import themeColorsClasses from './src/formats/sp-theme-colors-classes.js';
 import componentScss from './src/formats/component-scss.js';
+import breakpointsScss from './src/formats/breakpoints-scss.js';
 import fileHeader from './dist/src/utils/file-header.js';
 
 // Get directory path for ES modules
@@ -33,6 +34,7 @@ export default {
         formats: {
             'theme-colors-classes': themeColorsClasses,
             'component-scss': componentScss,
+            'breakpoints-scss': breakpointsScss,
         },
     },
     source: [
@@ -72,6 +74,13 @@ export default {
                     format: 'theme-colors-classes',
                     options: {
                         outputReferences: true,
+                        showFileHeader: true,
+                    },
+                },
+                {
+                    destination: 'static-pages/breakpoints.scss',
+                    format: 'breakpoints-scss',
+                    options: {
                         showFileHeader: true,
                     },
                 },
