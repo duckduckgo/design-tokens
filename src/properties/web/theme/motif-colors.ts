@@ -573,25 +573,25 @@ const motifColors: DesignToken = {
             },
             control: {
                 primaryBackgroundColor: {
-                    $value: '{color.pollen.30At.9}',
+                    $value: '{color.pollen.40At.28}',
                 },
                 secondaryBackgroundColor: {
-                    $value: '{color.pollen.30At.12}',
+                    $value: '{color.pollen.40At.40}',
                 },
                 tertiaryBackgroundColor: {
-                    $value: '{color.pollen.30At.18}',
+                    $value: '{color.pollen.40At.56}',
                 },
                 primaryBorderColor: {
-                    $value: '{color.pollen.30At.30}',
+                    $value: '{color.pollen.40At.30}',
                 },
                 secondaryBorderColor: {
-                    $value: '{color.pollen.30At.48}',
+                    $value: '{color.pollen.40At.48}',
                 },
                 tertiaryBorderColor: {
-                    $value: '{color.pollen.30At.60}',
+                    $value: '{color.pollen.40At.60}',
                 },
                 quaternaryBorderColor: {
-                    $value: '{color.pollen.30At.72}',
+                    $value: '{color.pollen.40At.72}',
                 },
             },
             controlRaised: {
