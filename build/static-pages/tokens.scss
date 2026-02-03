@@ -1,8 +1,8 @@
 /**
  * Do not edit directly, this file was auto-generated.
  * Source: https://github.com/duckduckgo/design-tokens
- * Version: 0.8.0
- * Last updated: January 28, 2026 at 09:13 PM
+ * Version: 0.9.0
+ * Last updated: February 3, 2026 at 05:20 PM
  */
 
 :root {
@@ -486,13 +486,19 @@
   --ds-typography-button-label-03-line-height: 16px;
   --ds-typography-button-label-03-size: 14px;
   --ds-typography-button-label-03-weight: 700;
+  --ds-typography-label-01-font-family: 'DuckSansProduct', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
+  --ds-typography-label-01-letter-spacing: 0;
+  --ds-typography-label-01-line-height: 12px;
+  --ds-typography-label-01-size: 12px;
+  --ds-typography-label-01-weight: 700;
+  --ds-typography-label-01-text-transform: uppercase;
   --ds-z-index-hidden: -999;
-  --ds-z-index-default: 1rem;
-  --ds-z-index-popover: 100rem;
-  --ds-z-index-side-menu: 200rem;
-  --ds-z-index-modal-backdrop: 300rem;
-  --ds-z-index-modal: 305rem;
-  --ds-z-index-alert: 400rem; /* Used for alerts, toasts */
+  --ds-z-index-default: 1;
+  --ds-z-index-popover: 100;
+  --ds-z-index-side-menu: 200;
+  --ds-z-index-modal-backdrop: 300;
+  --ds-z-index-modal: 305;
+  --ds-z-index-alert: 400; /* Used for alerts, toasts */
   --ds-motif-blossom-light-surface-backdrop: #ffffff;
   --ds-motif-blossom-light-surface-canvas: #FBF7FF;
   --ds-motif-blossom-light-surface-primary: #EADAFD;
