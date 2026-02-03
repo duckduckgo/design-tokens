@@ -287,6 +287,28 @@ const typography: DesignToken = {
                 },
             },
         },
+        label: {
+            '01': {
+                fontFamily: {
+                    $value: '{font.family.product}',
+                },
+                letterSpacing: {
+                    $value: '{font.letterSpacing.normal}',
+                },
+                lineHeight: {
+                    $value: '12px',
+                },
+                size: {
+                    $value: '12px',
+                },
+                weight: {
+                    $value: '{font.weight.bold}',
+                },
+                textTransform: {
+                    $value: 'uppercase',
+                },
+            },
+        },
     },
 };
 
