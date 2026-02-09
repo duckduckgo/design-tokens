@@ -51,6 +51,9 @@ const spacing: DesignToken = {
         x14: {
             $value: '56px',
         },
+        x15: {
+            $value: '60px',
+        },
         x16: {
             $value: '64px',
         },
@@ -62,6 +65,9 @@ const spacing: DesignToken = {
         },
         x20: {
             $value: '80px',
+        },
+        x22: {
+            $value: '88px',
         },
         x24: {
             $value: '96px',
@@ -78,6 +84,9 @@ const spacing: DesignToken = {
         x56: {
             $value: '224px',
         },
+        x60: {
+            $value: '240px',
+        },
         x64: {
             $value: '256px',
         },
@@ -86,6 +95,9 @@ const spacing: DesignToken = {
         },
         x80: {
             $value: '320px',
+        },
+        x90: {
+            $value: '360px',
         },
         x100: {
             $value: '400px',
