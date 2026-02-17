@@ -1,8 +1,8 @@
 /**
  * Do not edit directly, this file was auto-generated.
  * Source: https://github.com/duckduckgo/design-tokens
- * Version: 0.9.0
- * Last updated: February 3, 2026 at 05:20 PM
+ * Version: 0.10.0
+ * Last updated: February 17, 2026 at 05:45 PM
  */
 
 .theme-light {
@@ -59,8 +59,9 @@
   --ds-control-raised-primary-background-color: var(--ds-theme-light-control-raised-primary-background-color);
   --ds-control-raised-backdrop: var(--ds-theme-light-control-raised-backdrop);
   --ds-highlight-primary: var(--ds-theme-light-highlight-primary);
-  --ds-tone-brighten: var(--ds-theme-light-tone-brighten); /* Maps to Tint-Primary in Figma */
-  --ds-tone-darken: var(--ds-theme-light-tone-darken); /* Maps to Shade-Primary in Figma */
+  --ds-tone-brighten-primary: var(--ds-theme-light-tone-brighten-primary); /* Maps to Tint-Primary in Figma */
+  --ds-tone-brighten-secondary: var(--ds-theme-light-tone-brighten-secondary); /* Maps to Tint-Secondary in Figma */
+  --ds-tone-darken-primary: var(--ds-theme-light-tone-darken-primary); /* Maps to Shade-Primary in Figma */
   --ds-shadow-primary-color: var(--ds-theme-light-shadow-primary-color);
   --ds-shadow-secondary-color: var(--ds-theme-light-shadow-secondary-color);
   --ds-shadow-tertiary-color: var(--ds-theme-light-shadow-tertiary-color);
@@ -133,8 +134,9 @@
     --ds-control-raised-primary-background-color: var(--ds-motif-blossom-light-control-raised-primary-background-color);
     --ds-control-raised-backdrop: var(--ds-motif-blossom-light-control-raised-backdrop);
     --ds-highlight-primary: var(--ds-motif-blossom-light-highlight-primary);
-    --ds-tone-brighten: var(--ds-motif-blossom-light-tone-brighten);
-    --ds-tone-darken: var(--ds-motif-blossom-light-tone-darken);
+    --ds-tone-brighten-primary: var(--ds-motif-blossom-light-tone-brighten-primary);
+    --ds-tone-brighten-secondary: var(--ds-motif-blossom-light-tone-brighten-secondary);
+    --ds-tone-darken-primary: var(--ds-motif-blossom-light-tone-darken-primary);
     --ds-shadow-primary-color: var(--ds-motif-blossom-light-shadow-primary-color);
     --ds-shadow-secondary-color: var(--ds-motif-blossom-light-shadow-secondary-color);
     --ds-shadow-tertiary-color: var(--ds-motif-blossom-light-shadow-tertiary-color);
@@ -194,8 +196,9 @@
     --ds-control-raised-primary-background-color: var(--ds-motif-lilypad-light-control-raised-primary-background-color);
     --ds-control-raised-backdrop: var(--ds-motif-lilypad-light-control-raised-backdrop);
     --ds-highlight-primary: var(--ds-motif-lilypad-light-highlight-primary);
-    --ds-tone-brighten: var(--ds-motif-lilypad-light-tone-brighten);
-    --ds-tone-darken: var(--ds-motif-lilypad-light-tone-darken);
+    --ds-tone-brighten-primary: var(--ds-motif-lilypad-light-tone-brighten-primary);
+    --ds-tone-brighten-secondary: var(--ds-motif-lilypad-light-tone-brighten-secondary);
+    --ds-tone-darken-primary: var(--ds-motif-lilypad-light-tone-darken-primary);
     --ds-shadow-primary-color: var(--ds-motif-lilypad-light-shadow-primary-color);
     --ds-shadow-secondary-color: var(--ds-motif-lilypad-light-shadow-secondary-color);
     --ds-shadow-tertiary-color: var(--ds-motif-lilypad-light-shadow-tertiary-color);
@@ -255,8 +258,9 @@
     --ds-control-raised-primary-background-color: var(--ds-motif-mandarin-light-control-raised-primary-background-color);
     --ds-control-raised-backdrop: var(--ds-motif-mandarin-light-control-raised-backdrop);
     --ds-highlight-primary: var(--ds-motif-mandarin-light-highlight-primary);
-    --ds-tone-brighten: var(--ds-motif-mandarin-light-tone-brighten);
-    --ds-tone-darken: var(--ds-motif-mandarin-light-tone-darken);
+    --ds-tone-brighten-primary: var(--ds-motif-mandarin-light-tone-brighten-primary);
+    --ds-tone-brighten-secondary: var(--ds-motif-mandarin-light-tone-brighten-secondary);
+    --ds-tone-darken-primary: var(--ds-motif-mandarin-light-tone-darken-primary);
     --ds-shadow-primary-color: var(--ds-motif-mandarin-light-shadow-primary-color);
     --ds-shadow-secondary-color: var(--ds-motif-mandarin-light-shadow-secondary-color);
     --ds-shadow-tertiary-color: var(--ds-motif-mandarin-light-shadow-tertiary-color);
@@ -316,8 +320,9 @@
     --ds-control-raised-primary-background-color: var(--ds-motif-pollen-light-control-raised-primary-background-color);
     --ds-control-raised-backdrop: var(--ds-motif-pollen-light-control-raised-backdrop);
     --ds-highlight-primary: var(--ds-motif-pollen-light-highlight-primary);
-    --ds-tone-brighten: var(--ds-motif-pollen-light-tone-brighten);
-    --ds-tone-darken: var(--ds-motif-pollen-light-tone-darken);
+    --ds-tone-brighten-primary: var(--ds-motif-pollen-light-tone-brighten-primary);
+    --ds-tone-brighten-secondary: var(--ds-motif-pollen-light-tone-brighten-secondary);
+    --ds-tone-darken-primary: var(--ds-motif-pollen-light-tone-darken-primary);
     --ds-shadow-primary-color: var(--ds-motif-pollen-light-shadow-primary-color);
     --ds-shadow-secondary-color: var(--ds-motif-pollen-light-shadow-secondary-color);
     --ds-shadow-tertiary-color: var(--ds-motif-pollen-light-shadow-tertiary-color);
@@ -377,8 +382,9 @@
     --ds-control-raised-primary-background-color: var(--ds-motif-pondwater-light-control-raised-primary-background-color);
     --ds-control-raised-backdrop: var(--ds-motif-pondwater-light-control-raised-backdrop);
     --ds-highlight-primary: var(--ds-motif-pondwater-light-highlight-primary);
-    --ds-tone-brighten: var(--ds-motif-pondwater-light-tone-brighten);
-    --ds-tone-darken: var(--ds-motif-pondwater-light-tone-darken);
+    --ds-tone-brighten-primary: var(--ds-motif-pondwater-light-tone-brighten-primary);
+    --ds-tone-brighten-secondary: var(--ds-motif-pondwater-light-tone-brighten-secondary);
+    --ds-tone-darken-primary: var(--ds-motif-pondwater-light-tone-darken-primary);
     --ds-shadow-primary-color: var(--ds-motif-pondwater-light-shadow-primary-color);
     --ds-shadow-secondary-color: var(--ds-motif-pondwater-light-shadow-secondary-color);
     --ds-shadow-tertiary-color: var(--ds-motif-pondwater-light-shadow-tertiary-color);
@@ -439,8 +445,9 @@
   --ds-control-raised-primary-background-color: var(--ds-theme-dark-control-raised-primary-background-color);
   --ds-control-raised-backdrop: var(--ds-theme-dark-control-raised-backdrop);
   --ds-highlight-primary: var(--ds-theme-dark-highlight-primary);
-  --ds-tone-brighten: var(--ds-theme-dark-tone-brighten);
-  --ds-tone-darken: var(--ds-theme-dark-tone-darken);
+  --ds-tone-brighten-primary: var(--ds-theme-dark-tone-brighten-primary);
+  --ds-tone-brighten-secondary: var(--ds-theme-dark-tone-brighten-secondary);
+  --ds-tone-darken-primary: var(--ds-theme-dark-tone-darken-primary);
   --ds-shadow-primary-color: var(--ds-theme-dark-shadow-primary-color);
   --ds-shadow-secondary-color: var(--ds-theme-dark-shadow-secondary-color);
   --ds-shadow-tertiary-color: var(--ds-theme-dark-shadow-tertiary-color);
@@ -513,8 +520,9 @@
     --ds-control-raised-primary-background-color: var(--ds-motif-blossom-dark-control-raised-primary-background-color);
     --ds-control-raised-backdrop: var(--ds-motif-blossom-dark-control-raised-backdrop);
     --ds-highlight-primary: var(--ds-motif-blossom-dark-highlight-primary);
-    --ds-tone-brighten: var(--ds-motif-blossom-dark-tone-brighten);
-    --ds-tone-darken: var(--ds-motif-blossom-dark-tone-darken);
+    --ds-tone-brighten-primary: var(--ds-motif-blossom-dark-tone-brighten-primary);
+    --ds-tone-brighten-secondary: var(--ds-motif-blossom-dark-tone-brighten-secondary);
+    --ds-tone-darken-primary: var(--ds-motif-blossom-dark-tone-darken-primary);
     --ds-shadow-primary-color: var(--ds-motif-blossom-dark-shadow-primary-color);
     --ds-shadow-secondary-color: var(--ds-motif-blossom-dark-shadow-secondary-color);
     --ds-shadow-tertiary-color: var(--ds-motif-blossom-dark-shadow-tertiary-color);
@@ -574,8 +582,9 @@
     --ds-control-raised-primary-background-color: var(--ds-motif-lilypad-dark-control-raised-primary-background-color);
     --ds-control-raised-backdrop: var(--ds-motif-lilypad-dark-control-raised-backdrop);
     --ds-highlight-primary: var(--ds-motif-lilypad-dark-highlight-primary);
-    --ds-tone-brighten: var(--ds-motif-lilypad-dark-tone-brighten);
-    --ds-tone-darken: var(--ds-motif-lilypad-dark-tone-darken);
+    --ds-tone-brighten-primary: var(--ds-motif-lilypad-dark-tone-brighten-primary);
+    --ds-tone-brighten-secondary: var(--ds-motif-lilypad-dark-tone-brighten-secondary);
+    --ds-tone-darken-primary: var(--ds-motif-lilypad-dark-tone-darken-primary);
     --ds-shadow-primary-color: var(--ds-motif-lilypad-dark-shadow-primary-color);
     --ds-shadow-secondary-color: var(--ds-motif-lilypad-dark-shadow-secondary-color);
     --ds-shadow-tertiary-color: var(--ds-motif-lilypad-dark-shadow-tertiary-color);
@@ -635,8 +644,9 @@
     --ds-control-raised-primary-background-color: var(--ds-motif-mandarin-dark-control-raised-primary-background-color);
     --ds-control-raised-backdrop: var(--ds-motif-mandarin-dark-control-raised-backdrop);
     --ds-highlight-primary: var(--ds-motif-mandarin-dark-highlight-primary);
-    --ds-tone-brighten: var(--ds-motif-mandarin-dark-tone-brighten);
-    --ds-tone-darken: var(--ds-motif-mandarin-dark-tone-darken);
+    --ds-tone-brighten-primary: var(--ds-motif-mandarin-dark-tone-brighten-primary);
+    --ds-tone-brighten-secondary: var(--ds-motif-mandarin-dark-tone-brighten-secondary);
+    --ds-tone-darken-primary: var(--ds-motif-mandarin-dark-tone-darken-primary);
     --ds-shadow-primary-color: var(--ds-motif-mandarin-dark-shadow-primary-color);
     --ds-shadow-secondary-color: var(--ds-motif-mandarin-dark-shadow-secondary-color);
     --ds-shadow-tertiary-color: var(--ds-motif-mandarin-dark-shadow-tertiary-color);
@@ -696,8 +706,9 @@
     --ds-control-raised-primary-background-color: var(--ds-motif-pollen-dark-control-raised-primary-background-color);
     --ds-control-raised-backdrop: var(--ds-motif-pollen-dark-control-raised-backdrop);
     --ds-highlight-primary: var(--ds-motif-pollen-dark-highlight-primary);
-    --ds-tone-brighten: var(--ds-motif-pollen-dark-tone-brighten);
-    --ds-tone-darken: var(--ds-motif-pollen-dark-tone-darken);
+    --ds-tone-brighten-primary: var(--ds-motif-pollen-dark-tone-brighten-primary);
+    --ds-tone-brighten-secondary: var(--ds-motif-pollen-dark-tone-brighten-secondary);
+    --ds-tone-darken-primary: var(--ds-motif-pollen-dark-tone-darken-primary);
     --ds-shadow-primary-color: var(--ds-motif-pollen-dark-shadow-primary-color);
     --ds-shadow-secondary-color: var(--ds-motif-pollen-dark-shadow-secondary-color);
     --ds-shadow-tertiary-color: var(--ds-motif-pollen-dark-shadow-tertiary-color);
@@ -757,8 +768,9 @@
     --ds-control-raised-primary-background-color: var(--ds-motif-pondwater-dark-control-raised-primary-background-color);
     --ds-control-raised-backdrop: var(--ds-motif-pondwater-dark-control-raised-backdrop);
     --ds-highlight-primary: var(--ds-motif-pondwater-dark-highlight-primary);
-    --ds-tone-brighten: var(--ds-motif-pondwater-dark-tone-brighten);
-    --ds-tone-darken: var(--ds-motif-pondwater-dark-tone-darken);
+    --ds-tone-brighten-primary: var(--ds-motif-pondwater-dark-tone-brighten-primary);
+    --ds-tone-brighten-secondary: var(--ds-motif-pondwater-dark-tone-brighten-secondary);
+    --ds-tone-darken-primary: var(--ds-motif-pondwater-dark-tone-darken-primary);
     --ds-shadow-primary-color: var(--ds-motif-pondwater-dark-shadow-primary-color);
     --ds-shadow-secondary-color: var(--ds-motif-pondwater-dark-shadow-secondary-color);
     --ds-shadow-tertiary-color: var(--ds-motif-pondwater-dark-shadow-tertiary-color);

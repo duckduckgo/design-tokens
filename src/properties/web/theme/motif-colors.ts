@@ -143,10 +143,13 @@ const motifColors: DesignToken = {
                 },
             },
             tone: {
-                brighten: {
+                brightenPrimary: {
                     $value: `{color.blossom.0At.60}`,
                 },
-                darken: {
+                brightenSecondary: {
+                    $value: `{color.blossom.0At.84}`,
+                },
+                darkenPrimary: {
                     $value: `{color.blackAt.3}`,
                 },
             },
@@ -298,10 +301,13 @@ const motifColors: DesignToken = {
                 },
             },
             tone: {
-                brighten: {
+                brightenPrimary: {
                     $value: `{color.lilypad.0At.60}`,
                 },
-                darken: {
+                brightenSecondary: {
+                    $value: `{color.lilypad.0At.84}`,
+                },
+                darkenPrimary: {
                     $value: `{color.blackAt.3}`,
                 },
             },
@@ -453,10 +459,13 @@ const motifColors: DesignToken = {
                 },
             },
             tone: {
-                brighten: {
+                brightenPrimary: {
                     $value: `{color.mandarin.0At.60}`,
                 },
-                darken: {
+                brightenSecondary: {
+                    $value: `{color.mandarin.0At.84}`,
+                },
+                darkenPrimary: {
                     $value: `{color.blackAt.3}`,
                 },
             },
@@ -608,10 +617,13 @@ const motifColors: DesignToken = {
                 },
             },
             tone: {
-                brighten: {
+                brightenPrimary: {
                     $value: `{color.pollen.0At.60}`,
                 },
-                darken: {
+                brightenSecondary: {
+                    $value: `{color.pollen.0At.84}`,
+                },
+                darkenPrimary: {
                     $value: `{color.blackAt.3}`,
                 },
             },
@@ -763,10 +775,13 @@ const motifColors: DesignToken = {
                 },
             },
             tone: {
-                brighten: {
+                brightenPrimary: {
                     $value: `{color.pondwater.0At.60}`,
                 },
-                darken: {
+                brightenSecondary: {
+                    $value: `{color.pondwater.0At.84}`,
+                },
+                darkenPrimary: {
                     $value: `{color.blackAt.3}`,
                 },
             },
@@ -919,10 +934,13 @@ const motifColors: DesignToken = {
                 },
             },
             tone: {
-                brighten: {
+                brightenPrimary: {
                     $value: `{color.blossom.10At.6}`,
                 },
-                darken: {
+                brightenSecondary: {
+                    $value: `{color.blossom.10At.12}`,
+                },
+                darkenPrimary: {
                     $value: `{color.blackAt.12}`,
                 },
             },
@@ -1074,10 +1092,13 @@ const motifColors: DesignToken = {
                 },
             },
             tone: {
-                brighten: {
+                brightenPrimary: {
                     $value: `{color.lilypad.10At.6}`,
                 },
-                darken: {
+                brightenSecondary: {
+                    $value: `{color.lilypad.10At.12}`,
+                },
+                darkenPrimary: {
                     $value: `{color.blackAt.12}`,
                 },
             },
@@ -1230,10 +1251,13 @@ const motifColors: DesignToken = {
                 },
             },
             tone: {
-                brighten: {
+                brightenPrimary: {
                     $value: `{color.mandarin.10At.6}`,
                 },
-                darken: {
+                brightenSecondary: {
+                    $value: `{color.mandarin.10At.12}`,
+                },
+                darkenPrimary: {
                     $value: `{color.blackAt.12}`,
                 },
             },
@@ -1386,10 +1410,13 @@ const motifColors: DesignToken = {
                 },
             },
             tone: {
-                brighten: {
+                brightenPrimary: {
                     $value: `{color.pollen.10At.6}`,
                 },
-                darken: {
+                brightenSecondary: {
+                    $value: `{color.pollen.10At.12}`,
+                },
+                darkenPrimary: {
                     $value: `{color.blackAt.12}`,
                 },
             },
@@ -1541,10 +1568,13 @@ const motifColors: DesignToken = {
                 },
             },
             tone: {
-                brighten: {
+                brightenPrimary: {
                     $value: `{color.pondwater.10At.6}`,
                 },
-                darken: {
+                brightenSecondary: {
+                    $value: `{color.pondwater.10At.12}`,
+                },
+                darkenPrimary: {
                     $value: `{color.blackAt.12}`,
                 },
             },

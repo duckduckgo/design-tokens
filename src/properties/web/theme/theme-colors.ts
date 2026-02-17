@@ -150,11 +150,15 @@ const themeColors: DesignToken = {
                 },
             },
             tone: {
-                brighten: {
+                brightenPrimary: {
                     $value: `{color.gray0At.32}`,
                     comment: 'Maps to Tint-Primary in Figma',
                 },
-                darken: {
+                brightenSecondary: {
+                    $value: `{color.gray0At.60}`,
+                    comment: 'Maps to Tint-Secondary in Figma',
+                },
+                darkenPrimary: {
                     $value: `{color.blackAt.3}`,
                     comment: 'Maps to Shade-Primary in Figma',
                 },
@@ -347,10 +351,13 @@ const themeColors: DesignToken = {
                 },
             },
             tone: {
-                brighten: {
+                brightenPrimary: {
                     $value: `{color.whiteAt.6}`,
                 },
-                darken: {
+                brightenSecondary: {
+                    $value: `{color.whiteAt.12}`,
+                },
+                darkenPrimary: {
                     $value: `{color.blackAt.12}`,
                 },
             },

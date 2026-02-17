@@ -62,6 +62,7 @@ const colors: DesignToken = {
         gray0At: {
             24: { $value: 'rgba(252, 252, 252, 0.24)' },
             32: { $value: 'rgba(252, 252, 252, 0.32)' },
+            60: { $value: 'rgba(252, 252, 252, 0.60)' },
         },
         // Eggshell values are to be used similarly to the gray values, treat as warm neutrals
         eggshell: {
@@ -103,6 +104,7 @@ const colors: DesignToken = {
                 60: { $value: 'rgba(251, 247, 255, 0.60)' },
                 66: { $value: 'rgba(251, 247, 255, 0.66)' },
                 72: { $value: 'rgba(251, 247, 255, 0.72)' },
+                84: { $value: 'rgba(251, 247, 255, 0.84)' },
             },
             '10At': {
                 6: { $value: 'rgba(245, 237, 255, 0.06)' },
@@ -176,6 +178,7 @@ const colors: DesignToken = {
                 60: { $value: 'rgba(248, 252, 249, 0.60)' },
                 66: { $value: 'rgba(248, 252, 249, 0.66)' },
                 72: { $value: 'rgba(248, 252, 249, 0.72)' },
+                84: { $value: 'rgba(248, 252, 249, 0.84)' },
             },
             '10At': {
                 6: { $value: 'rgba(226, 243, 233, 0.06)' },
@@ -249,6 +252,7 @@ const colors: DesignToken = {
                 60: { $value: 'rgba(255, 240, 249, 0.60)' },
                 66: { $value: 'rgba(255, 240, 249, 0.66)' },
                 72: { $value: 'rgba(255, 240, 249, 0.72)' },
+                84: { $value: 'rgba(255, 240, 249, 0.84)' },
             },
             '10At': {
                 6: { $value: 'rgba(255, 235, 229, 0.06)' },
@@ -320,6 +324,7 @@ const colors: DesignToken = {
                 60: { $value: 'rgba(255, 251, 240, 0.60)' },
                 66: { $value: 'rgba(255, 251, 240, 0.66)' },
                 72: { $value: 'rgba(255, 251, 240, 0.72)' },
+                84: { $value: 'rgba(255, 251, 240, 0.84)' },
             },
             '10At': {
                 6: { $value: 'rgba(254, 244, 218, 0.06)' },
@@ -404,6 +409,7 @@ const colors: DesignToken = {
                 60: { $value: 'rgba(245, 251, 254, 0.60)' },
                 66: { $value: 'rgba(245, 251, 254, 0.66)' },
                 72: { $value: 'rgba(245, 251, 254, 0.72)' },
+                84: { $value: 'rgba(245, 251, 254, 0.84)' },
             },
             '10At': {
                 6: { $value: 'rgba(230, 246, 255, 0.06)' },
@@ -452,25 +458,12 @@ const colors: DesignToken = {
                 96: { $value: 'rgba(1, 20, 45, 0.96)' },
             },
         },
-        pondwaterUI: {
-            0: { $value: '#F4FAFE' },
-            10: { $value: '#E5F3FF' },
-            20: { $value: '#C7E5FF' },
-            30: { $value: '#99CFFF' },
-            40: { $value: '#67B3F5' },
-            50: { $value: '#3A9BF0' },
-            60: { $value: '#0075DB' },
-            70: { $value: '#0061BD' },
-            80: { $value: '#00458A' },
-            90: { $value: '#002857' },
-            100: { $value: '#001838' },
-        },
         red: {
             0: { $value: '#FEF9FA' },
             10: { $value: '#FCECF0' },
             20: { $value: '#FAD8DC' },
             30: { $value: '#F7AAAD' },
-            40: { $value: '#F68E8F' },
+            40: { $value: '#F06565' },
             50: { $value: '#EC434F' },
             60: { $value: '#CA2B3D' },
             70: { $value: '#A02231' },
