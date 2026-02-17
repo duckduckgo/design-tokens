@@ -62,6 +62,7 @@ const colors: DesignToken = {
         gray0At: {
             24: { $value: 'rgba(252, 252, 252, 0.24)' },
             32: { $value: 'rgba(252, 252, 252, 0.32)' },
+            60: { $value: 'rgba(252, 252, 252, 0.60)' },
         },
         // Eggshell values are to be used similarly to the gray values, treat as warm neutrals
         eggshell: {
@@ -103,6 +104,7 @@ const colors: DesignToken = {
                 60: { $value: 'rgba(251, 247, 255, 0.60)' },
                 66: { $value: 'rgba(251, 247, 255, 0.66)' },
                 72: { $value: 'rgba(251, 247, 255, 0.72)' },
+                84: { $value: 'rgba(251, 247, 255, 0.84)' },
             },
             '10At': {
                 6: { $value: 'rgba(245, 237, 255, 0.06)' },
@@ -176,6 +178,7 @@ const colors: DesignToken = {
                 60: { $value: 'rgba(248, 252, 249, 0.60)' },
                 66: { $value: 'rgba(248, 252, 249, 0.66)' },
                 72: { $value: 'rgba(248, 252, 249, 0.72)' },
+                84: { $value: 'rgba(248, 252, 249, 0.84)' },
             },
             '10At': {
                 6: { $value: 'rgba(226, 243, 233, 0.06)' },
@@ -249,6 +252,7 @@ const colors: DesignToken = {
                 60: { $value: 'rgba(255, 240, 249, 0.60)' },
                 66: { $value: 'rgba(255, 240, 249, 0.66)' },
                 72: { $value: 'rgba(255, 240, 249, 0.72)' },
+                84: { $value: 'rgba(255, 240, 249, 0.84)' },
             },
             '10At': {
                 6: { $value: 'rgba(255, 235, 229, 0.06)' },
@@ -320,6 +324,7 @@ const colors: DesignToken = {
                 60: { $value: 'rgba(255, 251, 240, 0.60)' },
                 66: { $value: 'rgba(255, 251, 240, 0.66)' },
                 72: { $value: 'rgba(255, 251, 240, 0.72)' },
+                84: { $value: 'rgba(255, 251, 240, 0.84)' },
             },
             '10At': {
                 6: { $value: 'rgba(254, 244, 218, 0.06)' },
@@ -404,6 +409,7 @@ const colors: DesignToken = {
                 60: { $value: 'rgba(245, 251, 254, 0.60)' },
                 66: { $value: 'rgba(245, 251, 254, 0.66)' },
                 72: { $value: 'rgba(245, 251, 254, 0.72)' },
+                84: { $value: 'rgba(245, 251, 254, 0.84)' },
             },
             '10At': {
                 6: { $value: 'rgba(230, 246, 255, 0.06)' },
