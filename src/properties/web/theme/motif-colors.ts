@@ -971,7 +971,7 @@ const motifColors: DesignToken = {
                     $value: '{color.lilypad.90}',
                 },
                 tertiary: {
-                    $value: '{color.lilypad.80}',
+                    $value: '{color.lilypad.30}',
                 },
                 // decorations are used for things like shadows, hr lines
                 decoration: {
@@ -1288,7 +1288,7 @@ const motifColors: DesignToken = {
                     $value: '{color.pollen.90}',
                 },
                 tertiary: {
-                    $value: '{color.pollen.80}',
+                    $value: '{color.pollen.30}',
                 },
                 // decorations are used for things like shadows, hr lines
                 decoration: {
@@ -1447,7 +1447,7 @@ const motifColors: DesignToken = {
                     $value: '{color.pondwater.90}',
                 },
                 tertiary: {
-                    $value: '{color.pondwater.80}',
+                    $value: '{color.pondwater.30}',
                 },
                 // decorations are used for things like shadows, hr lines
                 decoration: {

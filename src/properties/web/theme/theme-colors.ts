@@ -221,7 +221,7 @@ const themeColors: DesignToken = {
                     $value: '{color.gray.111}',
                 },
                 canvas: {
-                    $value: '{color.gray.100}',
+                    $value: '{color.eggshell.100}',
                 },
                 primary: {
                     $value: '{color.eggshell.100}',
@@ -230,7 +230,7 @@ const themeColors: DesignToken = {
                     $value: '{color.eggshell.90}',
                 },
                 tertiary: {
-                    $value: '{color.gray.80}',
+                    $value: '{color.eggshell.80}',
                 },
                 // decorations are used for things like shadows, hr lines
                 decoration: {
