@@ -31,8 +31,8 @@ const onboardingTokens: DesignToken = {
             },
             accentAlt: {
                 primary: { $value: '{color.pondwater.20}' },
-                glowPrimary: { $value: 'rgba(161, 207, 247, 0.16)' },
-                glowSecondary: { $value: 'rgba(161, 207, 247, 0.08)' },
+                glowPrimary: { $value: '{color.pondwater.30At.16}' },
+                glowSecondary: { $value: '{color.pondwater.30At.8}' },
             },
             control: {
                 primaryBorderColor: {
@@ -48,16 +48,16 @@ const onboardingTokens: DesignToken = {
         dark: {
             surface: {
                 backdrop: {
-                    $value: '#133E7C',
+                    $value: '{color.pondwater.80}',
                 },
                 primary: {
-                    $value: '#123269',
+                    $value: '{color.pondwater.80}',
                 },
                 secondary: {
-                    $value: '#051E3D',
+                    $value: '{color.pondwater.90}',
                 },
                 tertiary: {
-                    $value: '#011D34',
+                    $value: '{color.pondwater.100}',
                 },
             },
             text: {
@@ -69,12 +69,12 @@ const onboardingTokens: DesignToken = {
                 primary: { $value: '{color.pondwater.40}' },
                 secondary: { $value: '{color.pondwater.50}' },
                 primaryTextColor: { $value: '{color.pondwater.40}' },
-                primaryContentColor: { $value: '#222222' },
+                primaryContentColor: { $value: '{color.gray.90}' },
             },
             accentAlt: {
-                primary: { $value: '#133E7C' },
-                glowPrimary: { $value: 'rgba(161, 207, 247, 0.12)' },
-                glowSecondary: { $value: 'rgba(161, 207, 247, 0.08)' },
+                primary: { $value: '{color.pondwater.80}' },
+                glowPrimary: { $value: '{color.pondwater.30At.12}' },
+                glowSecondary: { $value: '{color.pondwater.30At.8}' },
             },
             control: {
                 primaryBorderColor: {
