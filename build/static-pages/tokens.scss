@@ -1,8 +1,8 @@
 /**
  * Do not edit directly, this file was auto-generated.
  * Source: https://github.com/duckduckgo/design-tokens
- * Version: 0.11.0
- * Last updated: February 17, 2026 at 07:31 PM
+ * Version: 0.12.0
+ * Last updated: February 24, 2026 at 04:56 AM
  */
 
 :root {
@@ -14,6 +14,7 @@
   --ds-color-black-at-9: rgba(0, 0, 0, 0.09);
   --ds-color-black-at-12: rgba(0, 0, 0, 0.12);
   --ds-color-black-at-16: rgba(0, 0, 0, 0.16);
+  --ds-color-black-at-20: rgba(0, 0, 0, 0.20);
   --ds-color-black-at-24: rgba(0, 0, 0, 0.24);
   --ds-color-black-at-30: rgba(0, 0, 0, 0.30);
   --ds-color-black-at-32: rgba(0, 0, 0, 0.32);
@@ -53,9 +54,9 @@
   --ds-color-gray-90: #282828;
   --ds-color-gray-100: #181818;
   --ds-color-gray-111: #111111;
-  --ds-color-gray0-at-24: rgba(252, 252, 252, 0.24);
-  --ds-color-gray0-at-32: rgba(252, 252, 252, 0.32);
-  --ds-color-gray0-at-60: rgba(252, 252, 252, 0.60);
+  --ds-color-gray-0-at-24: rgba(252, 252, 252, 0.24);
+  --ds-color-gray-0-at-32: rgba(252, 252, 252, 0.32);
+  --ds-color-gray-0-at-60: rgba(252, 252, 252, 0.60);
   --ds-color-eggshell-0: #FBFAF9;
   --ds-color-eggshell-10: #F7F5F2;
   --ds-color-eggshell-20: #ECEBE7;
@@ -67,6 +68,7 @@
   --ds-color-eggshell-80: #30302F;
   --ds-color-eggshell-90: #242323;
   --ds-color-eggshell-100: #171716;
+  --ds-color-eggshell-90-at-96: rgba(36, 35, 35, 0.96);
   --ds-color-blossom-0: #FBF7FF;
   --ds-color-blossom-10: #F5EDFF;
   --ds-color-blossom-20: #EADAFD;
@@ -339,6 +341,9 @@
   --ds-color-pondwater-10-at-80: rgba(230, 246, 255, 0.80);
   --ds-color-pondwater-20-at-12: rgba(203, 234, 255, 0.12);
   --ds-color-pondwater-20-at-20: rgba(203, 234, 255, 0.20);
+  --ds-color-pondwater-30-at-8: rgba(161, 208, 247, 0.08);
+  --ds-color-pondwater-30-at-12: rgba(161, 208, 247, 0.12);
+  --ds-color-pondwater-30-at-16: rgba(161, 208, 247, 0.16);
   --ds-color-pondwater-40-at-12: rgba(117, 182, 235, 0.12);
   --ds-color-pondwater-40-at-20: rgba(117, 182, 235, 0.20);
   --ds-color-pondwater-60-at-9: rgba(16, 116, 204, 0.09);

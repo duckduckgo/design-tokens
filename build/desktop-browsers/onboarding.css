@@ -1,0 +1,40 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ * Source: https://github.com/duckduckgo/design-tokens
+ * Version: 0.12.0
+ * Last updated: February 24, 2026 at 04:56 AM
+ */
+
+.theme-light {
+  --ds-surface-backdrop: #ffffff;
+  --ds-surface-primary: #ecebe7;
+  --ds-surface-secondary: #f7f5f2;
+  --ds-surface-tertiary: #ffffff;
+  --ds-text-primary: rgba(36, 35, 35, 0.96);
+  --ds-accent-primary: #4397e0;
+  --ds-accent-secondary: #1074cc;
+  --ds-accent-primary-text-color: #1074cc;
+  --ds-accent-primary-content-color: #ffffff;
+  --ds-accent-alt-primary: #cbeaff;
+  --ds-accent-alt-glow-primary: rgba(161, 208, 247, 0.16);
+  --ds-accent-alt-glow-secondary: rgba(161, 208, 247, 0.08);
+  --ds-control-primary-border-color: rgba(0, 0, 0, 0.2);
+  --ds-shadow-secondary-color: rgba(0, 0, 0, 0.08);
+}
+
+.theme-dark {
+  --ds-surface-backdrop: #034180;
+  --ds-surface-primary: #034180;
+  --ds-surface-secondary: #02254d;
+  --ds-surface-tertiary: #01142d;
+  --ds-text-primary: #ffffff;
+  --ds-accent-primary: #75b6eb;
+  --ds-accent-secondary: #4397e0;
+  --ds-accent-primary-text-color: #75b6eb;
+  --ds-accent-primary-content-color: #282828;
+  --ds-accent-alt-primary: #034180;
+  --ds-accent-alt-glow-primary: rgba(161, 208, 247, 0.12);
+  --ds-accent-alt-glow-secondary: rgba(161, 208, 247, 0.08);
+  --ds-control-primary-border-color: rgba(255, 255, 255, 0.36);
+  --ds-shadow-secondary-color: rgba(0, 0, 0, 0.08);
+}
