@@ -146,16 +146,16 @@ const themeColors: DesignToken = {
             },
             highlight: {
                 primary: {
-                    $value: '{color.gray0At.24}',
+                    $value: '{color.gray.0At.24}',
                 },
             },
             tone: {
                 brightenPrimary: {
-                    $value: `{color.gray0At.32}`,
+                    $value: `{color.gray.0At.32}`,
                     comment: 'Maps to Tint-Primary in Figma',
                 },
                 brightenSecondary: {
-                    $value: `{color.gray0At.60}`,
+                    $value: `{color.gray.0At.60}`,
                     comment: 'Maps to Tint-Secondary in Figma',
                 },
                 darkenPrimary: {

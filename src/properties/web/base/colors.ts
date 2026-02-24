@@ -59,11 +59,11 @@ const colors: DesignToken = {
             100: { $value: '#181818' },
             // Gray gets an extra value for the 111 color, which is used as dark mode background color
             111: { $value: '#111111' },
-        },
-        gray0At: {
-            24: { $value: 'rgba(252, 252, 252, 0.24)' },
-            32: { $value: 'rgba(252, 252, 252, 0.32)' },
-            60: { $value: 'rgba(252, 252, 252, 0.60)' },
+            '0At': {
+                24: { $value: 'rgba(252, 252, 252, 0.24)' },
+                32: { $value: 'rgba(252, 252, 252, 0.32)' },
+                60: { $value: 'rgba(252, 252, 252, 0.60)' },
+            },
         },
         // Eggshell values are to be used similarly to the gray values, treat as warm neutrals
         eggshell: {
