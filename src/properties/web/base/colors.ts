@@ -9,12 +9,15 @@ const colors: DesignToken = {
         blackAt: {
             1: { $value: 'rgba(0, 0, 0, 0.01)' },
             3: { $value: 'rgba(0, 0, 0, 0.03)' },
+            5: { $value: 'rgba(0, 0, 0, 0.05)' },
             6: { $value: 'rgba(0, 0, 0, 0.06)' },
             8: { $value: 'rgba(0, 0, 0, 0.08)' },
             9: { $value: 'rgba(0, 0, 0, 0.09)' },
             12: { $value: 'rgba(0, 0, 0, 0.12)' },
             16: { $value: 'rgba(0, 0, 0, 0.16)' },
+            20: { $value: 'rgba(0, 0, 0, 0.20)' },
             24: { $value: 'rgba(0, 0, 0, 0.24)' },
+            28: { $value: 'rgba(0, 0, 0, 0.28)' },
             30: { $value: 'rgba(0, 0, 0, 0.30)' },
             32: { $value: 'rgba(0, 0, 0, 0.32)' },
             36: { $value: 'rgba(0, 0, 0, 0.36)' },
@@ -34,6 +37,7 @@ const colors: DesignToken = {
             9: { $value: 'rgba(255, 255, 255, 0.09)' },
             12: { $value: 'rgba(255, 255, 255, 0.12)' },
             18: { $value: 'rgba(255, 255, 255, 0.18)' },
+            20: { $value: 'rgba(255, 255, 255, 0.20)' },
             24: { $value: 'rgba(255, 255, 255, 0.24)' },
             36: { $value: 'rgba(255, 255, 255, 0.36)' },
             48: { $value: 'rgba(255, 255, 255, 0.48)' },
@@ -42,6 +46,7 @@ const colors: DesignToken = {
             66: { $value: 'rgba(255, 255, 255, 0.66)' },
             72: { $value: 'rgba(255, 255, 255, 0.72)' },
             80: { $value: 'rgba(255, 255, 255, 0.80)' },
+            84: { $value: 'rgba(255, 255, 255, 0.84)' },
             90: { $value: 'rgba(255, 255, 255, 0.90)' },
         },
         gray: {
@@ -58,6 +63,9 @@ const colors: DesignToken = {
             100: { $value: '#181818' },
             // Gray gets an extra value for the 111 color, which is used as dark mode background color
             111: { $value: '#111111' },
+            '80At': {
+                60: { $value: 'rgba(56, 56, 56, 0.60)' },
+            },
         },
         gray0At: {
             24: { $value: 'rgba(252, 252, 252, 0.24)' },
@@ -77,6 +85,20 @@ const colors: DesignToken = {
             80: { $value: '#30302F' },
             90: { $value: '#242323' },
             100: { $value: '#171716' },
+            '90At': {
+                1: { $value: 'rgba(36, 35, 35, 0.01)' },
+                3: { $value: 'rgba(36, 35, 35, 0.03)' },
+                6: { $value: 'rgba(36, 35, 35, 0.06)' },
+                9: { $value: 'rgba(36, 35, 35, 0.09)' },
+                12: { $value: 'rgba(36, 35, 35, 0.12)' },
+                16: { $value: 'rgba(36, 35, 35, 0.16)' },
+                24: { $value: 'rgba(36, 35, 35, 0.24)' },
+                36: { $value: 'rgba(36, 35, 35, 0.36)' },
+                40: { $value: 'rgba(36, 35, 35, 0.40)' },
+                60: { $value: 'rgba(36, 35, 35, 0.60)' },
+                84: { $value: 'rgba(36, 35, 35, 0.84)' },
+                96: { $value: 'rgba(36, 35, 35, 0.96)' },
+            },
         },
         // Colors
         blossom: {
