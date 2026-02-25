@@ -17,11 +17,13 @@ const onboardingTokens: DesignToken = {
                 tertiary: {
                     $value: '{color.white}',
                 },
-                decorationPrimary: {
-                    $value: '{color.blackAt.9}',
-                },
-                decorationSecondary: {
-                    $value: '{color.blackAt.16}',
+                decoration: {
+                    primary: {
+                        $value: '{color.blackAt.9}',
+                    },
+                    secondary: {
+                        $value: '{color.blackAt.16}',
+                    },
                 },
             },
             text: {
@@ -52,11 +54,13 @@ const onboardingTokens: DesignToken = {
                 primaryBorderColor: {
                     $value: '{color.blackAt.20}',
                 },
-                primaryFillColor: {
+                primaryBackgroundColor: {
                     $value: '{color.blackAt.6}',
+                    comment: 'Maps to Fill-Primary in Figma',
                 },
-                secondaryFillColor: {
+                secondaryBackgroundColor: {
                     $value: '{color.blackAt.9}',
+                    comment: 'Maps to Fill-Secondary in Figma',
                 },
             },
             shadow: {
@@ -79,11 +83,13 @@ const onboardingTokens: DesignToken = {
                 tertiary: {
                     $value: '{color.pondwater.100}',
                 },
-                decorationPrimary: {
-                    $value: '{color.whiteAt.6}',
-                },
-                decorationSecondary: {
-                    $value: '{color.whiteAt.9}',
+                decoration: {
+                    primary: {
+                        $value: '{color.whiteAt.6}',
+                    },
+                    secondary: {
+                        $value: '{color.whiteAt.9}',
+                    },
                 },
             },
             text: {
@@ -114,11 +120,13 @@ const onboardingTokens: DesignToken = {
                 primaryBorderColor: {
                     $value: '{color.whiteAt.36}',
                 },
-                primaryFillColor: {
+                primaryBackgroundColor: {
                     $value: '{color.whiteAt.12}',
+                    comment: 'Maps to Fill-Primary in Figma',
                 },
-                secondaryFillColor: {
+                secondaryBackgroundColor: {
                     $value: '{color.whiteAt.18}',
+                    comment: 'Maps to Fill-Secondary in Figma',
                 },
             },
             shadow: {
