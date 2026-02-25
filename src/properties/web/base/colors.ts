@@ -79,6 +79,7 @@ const colors: DesignToken = {
             90: { $value: '#242323' },
             100: { $value: '#171716' },
             '90At': {
+                60: { $value: 'rgba(36, 35, 35, 0.60)' },
                 96: { $value: 'rgba(36, 35, 35, 0.96)' },
             },
         },
