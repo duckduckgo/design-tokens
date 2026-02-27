@@ -554,9 +554,9 @@ const motifColors: DesignToken = {
                 },
             },
             accent: {
-                primary: { $value: '{color.pollen.40}' },
-                secondary: { $value: '{color.pollen.50}' },
-                tertiary: { $value: '{color.pollen.60}' },
+                primary: { $value: '{color.pollen.20}' },
+                secondary: { $value: '{color.pollen.30}' },
+                tertiary: { $value: '{color.pollen.40}' },
                 quaternary: { $value: '{color.pollen.100}' },
                 glowPrimary: { $value: '{color.pollen.40At.20}' },
                 glowSecondary: { $value: '{color.pollen.40At.12}' },
