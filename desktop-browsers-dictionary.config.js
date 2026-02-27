@@ -1,12 +1,19 @@
 import { transformGroups, logBrokenReferenceLevels, logVerbosityLevels, logWarningLevels } from 'style-dictionary/enums';
 import cssVariablesShadowDom from './src/formats/css-variables-shadow-dom.js';
+import onboardingThemeClasses from './src/formats/css-onboarding-theme-classes.js';
 import fileHeader from './dist/src/utils/file-header.js';
 
 export default {
-    source: ['dist/src/properties/web/serp/sds-colors.js', 'dist/src/properties/web/desktop-browsers/theme.js'],
+    source: [
+        'dist/src/properties/web/serp/sds-colors.js',
+        'dist/src/properties/web/desktop-browsers/theme.js',
+        'dist/src/properties/web/base/colors.{js,json}',
+        'dist/src/properties/web/desktop-browsers/onboarding.{js,json}',
+    ],
     hooks: {
         formats: {
             'css/variables-shadow-dom': cssVariablesShadowDom,
+            'onboarding-theme-classes': onboardingThemeClasses,
         },
     },
     log: {
@@ -25,8 +32,17 @@ export default {
                 {
                     destination: 'desktop-browsers/tokens.css',
                     format: 'css/variables-shadow-dom',
+                    filter: (token) => !token.filePath?.includes('base/colors'),
                     options: {
                         outputReferences: true,
+                        showFileHeader: true,
+                    },
+                },
+                {
+                    destination: 'desktop-browsers/onboarding.css',
+                    format: 'onboarding-theme-classes',
+                    options: {
+                        outputReferences: false,
                         showFileHeader: true,
                     },
                 },
