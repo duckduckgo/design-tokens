@@ -63,9 +63,9 @@ export default {
                 {
                     destination: 'static-pages/tokens.scss',
                     format: formats.cssVariables,
-                    // options: {
-                    //     outputReferences: true,
-                    // },
+                    options: {
+                        showFileHeader: true,
+                    },
                 },
                 {
                     destination: 'static-pages/tokens.json',

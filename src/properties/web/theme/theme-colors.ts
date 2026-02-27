@@ -77,7 +77,7 @@ const themeColors: DesignToken = {
             },
             icons: {
                 primary: {
-                    $value: '{color.blackAt.84}',
+                    $value: '{color.blackAt.96}',
                 },
                 secondary: {
                     $value: '{color.blackAt.60}',
@@ -210,7 +210,7 @@ const themeColors: DesignToken = {
                 },
             },
             status: {
-                green: { $value: `{color.green40}` },
+                green: { $value: `{color.green.40}` },
                 yellow: { $value: '{color.pollen.40}' },
                 red: { $value: '{color.red.50}' },
             },
@@ -408,7 +408,7 @@ const themeColors: DesignToken = {
                 },
             },
             status: {
-                green: { $value: `{color.green40}` },
+                green: { $value: `{color.green.40}` },
                 yellow: { $value: '{color.pollen.40}' },
                 red: { $value: '{color.red.50}' },
             },
