@@ -86,21 +86,16 @@ export default async function themeColorsClasses({ dictionary, file, options, pl
                 const match = line.match(/^(\s*)(--[^:]+):\s*(.+);/);
                 if (!match) return line;
 
-                const [, indent, fullVarName] = match;
+                const [, indent, fullVarName, resolvedValue] = match;
 
                 // Create short variable name (remove theme-light/theme-dark)
                 const shortVarName = fullVarName.replace(themePattern, shortPrefix);
-
-                // Replace value to reference the full theme variable name
-                // The value might be a resolved reference like "var(--ds-color-white)" or a direct value
-                // We want to replace it with a reference to the full theme variable
-                const newValue = `var(${fullVarName})`;
 
                 // Preserve comments if present
                 const commentMatch = line.match(/;\s*(\/\*.*\*\/)/);
                 const comment = commentMatch ? ` ${commentMatch[1]}` : '';
 
-                return `${indent}${shortVarName}: ${newValue};${comment}`;
+                return `${indent}${shortVarName}: ${resolvedValue};${comment}`;
             })
             .join('\n');
     }
@@ -181,7 +176,7 @@ export default async function themeColorsClasses({ dictionary, file, options, pl
                     return '';
                 }
 
-                const [, , fullMotifVarName] = match;
+                const [, , fullMotifVarName, resolvedValue] = match;
 
                 // Extract the path from the motif variable name
                 // e.g., --ds-motif-blossom-light-surface-backdrop -> surface-backdrop
@@ -197,15 +192,12 @@ export default async function themeColorsClasses({ dictionary, file, options, pl
                 // Use the short name from base theme (same as base theme uses)
                 const shortVarName = baseToken.shortName;
 
-                // Reference the full motif variable name
-                const newValue = `var(${fullMotifVarName})`;
-
                 // Preserve comments if present
                 const commentMatch = line.match(/;\s*(\/\*.*\*\/)/);
                 const comment = commentMatch ? ` ${commentMatch[1]}` : '';
 
                 // Use consistent indentation (4 spaces for nested class content)
-                return `    ${shortVarName}: ${newValue};${comment}`;
+                return `    ${shortVarName}: ${resolvedValue};${comment}`;
             })
             .filter((line) => line.trim() !== '') // Remove empty lines
             .join('\n');

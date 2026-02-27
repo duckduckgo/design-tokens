@@ -3,8 +3,9 @@ import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import themeColorsClasses from './src/formats/sp-theme-colors-classes.js';
-import componentScss from './src/formats/component-scss.js';
-import breakpointsScss from './src/formats/breakpoints-scss.js';
+import componentScss from './src/formats/sp-component-scss.js';
+import breakpointsScss from './src/formats/sp-breakpoints-scss.js';
+import spBaseTokens from './src/formats/sp-base-tokens.js';
 import fileHeader from './dist/src/utils/file-header.js';
 
 // Get directory path for ES modules
@@ -35,6 +36,7 @@ export default {
             'theme-colors-classes': themeColorsClasses,
             'component-scss': componentScss,
             'breakpoints-scss': breakpointsScss,
+            'sp-base-tokens': spBaseTokens,
         },
     },
     source: [
@@ -61,9 +63,9 @@ export default {
                 {
                     destination: 'static-pages/tokens.scss',
                     format: formats.cssVariables,
-                    // options: {
-                    //     outputReferences: true,
-                    // },
+                    options: {
+                        showFileHeader: true,
+                    },
                 },
                 {
                     destination: 'static-pages/tokens.json',
@@ -73,7 +75,6 @@ export default {
                     destination: 'static-pages/theme-colors.scss',
                     format: 'theme-colors-classes',
                     options: {
-                        outputReferences: true,
                         showFileHeader: true,
                     },
                 },
@@ -82,6 +83,45 @@ export default {
                     format: 'breakpoints-scss',
                     options: {
                         showFileHeader: true,
+                    },
+                },
+                {
+                    destination: 'static-pages/colors.scss',
+                    format: 'sp-base-tokens',
+                    options: {
+                        showFileHeader: true,
+                        sections: [{ pathPrefix: 'color', comment: 'Color values' }],
+                    },
+                },
+                {
+                    destination: 'static-pages/zindexes.scss',
+                    format: 'sp-base-tokens',
+                    options: {
+                        showFileHeader: true,
+                        sections: [{ pathPrefix: 'zIndex', comment: 'Z-index values' }],
+                    },
+                },
+                {
+                    destination: 'static-pages/spacing.scss',
+                    format: 'sp-base-tokens',
+                    options: {
+                        showFileHeader: true,
+                        sections: [
+                            { pathPrefix: 'space', comment: 'Spacing values' },
+                            { pathPrefix: 'radius', comment: 'Radius values' },
+                        ],
+                    },
+                },
+                {
+                    destination: 'static-pages/typography.scss',
+                    format: 'sp-base-tokens',
+                    options: {
+                        showFileHeader: true,
+                        outputReferences: true,
+                        sections: [
+                            { pathPrefix: 'font', comment: 'Font setup' },
+                            { pathPrefix: 'typography', comment: 'Typography values' },
+                        ],
                     },
                 },
                 ...componentFileEntries,

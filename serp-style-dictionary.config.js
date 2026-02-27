@@ -1,5 +1,5 @@
 import { formats, transformGroups, logBrokenReferenceLevels, logVerbosityLevels, logWarningLevels } from 'style-dictionary/enums';
-import themedJsonFormat from './src/formats/themed-json.js';
+import themedJsonFormat from './src/formats/serp-themed-json.js';
 import fileHeader from './dist/src/utils/file-header.js';
 
 export default {

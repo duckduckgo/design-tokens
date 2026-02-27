@@ -485,7 +485,9 @@ const colors: DesignToken = {
                 20: { $value: 'rgba(236, 67, 79, 0.20)' },
             },
         },
-        green40: { $value: '#39B25E' }, // status green
+        green: {
+            40: { $value: '#39B25E' }, // status green
+        },
     },
 };
 
