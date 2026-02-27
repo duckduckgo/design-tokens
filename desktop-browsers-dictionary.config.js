@@ -32,7 +32,8 @@ export default {
                 {
                     destination: 'desktop-browsers/tokens.css',
                     format: 'css/variables-shadow-dom',
-                    filter: (token) => !token.filePath?.includes('base/colors'),
+                    // Exclude base/colors and desktop-browsers/onboarding tokens
+                    filter: (token) => !token.filePath?.includes('base/colors') && !token.filePath?.includes('desktop-browsers/onboarding'),
                     options: {
                         outputReferences: true,
                         showFileHeader: true,
