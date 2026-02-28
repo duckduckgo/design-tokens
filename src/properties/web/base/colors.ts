@@ -56,7 +56,7 @@ const colors: DesignToken = {
             70: { $value: '#484848' },
             80: { $value: '#383838' },
             90: { $value: '#282828' },
-            100: { $value: '#181818' },
+            100: { $value: '#181817' },
             // Gray gets an extra value for the 111 color, which is used as dark mode background color
             111: { $value: '#111111' },
             '0At': {
