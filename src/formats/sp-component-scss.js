@@ -40,11 +40,11 @@ export default async function componentScss({ dictionary, file, options, platfor
         allTokens: componentTokens,
     };
 
-    // Format variables using formattedVariables (this handles reference resolution)
     const variables = formattedVariables({
         format: 'css',
         dictionary: componentDictionary,
         ...options,
+        outputReferences: false,
     });
 
     // Wrap variables in component class selector
