@@ -141,12 +141,6 @@ const button: DesignToken = {
                 $value: '{typography.buttonLabel.01.lineHeight}',
             },
         },
-        primary: {
-            rest: {
-                // colors will refer to the outputted themed tokens
-                backgroundColor: { $value: 'var(--ds-control-primary-background-color)' },
-            },
-        },
     },
 };
 export default button;
