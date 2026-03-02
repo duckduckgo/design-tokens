@@ -88,6 +88,8 @@ export default {
                 {
                     destination: 'static-pages/colors.scss',
                     format: 'sp-base-tokens',
+                    // Exclude rgba values only used for the themes and motifs
+                    filter: (token) => !token.filePath?.includes('theme/colors'),
                     options: {
                         showFileHeader: true,
                         sections: [{ pathPrefix: 'color', comment: 'Color values' }],
