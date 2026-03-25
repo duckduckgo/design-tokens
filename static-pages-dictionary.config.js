@@ -126,6 +126,14 @@ export default {
                         ],
                     },
                 },
+                {
+                    destination: 'static-pages/theme-and-motif.json',
+                    format: formats.jsonFlat,
+                    filter: (token) => token.filePath?.includes('theme-colors') || token.filePath?.includes('motif-colors'),
+                    options: {
+                        showFileHeader: true,
+                    },
+                },
                 ...componentFileEntries,
             ],
             options: {
