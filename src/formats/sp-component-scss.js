@@ -1,5 +1,5 @@
 /**
- * Custom Style Dictionary format that outputs component-specific tokens wrapped in a CSS class selector
+ * Custom Style Dictionary format that outputs component-specific tokens wrapped in a SCSS @mixin
  */
 import { fileHeader, formattedVariables } from 'style-dictionary/utils';
 
@@ -30,8 +30,7 @@ export default async function componentScss({ dictionary, file, options, platfor
     const componentTokens = dictionary.allTokens.filter((token) => token.path[0] === componentName || token.path[0] === componentNameCamel);
 
     if (componentTokens.length === 0) {
-        // Return empty class if no tokens found
-        return header + `.${componentName} {\n}\n`;
+        return header + `@mixin ${componentNameCamel} {\n}\n`;
     }
 
     // Create filtered dictionary for this component
@@ -47,8 +46,7 @@ export default async function componentScss({ dictionary, file, options, platfor
         outputReferences: false,
     });
 
-    // Wrap variables in component class selector
-    const output = header + `.${componentName} {\n${variables}\n}\n`;
+    const output = header + `@mixin ${componentNameCamel} {\n${variables}\n}\n`;
 
     return output;
 }
