@@ -1,5 +1,7 @@
 import { formats, transformGroups, logBrokenReferenceLevels, logVerbosityLevels, logWarningLevels } from 'style-dictionary/enums';
-import themedJsonFormat from './src/formats/serp-themed-json.js';
+import serpBaseTokensTs from './src/formats/serp-base-tokens-ts.js';
+import serpColorsTs from './src/formats/serp-colors-ts.js';
+import serpThemesTs from './src/formats/serp-themes-ts.js';
 import fileHeader from './dist/src/utils/file-header.js';
 
 export default {
@@ -12,7 +14,9 @@ export default {
     ],
     hooks: {
         formats: {
-            'themed-json': themedJsonFormat,
+            'serp-base-tokens-ts': serpBaseTokensTs,
+            'serp-colors-ts': serpColorsTs,
+            'serp-themes-ts': serpThemesTs,
         },
     },
     log: {
@@ -29,27 +33,80 @@ export default {
             buildPath: 'build/',
             files: [
                 {
-                    destination: 'serp/tokens.scss',
-                    format: formats.cssVariables,
-                    options: {
-                        outputReferences: true,
-                        showFileHeader: true,
-                    },
-                },
-                {
                     destination: 'serp/tokens.json',
                     format: formats.jsonFlat,
                     options: {
-                        outputReferences: true,
                         showFileHeader: true,
                     },
                 },
                 {
-                    destination: 'serp/tokens-themes.json',
-                    format: 'themed-json',
+                    destination: 'serp/space.ts',
+                    format: 'serp-base-tokens-ts',
                     options: {
-                        outputReferences: false,
-                        showFileHeader: false,
+                        showFileHeader: true,
+                        sections: [
+                            {
+                                pathPrefix: 'space',
+                                exportName: 'dsTokensSpace',
+                                typeName: 'DSTokenSpace',
+                                valueFormat: 'rem-calc',
+                            },
+                        ],
+                    },
+                },
+                {
+                    destination: 'serp/radius.ts',
+                    format: 'serp-base-tokens-ts',
+                    options: {
+                        sections: [
+                            {
+                                pathPrefix: 'radius',
+                                exportName: 'dsTokensRadius',
+                                typeName: 'DSTokenRadius',
+                                valueFormat: 'raw',
+                            },
+                        ],
+                    },
+                },
+                {
+                    destination: 'serp/color-palette.ts',
+                    format: 'serp-colors-ts',
+                    filter: (token) => !token.filePath?.includes('theme/colors'),
+                    options: {
+                        exportName: 'dsColorPalette',
+                        typeName: 'DSColorPalette',
+                    },
+                },
+                {
+                    destination: 'serp/colors-light.ts',
+                    format: 'serp-themes-ts',
+                    options: {
+                        variant: 'light',
+                        exportName: 'dsThemeColorsLight',
+                        typeName: 'DSThemeColorsLight',
+                    },
+                },
+                {
+                    destination: 'serp/colors-dark.ts',
+                    format: 'serp-themes-ts',
+                    options: {
+                        variant: 'dark',
+                        exportName: 'dsThemeColorsDark',
+                        typeName: 'DSThemeColorsDark',
+                    },
+                },
+                {
+                    destination: 'serp/zindex.ts',
+                    format: 'serp-base-tokens-ts',
+                    options: {
+                        sections: [
+                            {
+                                pathPrefix: 'zIndex',
+                                exportName: 'dsTokensZindex',
+                                typeName: 'DSTokenZindex',
+                                valueFormat: 'number',
+                            },
+                        ],
                     },
                 },
             ],

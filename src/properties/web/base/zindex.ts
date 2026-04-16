@@ -5,6 +5,8 @@ const Zindexes: DesignToken = {
     zIndex: {
         hidden: { $type: 'other', $value: -999 },
         default: { $type: 'other', $value: 1 },
+        'middle-raised': { $type: 'other', $value: 50 },
+        sticky: { $type: 'other', $value: 55 },
         popover: { $type: 'other', $value: 100 },
         'side-menu': { $type: 'other', $value: 200 },
         'modal-backdrop': { $type: 'other', $value: 300 },
