@@ -6,6 +6,7 @@ import fileHeader from './dist/src/utils/file-header.js';
 export default {
     source: [
         'dist/src/properties/web/serp-legacy/sds-colors.js',
+        'dist/src/properties/web/theme/colors.js',
         'dist/src/properties/web/desktop-browsers/theme.js',
         'dist/src/properties/web/base/colors.{js,json}',
         'dist/src/properties/web/desktop-browsers/onboarding.{js,json}',
@@ -33,7 +34,10 @@ export default {
                     destination: 'desktop-browsers/tokens.css',
                     format: 'css/variables-shadow-dom',
                     // Exclude base/colors and desktop-browsers/onboarding tokens
-                    filter: (token) => !token.filePath?.includes('base/colors') && !token.filePath?.includes('desktop-browsers/onboarding'),
+                    filter: (token) =>
+                        !token.filePath?.includes('base/colors') &&
+                        !token.filePath?.includes('desktop-browsers/onboarding') &&
+                        !token.filePath?.includes('theme/colors'),
                     options: {
                         outputReferences: true,
                         showFileHeader: true,
