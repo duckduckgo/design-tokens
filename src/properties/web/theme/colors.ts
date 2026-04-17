@@ -4,6 +4,19 @@ import { DesignToken } from 'style-dictionary/types';
 
 const supportColors: DesignToken = {
     color: {
+        gray: {
+            '0At': {
+                24: { $value: 'rgba(252, 252, 252, 0.24)' },
+                32: { $value: 'rgba(252, 252, 252, 0.32)' },
+                60: { $value: 'rgba(252, 252, 252, 0.60)' },
+            },
+        },
+        eggshell: {
+            '90At': {
+                60: { $value: 'rgba(36, 35, 35, 0.60)' },
+                96: { $value: 'rgba(36, 35, 35, 0.96)' },
+            },
+        },
         blossom: {
             '0At': {
                 3: { $value: 'rgba(251, 247, 255, 0.03)' },
@@ -294,6 +307,11 @@ const supportColors: DesignToken = {
                 12: { $value: 'rgba(203, 234, 255, 0.12)' },
                 20: { $value: 'rgba(203, 234, 255, 0.20)' },
             },
+            '30At': {
+                8: { $value: 'rgba(161, 208, 247, 0.08)' },
+                12: { $value: 'rgba(161, 208, 247, 0.12)' },
+                16: { $value: 'rgba(161, 208, 247, 0.16)' },
+            },
             '40At': {
                 12: { $value: 'rgba(117, 182, 235, 0.12)' },
                 20: { $value: 'rgba(117, 182, 235, 0.20)' },
@@ -325,6 +343,12 @@ const supportColors: DesignToken = {
                 66: { $value: 'rgba(1, 20, 45, 0.66)' },
                 72: { $value: 'rgba(1, 20, 45, 0.72)' },
                 96: { $value: 'rgba(1, 20, 45, 0.96)' },
+            },
+        },
+        red: {
+            '50At': {
+                12: { $value: 'rgba(236, 67, 79, 0.12)' },
+                20: { $value: 'rgba(236, 67, 79, 0.20)' },
             },
         },
     },

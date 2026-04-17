@@ -59,11 +59,6 @@ const colors: DesignToken = {
             100: { $value: '#181818' },
             // Gray gets an extra value for the 111 color, which is used as dark mode background color
             111: { $value: '#111111' },
-            '0At': {
-                24: { $value: 'rgba(252, 252, 252, 0.24)' },
-                32: { $value: 'rgba(252, 252, 252, 0.32)' },
-                60: { $value: 'rgba(252, 252, 252, 0.60)' },
-            },
         },
         // Eggshell values are to be used similarly to the gray values, treat as warm neutrals
         eggshell: {
@@ -78,10 +73,6 @@ const colors: DesignToken = {
             80: { $value: '#30302F' },
             90: { $value: '#242323' },
             100: { $value: '#181817' },
-            '90At': {
-                60: { $value: 'rgba(36, 35, 35, 0.60)' },
-                96: { $value: 'rgba(36, 35, 35, 0.96)' },
-            },
         },
         // Colors
         blossom: {
@@ -148,11 +139,6 @@ const colors: DesignToken = {
             80: { $value: '#034180' },
             90: { $value: '#02254D' },
             100: { $value: '#01142D' },
-            '30At': {
-                8: { $value: 'rgba(161, 208, 247, 0.08)' },
-                12: { $value: 'rgba(161, 208, 247, 0.12)' },
-                16: { $value: 'rgba(161, 208, 247, 0.16)' },
-            },
         },
         red: {
             0: { $value: '#FEF9FA' },
@@ -166,10 +152,6 @@ const colors: DesignToken = {
             80: { $value: '#671421' },
             90: { $value: '#46111C' },
             100: { $value: '#2A0C14' },
-            '50At': {
-                12: { $value: 'rgba(236, 67, 79, 0.12)' },
-                20: { $value: 'rgba(236, 67, 79, 0.20)' },
-            },
         },
         green: {
             40: { $value: '#39B25E' }, // status green
