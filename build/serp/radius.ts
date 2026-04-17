@@ -1,0 +1,23 @@
+
+// Do not edit directly, this file was auto-generated.
+// Source: https://github.com/duckduckgo/design-tokens
+// Version: 0.19.0
+// Last updated: April 17, 2026 at 06:11 PM
+
+export const dsTokensRadius = {
+    '--ds-radius-full': '999px',
+    '--ds-radius-x01': '4px',
+    '--ds-radius-x02': '8px',
+    '--ds-radius-x03': '12px',
+    '--ds-radius-x04': '16px',
+    '--ds-radius-x05': '20px',
+    '--ds-radius-x06': '24px',
+    '--ds-radius-x07': '28px',
+    '--ds-radius-x08': '32px',
+    '--ds-radius-x09': '36px',
+    '--ds-radius-x10': '40px',
+    '--ds-radius-x11': '44px',
+    '--ds-radius-x12': '48px',
+} as const;
+
+export type DSTokenRadius = typeof dsTokensRadius;

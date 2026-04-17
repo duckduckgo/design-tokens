@@ -15,11 +15,20 @@ const spacing: DesignToken = {
         x02: {
             $value: '8px',
         },
+        x02_5: {
+            $value: '10px',
+        },
         x03: {
             $value: '12px',
         },
+        x03_5: {
+            $value: '14px',
+        },
         x04: {
             $value: '16px',
+        },
+        x04_5: {
+            $value: '18px',
         },
         x05: {
             $value: '20px',
@@ -84,9 +93,6 @@ const spacing: DesignToken = {
         x56: {
             $value: '224px',
         },
-        x60: {
-            $value: '240px',
-        },
         x64: {
             $value: '256px',
         },
@@ -99,6 +105,9 @@ const spacing: DesignToken = {
         x90: {
             $value: '360px',
         },
+        x96: {
+            $value: '384px',
+        },
         x100: {
             $value: '400px',
         },
@@ -108,47 +117,8 @@ const spacing: DesignToken = {
         x130: {
             $value: '520px',
         },
-        x142: {
-            $value: '568px',
-        },
-        x145: {
-            $value: '580px',
-        },
-        x150: {
-            $value: '600px',
-        },
-        x155: {
-            $value: '620px',
-        },
-        x160: {
-            $value: '640px',
-        },
-        x170: {
-            $value: '680px',
-        },
         x175: {
             $value: '700px',
-        },
-        x180: {
-            $value: '720px',
-        },
-        x192: {
-            $value: '768px',
-        },
-        x210: {
-            $value: '840px',
-        },
-        x220: {
-            $value: '880px',
-        },
-        x240: {
-            $value: '960px',
-        },
-        x242: {
-            $value: '968px',
-        },
-        x256: {
-            $value: '1024px',
         },
     },
 };

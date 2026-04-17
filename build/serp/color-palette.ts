@@ -1,0 +1,165 @@
+
+// Do not edit directly, this file was auto-generated.
+// Source: https://github.com/duckduckgo/design-tokens
+// Version: 0.19.0
+// Last updated: April 17, 2026 at 06:11 PM
+
+export const dsColorPalette = {
+    /** BLACK */
+    '--ds-color-black': '#000000',
+
+    /** BLACK-AT */
+    '--ds-color-black-at-1': 'rgba(0, 0, 0, 0.01)',
+    '--ds-color-black-at-3': 'rgba(0, 0, 0, 0.03)',
+    '--ds-color-black-at-6': 'rgba(0, 0, 0, 0.06)',
+    '--ds-color-black-at-8': 'rgba(0, 0, 0, 0.08)',
+    '--ds-color-black-at-9': 'rgba(0, 0, 0, 0.09)',
+    '--ds-color-black-at-12': 'rgba(0, 0, 0, 0.12)',
+    '--ds-color-black-at-16': 'rgba(0, 0, 0, 0.16)',
+    '--ds-color-black-at-20': 'rgba(0, 0, 0, 0.20)',
+    '--ds-color-black-at-24': 'rgba(0, 0, 0, 0.24)',
+    '--ds-color-black-at-30': 'rgba(0, 0, 0, 0.30)',
+    '--ds-color-black-at-32': 'rgba(0, 0, 0, 0.32)',
+    '--ds-color-black-at-36': 'rgba(0, 0, 0, 0.36)',
+    '--ds-color-black-at-48': 'rgba(0, 0, 0, 0.48)',
+    '--ds-color-black-at-60': 'rgba(0, 0, 0, 0.60)',
+    '--ds-color-black-at-66': 'rgba(0, 0, 0, 0.66)',
+    '--ds-color-black-at-72': 'rgba(0, 0, 0, 0.72)',
+    '--ds-color-black-at-84': 'rgba(0, 0, 0, 0.84)',
+    '--ds-color-black-at-90': 'rgba(0, 0, 0, 0.90)',
+    '--ds-color-black-at-96': 'rgba(0, 0, 0, 0.96)',
+
+    /** WHITE */
+    '--ds-color-white': '#ffffff',
+
+    /** WHITE-AT */
+    '--ds-color-white-at-1': 'rgba(255, 255, 255, 0.01)',
+    '--ds-color-white-at-3': 'rgba(255, 255, 255, 0.03)',
+    '--ds-color-white-at-6': 'rgba(255, 255, 255, 0.06)',
+    '--ds-color-white-at-9': 'rgba(255, 255, 255, 0.09)',
+    '--ds-color-white-at-12': 'rgba(255, 255, 255, 0.12)',
+    '--ds-color-white-at-18': 'rgba(255, 255, 255, 0.18)',
+    '--ds-color-white-at-24': 'rgba(255, 255, 255, 0.24)',
+    '--ds-color-white-at-36': 'rgba(255, 255, 255, 0.36)',
+    '--ds-color-white-at-48': 'rgba(255, 255, 255, 0.48)',
+    '--ds-color-white-at-60': 'rgba(255, 255, 255, 0.60)',
+    '--ds-color-white-at-64': 'rgba(255, 255, 255, 0.64)',
+    '--ds-color-white-at-66': 'rgba(255, 255, 255, 0.66)',
+    '--ds-color-white-at-72': 'rgba(255, 255, 255, 0.72)',
+    '--ds-color-white-at-80': 'rgba(255, 255, 255, 0.80)',
+    '--ds-color-white-at-90': 'rgba(255, 255, 255, 0.90)',
+
+    /** GRAY */
+    '--ds-color-gray-0': '#fcfcfc',
+    '--ds-color-gray-10': '#f5f5f5',
+    '--ds-color-gray-20': '#e5e5e5',
+    '--ds-color-gray-30': '#c5c5c5',
+    '--ds-color-gray-40': '#aaaaaa',
+    '--ds-color-gray-50': '#888888',
+    '--ds-color-gray-60': '#686868',
+    '--ds-color-gray-70': '#484848',
+    '--ds-color-gray-80': '#383838',
+    '--ds-color-gray-90': '#282828',
+    '--ds-color-gray-100': '#181818',
+    '--ds-color-gray-111': '#111111',
+
+    /** EGGSHELL */
+    '--ds-color-eggshell-0': '#FBFAF9',
+    '--ds-color-eggshell-10': '#F7F5F2',
+    '--ds-color-eggshell-20': '#ECEBE7',
+    '--ds-color-eggshell-30': '#D1CECB',
+    '--ds-color-eggshell-40': '#B2B0AD',
+    '--ds-color-eggshell-50': '#8A8886',
+    '--ds-color-eggshell-60': '#6B6968',
+    '--ds-color-eggshell-70': '#454443',
+    '--ds-color-eggshell-80': '#30302F',
+    '--ds-color-eggshell-90': '#242323',
+    '--ds-color-eggshell-100': '#181817',
+
+    /** BLOSSOM */
+    '--ds-color-blossom-0': '#FBF7FF',
+    '--ds-color-blossom-10': '#F5EDFF',
+    '--ds-color-blossom-20': '#EADAFD',
+    '--ds-color-blossom-30': '#D3B9EB',
+    '--ds-color-blossom-40': '#C19EDB',
+    '--ds-color-blossom-50': '#9F6EB8',
+    '--ds-color-blossom-60': '#7D4794',
+    '--ds-color-blossom-70': '#682A7A',
+    '--ds-color-blossom-80': '#521A61',
+    '--ds-color-blossom-90': '#3E0E47',
+    '--ds-color-blossom-100': '#230829',
+
+    /** LILYPAD */
+    '--ds-color-lilypad-0': '#F8FCF9',
+    '--ds-color-lilypad-10': '#E2F3E9',
+    '--ds-color-lilypad-20': '#CFEBDA',
+    '--ds-color-lilypad-30': '#AED5C2',
+    '--ds-color-lilypad-40': '#84BBA8',
+    '--ds-color-lilypad-50': '#589D88',
+    '--ds-color-lilypad-60': '#247A64',
+    '--ds-color-lilypad-70': '#11604D',
+    '--ds-color-lilypad-80': '#0A4739',
+    '--ds-color-lilypad-90': '#052F25',
+    '--ds-color-lilypad-100': '#082119',
+
+    /** MANDARIN */
+    '--ds-color-mandarin-0': '#FFFAF9',
+    '--ds-color-mandarin-10': '#FFEBE5',
+    '--ds-color-mandarin-20': '#FFDACC',
+    '--ds-color-mandarin-30': '#FFB294',
+    '--ds-color-mandarin-40': '#FF8D5C',
+    '--ds-color-mandarin-50': '#F05F2B',
+    '--ds-color-mandarin-60': '#CC3B0A',
+    '--ds-color-mandarin-70': '#9E2B08',
+    '--ds-color-mandarin-80': '#671907',
+    '--ds-color-mandarin-90': '#47140B',
+    '--ds-color-mandarin-100': '#290E0A',
+
+    /** POLLEN */
+    '--ds-color-pollen-0': '#FFFBF0',
+    '--ds-color-pollen-10': '#FEF4DA',
+    '--ds-color-pollen-20': '#FFEAB8',
+    '--ds-color-pollen-30': '#FFD885',
+    '--ds-color-pollen-40': '#FFC95C',
+    '--ds-color-pollen-50': '#FAB341',
+    '--ds-color-pollen-60': '#F5A031',
+    '--ds-color-pollen-70': '#B66A1F',
+    '--ds-color-pollen-80': '#783B13',
+    '--ds-color-pollen-90': '#47210A',
+    '--ds-color-pollen-100': '#240F04',
+
+    /** PONDWATER */
+    '--ds-color-pondwater-0': '#F5FBFE',
+    '--ds-color-pondwater-10': '#E6F6FF',
+    '--ds-color-pondwater-20': '#CBEAFF',
+    '--ds-color-pondwater-30': '#A1D0F7',
+    '--ds-color-pondwater-40': '#75B6EB',
+    '--ds-color-pondwater-50': '#4397E0',
+    '--ds-color-pondwater-60': '#1074CC',
+    '--ds-color-pondwater-70': '#045EB2',
+    '--ds-color-pondwater-80': '#034180',
+    '--ds-color-pondwater-90': '#02254D',
+    '--ds-color-pondwater-100': '#01142D',
+
+    /** RED */
+    '--ds-color-red-0': '#FEF9FA',
+    '--ds-color-red-10': '#FCECF0',
+    '--ds-color-red-20': '#FAD8DC',
+    '--ds-color-red-30': '#F7AAAD',
+    '--ds-color-red-40': '#F06565',
+    '--ds-color-red-50': '#EC434F',
+    '--ds-color-red-60': '#CA2B3D',
+    '--ds-color-red-70': '#A02231',
+    '--ds-color-red-80': '#671421',
+    '--ds-color-red-90': '#46111C',
+    '--ds-color-red-100': '#2A0C14',
+
+    /** GREEN */
+    '--ds-color-green-40': '#39B25E',
+} as const;
+
+export type DSColorPalette = typeof dsColorPalette;
+
+export type DSColorPaletteValues = DSColorPalette[keyof DSColorPalette];
+
+export type DSColorPaletteKeys = keyof DSColorPalette;
