@@ -1,3 +1,5 @@
+import { fileHeader } from 'style-dictionary/utils';
+
 /**
  * Custom Style Dictionary format that outputs theme-variant TypeScript files
  * with a flat `as const` object of CSS custom properties and derived type exports.
@@ -10,7 +12,7 @@
  *   exportName: string            – exported const name  (default: 'dsThemeColors')
  *   typeName:   string            – exported type prefix  (default: 'DSThemeColors')
  */
-export default function serpThemesTs({ dictionary, platform, options }) {
+export default async function serpThemesTs({ dictionary, platform, file, options }) {
     const prefix = platform?.prefix || 'ds';
     const { variant = 'light', exportName = 'dsThemeColors', typeName = 'DSThemeColors' } = options;
 
@@ -48,7 +50,8 @@ export default function serpThemesTs({ dictionary, platform, options }) {
         groups.get(category).push(token);
     }
 
-    const lines = [`export const ${exportName} = {`];
+    const header = await fileHeader({ file, commentStyle: 'short' });
+    const lines = [header + `export const ${exportName} = {`];
 
     let first = true;
     for (const [category, tokens] of groups) {

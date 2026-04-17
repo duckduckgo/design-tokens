@@ -1,3 +1,5 @@
+import { fileHeader } from 'style-dictionary/utils';
+
 /**
  * Custom Style Dictionary format that outputs TypeScript const objects
  * with `as const` assertions and derived type exports.
@@ -7,13 +9,14 @@
  *     pathPrefix:  string  – first path element to filter tokens (e.g. 'space')
  *     exportName:  string  – exported const name        (e.g. 'dsTokensSpace')
  *     typeName:    string  – exported type alias name    (e.g. 'DSTokenSpace')
- *     valueFormat: 'rem-calc' | 'number' | 'raw'
+ *     valueFormat: 'rem' | 'rem-calc' | 'number' | 'raw'
+ *       - rem      : converts pixel values to rem with a px comment (e.g. '0.5rem', // 8px)
  *       - rem-calc : wraps pixel values in calc(N * var(--<prefix>-base-px-in-rem))
  *       - number   : outputs the numeric value without quotes
  *       - raw      : outputs the resolved value as a string (default)
  *   }>
  */
-export default function serpBaseTokensTs({ dictionary, platform, options }) {
+export default async function serpBaseTokensTs({ dictionary, platform, file, options }) {
     const prefix = platform?.prefix || 'sds';
     const { sections = [] } = options;
 
@@ -33,6 +36,11 @@ export default function serpBaseTokensTs({ dictionary, platform, options }) {
         const originalValue = token.original?.$value ?? token.value;
 
         switch (section.valueFormat) {
+            case 'rem': {
+                const px = parseInt(String(originalValue), 10);
+                const rem = px / 16;
+                return { value: `'${rem}rem'`, comment: `${px}px` };
+            }
             case 'rem-calc': {
                 const px = parseInt(String(originalValue), 10);
                 return `'calc(${px} * var(--${prefix}-base-px-in-rem))'`;
@@ -52,8 +60,11 @@ export default function serpBaseTokensTs({ dictionary, platform, options }) {
 
             const entries = tokens.map((token) => {
                 const name = buildName(token);
-                const value = formatValue(token, section);
-                return `    '${name}': ${value},`;
+                const result = formatValue(token, section);
+                if (typeof result === 'object') {
+                    return `    '${name}': ${result.value}, // ${result.comment}`;
+                }
+                return `    '${name}': ${result},`;
             });
 
             return [
@@ -66,5 +77,6 @@ export default function serpBaseTokensTs({ dictionary, platform, options }) {
         })
         .filter(Boolean);
 
-    return blocks.join('\n\n') + '\n';
+    const header = await fileHeader({ file, commentStyle: 'short' });
+    return header + blocks.join('\n\n') + '\n';
 }

@@ -49,7 +49,7 @@ export default {
                                 pathPrefix: 'space',
                                 exportName: 'dsTokensSpace',
                                 typeName: 'DSTokenSpace',
-                                valueFormat: 'rem-calc',
+                                valueFormat: 'rem',
                             },
                         ],
                     },

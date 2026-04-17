@@ -1,4 +1,5 @@
-import { formats, transformGroups, logBrokenReferenceLevels, logVerbosityLevels, logWarningLevels } from 'style-dictionary/enums';
+import { transformGroups, logBrokenReferenceLevels, logVerbosityLevels, logWarningLevels } from 'style-dictionary/enums';
+import duckaiExtraColorsTs from './src/formats/duckai-extracolors-ts.js';
 import fileHeader from './dist/src/utils/file-header.js';
 
 export default {
@@ -11,7 +12,9 @@ export default {
         'dist/src/properties/web/duckai/*.{js,json}',
     ],
     hooks: {
-        formats: {},
+        formats: {
+            'duckai-extracolors-ts': duckaiExtraColorsTs,
+        },
     },
     log: {
         warnings: logWarningLevels.warn, // 'warn' | 'error' | 'disabled'
@@ -22,24 +25,19 @@ export default {
     },
     platforms: {
         duckai: {
-            prefix: 'ds',
+            prefix: 'duckai',
             transformGroup: transformGroups.css,
             buildPath: 'build/',
             files: [
                 {
-                    destination: 'duckai/tokens.scss',
-                    format: formats.cssVariables,
+                    destination: 'duckai/extra-colors.ts',
+                    format: 'duckai-extracolors-ts',
+                    filter: (token) => token.filePath?.includes('/duckai/'),
                     options: {
-                        outputReferences: true,
                         showFileHeader: true,
-                    },
-                },
-                {
-                    destination: 'duckai/tokens.json',
-                    format: formats.jsonFlat,
-                    options: {
-                        outputReferences: true,
-                        showFileHeader: true,
+                        refPrefix: 'ds',
+                        exportName: 'duckaiExtraColors',
+                        typeName: 'DuckaiExtraColors',
                     },
                 },
             ],

@@ -1,3 +1,5 @@
+import { fileHeader } from 'style-dictionary/utils';
+
 /**
  * Custom Style Dictionary format that outputs a color-palette TypeScript file
  * with a flat `as const` object of CSS custom properties and derived type exports.
@@ -8,7 +10,7 @@
  *   exportName: string – exported const name   (default: 'dsColorPalette')
  *   typeName:   string – exported type prefix   (default: 'DSColorPalette')
  */
-export default function serpColorsTs({ dictionary, platform, options }) {
+export default async function serpColorsTs({ dictionary, platform, file, options }) {
     const prefix = platform?.prefix || 'sds';
     const { exportName = 'dsColorPalette', typeName = 'DSColorPalette' } = options;
 
@@ -32,7 +34,8 @@ export default function serpColorsTs({ dictionary, platform, options }) {
         groups.get(family).push(token);
     }
 
-    const lines = [`export const ${exportName} = {`];
+    const header = await fileHeader({ file, commentStyle: 'short' });
+    const lines = [header + `export const ${exportName} = {`];
 
     let first = true;
     for (const [family, tokens] of groups) {
