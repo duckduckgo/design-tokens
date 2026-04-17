@@ -3,10 +3,12 @@ import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import themeColorsClasses from './src/formats/sp-theme-colors-classes.js';
+import motifColorsClasses from './src/formats/sp-motif-colors-classes.js';
 import componentScss from './src/formats/sp-component-scss.js';
 import breakpointsScss from './src/formats/sp-breakpoints-scss.js';
 import spBaseTokens from './src/formats/sp-base-tokens.js';
 import fileHeader from './dist/src/utils/file-header.js';
+import motifColorTokens from './dist/src/properties/web/theme/motif-colors.js';
 
 // Get directory path for ES modules
 const __filename = fileURLToPath(import.meta.url);
@@ -30,10 +32,23 @@ const componentFileEntries = componentFiles.map((componentName) => ({
     },
 }));
 
+// Discover motif names from the compiled token source
+const motifNames = [...new Set(Object.keys(motifColorTokens.motif).map((key) => key.replace(/(Light|Dark)$/, '')))].sort();
+
+const motifFileEntries = motifNames.map((motifName) => ({
+    destination: `static-pages/motif-${motifName}.scss`,
+    format: 'motif-colors-classes',
+    options: {
+        motifName,
+        showFileHeader: true,
+    },
+}));
+
 export default {
     hooks: {
         formats: {
             'theme-colors-classes': themeColorsClasses,
+            'motif-colors-classes': motifColorsClasses,
             'component-scss': componentScss,
             'breakpoints-scss': breakpointsScss,
             'sp-base-tokens': spBaseTokens,
@@ -78,6 +93,7 @@ export default {
                         showFileHeader: true,
                     },
                 },
+
                 {
                     destination: 'static-pages/breakpoints.scss',
                     format: 'breakpoints-scss',
@@ -126,14 +142,7 @@ export default {
                         ],
                     },
                 },
-                {
-                    destination: 'static-pages/theme-and-motif.json',
-                    format: formats.jsonFlat,
-                    filter: (token) => token.filePath?.includes('theme-colors') || token.filePath?.includes('motif-colors'),
-                    options: {
-                        showFileHeader: true,
-                    },
-                },
+                ...motifFileEntries,
                 ...componentFileEntries,
             ],
             options: {
