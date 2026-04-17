@@ -1,4 +1,5 @@
 import { fileHeader } from 'style-dictionary/utils';
+import { toKebab } from '../utils/to-kebab.js';
 
 /**
  * Custom Style Dictionary format that outputs theme-variant TypeScript files
@@ -15,10 +16,6 @@ import { fileHeader } from 'style-dictionary/utils';
 export default async function serpThemesTs({ dictionary, platform, file, options }) {
     const prefix = platform?.prefix || 'ds';
     const { variant = 'light', exportName = 'dsThemeColors', typeName = 'DSThemeColors' } = options;
-
-    function toKebab(str) {
-        return str.replace(/([a-z0-9])([A-Z])/g, '$1-$2').toLowerCase();
-    }
 
     function buildName(pathSegments) {
         const kebabPath = pathSegments.map(toKebab).join('-');

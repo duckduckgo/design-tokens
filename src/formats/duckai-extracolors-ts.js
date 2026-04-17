@@ -1,4 +1,5 @@
 import { fileHeader } from 'style-dictionary/utils';
+import { toKebab } from '../utils/to-kebab.js';
 
 /**
  * Custom Style Dictionary format that outputs a TypeScript file with a flat
@@ -15,10 +16,6 @@ import { fileHeader } from 'style-dictionary/utils';
 export default async function duckaiExtraColorsTs({ dictionary, platform, file, options }) {
     const prefix = platform?.prefix || 'duckai';
     const { refPrefix = 'ds', exportName = 'duckaiExtraColors', typeName = 'DuckaiExtraColors' } = options;
-
-    function toKebab(str) {
-        return str.replace(/([a-z0-9])([A-Z])/g, '$1-$2').toLowerCase();
-    }
 
     function buildName(token) {
         const path = token.path.map(toKebab).join('-');
