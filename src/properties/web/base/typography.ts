@@ -2,7 +2,7 @@ import { DesignToken } from 'style-dictionary/types';
 
 // Definitions for DuckSans + rebrand
 const typography: DesignToken = {
-    typography: {
+    font: {
         // Headings
         'title-01': {
             fontFamily: {
@@ -107,7 +107,7 @@ const typography: DesignToken = {
             },
         },
         // Body text variants
-        'body-01': {
+        'body-xxl': {
             fontFamily: {
                 $value: '{font.family.display}',
             },
@@ -124,7 +124,7 @@ const typography: DesignToken = {
                 $value: '{font.weight.normal}',
             },
         },
-        'body-02': {
+        'body-xl': {
             fontFamily: {
                 $value: '{font.family.display}',
             },
@@ -141,7 +141,7 @@ const typography: DesignToken = {
                 $value: '{font.weight.normal}',
             },
         },
-        'body-03': {
+        'body-lg': {
             fontFamily: {
                 $value: '{font.family.product}',
             },
@@ -158,7 +158,7 @@ const typography: DesignToken = {
                 $value: '{font.weight.normal}',
             },
         },
-        'body-04': {
+        'body-md': {
             fontFamily: {
                 $value: '{font.family.product}',
             },
@@ -175,7 +175,7 @@ const typography: DesignToken = {
                 $value: '{font.weight.normal}',
             },
         },
-        'body-05': {
+        'body-sm': {
             fontFamily: {
                 $value: '{font.family.product}',
             },
@@ -287,6 +287,7 @@ const typography: DesignToken = {
                 },
             },
         },
+        // Additional variants
         label: {
             '01': {
                 fontFamily: {
@@ -306,6 +307,25 @@ const typography: DesignToken = {
                 },
                 textTransform: {
                     $value: 'uppercase',
+                },
+            },
+        },
+        caption: {
+            '01': {
+                fontFamily: {
+                    $value: '{font.family.product}',
+                },
+                letterSpacing: {
+                    $value: '{font.letterSpacing.normal}',
+                },
+                lineHeight: {
+                    $value: '16px',
+                },
+                size: {
+                    $value: '13px',
+                },
+                weight: {
+                    $value: '{font.weight.normal}',
                 },
             },
         },

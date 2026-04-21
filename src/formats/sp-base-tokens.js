@@ -7,6 +7,12 @@ function extractVariableLines(cssVariables) {
         .join('\n');
 }
 
+function sectionMatchesToken(section, token) {
+    const matchesPathPrefix = section.pathPrefix ? token.path[0] === section.pathPrefix : true;
+    const matchesTokenMatcher = typeof section.tokenMatcher === 'function' ? section.tokenMatcher(token) : true;
+    return matchesPathPrefix && matchesTokenMatcher;
+}
+
 export default async function spBaseTokens({ dictionary, file, options }) {
     const header = await fileHeader({ file });
     const { sections = [] } = options;
@@ -14,7 +20,7 @@ export default async function spBaseTokens({ dictionary, file, options }) {
 
     const sectionOutputs = sections
         .map((section) => {
-            const tokens = dictionary.allTokens.filter((token) => token.path[0] === section.pathPrefix);
+            const tokens = dictionary.allTokens.filter((token) => sectionMatchesToken(section, token));
 
             if (tokens.length === 0) {
                 return '';
@@ -28,7 +34,7 @@ export default async function spBaseTokens({ dictionary, file, options }) {
             });
             const variableLines = extractVariableLines(cssVariables);
 
-            if (showSectionComments) {
+            if (showSectionComments && section.comment) {
                 return `  /* *** ${section.comment} *** */\n${variableLines}`;
             }
 

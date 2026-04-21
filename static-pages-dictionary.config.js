@@ -137,8 +137,16 @@ export default {
                         showFileHeader: true,
                         outputReferences: true,
                         sections: [
-                            { pathPrefix: 'font', comment: 'Font setup' },
-                            { pathPrefix: 'typography', comment: 'Typography values' },
+                            {
+                                pathPrefix: 'font',
+                                comment: 'Font setup',
+                                tokenMatcher: (token) => /[\\/]base[\\/]font\./.test(token.filePath ?? ''),
+                            },
+                            {
+                                pathPrefix: 'font',
+                                comment: 'Typestack definitions',
+                                tokenMatcher: (token) => /[\\/]base[\\/]typography\./.test(token.filePath ?? ''),
+                            },
                         ],
                     },
                 },

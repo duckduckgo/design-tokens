@@ -2,8 +2,8 @@ import { fileHeader } from 'style-dictionary/utils';
 import { toKebab } from '../utils/to-kebab.js';
 
 /**
- * Custom Style Dictionary format that outputs theme-variant TypeScript files
- * with a flat `as const` object of CSS custom properties and derived type exports.
+ * Custom Style Dictionary format that outputs theme-variant JavaScript files
+ * with a flat object of CSS custom properties and a default export.
  *
  * Tokens are filtered by theme variant (light/dark) and grouped by category
  * (surface, container, text, etc.) with JSDoc section comments.
@@ -11,11 +11,10 @@ import { toKebab } from '../utils/to-kebab.js';
  * Options (via file.options):
  *   variant:    'light' | 'dark'  – which theme variant to output (default: 'light')
  *   exportName: string            – exported const name  (default: 'dsThemeColors')
- *   typeName:   string            – exported type prefix  (default: 'DSThemeColors')
  */
 export default async function serpThemesTs({ dictionary, platform, file, options }) {
     const prefix = platform?.prefix || 'ds';
-    const { variant = 'light', exportName = 'dsThemeColors', typeName = 'DSThemeColors' } = options;
+    const { variant = 'light', exportName = 'dsThemeColors' } = options;
 
     function buildName(pathSegments) {
         const kebabPath = pathSegments.map(toKebab).join('-');
@@ -48,7 +47,7 @@ export default async function serpThemesTs({ dictionary, platform, file, options
     }
 
     const header = await fileHeader({ file, commentStyle: 'short' });
-    const lines = [header + `export const ${exportName} = {`];
+    const lines = [header + `const ${exportName} = {`];
 
     let first = true;
     for (const [category, tokens] of groups) {
@@ -63,13 +62,9 @@ export default async function serpThemesTs({ dictionary, platform, file, options
         first = false;
     }
 
-    lines.push('} as const;');
+    lines.push('};');
     lines.push('');
-    lines.push(`export type ${typeName} = typeof ${exportName};`);
-    lines.push('');
-    lines.push(`export type ${typeName}Values = ${typeName}[keyof ${typeName}];`);
-    lines.push('');
-    lines.push(`export type ${typeName}Keys = keyof ${typeName};`);
+    lines.push(`export default ${exportName};`);
     lines.push('');
 
     return lines.join('\n');
