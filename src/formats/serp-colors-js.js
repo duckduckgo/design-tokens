@@ -2,18 +2,17 @@ import { fileHeader } from 'style-dictionary/utils';
 import { toKebab } from '../utils/to-kebab.js';
 
 /**
- * Custom Style Dictionary format that outputs a color-palette TypeScript file
- * with a flat `as const` object of CSS custom properties and derived type exports.
+ * Custom Style Dictionary format that outputs a color-palette JavaScript file
+ * with a flat object of CSS custom properties and a default export.
  *
  * Tokens are grouped by color family with JSDoc section comments.
  *
  * Options (via file.options):
  *   exportName: string – exported const name   (default: 'dsColorPalette')
- *   typeName:   string – exported type prefix   (default: 'DSColorPalette')
  */
 export default async function serpColorsTs({ dictionary, platform, file, options }) {
     const prefix = platform?.prefix || 'sds';
-    const { exportName = 'dsColorPalette', typeName = 'DSColorPalette' } = options;
+    const { exportName = 'dsColorPalette' } = options;
 
     function buildName(token) {
         const path = token.path.map(toKebab).join('-');
@@ -32,7 +31,7 @@ export default async function serpColorsTs({ dictionary, platform, file, options
     }
 
     const header = await fileHeader({ file, commentStyle: 'short' });
-    const lines = [header + `export const ${exportName} = {`];
+    const lines = [header + `const ${exportName} = {`];
 
     let first = true;
     for (const [family, tokens] of groups) {
@@ -47,13 +46,9 @@ export default async function serpColorsTs({ dictionary, platform, file, options
         first = false;
     }
 
-    lines.push('} as const;');
+    lines.push('};');
     lines.push('');
-    lines.push(`export type ${typeName} = typeof ${exportName};`);
-    lines.push('');
-    lines.push(`export type ${typeName}Values = ${typeName}[keyof ${typeName}];`);
-    lines.push('');
-    lines.push(`export type ${typeName}Keys = keyof ${typeName};`);
+    lines.push(`export default ${exportName};`);
     lines.push('');
 
     return lines.join('\n');

@@ -14,16 +14,16 @@ const button: DesignToken = {
                 $value: '{space.x1_5}',
             },
             fontSize: {
-                $value: '{typography.buttonLabel.03.size}',
+                $value: '{font.buttonLabel.03.size}',
             },
             fontWeight: {
-                $value: '{typography.buttonLabel.03.weight}',
+                $value: '{font.buttonLabel.03.weight}',
             },
             letterSpacing: {
-                $value: '{typography.buttonLabel.03.letterSpacing}',
+                $value: '{font.buttonLabel.03.letterSpacing}',
             },
             lineHeight: {
-                $value: '{typography.buttonLabel.03.lineHeight}',
+                $value: '{font.buttonLabel.03.lineHeight}',
             },
         },
         xs: {
@@ -37,16 +37,16 @@ const button: DesignToken = {
                 $value: '{space.x02}',
             },
             fontSize: {
-                $value: '{typography.buttonLabel.03.size}',
+                $value: '{font.buttonLabel.03.size}',
             },
             fontWeight: {
-                $value: '{typography.buttonLabel.03.weight}',
+                $value: '{font.buttonLabel.03.weight}',
             },
             letterSpacing: {
-                $value: '{typography.buttonLabel.03.letterSpacing}',
+                $value: '{font.buttonLabel.03.letterSpacing}',
             },
             lineHeight: {
-                $value: '{typography.buttonLabel.03.lineHeight}',
+                $value: '{font.buttonLabel.03.lineHeight}',
             },
         },
         sm: {
@@ -60,16 +60,16 @@ const button: DesignToken = {
                 $value: '{space.x02}',
             },
             fontSize: {
-                $value: '{typography.buttonLabel.03.size}',
+                $value: '{font.buttonLabel.03.size}',
             },
             fontWeight: {
-                $value: '{typography.buttonLabel.03.weight}',
+                $value: '{font.buttonLabel.03.weight}',
             },
             letterSpacing: {
-                $value: '{typography.buttonLabel.03.letterSpacing}',
+                $value: '{font.buttonLabel.03.letterSpacing}',
             },
             lineHeight: {
-                $value: '{typography.buttonLabel.03.lineHeight}',
+                $value: '{font.buttonLabel.03.lineHeight}',
             },
         },
         md: {
@@ -83,16 +83,16 @@ const button: DesignToken = {
                 $value: '{space.x02}',
             },
             fontSize: {
-                $value: '{typography.buttonLabel.02.size}',
+                $value: '{font.buttonLabel.02.size}',
             },
             fontWeight: {
-                $value: '{typography.buttonLabel.02.weight}',
+                $value: '{font.buttonLabel.02.weight}',
             },
             letterSpacing: {
-                $value: '{typography.buttonLabel.02.letterSpacing}',
+                $value: '{font.buttonLabel.02.letterSpacing}',
             },
             lineHeight: {
-                $value: '{typography.buttonLabel.02.lineHeight}',
+                $value: '{font.buttonLabel.02.lineHeight}',
             },
         },
         lg: {
@@ -106,16 +106,16 @@ const button: DesignToken = {
                 $value: '{space.x03}',
             },
             fontSize: {
-                $value: '{typography.buttonLabel.02.size}',
+                $value: '{font.buttonLabel.02.size}',
             },
             fontWeight: {
-                $value: '{typography.buttonLabel.02.weight}',
+                $value: '{font.buttonLabel.02.weight}',
             },
             letterSpacing: {
-                $value: '{typography.buttonLabel.02.letterSpacing}',
+                $value: '{font.buttonLabel.02.letterSpacing}',
             },
             lineHeight: {
-                $value: '{typography.buttonLabel.02.lineHeight}',
+                $value: '{font.buttonLabel.02.lineHeight}',
             },
         },
         xl: {
@@ -129,16 +129,16 @@ const button: DesignToken = {
                 $value: '{space.x03}',
             },
             fontSize: {
-                $value: '{typography.buttonLabel.01.size}',
+                $value: '{font.buttonLabel.01.size}',
             },
             fontWeight: {
-                $value: '{typography.buttonLabel.01.weight}',
+                $value: '{font.buttonLabel.01.weight}',
             },
             letterSpacing: {
-                $value: '{typography.buttonLabel.01.letterSpacing}',
+                $value: '{font.buttonLabel.01.letterSpacing}',
             },
             lineHeight: {
-                $value: '{typography.buttonLabel.01.lineHeight}',
+                $value: '{font.buttonLabel.01.lineHeight}',
             },
         },
     },

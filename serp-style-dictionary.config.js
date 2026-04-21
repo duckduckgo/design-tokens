@@ -1,8 +1,41 @@
 import { formats, transformGroups, logBrokenReferenceLevels, logVerbosityLevels, logWarningLevels } from 'style-dictionary/enums';
-import serpBaseTokensTs from './src/formats/serp-base-tokens-ts.js';
-import serpColorsTs from './src/formats/serp-colors-ts.js';
-import serpThemesTs from './src/formats/serp-themes-ts.js';
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+import serpBaseTokensTs from './src/formats/serp-base-tokens-js.js';
+import serpColorsTs from './src/formats/serp-colors-js.js';
+import serpFontJs from './src/formats/serp-font-js.js';
+import serpThemesTs from './src/formats/serp-themes-js.js';
+import componentScss from './src/formats/sp-component-scss.js';
 import fileHeader from './dist/src/utils/file-header.js';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+function getSharedComponentFiles(directoryPath) {
+    if (!fs.existsSync(directoryPath)) {
+        return [];
+    }
+
+    return fs
+        .readdirSync(directoryPath)
+        .filter((file) => file.endsWith('.ts'))
+        .map((file) => path.basename(file, '.ts'))
+        .sort();
+}
+
+const sharedComponentFiles = getSharedComponentFiles(path.join(__dirname, 'src/properties/web/shared-components'));
+
+const componentJsFileEntries = sharedComponentFiles.map((componentName) => ({
+    destination: `serp/${componentName}.js`,
+    format: 'component-js',
+    options: {
+        componentName,
+        outputType: 'js',
+        outputReferences: true,
+        showFileHeader: true,
+    },
+}));
 
 export default {
     source: [
@@ -10,13 +43,16 @@ export default {
         'dist/src/properties/web/base/*.{js,json}',
         'dist/src/properties/web/theme/*.{js,json}',
         'dist/src/properties/web/components/*.{js,json}',
+        'dist/src/properties/web/shared-components/**/*.{js,json}',
         'dist/src/properties/web/serp/*.{js,json}',
     ],
     hooks: {
         formats: {
             'serp-base-tokens-ts': serpBaseTokensTs,
             'serp-colors-ts': serpColorsTs,
+            'serp-font-js': serpFontJs,
             'serp-themes-ts': serpThemesTs,
+            'component-js': componentScss,
         },
     },
     log: {
@@ -40,7 +76,7 @@ export default {
                     },
                 },
                 {
-                    destination: 'serp/space.ts',
+                    destination: 'serp/space.js',
                     format: 'serp-base-tokens-ts',
                     options: {
                         showFileHeader: true,
@@ -48,67 +84,85 @@ export default {
                             {
                                 pathPrefix: 'space',
                                 exportName: 'dsTokensSpace',
-                                typeName: 'DSTokenSpace',
                                 valueFormat: 'rem',
                             },
                         ],
                     },
                 },
                 {
-                    destination: 'serp/radius.ts',
+                    destination: 'serp/radius.js',
                     format: 'serp-base-tokens-ts',
                     options: {
                         sections: [
                             {
                                 pathPrefix: 'radius',
                                 exportName: 'dsTokensRadius',
-                                typeName: 'DSTokenRadius',
                                 valueFormat: 'raw',
                             },
                         ],
                     },
                 },
                 {
-                    destination: 'serp/color-palette.ts',
+                    destination: 'serp/color-palette.js',
                     format: 'serp-colors-ts',
                     filter: (token) => !token.filePath?.includes('theme/colors'),
                     options: {
                         exportName: 'dsColorPalette',
-                        typeName: 'DSColorPalette',
                     },
                 },
                 {
-                    destination: 'serp/colors-light.ts',
+                    destination: 'serp/colors-light.js',
                     format: 'serp-themes-ts',
                     options: {
                         variant: 'light',
                         exportName: 'dsThemeColorsLight',
-                        typeName: 'DSThemeColorsLight',
                     },
                 },
                 {
-                    destination: 'serp/colors-dark.ts',
+                    destination: 'serp/colors-dark.js',
                     format: 'serp-themes-ts',
                     options: {
                         variant: 'dark',
                         exportName: 'dsThemeColorsDark',
-                        typeName: 'DSThemeColorsDark',
                     },
                 },
                 {
-                    destination: 'serp/zindex.ts',
+                    destination: 'serp/zindex.js',
                     format: 'serp-base-tokens-ts',
                     options: {
                         sections: [
                             {
                                 pathPrefix: 'zIndex',
                                 exportName: 'dsTokensZindex',
-                                typeName: 'DSTokenZindex',
                                 valueFormat: 'number',
                             },
                         ],
                     },
                 },
+                {
+                    destination: 'serp/font.js',
+                    format: 'serp-font-js',
+                    options: {
+                        exportName: 'dsFont',
+                        showFileHeader: true,
+                        outputReferences: true,
+                    },
+                },
+                {
+                    destination: 'serp/full-font-stack.js',
+                    format: 'serp-font-js',
+                    options: {
+                        exportName: 'dsFullFontStack',
+                        showFileHeader: true,
+                        outputReferences: true,
+                        includeAllTypography: true,
+                        topComment: [
+                            'This is the full type stack established for use in static-pages.',
+                            'This is only to be imported when building features that need more font styles than the basics from SERP.',
+                        ],
+                    },
+                },
+                ...componentJsFileEntries,
             ],
             options: {
                 ...fileHeader,

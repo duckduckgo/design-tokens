@@ -14,12 +14,24 @@ import motifColorTokens from './dist/src/properties/web/theme/motif-colors.js';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// Dynamically discover component files
-const componentsDir = path.join(__dirname, 'src/properties/web/static-pages/components');
-const componentFiles = fs
-    .readdirSync(componentsDir)
-    .filter((file) => file.endsWith('.ts'))
-    .map((file) => path.basename(file, '.ts'));
+function getComponentFilesFromDir(directoryPath) {
+    if (!fs.existsSync(directoryPath)) {
+        return [];
+    }
+
+    return fs
+        .readdirSync(directoryPath)
+        .filter((file) => file.endsWith('.ts'))
+        .map((file) => path.basename(file, '.ts'));
+}
+
+// Dynamically discover component files from static pages + shared components sources
+const componentFiles = [
+    ...new Set([
+        ...getComponentFilesFromDir(path.join(__dirname, 'src/properties/web/static-pages/components')),
+        ...getComponentFilesFromDir(path.join(__dirname, 'src/properties/web/shared-components')),
+    ]),
+].sort();
 
 // Generate file entries for each component
 const componentFileEntries = componentFiles.map((componentName) => ({
@@ -59,6 +71,7 @@ export default {
         'dist/src/properties/web/base/*.{js,json}',
         'dist/src/properties/web/theme/*.{js,json}',
         'dist/src/properties/web/components/*.{js,json}',
+        'dist/src/properties/web/shared-components/**/*.{js,json}',
         'dist/src/properties/web/static-pages/*.{js,json}',
         'dist/src/properties/web/static-pages/**/*.{js,json}',
     ],
@@ -137,8 +150,16 @@ export default {
                         showFileHeader: true,
                         outputReferences: true,
                         sections: [
-                            { pathPrefix: 'font', comment: 'Font setup' },
-                            { pathPrefix: 'typography', comment: 'Typography values' },
+                            {
+                                pathPrefix: 'font',
+                                comment: 'Font setup',
+                                tokenMatcher: (token) => /[\\/]base[\\/]font\./.test(token.filePath ?? ''),
+                            },
+                            {
+                                pathPrefix: 'font',
+                                comment: 'Typestack definitions',
+                                tokenMatcher: (token) => /[\\/]base[\\/]typography\./.test(token.filePath ?? ''),
+                            },
                         ],
                     },
                 },

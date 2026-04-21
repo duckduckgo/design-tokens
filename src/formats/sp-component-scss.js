@@ -11,13 +11,17 @@ function kebabToCamel(str) {
     return str.replace(/-([a-z])/g, (_, letter) => letter.toUpperCase());
 }
 
-export default async function componentScss({ dictionary, file, options, platform }) {
-    const header = await fileHeader({ file });
+function buildComponentExportName(componentNameCamel) {
+    return `dsTokens${componentNameCamel.charAt(0).toUpperCase()}${componentNameCamel.slice(1)}`;
+}
 
-    // Get component name from options
-    const componentName = options?.componentName;
+export default async function componentScss({ dictionary, file, options }) {
+    const { componentName, outputType = 'scss', exportName, outputReferences = false, ...formatOptions } = options ?? {};
     if (!componentName) {
         throw new Error('component-scss format requires componentName option');
+    }
+    if (outputType !== 'scss' && outputType !== 'js') {
+        throw new Error(`component-scss format received invalid outputType "${outputType}"`);
     }
 
     // Convert kebab-case to camelCase for token path matching
@@ -30,7 +34,13 @@ export default async function componentScss({ dictionary, file, options, platfor
     const componentTokens = dictionary.allTokens.filter((token) => token.path[0] === componentName || token.path[0] === componentNameCamel);
 
     if (componentTokens.length === 0) {
-        return header + `@mixin ${componentNameCamel} {\n}\n`;
+        if (outputType === 'js') {
+            const jsHeader = await fileHeader({ file, commentStyle: 'short' });
+            const componentExportName = exportName ?? buildComponentExportName(componentNameCamel);
+            return `${jsHeader}const ${componentExportName} = {};\n\nexport default ${componentExportName};\n`;
+        }
+        const scssHeader = await fileHeader({ file });
+        return scssHeader + `@mixin ${componentNameCamel} {\n}\n`;
     }
 
     // Create filtered dictionary for this component
@@ -39,10 +49,44 @@ export default async function componentScss({ dictionary, file, options, platfor
         allTokens: componentTokens,
     };
 
+    if (outputType === 'js') {
+        const jsHeader = await fileHeader({ file, commentStyle: 'short' });
+        const componentExportName = exportName ?? buildComponentExportName(componentNameCamel);
+        const cssVariables = formattedVariables({
+            format: 'css',
+            dictionary: componentDictionary,
+            ...formatOptions,
+            outputReferences,
+        });
+        const variableEntries = cssVariables
+            .split('\n')
+            .map((line) => line.trim())
+            .filter(Boolean)
+            .map((line) => {
+                const match = line.match(/^(--[^:]+):\s*(.+);$/);
+                if (!match) {
+                    return null;
+                }
+                const [, variableName, value] = match;
+                return `    '${variableName}': ${JSON.stringify(value)},`;
+            })
+            .filter(Boolean);
+
+        return [
+            `${jsHeader}const ${componentExportName} = {`,
+            variableEntries.join('\n'),
+            '};',
+            '',
+            `export default ${componentExportName};`,
+            '',
+        ].join('\n');
+    }
+
+    const header = await fileHeader({ file });
     const variables = formattedVariables({
         format: 'css',
         dictionary: componentDictionary,
-        ...options,
+        ...formatOptions,
         outputReferences: false,
     });
 
