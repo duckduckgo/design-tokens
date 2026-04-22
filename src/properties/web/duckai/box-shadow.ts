@@ -6,6 +6,8 @@ const duckaiBoxShadow: DesignToken = {
         'main-chat-dark': { $value: '0px 4px 12px 0px rgba(0, 0, 0, 0.20), 0px 20px 40px 0px rgba(0, 0, 0, 0.16)' },
         'scroll-top-light': { $value: '0px 1px 12px rgba(0, 0, 0, 0.08)' },
         'scroll-top-dark': { $value: '0px 1px 12px 0px var({color.gray.100}), 0px 1px 12px 0px var({color.gray.100})' },
+        'scroll-bottom-light': { $value: '0px -1px 12px rgba(0, 0, 0, 0.08)' },
+        'scroll-bottom-dark': { $value: '0px -1px 12px 0px var(--ds-surface-backdrop), 0px -1px 12px 0px var(--ds-surface-backdrop)' },
     },
 };
 

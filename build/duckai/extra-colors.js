@@ -1,8 +1,8 @@
 
 // Do not edit directly, this file was auto-generated.
 // Source: https://github.com/duckduckgo/design-tokens
-// Version: 0.21.0
-// Last updated: April 22, 2026 at 12:46 AM
+// Version: 0.22.0
+// Last updated: April 22, 2026 at 01:14 AM
 
 export const duckaiExtraColors = {
     /** COLOR */
@@ -28,6 +28,7 @@ export const duckaiExtraColors = {
     '--duckai-color-duckassist-50': '#222222',
     '--duckai-color-duckassist-70': '#666666',
     '--duckai-color-duckassist-90': '#222222',
+    '--duckai-color-transparent': 'transparent',
     '--duckai-color-green-private-light': '#11604D',
     '--duckai-color-green-private-dark': '#589D88',
     '--duckai-color-limit-10': '#FFF1B8',
@@ -39,10 +40,8 @@ export const duckaiExtraColors = {
     '--duckai-box-shadow-main-chat-dark': '0px 4px 12px 0px rgba(0, 0, 0, 0.20), 0px 20px 40px 0px rgba(0, 0, 0, 0.16)',
     '--duckai-box-shadow-scroll-top-light': '0px 1px 12px rgba(0, 0, 0, 0.08)',
     '--duckai-box-shadow-scroll-top-dark': '0px 1px 12px 0px var(--ds-color-gray-100), 0px 1px 12px 0px var(--ds-color-gray-100)',
-} as const;
+    '--duckai-box-shadow-scroll-bottom-light': '0px -1px 12px rgba(0, 0, 0, 0.08)',
+    '--duckai-box-shadow-scroll-bottom-dark': '0px -1px 12px 0px var(--ds-surface-backdrop), 0px -1px 12px 0px var(--ds-surface-backdrop)',
+};
 
-export type DuckaiExtraColors = typeof duckaiExtraColors;
-
-export type DuckaiExtraColorsValues = DuckaiExtraColors[keyof DuckaiExtraColors];
-
-export type DuckaiExtraColorsKeys = keyof DuckaiExtraColors;
+export default duckaiExtraColors;
