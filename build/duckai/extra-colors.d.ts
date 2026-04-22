@@ -1,9 +1,77 @@
 // Do not edit directly, this file was auto-generated.
 // Source: https://github.com/duckduckgo/design-tokens
-// Version: 0.22.0
-// Last updated: April 22, 2026 at 01:14 AM
+// Version: 0.23.0
+// Last updated: April 22, 2026 at 09:21 PM
 
 declare module '@duckduckgo/design-tokens/build/duckai/extra-colors' {
-    const duckaiExtraColors: Record<`--${string}`, string>;
+    export type DuckaiExtraColorsKeys =
+        | '--duckai-color-primary'
+        | '--duckai-color-blue-container'
+        | '--duckai-color-red-tint'
+        | '--duckai-color-zone-blue-light'
+        | '--duckai-color-zone-blue-accent-light'
+        | '--duckai-color-zone-blue-dark'
+        | '--duckai-color-zone-blue-accent-dark'
+        | '--duckai-color-internal-a-10'
+        | '--duckai-color-internal-a-30'
+        | '--duckai-color-internal-a-50'
+        | '--duckai-color-internal-a-70'
+        | '--duckai-color-internal-a-90'
+        | '--duckai-color-internal-b-10'
+        | '--duckai-color-internal-b-30'
+        | '--duckai-color-internal-b-50'
+        | '--duckai-color-internal-b-70'
+        | '--duckai-color-internal-b-90'
+        | '--duckai-color-duckassist-10'
+        | '--duckai-color-duckassist-30'
+        | '--duckai-color-duckassist-50'
+        | '--duckai-color-duckassist-70'
+        | '--duckai-color-duckassist-90'
+        | '--duckai-color-transparent'
+        | '--duckai-color-green-private-light'
+        | '--duckai-color-green-private-dark'
+        | '--duckai-color-limit-10'
+        | '--duckai-color-limit-90'
+        | '--duckai-color-voice-input-background-disabled'
+        | '--duckai-box-shadow-main-chat-light'
+        | '--duckai-box-shadow-main-chat-dark'
+        | '--duckai-box-shadow-scroll-top-light'
+        | '--duckai-box-shadow-scroll-top-dark'
+        | '--duckai-box-shadow-scroll-bottom-light'
+        | '--duckai-box-shadow-scroll-bottom-dark';
+    export type DuckaiExtraColorsValues =
+        | '#000000'
+        | '#F3F6FF'
+        | '#FFD7CC3D'
+        | '#F0F4FF'
+        | 'rgba(57, 105, 239, 0.7)'
+        | 'rgba(27, 45, 94, 0.97)'
+        | '#D8F7FF'
+        | '#7EE3FF'
+        | '#00D1EC'
+        | '#00A2CE'
+        | '#054E62'
+        | '#E3E8FF'
+        | '#BCC7FF'
+        | '#7189FE'
+        | '#5162B4'
+        | '#434A70'
+        | '#F0F0F0'
+        | '#C2C2C2'
+        | '#222222'
+        | '#666666'
+        | 'transparent'
+        | '#11604D'
+        | '#589D88'
+        | '#FFF1B8'
+        | '#554400'
+        | 'rgba(255, 84, 90, 0.30)'
+        | '0px 4px 12px 0px rgba(0, 0, 0, 0.04)'
+        | '0px 4px 12px 0px rgba(0, 0, 0, 0.20), 0px 20px 40px 0px rgba(0, 0, 0, 0.16)'
+        | '0px 1px 12px rgba(0, 0, 0, 0.08)'
+        | '0px 1px 12px 0px var(--ds-color-gray-100), 0px 1px 12px 0px var(--ds-color-gray-100)'
+        | '0px -1px 12px rgba(0, 0, 0, 0.08)'
+        | '0px -1px 12px 0px var(--ds-surface-backdrop), 0px -1px 12px 0px var(--ds-surface-backdrop)';
+    const duckaiExtraColors: Record<DuckaiExtraColorsKeys, DuckaiExtraColorsValues>;
     export default duckaiExtraColors;
 }

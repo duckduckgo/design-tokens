@@ -1,5 +1,6 @@
 import { promises as fs } from 'node:fs';
 import path from 'node:path';
+import { buildModuleDeclaration, getExportName, getTokenKeys, getTokenValues, inferValueType } from './generate-types-shared.js';
 
 const PACKAGE_NAME = '@duckduckgo/design-tokens';
 const DUCKAI_BUILD_DIRECTORY = path.resolve('build/duckai');
@@ -29,49 +30,6 @@ async function getPackageVersion() {
     const packageJsonContents = await fs.readFile(PACKAGE_JSON_PATH, 'utf8');
     const packageJson = JSON.parse(packageJsonContents);
     return packageJson.version;
-}
-
-function getExportName(fileContents) {
-    const constMatch = fileContents.match(/const\s+([A-Za-z_$][\w$]*)\s*=\s*\{/);
-    if (constMatch) {
-        return constMatch[1];
-    }
-
-    const defaultExportMatch = fileContents.match(/export\s+default\s+([A-Za-z_$][\w$]*)\s*;?/);
-    if (defaultExportMatch) {
-        return defaultExportMatch[1];
-    }
-
-    return null;
-}
-
-function inferValueType(fileContents) {
-    const valueMatches = [...fileContents.matchAll(/^\s*['"]--[^'"]+['"]:\s*([^,]+),/gm)].map((match) => match[1].trim());
-    if (valueMatches.length === 0) {
-        return 'string';
-    }
-
-    const hasNumberValue = valueMatches.some((value) => /^-?(?:\d+|\d+\.\d+|\.\d+)$/.test(value));
-    const hasStringValue = valueMatches.some((value) => /^['"`]/.test(value));
-
-    if (hasNumberValue && hasStringValue) {
-        return 'string | number';
-    }
-
-    if (hasNumberValue) {
-        return 'number';
-    }
-
-    return 'string';
-}
-
-function buildModuleDeclaration(moduleName, exportName, valueType) {
-    return [
-        `declare module '${moduleName}' {`,
-        `    const ${exportName}: Record<\`--\${string}\`, ${valueType}>;`,
-        `    export default ${exportName};`,
-        '}',
-    ].join('\n');
 }
 
 async function generateDuckaiTypes() {
@@ -105,8 +63,10 @@ async function generateDuckaiTypes() {
             continue;
         }
 
-        const valueType = inferValueType(fileContents);
-        const declaration = buildModuleDeclaration(moduleName, exportName, valueType);
+        const tokenKeys = getTokenKeys(fileContents);
+        const tokenValues = getTokenValues(fileContents);
+        const valueType = inferValueType(tokenValues);
+        const declaration = buildModuleDeclaration(moduleName, exportName, tokenKeys, valueType);
         const outputContents = [...getHeaderLines(packageVersion), '', declaration, ''].join('\n');
         const outputPath = path.join(DUCKAI_BUILD_DIRECTORY, `${modulePathWithoutExtension}.d.ts`);
         await fs.writeFile(outputPath, outputContents, 'utf8');
