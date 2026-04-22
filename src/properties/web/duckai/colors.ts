@@ -25,6 +25,7 @@ const duckaiColors: DesignToken = {
         'duckassist-50': { $value: '#222222' },
         'duckassist-70': { $value: '#666666' },
         'duckassist-90': { $value: '#222222' },
+        transparent: { $value: 'transparent' },
         'green-private-light': { $value: '#11604D' },
         'green-private-dark': { $value: '#589D88' },
         'limit-10': { $value: '#FFF1B8' },

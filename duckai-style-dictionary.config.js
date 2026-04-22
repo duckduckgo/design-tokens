@@ -1,5 +1,5 @@
 import { transformGroups, logBrokenReferenceLevels, logVerbosityLevels, logWarningLevels } from 'style-dictionary/enums';
-import duckaiExtraColorsTs from './src/formats/duckai-extracolors-ts.js';
+import duckaiExtraColorsJs from './src/formats/duckai-extracolors-js.js';
 import fileHeader from './dist/src/utils/file-header.js';
 
 export default {
@@ -13,7 +13,7 @@ export default {
     ],
     hooks: {
         formats: {
-            'duckai-extracolors-ts': duckaiExtraColorsTs,
+            'duckai-extracolors-js': duckaiExtraColorsJs,
         },
     },
     log: {
@@ -30,14 +30,13 @@ export default {
             buildPath: 'build/',
             files: [
                 {
-                    destination: 'duckai/extra-colors.ts',
-                    format: 'duckai-extracolors-ts',
+                    destination: 'duckai/extra-colors.js',
+                    format: 'duckai-extracolors-js',
                     filter: (token) => token.filePath?.includes('/duckai/'),
                     options: {
                         showFileHeader: true,
                         refPrefix: 'ds',
                         exportName: 'duckaiExtraColors',
-                        typeName: 'DuckaiExtraColors',
                     },
                 },
             ],
