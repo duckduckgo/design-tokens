@@ -2,8 +2,8 @@ import { promises as fs } from 'node:fs';
 import path from 'node:path';
 
 const PACKAGE_NAME = '@duckduckgo/design-tokens';
-const SERP_BUILD_DIRECTORY = path.resolve('build/serp');
-const LEGACY_OUTPUT_FILENAME = 'design-tokens-serp.d.ts';
+const DUCKAI_BUILD_DIRECTORY = path.resolve('build/duckai');
+const LEGACY_OUTPUT_FILENAME = 'extra-colors.ts';
 const REPOSITORY_URL = 'https://github.com/duckduckgo/design-tokens';
 const PACKAGE_JSON_PATH = new URL('../package.json', import.meta.url);
 
@@ -74,14 +74,14 @@ function buildModuleDeclaration(moduleName, exportName, valueType) {
     ].join('\n');
 }
 
-async function generateSerpTypes() {
+async function generateDuckaiTypes() {
     const packageVersion = await getPackageVersion();
     let directoryEntries = [];
 
     try {
-        directoryEntries = await fs.readdir(SERP_BUILD_DIRECTORY, { withFileTypes: true });
+        directoryEntries = await fs.readdir(DUCKAI_BUILD_DIRECTORY, { withFileTypes: true });
     } catch {
-        throw new Error(`Missing directory: "${SERP_BUILD_DIRECTORY}". Run token build first.`);
+        throw new Error(`Missing directory: "${DUCKAI_BUILD_DIRECTORY}". Run token build first.`);
     }
 
     const jsFiles = directoryEntries
@@ -89,15 +89,15 @@ async function generateSerpTypes() {
         .map((entry) => entry.name)
         .sort((left, right) => left.localeCompare(right));
 
-    const legacyOutputPath = path.join(SERP_BUILD_DIRECTORY, LEGACY_OUTPUT_FILENAME);
+    const legacyOutputPath = path.join(DUCKAI_BUILD_DIRECTORY, LEGACY_OUTPUT_FILENAME);
     await fs.rm(legacyOutputPath, { force: true });
 
     let generatedFileCount = 0;
 
     for (const jsFile of jsFiles) {
         const modulePathWithoutExtension = jsFile.replace(/\.js$/, '');
-        const absoluteFilePath = path.join(SERP_BUILD_DIRECTORY, jsFile);
-        const moduleName = `${PACKAGE_NAME}/build/serp/${modulePathWithoutExtension}`;
+        const absoluteFilePath = path.join(DUCKAI_BUILD_DIRECTORY, jsFile);
+        const moduleName = `${PACKAGE_NAME}/build/duckai/${modulePathWithoutExtension}`;
         const fileContents = await fs.readFile(absoluteFilePath, 'utf8');
         const exportName = getExportName(fileContents);
 
@@ -108,7 +108,7 @@ async function generateSerpTypes() {
         const valueType = inferValueType(fileContents);
         const declaration = buildModuleDeclaration(moduleName, exportName, valueType);
         const outputContents = [...getHeaderLines(packageVersion), '', declaration, ''].join('\n');
-        const outputPath = path.join(SERP_BUILD_DIRECTORY, `${modulePathWithoutExtension}.d.ts`);
+        const outputPath = path.join(DUCKAI_BUILD_DIRECTORY, `${modulePathWithoutExtension}.d.ts`);
         await fs.writeFile(outputPath, outputContents, 'utf8');
         generatedFileCount += 1;
     }
@@ -116,7 +116,7 @@ async function generateSerpTypes() {
     console.log(`Generated ${generatedFileCount} declaration files from ${jsFiles.length} JS files.`);
 }
 
-generateSerpTypes().catch((error) => {
+generateDuckaiTypes().catch((error) => {
     console.error(error instanceof Error ? error.message : String(error));
     process.exitCode = 1;
 });

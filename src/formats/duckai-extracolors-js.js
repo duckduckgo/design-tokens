@@ -2,8 +2,8 @@ import { fileHeader } from 'style-dictionary/utils';
 import { toKebab } from '../utils/to-kebab.js';
 
 /**
- * Custom Style Dictionary format that outputs a TypeScript file with a flat
- * `as const` object of CSS custom properties for duckai-specific tokens.
+ * Custom Style Dictionary format that outputs a JavaScript file with a flat
+ * object of CSS custom properties for duckai-specific tokens.
  *
  * Cross-file references ({path.segments}) are resolved to a configurable
  * prefix (default 'ds') so the output can be used alongside serp tokens.
@@ -11,11 +11,10 @@ import { toKebab } from '../utils/to-kebab.js';
  * Options (via file.options):
  *   refPrefix:  string – prefix for resolved external references (default: 'ds')
  *   exportName: string – exported const name  (default: 'duckaiExtraColors')
- *   typeName:   string – exported type prefix  (default: 'DuckaiExtraColors')
  */
-export default async function duckaiExtraColorsTs({ dictionary, platform, file, options }) {
+export default async function duckaiExtraColorsJs({ dictionary, platform, file, options }) {
     const prefix = platform?.prefix || 'duckai';
-    const { refPrefix = 'ds', exportName = 'duckaiExtraColors', typeName = 'DuckaiExtraColors' } = options;
+    const { refPrefix = 'ds', exportName = 'duckaiExtraColors' } = options;
 
     function buildName(token) {
         const path = token.path.map(toKebab).join('-');
@@ -33,7 +32,7 @@ export default async function duckaiExtraColorsTs({ dictionary, platform, file, 
         });
     }
 
-    const duckaiTokens = dictionary.allTokens.filter((t) => t.filePath?.includes('/duckai/'));
+    const duckaiTokens = dictionary.allTokens.filter((token) => token.filePath?.includes('/duckai/'));
 
     const groups = new Map();
     for (const token of duckaiTokens) {
@@ -60,13 +59,9 @@ export default async function duckaiExtraColorsTs({ dictionary, platform, file, 
         first = false;
     }
 
-    lines.push('} as const;');
+    lines.push('};');
     lines.push('');
-    lines.push(`export type ${typeName} = typeof ${exportName};`);
-    lines.push('');
-    lines.push(`export type ${typeName}Values = ${typeName}[keyof ${typeName}];`);
-    lines.push('');
-    lines.push(`export type ${typeName}Keys = keyof ${typeName};`);
+    lines.push(`export default ${exportName};`);
     lines.push('');
 
     return lines.join('\n');
