@@ -2,14 +2,13 @@ import { fileHeader } from 'style-dictionary/utils';
 import { toKebab } from '../utils/to-kebab.js';
 
 /**
- * Custom Style Dictionary format that outputs TypeScript const objects
- * with `as const` assertions and derived type exports.
+ * Custom Style Dictionary format that outputs JavaScript const objects
+ * with a default export.
  *
  * Options (via file.options):
  *   sections: Array<{
  *     pathPrefix:  string  – first path element to filter tokens (e.g. 'space')
  *     exportName:  string  – exported const name        (e.g. 'dsTokensSpace')
- *     typeName:    string  – exported type alias name    (e.g. 'DSTokenSpace')
  *     valueFormat: 'rem' | 'rem-calc' | 'number' | 'raw'
  *       - rem      : converts pixel values to rem with a px comment (e.g. '0.5rem', // 8px)
  *       - rem-calc : wraps pixel values in calc(N * var(--<prefix>-base-px-in-rem))
@@ -64,16 +63,20 @@ export default async function serpBaseTokensTs({ dictionary, platform, file, opt
                 return `    '${name}': ${result},`;
             });
 
-            return [
-                `export const ${section.exportName} = {`,
-                entries.join('\n'),
-                '} as const;',
-                '',
-                `export type ${section.typeName} = typeof ${section.exportName};`,
-            ].join('\n');
+            return {
+                exportName: section.exportName,
+                entries,
+            };
         })
         .filter(Boolean);
 
     const header = await fileHeader({ file, commentStyle: 'short' });
-    return header + blocks.join('\n\n') + '\n';
+    if (blocks.length === 0) return `${header}\n`;
+
+    if (blocks.length > 1) {
+        throw new Error('serp-base-tokens-ts expects exactly one populated section per output file');
+    }
+
+    const [{ exportName, entries }] = blocks;
+    return [`${header}const ${exportName} = {`, entries.join('\n'), '};', '', `export default ${exportName};`, ''].join('\n');
 }

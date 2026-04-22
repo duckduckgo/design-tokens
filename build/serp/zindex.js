@@ -1,10 +1,10 @@
 
 // Do not edit directly, this file was auto-generated.
 // Source: https://github.com/duckduckgo/design-tokens
-// Version: 0.19.0
-// Last updated: April 17, 2026 at 06:11 PM
+// Version: 0.20.0
+// Last updated: April 22, 2026 at 12:01 AM
 
-export const dsTokensZindex = {
+const dsTokensZindex = {
     '--ds-z-index-hidden': -999,
     '--ds-z-index-default': 1,
     '--ds-z-index-middle-raised': 50,
@@ -14,6 +14,6 @@ export const dsTokensZindex = {
     '--ds-z-index-modal-backdrop': 300,
     '--ds-z-index-modal': 305,
     '--ds-z-index-alert': 400,
-} as const;
+};
 
-export type DSTokenZindex = typeof dsTokensZindex;
+export default dsTokensZindex;

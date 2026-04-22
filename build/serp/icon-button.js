@@ -1,0 +1,23 @@
+
+// Do not edit directly, this file was auto-generated.
+// Source: https://github.com/duckduckgo/design-tokens
+// Version: 0.20.0
+// Last updated: April 22, 2026 at 12:01 AM
+
+const dsTokensIconButton = {
+    '--ds-icon-button-xxs-icon-size': "16px",
+    '--ds-icon-button-xs-icon-size': "16px",
+    '--ds-icon-button-sm-padding': "10px",
+    '--ds-icon-button-sm-icon-size': "16px",
+    '--ds-icon-button-md-icon-size': "16px",
+    '--ds-icon-button-lg-icon-size': "16px",
+    '--ds-icon-button-xl-icon-size': "24px",
+    '--ds-icon-button-border-radius': "var(--ds-radius-full)",
+    '--ds-icon-button-xxs-padding': "var(--ds-space-x1-5)",
+    '--ds-icon-button-xs-padding': "var(--ds-space-x02)",
+    '--ds-icon-button-md-padding': "var(--ds-space-x03)",
+    '--ds-icon-button-lg-padding': "var(--ds-space-x04)",
+    '--ds-icon-button-xl-padding': "var(--ds-space-x04)",
+};
+
+export default dsTokensIconButton;

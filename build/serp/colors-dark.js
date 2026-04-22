@@ -1,10 +1,10 @@
 
 // Do not edit directly, this file was auto-generated.
 // Source: https://github.com/duckduckgo/design-tokens
-// Version: 0.19.0
-// Last updated: April 17, 2026 at 06:11 PM
+// Version: 0.20.0
+// Last updated: April 22, 2026 at 12:01 AM
 
-export const dsThemeColorsDark = {
+const dsThemeColorsDark = {
     /** SURFACE */
     '--ds-surface-backdrop': '#111111',
     '--ds-surface-canvas': '#181817',
@@ -103,10 +103,6 @@ export const dsThemeColorsDark = {
     '--ds-status-green': '#39B25E',
     '--ds-status-yellow': '#FFC95C',
     '--ds-status-red': '#EC434F',
-} as const;
+};
 
-export type DSThemeColorsDark = typeof dsThemeColorsDark;
-
-export type DSThemeColorsDarkValues = DSThemeColorsDark[keyof DSThemeColorsDark];
-
-export type DSThemeColorsDarkKeys = keyof DSThemeColorsDark;
+export default dsThemeColorsDark;

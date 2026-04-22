@@ -1,10 +1,10 @@
 
 // Do not edit directly, this file was auto-generated.
 // Source: https://github.com/duckduckgo/design-tokens
-// Version: 0.19.0
-// Last updated: April 17, 2026 at 06:11 PM
+// Version: 0.20.0
+// Last updated: April 22, 2026 at 12:01 AM
 
-export const dsTokensSpace = {
+const dsTokensSpace = {
     '--ds-space-x_5': '0.125rem', // 2px
     '--ds-space-x01': '0.25rem', // 4px
     '--ds-space-x1_5': '0.375rem', // 6px
@@ -44,6 +44,6 @@ export const dsTokensSpace = {
     '--ds-space-x110': '27.5rem', // 440px
     '--ds-space-x130': '32.5rem', // 520px
     '--ds-space-x175': '43.75rem', // 700px
-} as const;
+};
 
-export type DSTokenSpace = typeof dsTokensSpace;
+export default dsTokensSpace;

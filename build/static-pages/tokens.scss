@@ -1,8 +1,8 @@
 /**
  * Do not edit directly, this file was auto-generated.
  * Source: https://github.com/duckduckgo/design-tokens
- * Version: 0.19.0
- * Last updated: April 17, 2026 at 06:11 PM
+ * Version: 0.20.0
+ * Last updated: April 22, 2026 at 12:01 AM
  */
 
 :root {
@@ -392,6 +392,99 @@
   --ds-font-letter-spacing-narrow: -1px;
   --ds-font-letter-spacing-normal: 0;
   --ds-font-letter-spacing-wide: 2px;
+  --ds-font-title-01-font-family: 'DuckSansDisplay', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
+  --ds-font-title-01-letter-spacing: -1px;
+  --ds-font-title-01-line-height: 64px;
+  --ds-font-title-01-size: 64px;
+  --ds-font-title-01-weight: 400;
+  --ds-font-title-02-font-family: 'DuckSansDisplay', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
+  --ds-font-title-02-letter-spacing: -1px;
+  --ds-font-title-02-line-height: 52px;
+  --ds-font-title-02-size: 52px;
+  --ds-font-title-02-weight: 400;
+  --ds-font-title-03-font-family: 'DuckSansDisplay', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
+  --ds-font-title-03-letter-spacing: -1px;
+  --ds-font-title-03-line-height: 44px;
+  --ds-font-title-03-size: 44px;
+  --ds-font-title-03-weight: 400;
+  --ds-font-title-04-font-family: 'DuckSansDisplay', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
+  --ds-font-title-04-letter-spacing: -1px;
+  --ds-font-title-04-line-height: 40px;
+  --ds-font-title-04-size: 36px;
+  --ds-font-title-04-weight: 400;
+  --ds-font-title-05-font-family: 'DuckSansDisplay', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
+  --ds-font-title-05-letter-spacing: 0;
+  --ds-font-title-05-line-height: 32px;
+  --ds-font-title-05-size: 24px;
+  --ds-font-title-05-weight: 400;
+  --ds-font-title-06-font-family: 'DuckSansDisplay', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
+  --ds-font-title-06-letter-spacing: 0;
+  --ds-font-title-06-line-height: 28px;
+  --ds-font-title-06-size: 20px;
+  --ds-font-title-06-weight: 400;
+  --ds-font-body-xxl-font-family: 'DuckSansDisplay', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
+  --ds-font-body-xxl-letter-spacing: 0;
+  --ds-font-body-xxl-line-height: 32px;
+  --ds-font-body-xxl-size: 24px;
+  --ds-font-body-xxl-weight: 400;
+  --ds-font-body-xl-font-family: 'DuckSansDisplay', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
+  --ds-font-body-xl-letter-spacing: 0;
+  --ds-font-body-xl-line-height: 28px;
+  --ds-font-body-xl-size: 20px;
+  --ds-font-body-xl-weight: 400;
+  --ds-font-body-lg-font-family: 'DuckSansProduct', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
+  --ds-font-body-lg-letter-spacing: 0;
+  --ds-font-body-lg-line-height: 24px;
+  --ds-font-body-lg-size: 16px;
+  --ds-font-body-lg-weight: 400;
+  --ds-font-body-md-font-family: 'DuckSansProduct', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
+  --ds-font-body-md-letter-spacing: 0;
+  --ds-font-body-md-line-height: 20px;
+  --ds-font-body-md-size: 14px;
+  --ds-font-body-md-weight: 400;
+  --ds-font-body-sm-font-family: 'DuckSansProduct', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
+  --ds-font-body-sm-letter-spacing: 0;
+  --ds-font-body-sm-line-height: 16px;
+  --ds-font-body-sm-size: 12px;
+  --ds-font-body-sm-weight: 400;
+  --ds-font-eyebrow-01-font-family: 'DuckSansProduct', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
+  --ds-font-eyebrow-01-letter-spacing: 2px;
+  --ds-font-eyebrow-01-line-height: 20px;
+  --ds-font-eyebrow-01-size: 18px;
+  --ds-font-eyebrow-01-weight: 500;
+  --ds-font-eyebrow-01-text-transform: uppercase;
+  --ds-font-eyebrow-02-font-family: 'DuckSansProduct', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
+  --ds-font-eyebrow-02-letter-spacing: 2px;
+  --ds-font-eyebrow-02-line-height: 16px;
+  --ds-font-eyebrow-02-size: 14px;
+  --ds-font-eyebrow-02-weight: 500;
+  --ds-font-eyebrow-02-text-transform: uppercase;
+  --ds-font-button-label-01-font-family: 'DuckSansProduct', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
+  --ds-font-button-label-01-letter-spacing: 0;
+  --ds-font-button-label-01-line-height: 20px;
+  --ds-font-button-label-01-size: 18px;
+  --ds-font-button-label-01-weight: 500;
+  --ds-font-button-label-02-font-family: 'DuckSansProduct', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
+  --ds-font-button-label-02-letter-spacing: 0;
+  --ds-font-button-label-02-line-height: 16px;
+  --ds-font-button-label-02-size: 16px;
+  --ds-font-button-label-02-weight: 700;
+  --ds-font-button-label-03-font-family: 'DuckSansProduct', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
+  --ds-font-button-label-03-letter-spacing: 0;
+  --ds-font-button-label-03-line-height: 16px;
+  --ds-font-button-label-03-size: 14px;
+  --ds-font-button-label-03-weight: 700;
+  --ds-font-label-01-font-family: 'DuckSansProduct', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
+  --ds-font-label-01-letter-spacing: 0;
+  --ds-font-label-01-line-height: 12px;
+  --ds-font-label-01-size: 12px;
+  --ds-font-label-01-weight: 700;
+  --ds-font-label-01-text-transform: uppercase;
+  --ds-font-caption-01-font-family: 'DuckSansProduct', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
+  --ds-font-caption-01-letter-spacing: 0;
+  --ds-font-caption-01-line-height: 16px;
+  --ds-font-caption-01-size: 13px;
+  --ds-font-caption-01-weight: 400;
   --ds-radius-full: 999px; /* Used for most buttons */
   --ds-radius-x01: 4px;
   --ds-radius-x02: 8px;
@@ -1189,99 +1282,6 @@
   --ds-theme-dark-status-green: #39B25E;
   --ds-theme-dark-status-yellow: #FFC95C;
   --ds-theme-dark-status-red: #EC434F;
-  --ds-breakpoint-xs: 425px; /* Max width for extra small screens */
-  --ds-breakpoint-sm: 640px; /* Max width for small screens */
-  --ds-breakpoint-md: 1024px; /* Max width for medium screens */
-  --ds-breakpoint-lg: 1025px; /* Min width for large screens */
-  --ds-breakpoint-text-shift: 800px; /* This the device width at which the text shifts up or down a size */
-  --ds-typography-title-01-font-family: 'DuckSansDisplay', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
-  --ds-typography-title-01-letter-spacing: -1px;
-  --ds-typography-title-01-line-height: 64px;
-  --ds-typography-title-01-size: 64px;
-  --ds-typography-title-01-weight: 400;
-  --ds-typography-title-02-font-family: 'DuckSansDisplay', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
-  --ds-typography-title-02-letter-spacing: -1px;
-  --ds-typography-title-02-line-height: 52px;
-  --ds-typography-title-02-size: 52px;
-  --ds-typography-title-02-weight: 400;
-  --ds-typography-title-03-font-family: 'DuckSansDisplay', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
-  --ds-typography-title-03-letter-spacing: -1px;
-  --ds-typography-title-03-line-height: 44px;
-  --ds-typography-title-03-size: 44px;
-  --ds-typography-title-03-weight: 400;
-  --ds-typography-title-04-font-family: 'DuckSansDisplay', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
-  --ds-typography-title-04-letter-spacing: -1px;
-  --ds-typography-title-04-line-height: 40px;
-  --ds-typography-title-04-size: 36px;
-  --ds-typography-title-04-weight: 400;
-  --ds-typography-title-05-font-family: 'DuckSansDisplay', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
-  --ds-typography-title-05-letter-spacing: 0;
-  --ds-typography-title-05-line-height: 32px;
-  --ds-typography-title-05-size: 24px;
-  --ds-typography-title-05-weight: 400;
-  --ds-typography-title-06-font-family: 'DuckSansDisplay', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
-  --ds-typography-title-06-letter-spacing: 0;
-  --ds-typography-title-06-line-height: 28px;
-  --ds-typography-title-06-size: 20px;
-  --ds-typography-title-06-weight: 400;
-  --ds-typography-body-01-font-family: 'DuckSansDisplay', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
-  --ds-typography-body-01-letter-spacing: 0;
-  --ds-typography-body-01-line-height: 32px;
-  --ds-typography-body-01-size: 24px;
-  --ds-typography-body-01-weight: 400;
-  --ds-typography-body-02-font-family: 'DuckSansDisplay', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
-  --ds-typography-body-02-letter-spacing: 0;
-  --ds-typography-body-02-line-height: 28px;
-  --ds-typography-body-02-size: 20px;
-  --ds-typography-body-02-weight: 400;
-  --ds-typography-body-03-font-family: 'DuckSansProduct', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
-  --ds-typography-body-03-letter-spacing: 0;
-  --ds-typography-body-03-line-height: 24px;
-  --ds-typography-body-03-size: 16px;
-  --ds-typography-body-03-weight: 400;
-  --ds-typography-body-04-font-family: 'DuckSansProduct', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
-  --ds-typography-body-04-letter-spacing: 0;
-  --ds-typography-body-04-line-height: 20px;
-  --ds-typography-body-04-size: 14px;
-  --ds-typography-body-04-weight: 400;
-  --ds-typography-body-05-font-family: 'DuckSansProduct', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
-  --ds-typography-body-05-letter-spacing: 0;
-  --ds-typography-body-05-line-height: 16px;
-  --ds-typography-body-05-size: 12px;
-  --ds-typography-body-05-weight: 400;
-  --ds-typography-eyebrow-01-font-family: 'DuckSansProduct', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
-  --ds-typography-eyebrow-01-letter-spacing: 2px;
-  --ds-typography-eyebrow-01-line-height: 20px;
-  --ds-typography-eyebrow-01-size: 18px;
-  --ds-typography-eyebrow-01-weight: 500;
-  --ds-typography-eyebrow-01-text-transform: uppercase;
-  --ds-typography-eyebrow-02-font-family: 'DuckSansProduct', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
-  --ds-typography-eyebrow-02-letter-spacing: 2px;
-  --ds-typography-eyebrow-02-line-height: 16px;
-  --ds-typography-eyebrow-02-size: 14px;
-  --ds-typography-eyebrow-02-weight: 500;
-  --ds-typography-eyebrow-02-text-transform: uppercase;
-  --ds-typography-button-label-01-font-family: 'DuckSansProduct', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
-  --ds-typography-button-label-01-letter-spacing: 0;
-  --ds-typography-button-label-01-line-height: 20px;
-  --ds-typography-button-label-01-size: 18px;
-  --ds-typography-button-label-01-weight: 500;
-  --ds-typography-button-label-02-font-family: 'DuckSansProduct', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
-  --ds-typography-button-label-02-letter-spacing: 0;
-  --ds-typography-button-label-02-line-height: 16px;
-  --ds-typography-button-label-02-size: 16px;
-  --ds-typography-button-label-02-weight: 700;
-  --ds-typography-button-label-03-font-family: 'DuckSansProduct', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
-  --ds-typography-button-label-03-letter-spacing: 0;
-  --ds-typography-button-label-03-line-height: 16px;
-  --ds-typography-button-label-03-size: 14px;
-  --ds-typography-button-label-03-weight: 700;
-  --ds-typography-label-01-font-family: 'DuckSansProduct', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
-  --ds-typography-label-01-letter-spacing: 0;
-  --ds-typography-label-01-line-height: 12px;
-  --ds-typography-label-01-size: 12px;
-  --ds-typography-label-01-weight: 700;
-  --ds-typography-label-01-text-transform: uppercase;
   --ds-button-xxs-border-radius: 999px;
   --ds-button-xxs-padding-x: 8px;
   --ds-button-xxs-padding-y: 6px;
@@ -1337,6 +1337,11 @@
   --ds-icon-button-lg-icon-size: 16px;
   --ds-icon-button-xl-padding: 16px;
   --ds-icon-button-xl-icon-size: 24px;
+  --ds-breakpoint-xs: 425px; /* Max width for extra small screens */
+  --ds-breakpoint-sm: 640px; /* Max width for small screens */
+  --ds-breakpoint-md: 1024px; /* Max width for medium screens */
+  --ds-breakpoint-lg: 1025px; /* Min width for large screens */
+  --ds-breakpoint-text-shift: 800px; /* This the device width at which the text shifts up or down a size */
   --ds-tabs-button-style-tab-unselected-background-color: var(--ds-control-secondary-background-color);
   --ds-tabs-button-style-tab-unselected-border-color: var(--ds-control-secondary-border-color);
   --ds-tabs-button-style-tab-unselected-text-color: var(--ds-text-secondary-color);
