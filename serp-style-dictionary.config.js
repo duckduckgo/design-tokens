@@ -71,6 +71,7 @@ export default {
                 {
                     destination: 'serp/tokens.json',
                     format: formats.jsonFlat,
+                    filter: (token) => !token.filePath?.includes('theme/motif-colors'),
                     options: {
                         showFileHeader: true,
                     },
