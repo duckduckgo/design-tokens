@@ -1,7 +1,7 @@
 // Do not edit directly, this file was auto-generated.
 // Source: https://github.com/duckduckgo/design-tokens
-// Version: 0.23.0
-// Last updated: April 22, 2026 at 09:21 PM
+// Version: 0.24.0
+// Last updated: April 24, 2026 at 02:56 AM
 
 declare module '@duckduckgo/design-tokens/build/serp/colors-dark' {
     export type DSThemeColorsDarkKeys =
@@ -77,7 +77,11 @@ declare module '@duckduckgo/design-tokens/build/serp/colors-dark' {
         | '--ds-destructive-tertiary-content-color'
         | '--ds-status-green'
         | '--ds-status-yellow'
-        | '--ds-status-red';
+        | '--ds-status-red'
+        | '--ds-link-primary'
+        | '--ds-link-primary-visited'
+        | '--ds-link-secondary'
+        | '--ds-link-secondary-hover';
     export type DSThemeColorsDarkValues =
         | '#111111'
         | '#181817'
@@ -126,7 +130,11 @@ declare module '@duckduckgo/design-tokens/build/serp/colors-dark' {
         | 'rgba(0, 0, 0, 0.90)'
         | 'rgba(0, 0, 0, 0.60)'
         | '#39B25E'
-        | '#FFC95C';
+        | '#FFC95C'
+        | '#adc2fc'
+        | '#A591DC'
+        | '#aaaaaa'
+        | '#cccccc';
     const dsThemeColorsDark: Record<DSThemeColorsDarkKeys, DSThemeColorsDarkValues>;
     export default dsThemeColorsDark;
 }

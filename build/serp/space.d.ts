@@ -1,7 +1,7 @@
 // Do not edit directly, this file was auto-generated.
 // Source: https://github.com/duckduckgo/design-tokens
-// Version: 0.23.0
-// Last updated: April 22, 2026 at 09:21 PM
+// Version: 0.24.0
+// Last updated: April 24, 2026 at 02:56 AM
 
 declare module '@duckduckgo/design-tokens/build/serp/space' {
     export type DSTokensSpaceKeys =
@@ -43,47 +43,48 @@ declare module '@duckduckgo/design-tokens/build/serp/space' {
         | '--ds-space-x100'
         | '--ds-space-x110'
         | '--ds-space-x130'
-        | '--ds-space-x175';
+        | '--ds-space-x175'
+        | '--ds-px-in-rem';
     export type DSTokensSpaceValues =
-        | '0.125rem'
-        | '0.25rem'
-        | '0.375rem'
-        | '0.5rem'
-        | '0.625rem'
-        | '0.75rem'
-        | '0.875rem'
-        | '1rem'
-        | '1.125rem'
-        | '1.25rem'
-        | '1.5rem'
-        | '1.75rem'
-        | '2rem'
-        | '2.25rem'
-        | '2.5rem'
-        | '2.75rem'
-        | '3rem'
-        | '3.25rem'
-        | '3.5rem'
-        | '3.75rem'
-        | '4rem'
-        | '4.25rem'
-        | '4.5rem'
-        | '5rem'
-        | '5.5rem'
-        | '6rem'
-        | '8rem'
-        | '10rem'
-        | '12rem'
-        | '14rem'
-        | '16rem'
-        | '18rem'
-        | '20rem'
-        | '22.5rem'
-        | '24rem'
-        | '25rem'
-        | '27.5rem'
-        | '32.5rem'
-        | '43.75rem';
+        | '2px'
+        | '4px'
+        | '6px'
+        | '8px'
+        | '10px'
+        | '12px'
+        | '14px'
+        | '16px'
+        | '18px'
+        | '20px'
+        | '24px'
+        | '28px'
+        | '32px'
+        | '36px'
+        | '40px'
+        | '44px'
+        | '48px'
+        | '52px'
+        | '56px'
+        | '60px'
+        | '64px'
+        | '68px'
+        | '72px'
+        | '80px'
+        | '88px'
+        | '96px'
+        | '128px'
+        | '160px'
+        | '192px'
+        | '224px'
+        | '256px'
+        | '288px'
+        | '320px'
+        | '360px'
+        | '384px'
+        | '400px'
+        | '440px'
+        | '520px'
+        | '700px';
     const dsTokensSpace: Record<DSTokensSpaceKeys, DSTokensSpaceValues>;
     export default dsTokensSpace;
 }

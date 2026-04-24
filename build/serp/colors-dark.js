@@ -1,8 +1,8 @@
 
 // Do not edit directly, this file was auto-generated.
 // Source: https://github.com/duckduckgo/design-tokens
-// Version: 0.23.0
-// Last updated: April 22, 2026 at 09:21 PM
+// Version: 0.24.0
+// Last updated: April 24, 2026 at 02:56 AM
 
 const dsThemeColorsDark = {
     /** SURFACE */
@@ -103,6 +103,12 @@ const dsThemeColorsDark = {
     '--ds-status-green': '#39B25E',
     '--ds-status-yellow': '#FFC95C',
     '--ds-status-red': '#EC434F',
+
+    /** LINK-COLORS */
+    '--ds-link-primary': '#adc2fc',
+    '--ds-link-primary-visited': '#A591DC',
+    '--ds-link-secondary': '#aaaaaa',
+    '--ds-link-secondary-hover': '#cccccc',
 };
 
 export default dsThemeColorsDark;
