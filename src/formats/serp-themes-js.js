@@ -16,9 +16,28 @@ export default async function serpThemesTs({ dictionary, platform, file, options
     const prefix = platform?.prefix || 'ds';
     const { variant = 'light', exportName = 'dsThemeColors' } = options;
 
+    function isThemeVariantToken(token) {
+        return token.path[0] === 'theme' && token.path[1] === variant;
+    }
+
+    function isSerpThemeOverrideToken(token) {
+        return isThemeVariantToken(token) && token.filePath?.match(/[\\/]web[\\/]serp[\\/]colors\./);
+    }
+
     function buildName(pathSegments) {
         const kebabPath = pathSegments.map(toKebab).join('-');
         return `--${prefix}-${kebabPath}`;
+    }
+
+    function getCategory(token) {
+        const category = token.path[2];
+
+        // Keep SERP link tokens together in a single section.
+        if (isSerpThemeOverrideToken(token) && /^link/i.test(String(category))) {
+            return 'linkColors';
+        }
+
+        return category;
     }
 
     const refLookup = new Map();
@@ -35,11 +54,22 @@ export default async function serpThemesTs({ dictionary, platform, file, options
         return refLookup.get(rawRef) ?? rawRef;
     }
 
-    const themeTokens = dictionary.allTokens.filter((t) => t.path[0] === 'theme' && t.path[1] === variant);
+    const themeTokens = dictionary.allTokens.filter(isThemeVariantToken);
+    const mergedThemeTokens = new Map();
+
+    // Build base theme tokens first, then apply SERP color overrides by CSS var name.
+    for (const token of themeTokens) {
+        mergedThemeTokens.set(buildName(token.path.slice(2)), token);
+    }
+
+    const serpThemeOverrideTokens = dictionary.allTokens.filter(isSerpThemeOverrideToken);
+    for (const token of serpThemeOverrideTokens) {
+        mergedThemeTokens.set(buildName(token.path.slice(2)), token);
+    }
 
     const groups = new Map();
-    for (const token of themeTokens) {
-        const category = token.path[2];
+    for (const token of mergedThemeTokens.values()) {
+        const category = getCategory(token);
         if (!groups.has(category)) {
             groups.set(category, []);
         }

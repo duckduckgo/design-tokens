@@ -9,6 +9,7 @@ import { toKebab } from '../utils/to-kebab.js';
  *   sections: Array<{
  *     pathPrefix:  string  – first path element to filter tokens (e.g. 'space')
  *     exportName:  string  – exported const name        (e.g. 'dsTokensSpace')
+ *     pathNameOverrides?: Record<string, string> – optional kebab-cased token-path -> output path override
  *     valueFormat: 'rem' | 'rem-calc' | 'number' | 'raw'
  *       - rem      : converts pixel values to rem with a px comment (e.g. '0.5rem', // 8px)
  *       - rem-calc : wraps pixel values in calc(N * var(--<prefix>-base-px-in-rem))
@@ -20,8 +21,11 @@ export default async function serpBaseTokensTs({ dictionary, platform, file, opt
     const prefix = platform?.prefix;
     const { sections = [] } = options;
 
-    function buildName(token) {
-        const path = token.path.map(toKebab).join('-');
+    function buildName(token, section) {
+        const kebabPath = token.path.map(toKebab);
+        const tokenPathKey = kebabPath.join('.');
+        const overridePath = section.pathNameOverrides?.[tokenPathKey];
+        const path = overridePath ?? kebabPath.join('-');
         if (prefix) {
             return `--${prefix}-${path}`;
         }
@@ -55,7 +59,7 @@ export default async function serpBaseTokensTs({ dictionary, platform, file, opt
             if (tokens.length === 0) return '';
 
             const entries = tokens.map((token) => {
-                const name = buildName(token);
+                const name = buildName(token, section);
                 const result = formatValue(token, section);
                 if (typeof result === 'object') {
                     return `    '${name}': ${result.value}, // ${result.comment}`;
