@@ -52,7 +52,10 @@ export default {
                             {
                                 pathPrefix: 'space',
                                 exportName: 'dsTokensSpace',
-                                valueFormat: 'rem',
+                                pathNameOverrides: {
+                                    'space.px-in-rem': 'px-in-rem',
+                                },
+                                valueFormat: 'raw',
                             },
                         ],
                     },
