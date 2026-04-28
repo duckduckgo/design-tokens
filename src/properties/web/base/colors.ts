@@ -46,10 +46,10 @@ const colors: DesignToken = {
             90: { $value: 'rgba(255, 255, 255, 0.90)' },
         },
         gray: {
-            0: { $value: '#fcfcfc' },
+            0: { $value: '#fafafa' },
             10: { $value: '#f5f5f5' },
-            20: { $value: '#e5e5e5' },
-            30: { $value: '#c5c5c5' },
+            20: { $value: '#eeeeee' },
+            30: { $value: '#cccccc' },
             40: { $value: '#aaaaaa' },
             50: { $value: '#888888' },
             60: { $value: '#686868' },
