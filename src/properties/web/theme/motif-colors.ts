@@ -22,7 +22,10 @@ const motifColors: DesignToken = {
                     $value: '{color.blossom.10}',
                 },
                 tertiary: {
-                    $value: '{color.white}',
+                    $value: '{color.blossom.0}',
+                },
+                contrast: {
+                    $value: '{color.blossom.100At.96}',
                 },
                 // decorations are used for things like shadows, hr lines
                 decoration: {
@@ -180,7 +183,10 @@ const motifColors: DesignToken = {
                     $value: '{color.lilypad.10}',
                 },
                 tertiary: {
-                    $value: '{color.white}',
+                    $value: '{color.lilypad.0}',
+                },
+                contrast: {
+                    $value: '{color.lilypad.100At.96}',
                 },
                 // decorations are used for things like shadows, hr lines
                 decoration: {
@@ -338,7 +344,10 @@ const motifColors: DesignToken = {
                     $value: '{color.mandarin.10}',
                 },
                 tertiary: {
-                    $value: '{color.white}',
+                    $value: '{color.mandarin.0}',
+                },
+                contrast: {
+                    $value: '{color.mandarin.100At.96}',
                 },
                 // decorations are used for things like shadows, hr lines
                 decoration: {
@@ -496,7 +505,10 @@ const motifColors: DesignToken = {
                     $value: '{color.pollen.10}',
                 },
                 tertiary: {
-                    $value: '{color.white}',
+                    $value: '{color.pollen.0}',
+                },
+                contrast: {
+                    $value: '{color.pollen.100At.96}',
                 },
                 // decorations are used for things like shadows, hr lines
                 decoration: {
@@ -654,7 +666,10 @@ const motifColors: DesignToken = {
                     $value: '{color.pondwater.10}',
                 },
                 tertiary: {
-                    $value: '{color.white}',
+                    $value: '{color.pondwater.0}',
+                },
+                contrast: {
+                    $value: '{color.pondwater.100At.96}',
                 },
                 // decorations are used for things like shadows, hr lines
                 decoration: {
@@ -815,6 +830,9 @@ const motifColors: DesignToken = {
                 tertiary: {
                     $value: '{color.blossom.80}',
                 },
+                contrast: {
+                    $value: '{color.whiteAt.96}',
+                },
                 // decorations are used for things like shadows, hr lines
                 decoration: {
                     primary: {
@@ -971,7 +989,10 @@ const motifColors: DesignToken = {
                     $value: '{color.lilypad.90}',
                 },
                 tertiary: {
-                    $value: '{color.lilypad.30}',
+                    $value: '{color.lilypad.80}',
+                },
+                contrast: {
+                    $value: '{color.whiteAt.96}',
                 },
                 // decorations are used for things like shadows, hr lines
                 decoration: {
@@ -1131,6 +1152,9 @@ const motifColors: DesignToken = {
                 tertiary: {
                     $value: '{color.mandarin.80}',
                 },
+                contrast: {
+                    $value: '{color.whiteAt.96}',
+                },
                 // decorations are used for things like shadows, hr lines
                 decoration: {
                     primary: {
@@ -1288,7 +1312,10 @@ const motifColors: DesignToken = {
                     $value: '{color.pollen.90}',
                 },
                 tertiary: {
-                    $value: '{color.pollen.30}',
+                    $value: '{color.pollen.80}',
+                },
+                contrast: {
+                    $value: '{color.whiteAt.96}',
                 },
                 // decorations are used for things like shadows, hr lines
                 decoration: {
@@ -1447,7 +1474,10 @@ const motifColors: DesignToken = {
                     $value: '{color.pondwater.90}',
                 },
                 tertiary: {
-                    $value: '{color.pondwater.30}',
+                    $value: '{color.pondwater.80}',
+                },
+                contrast: {
+                    $value: '{color.whiteAt.96}',
                 },
                 // decorations are used for things like shadows, hr lines
                 decoration: {
