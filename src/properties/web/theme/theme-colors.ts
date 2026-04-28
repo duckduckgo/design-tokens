@@ -214,8 +214,9 @@ const themeColors: DesignToken = {
             },
             status: {
                 green: { $value: `{color.green.40}` },
-                yellow: { $value: '{color.pollen.40}' },
+                yellow: { $value: '{color.pollen.50}' },
                 red: { $value: '{color.red.50}' },
+                gray: { $value: '{color.gray.50}' },
             },
         },
         dark: {
@@ -415,8 +416,9 @@ const themeColors: DesignToken = {
             },
             status: {
                 green: { $value: `{color.green.40}` },
-                yellow: { $value: '{color.pollen.40}' },
+                yellow: { $value: '{color.pollen.50}' },
                 red: { $value: '{color.red.50}' },
+                gray: { $value: '{color.gray.50}' },
             },
         },
     },
