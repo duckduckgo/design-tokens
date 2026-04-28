@@ -25,6 +25,9 @@ const themeColors: DesignToken = {
                 tertiary: {
                     $value: '{color.white}',
                 },
+                contrast: {
+                    $value: '{color.black}',
+                },
                 // decorations are used for things like shadows, hr lines
                 decoration: {
                     primary: {
@@ -231,6 +234,9 @@ const themeColors: DesignToken = {
                 },
                 tertiary: {
                     $value: '{color.eggshell.80}',
+                },
+                contrast: {
+                    $value: '{color.eggshell.20}',
                 },
                 // decorations are used for things like shadows, hr lines
                 decoration: {
