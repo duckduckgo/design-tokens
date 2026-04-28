@@ -132,6 +132,17 @@ const motifColors: DesignToken = {
                     $value: '{color.blossom.80At.72}',
                 },
             },
+            controlSubtle: {
+                primaryBorderColor: {
+                    $value: '{color.blossom.80At.12}',
+                },
+                secondaryBorderColor: {
+                    $value: '{color.blossom.80At.18}',
+                },
+                tertiaryBorderColor: {
+                    $value: '{color.blossom.80At.36}',
+                },
+            },
             controlRaised: {
                 primaryBackgroundColor: {
                     $value: '{color.blossom.0}',
@@ -291,6 +302,17 @@ const motifColors: DesignToken = {
                 },
                 quaternaryBorderColor: {
                     $value: '{color.lilypad.60At.72}',
+                },
+            },
+            controlSubtle: {
+                primaryBorderColor: {
+                    $value: '{color.lilypad.60At.12}',
+                },
+                secondaryBorderColor: {
+                    $value: '{color.lilypad.60At.18}',
+                },
+                tertiaryBorderColor: {
+                    $value: '{color.lilypad.60At.36}',
                 },
             },
             controlRaised: {
@@ -454,6 +476,17 @@ const motifColors: DesignToken = {
                     $value: '{color.mandarin.50At.72}',
                 },
             },
+            controlSubtle: {
+                primaryBorderColor: {
+                    $value: '{color.mandarin.50At.12}',
+                },
+                secondaryBorderColor: {
+                    $value: '{color.mandarin.50At.18}',
+                },
+                tertiaryBorderColor: {
+                    $value: '{color.mandarin.50At.36}',
+                },
+            },
             controlRaised: {
                 primaryBackgroundColor: {
                     $value: '{color.mandarin.0}',
@@ -615,6 +648,17 @@ const motifColors: DesignToken = {
                     $value: '{color.pollen.40At.72}',
                 },
             },
+            controlSubtle: {
+                primaryBorderColor: {
+                    $value: '{color.pollen.40At.12}',
+                },
+                secondaryBorderColor: {
+                    $value: '{color.pollen.40At.18}',
+                },
+                tertiaryBorderColor: {
+                    $value: '{color.pollen.40At.36}',
+                },
+            },
             controlRaised: {
                 primaryBackgroundColor: {
                     $value: '{color.pollen.0}',
@@ -774,6 +818,17 @@ const motifColors: DesignToken = {
                 },
                 quaternaryBorderColor: {
                     $value: '{color.pondwater.60At.72}',
+                },
+            },
+            controlSubtle: {
+                primaryBorderColor: {
+                    $value: '{color.pondwater.60At.12}',
+                },
+                secondaryBorderColor: {
+                    $value: '{color.pondwater.60At.18}',
+                },
+                tertiaryBorderColor: {
+                    $value: '{color.pondwater.60At.36}',
                 },
             },
             controlRaised: {
@@ -938,6 +993,17 @@ const motifColors: DesignToken = {
                     $value: '{color.blossom.10At.80}',
                 },
             },
+            controlSubtle: {
+                primaryBorderColor: {
+                    $value: '{color.blossom.10At.12}',
+                },
+                secondaryBorderColor: {
+                    $value: '{color.blossom.10At.18}',
+                },
+                tertiaryBorderColor: {
+                    $value: '{color.blossom.10At.36}',
+                },
+            },
             controlRaised: {
                 primaryBackgroundColor: {
                     $value: '{color.blossom.0At.18}',
@@ -1097,6 +1163,17 @@ const motifColors: DesignToken = {
                 },
                 quaternaryBorderColor: {
                     $value: '{color.lilypad.10At.80}',
+                },
+            },
+            controlSubtle: {
+                primaryBorderColor: {
+                    $value: '{color.lilypad.10At.12}',
+                },
+                secondaryBorderColor: {
+                    $value: '{color.lilypad.10At.18}',
+                },
+                tertiaryBorderColor: {
+                    $value: '{color.lilypad.10At.36}',
                 },
             },
             controlRaised: {
@@ -1261,6 +1338,17 @@ const motifColors: DesignToken = {
                     $value: '{color.mandarin.10At.80}',
                 },
             },
+            controlSubtle: {
+                primaryBorderColor: {
+                    $value: '{color.mandarin.10At.12}',
+                },
+                secondaryBorderColor: {
+                    $value: '{color.mandarin.10At.18}',
+                },
+                tertiaryBorderColor: {
+                    $value: '{color.mandarin.10At.36}',
+                },
+            },
             controlRaised: {
                 primaryBackgroundColor: {
                     $value: '{color.mandarin.0At.18}',
@@ -1423,6 +1511,17 @@ const motifColors: DesignToken = {
                     $value: '{color.pollen.10At.80}',
                 },
             },
+            controlSubtle: {
+                primaryBorderColor: {
+                    $value: '{color.pollen.10At.12}',
+                },
+                secondaryBorderColor: {
+                    $value: '{color.pollen.10At.18}',
+                },
+                tertiaryBorderColor: {
+                    $value: '{color.pollen.10At.36}',
+                },
+            },
             controlRaised: {
                 primaryBackgroundColor: {
                     $value: '{color.pollen.0At.18}',
@@ -1582,6 +1681,17 @@ const motifColors: DesignToken = {
                 },
                 quaternaryBorderColor: {
                     $value: '{color.pondwater.10At.80}',
+                },
+            },
+            controlSubtle: {
+                primaryBorderColor: {
+                    $value: '{color.pondwater.10At.12}',
+                },
+                secondaryBorderColor: {
+                    $value: '{color.pondwater.10At.18}',
+                },
+                tertiaryBorderColor: {
+                    $value: '{color.pondwater.10At.36}',
                 },
             },
             controlRaised: {
