@@ -6,9 +6,9 @@ const supportColors: DesignToken = {
     color: {
         gray: {
             '0At': {
-                24: { $value: 'rgba(252, 252, 252, 0.24)' },
-                32: { $value: 'rgba(252, 252, 252, 0.32)' },
-                60: { $value: 'rgba(252, 252, 252, 0.60)' },
+                24: { $value: 'rgba(250, 250, 250, 0.24)' },
+                32: { $value: 'rgba(250, 250, 250, 0.32)' },
+                60: { $value: 'rgba(250, 250, 250, 0.60)' },
             },
         },
         eggshell: {
