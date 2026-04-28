@@ -139,6 +139,17 @@ const themeColors: DesignToken = {
                     $value: '{color.blackAt.72}',
                 },
             },
+            controlSubtle: {
+                primaryBorderColor: {
+                    $value: '{color.blackAt.12}',
+                },
+                secondaryBorderColor: {
+                    $value: '{color.blackAt.20}',
+                },
+                tertiaryBorderColor: {
+                    $value: '{color.blackAt.32}',
+                },
+            },
             controlRaised: {
                 primaryBackgroundColor: {
                     $value: '{color.gray.0}',
@@ -342,6 +353,17 @@ const themeColors: DesignToken = {
                 },
                 quaternaryBorderColor: {
                     $value: '{color.whiteAt.80}',
+                },
+            },
+            controlSubtle: {
+                primaryBorderColor: {
+                    $value: '{color.whiteAt.12}',
+                },
+                secondaryBorderColor: {
+                    $value: '{color.whiteAt.18}',
+                },
+                tertiaryBorderColor: {
+                    $value: '{color.whiteAt.36}',
                 },
             },
             controlRaised: {

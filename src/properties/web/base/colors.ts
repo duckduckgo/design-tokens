@@ -44,6 +44,7 @@ const colors: DesignToken = {
             72: { $value: 'rgba(255, 255, 255, 0.72)' },
             80: { $value: 'rgba(255, 255, 255, 0.80)' },
             90: { $value: 'rgba(255, 255, 255, 0.90)' },
+            96: { $value: 'rgba(255, 255, 255, 0.96)' },
         },
         gray: {
             0: { $value: '#fafafa' },
