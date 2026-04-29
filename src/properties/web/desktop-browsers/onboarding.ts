@@ -52,7 +52,7 @@ const onboardingTokens: DesignToken = {
             },
             control: {
                 primaryBorderColor: {
-                    $value: '{color.blackAt.20}',
+                    $value: 'rgba(0, 0, 0, 0.20)',
                 },
                 primaryBackgroundColor: {
                     $value: '{color.blackAt.6}',

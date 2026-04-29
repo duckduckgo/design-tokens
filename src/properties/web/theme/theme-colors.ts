@@ -144,10 +144,10 @@ const themeColors: DesignToken = {
                     $value: '{color.blackAt.12}',
                 },
                 secondaryBorderColor: {
-                    $value: '{color.blackAt.20}',
+                    $value: '{color.blackAt.18}',
                 },
                 tertiaryBorderColor: {
-                    $value: '{color.blackAt.32}',
+                    $value: '{color.blackAt.36}',
                 },
             },
             controlRaised: {

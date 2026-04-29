@@ -14,7 +14,7 @@ const colors: DesignToken = {
             9: { $value: 'rgba(0, 0, 0, 0.09)' },
             12: { $value: 'rgba(0, 0, 0, 0.12)' },
             16: { $value: 'rgba(0, 0, 0, 0.16)' },
-            20: { $value: 'rgba(0, 0, 0, 0.20)' },
+            18: { $value: 'rgba(0, 0, 0, 0.18)' },
             24: { $value: 'rgba(0, 0, 0, 0.24)' },
             30: { $value: 'rgba(0, 0, 0, 0.30)' },
             32: { $value: 'rgba(0, 0, 0, 0.32)' },
