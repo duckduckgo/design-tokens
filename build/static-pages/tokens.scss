@@ -1,8 +1,8 @@
 /**
  * Do not edit directly, this file was auto-generated.
  * Source: https://github.com/duckduckgo/design-tokens
- * Version: 0.24.0
- * Last updated: April 24, 2026 at 02:56 AM
+ * Version: 0.25.0
+ * Last updated: April 29, 2026 at 01:02 AM
  */
 
 :root {
@@ -14,7 +14,7 @@
   --ds-color-black-at-9: rgba(0, 0, 0, 0.09);
   --ds-color-black-at-12: rgba(0, 0, 0, 0.12);
   --ds-color-black-at-16: rgba(0, 0, 0, 0.16);
-  --ds-color-black-at-20: rgba(0, 0, 0, 0.20);
+  --ds-color-black-at-18: rgba(0, 0, 0, 0.18);
   --ds-color-black-at-24: rgba(0, 0, 0, 0.24);
   --ds-color-black-at-30: rgba(0, 0, 0, 0.30);
   --ds-color-black-at-32: rgba(0, 0, 0, 0.32);
@@ -42,10 +42,11 @@
   --ds-color-white-at-72: rgba(255, 255, 255, 0.72);
   --ds-color-white-at-80: rgba(255, 255, 255, 0.80);
   --ds-color-white-at-90: rgba(255, 255, 255, 0.90);
-  --ds-color-gray-0: #fcfcfc;
+  --ds-color-white-at-96: rgba(255, 255, 255, 0.96);
+  --ds-color-gray-0: #fafafa;
   --ds-color-gray-10: #f5f5f5;
-  --ds-color-gray-20: #e5e5e5;
-  --ds-color-gray-30: #c5c5c5;
+  --ds-color-gray-20: #eeeeee;
+  --ds-color-gray-30: #cccccc;
   --ds-color-gray-40: #aaaaaa;
   --ds-color-gray-50: #888888;
   --ds-color-gray-60: #686868;
@@ -54,9 +55,9 @@
   --ds-color-gray-90: #282828;
   --ds-color-gray-100: #181818;
   --ds-color-gray-111: #111111;
-  --ds-color-gray-0-at-24: rgba(252, 252, 252, 0.24);
-  --ds-color-gray-0-at-32: rgba(252, 252, 252, 0.32);
-  --ds-color-gray-0-at-60: rgba(252, 252, 252, 0.60);
+  --ds-color-gray-0-at-24: rgba(250, 250, 250, 0.24);
+  --ds-color-gray-0-at-32: rgba(250, 250, 250, 0.32);
+  --ds-color-gray-0-at-60: rgba(250, 250, 250, 0.60);
   --ds-color-eggshell-0: #FBFAF9;
   --ds-color-eggshell-10: #F7F5F2;
   --ds-color-eggshell-20: #ECEBE7;
@@ -110,6 +111,7 @@
   --ds-color-blossom-80-at-18: rgba(82, 26, 97, 0.18);
   --ds-color-blossom-80-at-20: rgba(82, 26, 97, 0.20);
   --ds-color-blossom-80-at-30: rgba(82, 26, 97, 0.30);
+  --ds-color-blossom-80-at-36: rgba(82, 26, 97, 0.36);
   --ds-color-blossom-80-at-48: rgba(82, 26, 97, 0.48);
   --ds-color-blossom-80-at-60: rgba(82, 26, 97, 0.60);
   --ds-color-blossom-80-at-72: rgba(82, 26, 97, 0.72);
@@ -168,6 +170,7 @@
   --ds-color-lilypad-60-at-18: rgba(36, 122, 100, 0.18);
   --ds-color-lilypad-60-at-20: rgba(36, 122, 100, 0.20);
   --ds-color-lilypad-60-at-30: rgba(36, 122, 100, 0.30);
+  --ds-color-lilypad-60-at-36: rgba(36, 122, 100, 0.36);
   --ds-color-lilypad-60-at-48: rgba(36, 122, 100, 0.48);
   --ds-color-lilypad-60-at-60: rgba(36, 122, 100, 0.60);
   --ds-color-lilypad-60-at-72: rgba(36, 122, 100, 0.72);
@@ -226,6 +229,7 @@
   --ds-color-mandarin-50-at-18: rgba(240, 95, 43, 0.18);
   --ds-color-mandarin-50-at-20: rgba(240, 95, 43, 0.20);
   --ds-color-mandarin-50-at-30: rgba(240, 95, 43, 0.30);
+  --ds-color-mandarin-50-at-36: rgba(240, 95, 43, 0.36);
   --ds-color-mandarin-50-at-48: rgba(240, 95, 43, 0.48);
   --ds-color-mandarin-50-at-60: rgba(240, 95, 43, 0.60);
   --ds-color-mandarin-50-at-72: rgba(240, 95, 43, 0.72);
@@ -282,9 +286,11 @@
   --ds-color-pollen-30-at-60: rgba(255, 216, 133, 0.60);
   --ds-color-pollen-30-at-72: rgba(255, 216, 133, 0.72);
   --ds-color-pollen-40-at-12: rgba(255, 201, 92, 0.12);
+  --ds-color-pollen-40-at-18: rgba(255, 201, 92, 0.18);
   --ds-color-pollen-40-at-20: rgba(255, 201, 92, 0.20);
   --ds-color-pollen-40-at-28: rgba(255, 201, 92, 0.28);
   --ds-color-pollen-40-at-30: rgba(255, 201, 92, 0.30);
+  --ds-color-pollen-40-at-36: rgba(255, 201, 92, 0.36);
   --ds-color-pollen-40-at-40: rgba(255, 201, 92, 0.40);
   --ds-color-pollen-40-at-48: rgba(255, 201, 92, 0.48);
   --ds-color-pollen-40-at-56: rgba(255, 201, 92, 0.56);
@@ -352,6 +358,7 @@
   --ds-color-pondwater-60-at-18: rgba(16, 116, 204, 0.18);
   --ds-color-pondwater-60-at-20: rgba(16, 116, 204, 0.20);
   --ds-color-pondwater-60-at-30: rgba(16, 116, 204, 0.30);
+  --ds-color-pondwater-60-at-36: rgba(16, 116, 204, 0.36);
   --ds-color-pondwater-60-at-48: rgba(16, 116, 204, 0.48);
   --ds-color-pondwater-60-at-60: rgba(16, 116, 204, 0.60);
   --ds-color-pondwater-60-at-72: rgba(16, 116, 204, 0.72);
@@ -550,7 +557,8 @@
   --ds-motif-blossom-light-surface-canvas: #FBF7FF;
   --ds-motif-blossom-light-surface-primary: #EADAFD;
   --ds-motif-blossom-light-surface-secondary: #F5EDFF;
-  --ds-motif-blossom-light-surface-tertiary: #ffffff;
+  --ds-motif-blossom-light-surface-tertiary: #FBF7FF;
+  --ds-motif-blossom-light-surface-contrast: rgba(35, 8, 41, 0.96);
   --ds-motif-blossom-light-surface-decoration-primary: rgba(35, 8, 41, 0.06);
   --ds-motif-blossom-light-surface-decoration-secondary: rgba(35, 8, 41, 0.12);
   --ds-motif-blossom-light-surface-decoration-tertiary: rgba(35, 8, 41, 0.16);
@@ -596,6 +604,9 @@
   --ds-motif-blossom-light-control-secondary-border-color: rgba(82, 26, 97, 0.48);
   --ds-motif-blossom-light-control-tertiary-border-color: rgba(82, 26, 97, 0.60);
   --ds-motif-blossom-light-control-quaternary-border-color: rgba(82, 26, 97, 0.72);
+  --ds-motif-blossom-light-control-subtle-primary-border-color: rgba(82, 26, 97, 0.12);
+  --ds-motif-blossom-light-control-subtle-secondary-border-color: rgba(82, 26, 97, 0.18);
+  --ds-motif-blossom-light-control-subtle-tertiary-border-color: rgba(82, 26, 97, 0.36);
   --ds-motif-blossom-light-control-raised-primary-background-color: #FBF7FF;
   --ds-motif-blossom-light-control-raised-backdrop: rgba(0, 0, 0, 0.09);
   --ds-motif-blossom-light-highlight-primary: rgba(251, 247, 255, 0.24);
@@ -609,7 +620,8 @@
   --ds-motif-lilypad-light-surface-canvas: #F8FCF9;
   --ds-motif-lilypad-light-surface-primary: #CFEBDA;
   --ds-motif-lilypad-light-surface-secondary: #E2F3E9;
-  --ds-motif-lilypad-light-surface-tertiary: #ffffff;
+  --ds-motif-lilypad-light-surface-tertiary: #F8FCF9;
+  --ds-motif-lilypad-light-surface-contrast: rgba(8, 33, 25, 0.96);
   --ds-motif-lilypad-light-surface-decoration-primary: rgba(8, 33, 25, 0.06);
   --ds-motif-lilypad-light-surface-decoration-secondary: rgba(8, 33, 25, 0.12);
   --ds-motif-lilypad-light-surface-decoration-tertiary: rgba(8, 33, 25, 0.16);
@@ -655,6 +667,9 @@
   --ds-motif-lilypad-light-control-secondary-border-color: rgba(36, 122, 100, 0.48);
   --ds-motif-lilypad-light-control-tertiary-border-color: rgba(36, 122, 100, 0.60);
   --ds-motif-lilypad-light-control-quaternary-border-color: rgba(36, 122, 100, 0.72);
+  --ds-motif-lilypad-light-control-subtle-primary-border-color: rgba(36, 122, 100, 0.12);
+  --ds-motif-lilypad-light-control-subtle-secondary-border-color: rgba(36, 122, 100, 0.18);
+  --ds-motif-lilypad-light-control-subtle-tertiary-border-color: rgba(36, 122, 100, 0.36);
   --ds-motif-lilypad-light-control-raised-primary-background-color: #F8FCF9;
   --ds-motif-lilypad-light-control-raised-backdrop: rgba(0, 0, 0, 0.09);
   --ds-motif-lilypad-light-highlight-primary: rgba(248, 252, 249, 0.24);
@@ -668,7 +683,8 @@
   --ds-motif-mandarin-light-surface-canvas: #FFFAF9;
   --ds-motif-mandarin-light-surface-primary: #FFDACC;
   --ds-motif-mandarin-light-surface-secondary: #FFEBE5;
-  --ds-motif-mandarin-light-surface-tertiary: #ffffff;
+  --ds-motif-mandarin-light-surface-tertiary: #FFFAF9;
+  --ds-motif-mandarin-light-surface-contrast: rgba(41, 14, 10, 0.96);
   --ds-motif-mandarin-light-surface-decoration-primary: rgba(41, 14, 10, 0.06);
   --ds-motif-mandarin-light-surface-decoration-secondary: rgba(41, 14, 10, 0.12);
   --ds-motif-mandarin-light-surface-decoration-tertiary: rgba(41, 14, 10, 0.16);
@@ -714,6 +730,9 @@
   --ds-motif-mandarin-light-control-secondary-border-color: rgba(240, 95, 43, 0.48);
   --ds-motif-mandarin-light-control-tertiary-border-color: rgba(240, 95, 43, 0.60);
   --ds-motif-mandarin-light-control-quaternary-border-color: rgba(240, 95, 43, 0.72);
+  --ds-motif-mandarin-light-control-subtle-primary-border-color: rgba(240, 95, 43, 0.12);
+  --ds-motif-mandarin-light-control-subtle-secondary-border-color: rgba(240, 95, 43, 0.18);
+  --ds-motif-mandarin-light-control-subtle-tertiary-border-color: rgba(240, 95, 43, 0.36);
   --ds-motif-mandarin-light-control-raised-primary-background-color: #FFFAF9;
   --ds-motif-mandarin-light-control-raised-backdrop: rgba(0, 0, 0, 0.09);
   --ds-motif-mandarin-light-highlight-primary: rgba(255, 240, 249, 0.24);
@@ -727,7 +746,8 @@
   --ds-motif-pollen-light-surface-canvas: #FFFBF0;
   --ds-motif-pollen-light-surface-primary: #FFEAB8;
   --ds-motif-pollen-light-surface-secondary: #FEF4DA;
-  --ds-motif-pollen-light-surface-tertiary: #ffffff;
+  --ds-motif-pollen-light-surface-tertiary: #FFFBF0;
+  --ds-motif-pollen-light-surface-contrast: rgba(36, 15, 4, 0.96);
   --ds-motif-pollen-light-surface-decoration-primary: rgba(36, 15, 4, 0.06);
   --ds-motif-pollen-light-surface-decoration-secondary: rgba(36, 15, 4, 0.12);
   --ds-motif-pollen-light-surface-decoration-tertiary: rgba(36, 15, 4, 0.16);
@@ -773,6 +793,9 @@
   --ds-motif-pollen-light-control-secondary-border-color: rgba(255, 201, 92, 0.48);
   --ds-motif-pollen-light-control-tertiary-border-color: rgba(255, 201, 92, 0.60);
   --ds-motif-pollen-light-control-quaternary-border-color: rgba(255, 201, 92, 0.72);
+  --ds-motif-pollen-light-control-subtle-primary-border-color: rgba(255, 201, 92, 0.12);
+  --ds-motif-pollen-light-control-subtle-secondary-border-color: rgba(255, 201, 92, 0.18);
+  --ds-motif-pollen-light-control-subtle-tertiary-border-color: rgba(255, 201, 92, 0.36);
   --ds-motif-pollen-light-control-raised-primary-background-color: #FFFBF0;
   --ds-motif-pollen-light-control-raised-backdrop: rgba(0, 0, 0, 0.09);
   --ds-motif-pollen-light-highlight-primary: rgba(255, 251, 240, 0.24);
@@ -786,7 +809,8 @@
   --ds-motif-pondwater-light-surface-canvas: #F5FBFE;
   --ds-motif-pondwater-light-surface-primary: #CBEAFF;
   --ds-motif-pondwater-light-surface-secondary: #E6F6FF;
-  --ds-motif-pondwater-light-surface-tertiary: #ffffff;
+  --ds-motif-pondwater-light-surface-tertiary: #F5FBFE;
+  --ds-motif-pondwater-light-surface-contrast: rgba(1, 20, 45, 0.96);
   --ds-motif-pondwater-light-surface-decoration-primary: rgba(1, 20, 45, 0.06);
   --ds-motif-pondwater-light-surface-decoration-secondary: rgba(1, 20, 45, 0.12);
   --ds-motif-pondwater-light-surface-decoration-tertiary: rgba(1, 20, 45, 0.16);
@@ -832,6 +856,9 @@
   --ds-motif-pondwater-light-control-secondary-border-color: rgba(16, 116, 204, 0.48);
   --ds-motif-pondwater-light-control-tertiary-border-color: rgba(16, 116, 204, 0.60);
   --ds-motif-pondwater-light-control-quaternary-border-color: rgba(16, 116, 204, 0.72);
+  --ds-motif-pondwater-light-control-subtle-primary-border-color: rgba(16, 116, 204, 0.12);
+  --ds-motif-pondwater-light-control-subtle-secondary-border-color: rgba(16, 116, 204, 0.18);
+  --ds-motif-pondwater-light-control-subtle-tertiary-border-color: rgba(16, 116, 204, 0.36);
   --ds-motif-pondwater-light-control-raised-primary-background-color: #F5FBFE;
   --ds-motif-pondwater-light-control-raised-backdrop: rgba(0, 0, 0, 0.09);
   --ds-motif-pondwater-light-highlight-primary: rgba(245, 251, 254, 0.24);
@@ -846,6 +873,7 @@
   --ds-motif-blossom-dark-surface-primary: #230829;
   --ds-motif-blossom-dark-surface-secondary: #3E0E47;
   --ds-motif-blossom-dark-surface-tertiary: #521A61;
+  --ds-motif-blossom-dark-surface-contrast: rgba(255, 255, 255, 0.96);
   --ds-motif-blossom-dark-surface-decoration-primary: rgba(255, 255, 255, 0.06);
   --ds-motif-blossom-dark-surface-decoration-secondary: rgba(255, 255, 255, 0.12);
   --ds-motif-blossom-dark-surface-decoration-tertiary: rgba(255, 255, 255, 0.24);
@@ -891,6 +919,9 @@
   --ds-motif-blossom-dark-control-secondary-border-color: rgba(245, 237, 255, 0.64);
   --ds-motif-blossom-dark-control-tertiary-border-color: rgba(245, 237, 255, 0.72);
   --ds-motif-blossom-dark-control-quaternary-border-color: rgba(245, 237, 255, 0.80);
+  --ds-motif-blossom-dark-control-subtle-primary-border-color: rgba(245, 237, 255, 0.12);
+  --ds-motif-blossom-dark-control-subtle-secondary-border-color: rgba(245, 237, 255, 0.18);
+  --ds-motif-blossom-dark-control-subtle-tertiary-border-color: rgba(245, 237, 255, 0.36);
   --ds-motif-blossom-dark-control-raised-primary-background-color: rgba(251, 247, 255, 0.18);
   --ds-motif-blossom-dark-control-raised-backdrop: rgba(255, 255, 255, 0.12);
   --ds-motif-blossom-dark-highlight-primary: rgba(251, 247, 255, 0.12);
@@ -904,7 +935,8 @@
   --ds-motif-lilypad-dark-surface-canvas: #082119;
   --ds-motif-lilypad-dark-surface-primary: #082119;
   --ds-motif-lilypad-dark-surface-secondary: #052F25;
-  --ds-motif-lilypad-dark-surface-tertiary: #AED5C2;
+  --ds-motif-lilypad-dark-surface-tertiary: #0A4739;
+  --ds-motif-lilypad-dark-surface-contrast: rgba(255, 255, 255, 0.96);
   --ds-motif-lilypad-dark-surface-decoration-primary: rgba(255, 255, 255, 0.06);
   --ds-motif-lilypad-dark-surface-decoration-secondary: rgba(255, 255, 255, 0.12);
   --ds-motif-lilypad-dark-surface-decoration-tertiary: rgba(255, 255, 255, 0.24);
@@ -950,6 +982,9 @@
   --ds-motif-lilypad-dark-control-secondary-border-color: rgba(226, 243, 233, 0.64);
   --ds-motif-lilypad-dark-control-tertiary-border-color: rgba(226, 243, 233, 0.72);
   --ds-motif-lilypad-dark-control-quaternary-border-color: rgba(226, 243, 233, 0.80);
+  --ds-motif-lilypad-dark-control-subtle-primary-border-color: rgba(226, 243, 233, 0.12);
+  --ds-motif-lilypad-dark-control-subtle-secondary-border-color: rgba(226, 243, 233, 0.18);
+  --ds-motif-lilypad-dark-control-subtle-tertiary-border-color: rgba(226, 243, 233, 0.36);
   --ds-motif-lilypad-dark-control-raised-primary-background-color: rgba(248, 252, 249, 0.18);
   --ds-motif-lilypad-dark-control-raised-backdrop: rgba(255, 255, 255, 0.12);
   --ds-motif-lilypad-dark-highlight-primary: rgba(248, 252, 249, 0.12);
@@ -964,6 +999,7 @@
   --ds-motif-mandarin-dark-surface-primary: #290E0A;
   --ds-motif-mandarin-dark-surface-secondary: #47140B;
   --ds-motif-mandarin-dark-surface-tertiary: #671907;
+  --ds-motif-mandarin-dark-surface-contrast: rgba(255, 255, 255, 0.96);
   --ds-motif-mandarin-dark-surface-decoration-primary: rgba(255, 255, 255, 0.06);
   --ds-motif-mandarin-dark-surface-decoration-secondary: rgba(255, 255, 255, 0.12);
   --ds-motif-mandarin-dark-surface-decoration-tertiary: rgba(255, 255, 255, 0.24);
@@ -1009,6 +1045,9 @@
   --ds-motif-mandarin-dark-control-secondary-border-color: rgba(255, 235, 229, 0.64);
   --ds-motif-mandarin-dark-control-tertiary-border-color: rgba(255, 235, 229, 0.72);
   --ds-motif-mandarin-dark-control-quaternary-border-color: rgba(255, 235, 229, 0.80);
+  --ds-motif-mandarin-dark-control-subtle-primary-border-color: rgba(255, 235, 229, 0.12);
+  --ds-motif-mandarin-dark-control-subtle-secondary-border-color: rgba(255, 235, 229, 0.18);
+  --ds-motif-mandarin-dark-control-subtle-tertiary-border-color: rgba(255, 235, 229, 0.36);
   --ds-motif-mandarin-dark-control-raised-primary-background-color: rgba(255, 240, 249, 0.18);
   --ds-motif-mandarin-dark-control-raised-backdrop: rgba(255, 255, 255, 0.12);
   --ds-motif-mandarin-dark-highlight-primary: rgba(255, 240, 249, 0.12);
@@ -1022,7 +1061,8 @@
   --ds-motif-pollen-dark-surface-canvas: #240F04;
   --ds-motif-pollen-dark-surface-primary: #240F04;
   --ds-motif-pollen-dark-surface-secondary: #47210A;
-  --ds-motif-pollen-dark-surface-tertiary: #FFD885;
+  --ds-motif-pollen-dark-surface-tertiary: #783B13;
+  --ds-motif-pollen-dark-surface-contrast: rgba(255, 255, 255, 0.96);
   --ds-motif-pollen-dark-surface-decoration-primary: rgba(255, 255, 255, 0.06);
   --ds-motif-pollen-dark-surface-decoration-secondary: rgba(255, 255, 255, 0.12);
   --ds-motif-pollen-dark-surface-decoration-tertiary: rgba(255, 255, 255, 0.24);
@@ -1068,6 +1108,9 @@
   --ds-motif-pollen-dark-control-secondary-border-color: rgba(254, 244, 218, 0.64);
   --ds-motif-pollen-dark-control-tertiary-border-color: rgba(254, 244, 218, 0.72);
   --ds-motif-pollen-dark-control-quaternary-border-color: rgba(254, 244, 218, 0.80);
+  --ds-motif-pollen-dark-control-subtle-primary-border-color: rgba(254, 244, 218, 0.12);
+  --ds-motif-pollen-dark-control-subtle-secondary-border-color: rgba(254, 244, 218, 0.18);
+  --ds-motif-pollen-dark-control-subtle-tertiary-border-color: rgba(254, 244, 218, 0.36);
   --ds-motif-pollen-dark-control-raised-primary-background-color: rgba(255, 251, 240, 0.18);
   --ds-motif-pollen-dark-control-raised-backdrop: rgba(255, 255, 255, 0.12);
   --ds-motif-pollen-dark-highlight-primary: rgba(255, 251, 240, 0.12);
@@ -1081,7 +1124,8 @@
   --ds-motif-pondwater-dark-surface-canvas: #01142D;
   --ds-motif-pondwater-dark-surface-primary: #01142D;
   --ds-motif-pondwater-dark-surface-secondary: #02254D;
-  --ds-motif-pondwater-dark-surface-tertiary: #A1D0F7;
+  --ds-motif-pondwater-dark-surface-tertiary: #034180;
+  --ds-motif-pondwater-dark-surface-contrast: rgba(255, 255, 255, 0.96);
   --ds-motif-pondwater-dark-surface-decoration-primary: rgba(255, 255, 255, 0.06);
   --ds-motif-pondwater-dark-surface-decoration-secondary: rgba(255, 255, 255, 0.12);
   --ds-motif-pondwater-dark-surface-decoration-tertiary: rgba(255, 255, 255, 0.24);
@@ -1127,6 +1171,9 @@
   --ds-motif-pondwater-dark-control-secondary-border-color: rgba(230, 246, 255, 0.64);
   --ds-motif-pondwater-dark-control-tertiary-border-color: rgba(230, 246, 255, 0.72);
   --ds-motif-pondwater-dark-control-quaternary-border-color: rgba(230, 246, 255, 0.80);
+  --ds-motif-pondwater-dark-control-subtle-primary-border-color: rgba(230, 246, 255, 0.12);
+  --ds-motif-pondwater-dark-control-subtle-secondary-border-color: rgba(230, 246, 255, 0.18);
+  --ds-motif-pondwater-dark-control-subtle-tertiary-border-color: rgba(230, 246, 255, 0.36);
   --ds-motif-pondwater-dark-control-raised-primary-background-color: rgba(245, 251, 254, 0.18);
   --ds-motif-pondwater-dark-control-raised-backdrop: rgba(255, 255, 255, 0.12);
   --ds-motif-pondwater-dark-highlight-primary: rgba(245, 251, 254, 0.12);
@@ -1141,6 +1188,7 @@
   --ds-theme-light-surface-primary: #ECEBE7;
   --ds-theme-light-surface-secondary: #F7F5F2;
   --ds-theme-light-surface-tertiary: #ffffff;
+  --ds-theme-light-surface-contrast: #000000;
   --ds-theme-light-surface-decoration-primary: rgba(0, 0, 0, 0.06);
   --ds-theme-light-surface-decoration-secondary: rgba(0, 0, 0, 0.12);
   --ds-theme-light-surface-decoration-tertiary: rgba(0, 0, 0, 0.16);
@@ -1186,11 +1234,14 @@
   --ds-theme-light-control-secondary-border-color: rgba(0, 0, 0, 0.48);
   --ds-theme-light-control-tertiary-border-color: rgba(0, 0, 0, 0.60);
   --ds-theme-light-control-quaternary-border-color: rgba(0, 0, 0, 0.72);
-  --ds-theme-light-control-raised-primary-background-color: #fcfcfc;
+  --ds-theme-light-control-subtle-primary-border-color: rgba(0, 0, 0, 0.12);
+  --ds-theme-light-control-subtle-secondary-border-color: rgba(0, 0, 0, 0.18);
+  --ds-theme-light-control-subtle-tertiary-border-color: rgba(0, 0, 0, 0.36);
+  --ds-theme-light-control-raised-primary-background-color: #fafafa;
   --ds-theme-light-control-raised-backdrop: rgba(0, 0, 0, 0.09);
-  --ds-theme-light-highlight-primary: rgba(252, 252, 252, 0.24);
-  --ds-theme-light-tone-brighten-primary: rgba(252, 252, 252, 0.32); /* Maps to Tint-Primary in Figma */
-  --ds-theme-light-tone-brighten-secondary: rgba(252, 252, 252, 0.60); /* Maps to Tint-Secondary in Figma */
+  --ds-theme-light-highlight-primary: rgba(250, 250, 250, 0.24);
+  --ds-theme-light-tone-brighten-primary: rgba(250, 250, 250, 0.32); /* Maps to Tint-Primary in Figma */
+  --ds-theme-light-tone-brighten-secondary: rgba(250, 250, 250, 0.60); /* Maps to Tint-Secondary in Figma */
   --ds-theme-light-tone-darken-primary: rgba(0, 0, 0, 0.03); /* Maps to Shade-Primary in Figma */
   --ds-theme-light-shadow-primary-color: rgba(0, 0, 0, 0.06);
   --ds-theme-light-shadow-secondary-color: rgba(0, 0, 0, 0.08);
@@ -1207,13 +1258,15 @@
   --ds-theme-light-destructive-secondary-content-color: rgba(255, 255, 255, 0.90);
   --ds-theme-light-destructive-tertiary-content-color: rgba(255, 255, 255, 0.60);
   --ds-theme-light-status-green: #39B25E;
-  --ds-theme-light-status-yellow: #FFC95C;
+  --ds-theme-light-status-yellow: #FAB341;
   --ds-theme-light-status-red: #EC434F;
+  --ds-theme-light-status-gray: #888888;
   --ds-theme-dark-surface-backdrop: #111111;
   --ds-theme-dark-surface-canvas: #181817;
   --ds-theme-dark-surface-primary: #181817;
   --ds-theme-dark-surface-secondary: #242323;
   --ds-theme-dark-surface-tertiary: #30302F;
+  --ds-theme-dark-surface-contrast: #ECEBE7;
   --ds-theme-dark-surface-decoration-primary: rgba(255, 255, 255, 0.06);
   --ds-theme-dark-surface-decoration-secondary: rgba(255, 255, 255, 0.12);
   --ds-theme-dark-surface-decoration-tertiary: rgba(255, 255, 255, 0.24);
@@ -1259,6 +1312,9 @@
   --ds-theme-dark-control-secondary-border-color: rgba(255, 255, 255, 0.64);
   --ds-theme-dark-control-tertiary-border-color: rgba(255, 255, 255, 0.72);
   --ds-theme-dark-control-quaternary-border-color: rgba(255, 255, 255, 0.80);
+  --ds-theme-dark-control-subtle-primary-border-color: rgba(255, 255, 255, 0.12);
+  --ds-theme-dark-control-subtle-secondary-border-color: rgba(255, 255, 255, 0.18);
+  --ds-theme-dark-control-subtle-tertiary-border-color: rgba(255, 255, 255, 0.36);
   --ds-theme-dark-control-raised-primary-background-color: rgba(255, 255, 255, 0.18);
   --ds-theme-dark-control-raised-backdrop: rgba(255, 255, 255, 0.12);
   --ds-theme-dark-highlight-primary: rgba(255, 255, 255, 0.12);
@@ -1280,8 +1336,9 @@
   --ds-theme-dark-destructive-secondary-content-color: rgba(0, 0, 0, 0.90);
   --ds-theme-dark-destructive-tertiary-content-color: rgba(0, 0, 0, 0.60);
   --ds-theme-dark-status-green: #39B25E;
-  --ds-theme-dark-status-yellow: #FFC95C;
+  --ds-theme-dark-status-yellow: #FAB341;
   --ds-theme-dark-status-red: #EC434F;
+  --ds-theme-dark-status-gray: #888888;
   --ds-button-xxs-border-radius: 999px;
   --ds-button-xxs-padding-x: 8px;
   --ds-button-xxs-padding-y: 6px;

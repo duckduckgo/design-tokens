@@ -1,7 +1,7 @@
 // Do not edit directly, this file was auto-generated.
 // Source: https://github.com/duckduckgo/design-tokens
-// Version: 0.24.0
-// Last updated: April 24, 2026 at 02:56 AM
+// Version: 0.25.0
+// Last updated: April 29, 2026 at 01:02 AM
 
 declare module '@duckduckgo/design-tokens/build/serp/color-palette' {
     export type DSColorPaletteKeys =
@@ -13,7 +13,7 @@ declare module '@duckduckgo/design-tokens/build/serp/color-palette' {
         | '--ds-color-black-at-9'
         | '--ds-color-black-at-12'
         | '--ds-color-black-at-16'
-        | '--ds-color-black-at-20'
+        | '--ds-color-black-at-18'
         | '--ds-color-black-at-24'
         | '--ds-color-black-at-30'
         | '--ds-color-black-at-32'
@@ -41,6 +41,7 @@ declare module '@duckduckgo/design-tokens/build/serp/color-palette' {
         | '--ds-color-white-at-72'
         | '--ds-color-white-at-80'
         | '--ds-color-white-at-90'
+        | '--ds-color-white-at-96'
         | '--ds-color-gray-0'
         | '--ds-color-gray-10'
         | '--ds-color-gray-20'
@@ -140,7 +141,7 @@ declare module '@duckduckgo/design-tokens/build/serp/color-palette' {
         | 'rgba(0, 0, 0, 0.09)'
         | 'rgba(0, 0, 0, 0.12)'
         | 'rgba(0, 0, 0, 0.16)'
-        | 'rgba(0, 0, 0, 0.20)'
+        | 'rgba(0, 0, 0, 0.18)'
         | 'rgba(0, 0, 0, 0.24)'
         | 'rgba(0, 0, 0, 0.30)'
         | 'rgba(0, 0, 0, 0.32)'
@@ -168,10 +169,11 @@ declare module '@duckduckgo/design-tokens/build/serp/color-palette' {
         | 'rgba(255, 255, 255, 0.72)'
         | 'rgba(255, 255, 255, 0.80)'
         | 'rgba(255, 255, 255, 0.90)'
-        | '#fcfcfc'
+        | 'rgba(255, 255, 255, 0.96)'
+        | '#fafafa'
         | '#f5f5f5'
-        | '#e5e5e5'
-        | '#c5c5c5'
+        | '#eeeeee'
+        | '#cccccc'
         | '#aaaaaa'
         | '#888888'
         | '#686868'

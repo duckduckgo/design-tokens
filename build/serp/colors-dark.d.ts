@@ -1,7 +1,7 @@
 // Do not edit directly, this file was auto-generated.
 // Source: https://github.com/duckduckgo/design-tokens
-// Version: 0.24.0
-// Last updated: April 24, 2026 at 02:56 AM
+// Version: 0.25.0
+// Last updated: April 29, 2026 at 01:02 AM
 
 declare module '@duckduckgo/design-tokens/build/serp/colors-dark' {
     export type DSThemeColorsDarkKeys =
@@ -10,6 +10,7 @@ declare module '@duckduckgo/design-tokens/build/serp/colors-dark' {
         | '--ds-surface-primary'
         | '--ds-surface-secondary'
         | '--ds-surface-tertiary'
+        | '--ds-surface-contrast'
         | '--ds-surface-decoration-primary'
         | '--ds-surface-decoration-secondary'
         | '--ds-surface-decoration-tertiary'
@@ -55,6 +56,9 @@ declare module '@duckduckgo/design-tokens/build/serp/colors-dark' {
         | '--ds-control-secondary-border-color'
         | '--ds-control-tertiary-border-color'
         | '--ds-control-quaternary-border-color'
+        | '--ds-control-subtle-primary-border-color'
+        | '--ds-control-subtle-secondary-border-color'
+        | '--ds-control-subtle-tertiary-border-color'
         | '--ds-control-raised-primary-background-color'
         | '--ds-control-raised-backdrop'
         | '--ds-highlight-primary'
@@ -78,6 +82,7 @@ declare module '@duckduckgo/design-tokens/build/serp/colors-dark' {
         | '--ds-status-green'
         | '--ds-status-yellow'
         | '--ds-status-red'
+        | '--ds-status-gray'
         | '--ds-link-primary'
         | '--ds-link-primary-visited'
         | '--ds-link-secondary'
@@ -87,6 +92,7 @@ declare module '@duckduckgo/design-tokens/build/serp/colors-dark' {
         | '#181817'
         | '#242323'
         | '#30302F'
+        | '#ECEBE7'
         | 'rgba(255, 255, 255, 0.06)'
         | 'rgba(255, 255, 255, 0.12)'
         | 'rgba(255, 255, 255, 0.24)'
@@ -130,7 +136,8 @@ declare module '@duckduckgo/design-tokens/build/serp/colors-dark' {
         | 'rgba(0, 0, 0, 0.90)'
         | 'rgba(0, 0, 0, 0.60)'
         | '#39B25E'
-        | '#FFC95C'
+        | '#FAB341'
+        | '#888888'
         | '#adc2fc'
         | '#A591DC'
         | '#aaaaaa'

@@ -1,8 +1,8 @@
 /**
  * Do not edit directly, this file was auto-generated.
  * Source: https://github.com/duckduckgo/design-tokens
- * Version: 0.24.0
- * Last updated: April 24, 2026 at 02:56 AM
+ * Version: 0.25.0
+ * Last updated: April 29, 2026 at 01:02 AM
  */
 
 .theme-light {
@@ -11,7 +11,8 @@
     --ds-surface-canvas: #FFFAF9;
     --ds-surface-primary: #FFDACC;
     --ds-surface-secondary: #FFEBE5;
-    --ds-surface-tertiary: #ffffff;
+    --ds-surface-tertiary: #FFFAF9;
+    --ds-surface-contrast: rgba(41, 14, 10, 0.96);
     --ds-surface-decoration-primary: rgba(41, 14, 10, 0.06);
     --ds-surface-decoration-secondary: rgba(41, 14, 10, 0.12);
     --ds-surface-decoration-tertiary: rgba(41, 14, 10, 0.16);
@@ -57,6 +58,9 @@
     --ds-control-secondary-border-color: rgba(240, 95, 43, 0.48);
     --ds-control-tertiary-border-color: rgba(240, 95, 43, 0.60);
     --ds-control-quaternary-border-color: rgba(240, 95, 43, 0.72);
+    --ds-control-subtle-primary-border-color: rgba(240, 95, 43, 0.12);
+    --ds-control-subtle-secondary-border-color: rgba(240, 95, 43, 0.18);
+    --ds-control-subtle-tertiary-border-color: rgba(240, 95, 43, 0.36);
     --ds-control-raised-primary-background-color: #FFFAF9;
     --ds-control-raised-backdrop: rgba(0, 0, 0, 0.09);
     --ds-highlight-primary: rgba(255, 240, 249, 0.24);
@@ -76,6 +80,7 @@
     --ds-surface-primary: #290E0A;
     --ds-surface-secondary: #47140B;
     --ds-surface-tertiary: #671907;
+    --ds-surface-contrast: rgba(255, 255, 255, 0.96);
     --ds-surface-decoration-primary: rgba(255, 255, 255, 0.06);
     --ds-surface-decoration-secondary: rgba(255, 255, 255, 0.12);
     --ds-surface-decoration-tertiary: rgba(255, 255, 255, 0.24);
@@ -121,6 +126,9 @@
     --ds-control-secondary-border-color: rgba(255, 235, 229, 0.64);
     --ds-control-tertiary-border-color: rgba(255, 235, 229, 0.72);
     --ds-control-quaternary-border-color: rgba(255, 235, 229, 0.80);
+    --ds-control-subtle-primary-border-color: rgba(255, 235, 229, 0.12);
+    --ds-control-subtle-secondary-border-color: rgba(255, 235, 229, 0.18);
+    --ds-control-subtle-tertiary-border-color: rgba(255, 235, 229, 0.36);
     --ds-control-raised-primary-background-color: rgba(255, 240, 249, 0.18);
     --ds-control-raised-backdrop: rgba(255, 255, 255, 0.12);
     --ds-highlight-primary: rgba(255, 240, 249, 0.12);

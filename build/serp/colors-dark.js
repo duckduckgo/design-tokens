@@ -1,8 +1,8 @@
 
 // Do not edit directly, this file was auto-generated.
 // Source: https://github.com/duckduckgo/design-tokens
-// Version: 0.24.0
-// Last updated: April 24, 2026 at 02:56 AM
+// Version: 0.25.0
+// Last updated: April 29, 2026 at 01:02 AM
 
 const dsThemeColorsDark = {
     /** SURFACE */
@@ -11,6 +11,7 @@ const dsThemeColorsDark = {
     '--ds-surface-primary': '#181817',
     '--ds-surface-secondary': '#242323',
     '--ds-surface-tertiary': '#30302F',
+    '--ds-surface-contrast': '#ECEBE7',
     '--ds-surface-decoration-primary': 'rgba(255, 255, 255, 0.06)',
     '--ds-surface-decoration-secondary': 'rgba(255, 255, 255, 0.12)',
     '--ds-surface-decoration-tertiary': 'rgba(255, 255, 255, 0.24)',
@@ -69,6 +70,11 @@ const dsThemeColorsDark = {
     '--ds-control-tertiary-border-color': 'rgba(255, 255, 255, 0.72)',
     '--ds-control-quaternary-border-color': 'rgba(255, 255, 255, 0.80)',
 
+    /** CONTROL-SUBTLE */
+    '--ds-control-subtle-primary-border-color': 'rgba(255, 255, 255, 0.12)',
+    '--ds-control-subtle-secondary-border-color': 'rgba(255, 255, 255, 0.18)',
+    '--ds-control-subtle-tertiary-border-color': 'rgba(255, 255, 255, 0.36)',
+
     /** CONTROL-RAISED */
     '--ds-control-raised-primary-background-color': 'rgba(255, 255, 255, 0.18)',
     '--ds-control-raised-backdrop': 'rgba(255, 255, 255, 0.12)',
@@ -101,8 +107,9 @@ const dsThemeColorsDark = {
 
     /** STATUS */
     '--ds-status-green': '#39B25E',
-    '--ds-status-yellow': '#FFC95C',
+    '--ds-status-yellow': '#FAB341',
     '--ds-status-red': '#EC434F',
+    '--ds-status-gray': '#888888',
 
     /** LINK-COLORS */
     '--ds-link-primary': '#adc2fc',

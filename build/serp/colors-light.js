@@ -1,8 +1,8 @@
 
 // Do not edit directly, this file was auto-generated.
 // Source: https://github.com/duckduckgo/design-tokens
-// Version: 0.24.0
-// Last updated: April 24, 2026 at 02:56 AM
+// Version: 0.25.0
+// Last updated: April 29, 2026 at 01:02 AM
 
 const dsThemeColorsLight = {
     /** SURFACE */
@@ -11,6 +11,7 @@ const dsThemeColorsLight = {
     '--ds-surface-primary': '#ECEBE7',
     '--ds-surface-secondary': '#F7F5F2',
     '--ds-surface-tertiary': '#ffffff',
+    '--ds-surface-contrast': '#000000',
     '--ds-surface-decoration-primary': 'rgba(0, 0, 0, 0.06)',
     '--ds-surface-decoration-secondary': 'rgba(0, 0, 0, 0.12)',
     '--ds-surface-decoration-tertiary': 'rgba(0, 0, 0, 0.16)',
@@ -69,16 +70,21 @@ const dsThemeColorsLight = {
     '--ds-control-tertiary-border-color': 'rgba(0, 0, 0, 0.60)',
     '--ds-control-quaternary-border-color': 'rgba(0, 0, 0, 0.72)',
 
+    /** CONTROL-SUBTLE */
+    '--ds-control-subtle-primary-border-color': 'rgba(0, 0, 0, 0.12)',
+    '--ds-control-subtle-secondary-border-color': 'rgba(0, 0, 0, 0.18)',
+    '--ds-control-subtle-tertiary-border-color': 'rgba(0, 0, 0, 0.36)',
+
     /** CONTROL-RAISED */
-    '--ds-control-raised-primary-background-color': '#fcfcfc',
+    '--ds-control-raised-primary-background-color': '#fafafa',
     '--ds-control-raised-backdrop': 'rgba(0, 0, 0, 0.09)',
 
     /** HIGHLIGHT */
-    '--ds-highlight-primary': 'rgba(252, 252, 252, 0.24)',
+    '--ds-highlight-primary': 'rgba(250, 250, 250, 0.24)',
 
     /** TONE */
-    '--ds-tone-brighten-primary': 'rgba(252, 252, 252, 0.32)',
-    '--ds-tone-brighten-secondary': 'rgba(252, 252, 252, 0.60)',
+    '--ds-tone-brighten-primary': 'rgba(250, 250, 250, 0.32)',
+    '--ds-tone-brighten-secondary': 'rgba(250, 250, 250, 0.60)',
     '--ds-tone-darken-primary': 'rgba(0, 0, 0, 0.03)',
 
     /** SHADOW */
@@ -101,8 +107,9 @@ const dsThemeColorsLight = {
 
     /** STATUS */
     '--ds-status-green': '#39B25E',
-    '--ds-status-yellow': '#FFC95C',
+    '--ds-status-yellow': '#FAB341',
     '--ds-status-red': '#EC434F',
+    '--ds-status-gray': '#888888',
 
     /** LINK-COLORS */
     '--ds-link-primary': '#1a0dab',

@@ -1,8 +1,8 @@
 /**
  * Do not edit directly, this file was auto-generated.
  * Source: https://github.com/duckduckgo/design-tokens
- * Version: 0.24.0
- * Last updated: April 24, 2026 at 02:56 AM
+ * Version: 0.25.0
+ * Last updated: April 29, 2026 at 01:02 AM
  */
 
 .theme-light {
@@ -11,6 +11,7 @@
   --ds-surface-primary: #ECEBE7;
   --ds-surface-secondary: #F7F5F2;
   --ds-surface-tertiary: #ffffff;
+  --ds-surface-contrast: #000000;
   --ds-surface-decoration-primary: rgba(0, 0, 0, 0.06);
   --ds-surface-decoration-secondary: rgba(0, 0, 0, 0.12);
   --ds-surface-decoration-tertiary: rgba(0, 0, 0, 0.16);
@@ -56,11 +57,14 @@
   --ds-control-secondary-border-color: rgba(0, 0, 0, 0.48);
   --ds-control-tertiary-border-color: rgba(0, 0, 0, 0.60);
   --ds-control-quaternary-border-color: rgba(0, 0, 0, 0.72);
-  --ds-control-raised-primary-background-color: #fcfcfc;
+  --ds-control-subtle-primary-border-color: rgba(0, 0, 0, 0.12);
+  --ds-control-subtle-secondary-border-color: rgba(0, 0, 0, 0.18);
+  --ds-control-subtle-tertiary-border-color: rgba(0, 0, 0, 0.36);
+  --ds-control-raised-primary-background-color: #fafafa;
   --ds-control-raised-backdrop: rgba(0, 0, 0, 0.09);
-  --ds-highlight-primary: rgba(252, 252, 252, 0.24);
-  --ds-tone-brighten-primary: rgba(252, 252, 252, 0.32); /* Maps to Tint-Primary in Figma */
-  --ds-tone-brighten-secondary: rgba(252, 252, 252, 0.60); /* Maps to Tint-Secondary in Figma */
+  --ds-highlight-primary: rgba(250, 250, 250, 0.24);
+  --ds-tone-brighten-primary: rgba(250, 250, 250, 0.32); /* Maps to Tint-Primary in Figma */
+  --ds-tone-brighten-secondary: rgba(250, 250, 250, 0.60); /* Maps to Tint-Secondary in Figma */
   --ds-tone-darken-primary: rgba(0, 0, 0, 0.03); /* Maps to Shade-Primary in Figma */
   --ds-shadow-primary-color: rgba(0, 0, 0, 0.06);
   --ds-shadow-secondary-color: rgba(0, 0, 0, 0.08);
@@ -77,8 +81,9 @@
   --ds-destructive-secondary-content-color: rgba(255, 255, 255, 0.90);
   --ds-destructive-tertiary-content-color: rgba(255, 255, 255, 0.60);
   --ds-status-green: #39B25E;
-  --ds-status-yellow: #FFC95C;
+  --ds-status-yellow: #FAB341;
   --ds-status-red: #EC434F;
+  --ds-status-gray: #888888;
 }
 
 .theme-dark {
@@ -87,6 +92,7 @@
   --ds-surface-primary: #181817;
   --ds-surface-secondary: #242323;
   --ds-surface-tertiary: #30302F;
+  --ds-surface-contrast: #ECEBE7;
   --ds-surface-decoration-primary: rgba(255, 255, 255, 0.06);
   --ds-surface-decoration-secondary: rgba(255, 255, 255, 0.12);
   --ds-surface-decoration-tertiary: rgba(255, 255, 255, 0.24);
@@ -132,6 +138,9 @@
   --ds-control-secondary-border-color: rgba(255, 255, 255, 0.64);
   --ds-control-tertiary-border-color: rgba(255, 255, 255, 0.72);
   --ds-control-quaternary-border-color: rgba(255, 255, 255, 0.80);
+  --ds-control-subtle-primary-border-color: rgba(255, 255, 255, 0.12);
+  --ds-control-subtle-secondary-border-color: rgba(255, 255, 255, 0.18);
+  --ds-control-subtle-tertiary-border-color: rgba(255, 255, 255, 0.36);
   --ds-control-raised-primary-background-color: rgba(255, 255, 255, 0.18);
   --ds-control-raised-backdrop: rgba(255, 255, 255, 0.12);
   --ds-highlight-primary: rgba(255, 255, 255, 0.12);
@@ -153,6 +162,7 @@
   --ds-destructive-secondary-content-color: rgba(0, 0, 0, 0.90);
   --ds-destructive-tertiary-content-color: rgba(0, 0, 0, 0.60);
   --ds-status-green: #39B25E;
-  --ds-status-yellow: #FFC95C;
+  --ds-status-yellow: #FAB341;
   --ds-status-red: #EC434F;
+  --ds-status-gray: #888888;
 }

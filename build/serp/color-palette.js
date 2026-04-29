@@ -1,8 +1,8 @@
 
 // Do not edit directly, this file was auto-generated.
 // Source: https://github.com/duckduckgo/design-tokens
-// Version: 0.24.0
-// Last updated: April 24, 2026 at 02:56 AM
+// Version: 0.25.0
+// Last updated: April 29, 2026 at 01:02 AM
 
 const dsColorPalette = {
     /** BLACK */
@@ -16,7 +16,7 @@ const dsColorPalette = {
     '--ds-color-black-at-9': 'rgba(0, 0, 0, 0.09)',
     '--ds-color-black-at-12': 'rgba(0, 0, 0, 0.12)',
     '--ds-color-black-at-16': 'rgba(0, 0, 0, 0.16)',
-    '--ds-color-black-at-20': 'rgba(0, 0, 0, 0.20)',
+    '--ds-color-black-at-18': 'rgba(0, 0, 0, 0.18)',
     '--ds-color-black-at-24': 'rgba(0, 0, 0, 0.24)',
     '--ds-color-black-at-30': 'rgba(0, 0, 0, 0.30)',
     '--ds-color-black-at-32': 'rgba(0, 0, 0, 0.32)',
@@ -48,12 +48,13 @@ const dsColorPalette = {
     '--ds-color-white-at-72': 'rgba(255, 255, 255, 0.72)',
     '--ds-color-white-at-80': 'rgba(255, 255, 255, 0.80)',
     '--ds-color-white-at-90': 'rgba(255, 255, 255, 0.90)',
+    '--ds-color-white-at-96': 'rgba(255, 255, 255, 0.96)',
 
     /** GRAY */
-    '--ds-color-gray-0': '#fcfcfc',
+    '--ds-color-gray-0': '#fafafa',
     '--ds-color-gray-10': '#f5f5f5',
-    '--ds-color-gray-20': '#e5e5e5',
-    '--ds-color-gray-30': '#c5c5c5',
+    '--ds-color-gray-20': '#eeeeee',
+    '--ds-color-gray-30': '#cccccc',
     '--ds-color-gray-40': '#aaaaaa',
     '--ds-color-gray-50': '#888888',
     '--ds-color-gray-60': '#686868',
