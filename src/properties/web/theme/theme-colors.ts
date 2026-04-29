@@ -25,6 +25,9 @@ const themeColors: DesignToken = {
                 tertiary: {
                     $value: '{color.white}',
                 },
+                contrast: {
+                    $value: '{color.black}',
+                },
                 // decorations are used for things like shadows, hr lines
                 decoration: {
                     primary: {
@@ -136,6 +139,17 @@ const themeColors: DesignToken = {
                     $value: '{color.blackAt.72}',
                 },
             },
+            controlSubtle: {
+                primaryBorderColor: {
+                    $value: '{color.blackAt.12}',
+                },
+                secondaryBorderColor: {
+                    $value: '{color.blackAt.18}',
+                },
+                tertiaryBorderColor: {
+                    $value: '{color.blackAt.36}',
+                },
+            },
             controlRaised: {
                 primaryBackgroundColor: {
                     $value: '{color.gray.0}',
@@ -211,8 +225,9 @@ const themeColors: DesignToken = {
             },
             status: {
                 green: { $value: `{color.green.40}` },
-                yellow: { $value: '{color.pollen.40}' },
+                yellow: { $value: '{color.pollen.50}' },
                 red: { $value: '{color.red.50}' },
+                gray: { $value: '{color.gray.50}' },
             },
         },
         dark: {
@@ -231,6 +246,9 @@ const themeColors: DesignToken = {
                 },
                 tertiary: {
                     $value: '{color.eggshell.80}',
+                },
+                contrast: {
+                    $value: '{color.eggshell.20}',
                 },
                 // decorations are used for things like shadows, hr lines
                 decoration: {
@@ -337,6 +355,17 @@ const themeColors: DesignToken = {
                     $value: '{color.whiteAt.80}',
                 },
             },
+            controlSubtle: {
+                primaryBorderColor: {
+                    $value: '{color.whiteAt.12}',
+                },
+                secondaryBorderColor: {
+                    $value: '{color.whiteAt.18}',
+                },
+                tertiaryBorderColor: {
+                    $value: '{color.whiteAt.36}',
+                },
+            },
             controlRaised: {
                 primaryBackgroundColor: {
                     $value: '{color.whiteAt.18}',
@@ -409,8 +438,9 @@ const themeColors: DesignToken = {
             },
             status: {
                 green: { $value: `{color.green.40}` },
-                yellow: { $value: '{color.pollen.40}' },
+                yellow: { $value: '{color.pollen.50}' },
                 red: { $value: '{color.red.50}' },
+                gray: { $value: '{color.gray.50}' },
             },
         },
     },
