@@ -1,7 +1,7 @@
 // Do not edit directly, this file was auto-generated.
 // Source: https://github.com/duckduckgo/design-tokens
-// Version: 0.25.0
-// Last updated: April 29, 2026 at 01:02 AM
+// Version: 0.26.0
+// Last updated: May 12, 2026 at 06:03 PM
 
 declare module '@duckduckgo/design-tokens/build/serp/colors-dark' {
     export type DSThemeColorsDarkKeys =
@@ -102,7 +102,6 @@ declare module '@duckduckgo/design-tokens/build/serp/colors-dark' {
         | 'rgba(255, 255, 255, 0.66)'
         | 'rgba(255, 255, 255, 0.36)'
         | 'rgba(255, 255, 255, 0.60)'
-        | '#A1D0F7'
         | '#75B6EB'
         | '#4397E0'
         | '#1074CC'
@@ -116,6 +115,7 @@ declare module '@duckduckgo/design-tokens/build/serp/colors-dark' {
         | 'rgba(203, 234, 255, 0.20)'
         | 'rgba(203, 234, 255, 0.12)'
         | '#CBEAFF'
+        | '#A1D0F7'
         | '#F5FBFE'
         | 'rgba(245, 251, 254, 0.72)'
         | 'rgba(245, 251, 254, 0.48)'

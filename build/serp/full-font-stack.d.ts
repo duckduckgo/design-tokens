@@ -1,7 +1,7 @@
 // Do not edit directly, this file was auto-generated.
 // Source: https://github.com/duckduckgo/design-tokens
-// Version: 0.25.0
-// Last updated: April 29, 2026 at 01:02 AM
+// Version: 0.26.0
+// Last updated: May 12, 2026 at 06:03 PM
 
 declare module '@duckduckgo/design-tokens/build/serp/full-font-stack' {
     export type DSFullFontStackKeys =
