@@ -210,13 +210,13 @@ const themeColors: DesignToken = {
                     $value: `{color.red.50At.12}`,
                 },
                 primaryTextColor: {
-                    $value: `{color.red.50}`,
-                },
-                secondaryTextColor: {
                     $value: `{color.red.60}`,
                 },
-                tertiaryTextColor: {
+                secondaryTextColor: {
                     $value: `{color.red.70}`,
+                },
+                tertiaryTextColor: {
+                    $value: `{color.red.80}`,
                 },
                 primaryContentColor: {
                     $value: `{color.white}`,
