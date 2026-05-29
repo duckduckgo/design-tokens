@@ -1,7 +1,7 @@
 // Do not edit directly, this file was auto-generated.
 // Source: https://github.com/duckduckgo/design-tokens
-// Version: 0.26.0
-// Last updated: May 12, 2026 at 06:03 PM
+// Version: 0.27.0
+// Last updated: May 29, 2026 at 11:50 PM
 
 declare module '@duckduckgo/design-tokens/build/serp/colors-light' {
     export type DSThemeColorsLightKeys =
@@ -61,6 +61,7 @@ declare module '@duckduckgo/design-tokens/build/serp/colors-light' {
         | '--ds-control-subtle-tertiary-border-color'
         | '--ds-control-raised-primary-background-color'
         | '--ds-control-raised-backdrop'
+        | '--ds-input-primary-background-color'
         | '--ds-highlight-primary'
         | '--ds-tone-brighten-primary'
         | '--ds-tone-brighten-secondary'
@@ -89,9 +90,7 @@ declare module '@duckduckgo/design-tokens/build/serp/colors-light' {
         | '--ds-link-secondary-hover';
     export type DSThemeColorsLightValues =
         | '#ffffff'
-        | '#FBFAF9'
-        | '#ECEBE7'
-        | '#F7F5F2'
+        | '#eeeeee'
         | '#000000'
         | 'rgba(0, 0, 0, 0.06)'
         | 'rgba(0, 0, 0, 0.12)'
@@ -127,11 +126,12 @@ declare module '@duckduckgo/design-tokens/build/serp/colors-light' {
         | 'rgba(250, 250, 250, 0.32)'
         | 'rgba(250, 250, 250, 0.60)'
         | 'rgba(0, 0, 0, 0.08)'
-        | '#EC434F'
+        | '#D83544'
         | '#CA2B3D'
         | '#A02231'
-        | 'rgba(236, 67, 79, 0.20)'
-        | 'rgba(236, 67, 79, 0.12)'
+        | 'rgba(228, 77, 85, 0.20)'
+        | 'rgba(228, 77, 85, 0.12)'
+        | '#671421'
         | 'rgba(255, 255, 255, 0.90)'
         | 'rgba(255, 255, 255, 0.60)'
         | '#39B25E'

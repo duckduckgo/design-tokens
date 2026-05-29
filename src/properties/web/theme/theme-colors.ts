@@ -158,6 +158,11 @@ const themeColors: DesignToken = {
                     $value: '{color.blackAt.9}',
                 },
             },
+            input: {
+                primaryBackgroundColor: {
+                    $value: '{color.white}',
+                },
+            },
             highlight: {
                 primary: {
                     $value: '{color.gray.0At.24}',
@@ -199,19 +204,19 @@ const themeColors: DesignToken = {
                     $value: `{color.red.70}`,
                 },
                 glowPrimary: {
-                    $value: `{color.red.50At.20}`,
+                    $value: `{color.red.40At.20}`,
                 },
                 glowSecondary: {
-                    $value: `{color.red.50At.12}`,
+                    $value: `{color.red.40At.12}`,
                 },
                 primaryTextColor: {
-                    $value: `{color.red.50}`,
-                },
-                secondaryTextColor: {
                     $value: `{color.red.60}`,
                 },
-                tertiaryTextColor: {
+                secondaryTextColor: {
                     $value: `{color.red.70}`,
+                },
+                tertiaryTextColor: {
+                    $value: `{color.red.80}`,
                 },
                 primaryContentColor: {
                     $value: `{color.white}`,
@@ -374,6 +379,11 @@ const themeColors: DesignToken = {
                     $value: '{color.whiteAt.12}',
                 },
             },
+            input: {
+                primaryBackgroundColor: {
+                    $value: '{color.eggshell.80}',
+                },
+            },
             highlight: {
                 primary: {
                     $value: '{color.whiteAt.12}',
@@ -403,28 +413,28 @@ const themeColors: DesignToken = {
             },
             destructive: {
                 primary: {
-                    $value: `{color.red.50}`,
+                    $value: `{color.red.40}`,
                 },
                 secondary: {
-                    $value: `{color.red.60}`,
-                },
-                tertiary: {
-                    $value: `{color.red.70}`,
-                },
-                glowPrimary: {
-                    $value: `{color.red.50At.20}`,
-                },
-                glowSecondary: {
-                    $value: `{color.red.50At.12}`,
-                },
-                primaryTextColor: {
                     $value: `{color.red.50}`,
                 },
-                secondaryTextColor: {
+                tertiary: {
                     $value: `{color.red.60}`,
                 },
+                glowPrimary: {
+                    $value: `{color.red.30At.20}`,
+                },
+                glowSecondary: {
+                    $value: `{color.red.30At.12}`,
+                },
+                primaryTextColor: {
+                    $value: `{color.red.30}`,
+                },
+                secondaryTextColor: {
+                    $value: `{color.red.40}`,
+                },
                 tertiaryTextColor: {
-                    $value: `{color.red.70}`,
+                    $value: `{color.red.50}`,
                 },
                 primaryContentColor: {
                     $value: `{color.black}`,

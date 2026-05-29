@@ -1,7 +1,7 @@
 // Do not edit directly, this file was auto-generated.
 // Source: https://github.com/duckduckgo/design-tokens
-// Version: 0.26.0
-// Last updated: May 12, 2026 at 06:03 PM
+// Version: 0.27.0
+// Last updated: May 29, 2026 at 11:50 PM
 
 declare module '@duckduckgo/design-tokens/build/serp/color-palette' {
     export type DSColorPaletteKeys =
@@ -248,12 +248,12 @@ declare module '@duckduckgo/design-tokens/build/serp/color-palette' {
         | '#034180'
         | '#02254D'
         | '#01142D'
-        | '#FEF9FA'
         | '#FCECF0'
         | '#FAD8DC'
         | '#F7AAAD'
         | '#F06565'
-        | '#EC434F'
+        | '#E44D55'
+        | '#D83544'
         | '#CA2B3D'
         | '#A02231'
         | '#671421'

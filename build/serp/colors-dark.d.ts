@@ -1,7 +1,7 @@
 // Do not edit directly, this file was auto-generated.
 // Source: https://github.com/duckduckgo/design-tokens
-// Version: 0.26.0
-// Last updated: May 12, 2026 at 06:03 PM
+// Version: 0.27.0
+// Last updated: May 29, 2026 at 11:50 PM
 
 declare module '@duckduckgo/design-tokens/build/serp/colors-dark' {
     export type DSThemeColorsDarkKeys =
@@ -61,6 +61,7 @@ declare module '@duckduckgo/design-tokens/build/serp/colors-dark' {
         | '--ds-control-subtle-tertiary-border-color'
         | '--ds-control-raised-primary-background-color'
         | '--ds-control-raised-backdrop'
+        | '--ds-input-primary-background-color'
         | '--ds-highlight-primary'
         | '--ds-tone-brighten-primary'
         | '--ds-tone-brighten-secondary'
@@ -89,10 +90,9 @@ declare module '@duckduckgo/design-tokens/build/serp/colors-dark' {
         | '--ds-link-secondary-hover';
     export type DSThemeColorsDarkValues =
         | '#111111'
-        | '#181817'
-        | '#242323'
-        | '#30302F'
-        | '#ECEBE7'
+        | '#181818'
+        | '#282828'
+        | '#eeeeee'
         | 'rgba(255, 255, 255, 0.06)'
         | 'rgba(255, 255, 255, 0.12)'
         | 'rgba(255, 255, 255, 0.24)'
@@ -123,15 +123,17 @@ declare module '@duckduckgo/design-tokens/build/serp/colors-dark' {
         | 'rgba(255, 255, 255, 0.64)'
         | 'rgba(255, 255, 255, 0.72)'
         | 'rgba(255, 255, 255, 0.80)'
+        | '#383838'
         | 'rgba(0, 0, 0, 0.12)'
         | 'rgba(0, 0, 0, 0.16)'
         | 'rgba(0, 0, 0, 0.24)'
         | 'rgba(0, 0, 0, 0.32)'
-        | '#EC434F'
+        | '#E44D55'
+        | '#D83544'
         | '#CA2B3D'
-        | '#A02231'
-        | 'rgba(236, 67, 79, 0.20)'
-        | 'rgba(236, 67, 79, 0.12)'
+        | 'rgba(240, 101, 101, 0.20)'
+        | 'rgba(240, 101, 101, 0.12)'
+        | '#F06565'
         | '#000000'
         | 'rgba(0, 0, 0, 0.90)'
         | 'rgba(0, 0, 0, 0.60)'

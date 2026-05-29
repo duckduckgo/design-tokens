@@ -1,17 +1,17 @@
 
 // Do not edit directly, this file was auto-generated.
 // Source: https://github.com/duckduckgo/design-tokens
-// Version: 0.26.0
-// Last updated: May 12, 2026 at 06:03 PM
+// Version: 0.27.0
+// Last updated: May 29, 2026 at 11:50 PM
 
 const dsThemeColorsDark = {
     /** SURFACE */
     '--ds-surface-backdrop': '#111111',
-    '--ds-surface-canvas': '#181817',
-    '--ds-surface-primary': '#181817',
-    '--ds-surface-secondary': '#242323',
-    '--ds-surface-tertiary': '#30302F',
-    '--ds-surface-contrast': '#ECEBE7',
+    '--ds-surface-canvas': '#181818',
+    '--ds-surface-primary': '#282828',
+    '--ds-surface-secondary': '#282828',
+    '--ds-surface-tertiary': '#282828',
+    '--ds-surface-contrast': '#eeeeee',
     '--ds-surface-decoration-primary': 'rgba(255, 255, 255, 0.06)',
     '--ds-surface-decoration-secondary': 'rgba(255, 255, 255, 0.12)',
     '--ds-surface-decoration-tertiary': 'rgba(255, 255, 255, 0.24)',
@@ -79,6 +79,9 @@ const dsThemeColorsDark = {
     '--ds-control-raised-primary-background-color': 'rgba(255, 255, 255, 0.18)',
     '--ds-control-raised-backdrop': 'rgba(255, 255, 255, 0.12)',
 
+    /** INPUT */
+    '--ds-input-primary-background-color': '#383838',
+
     /** HIGHLIGHT */
     '--ds-highlight-primary': 'rgba(255, 255, 255, 0.12)',
 
@@ -93,14 +96,14 @@ const dsThemeColorsDark = {
     '--ds-shadow-tertiary-color': 'rgba(0, 0, 0, 0.32)',
 
     /** DESTRUCTIVE */
-    '--ds-destructive-primary': '#EC434F',
-    '--ds-destructive-secondary': '#CA2B3D',
-    '--ds-destructive-tertiary': '#A02231',
-    '--ds-destructive-glow-primary': 'rgba(236, 67, 79, 0.20)',
-    '--ds-destructive-glow-secondary': 'rgba(236, 67, 79, 0.12)',
-    '--ds-destructive-primary-text-color': '#EC434F',
-    '--ds-destructive-secondary-text-color': '#CA2B3D',
-    '--ds-destructive-tertiary-text-color': '#A02231',
+    '--ds-destructive-primary': '#E44D55',
+    '--ds-destructive-secondary': '#D83544',
+    '--ds-destructive-tertiary': '#CA2B3D',
+    '--ds-destructive-glow-primary': 'rgba(240, 101, 101, 0.20)',
+    '--ds-destructive-glow-secondary': 'rgba(240, 101, 101, 0.12)',
+    '--ds-destructive-primary-text-color': '#F06565',
+    '--ds-destructive-secondary-text-color': '#E44D55',
+    '--ds-destructive-tertiary-text-color': '#D83544',
     '--ds-destructive-primary-content-color': '#000000',
     '--ds-destructive-secondary-content-color': 'rgba(0, 0, 0, 0.90)',
     '--ds-destructive-tertiary-content-color': 'rgba(0, 0, 0, 0.60)',
@@ -108,7 +111,7 @@ const dsThemeColorsDark = {
     /** STATUS */
     '--ds-status-green': '#39B25E',
     '--ds-status-yellow': '#FAB341',
-    '--ds-status-red': '#EC434F',
+    '--ds-status-red': '#D83544',
     '--ds-status-gray': '#888888',
 
     /** LINK-COLORS */
