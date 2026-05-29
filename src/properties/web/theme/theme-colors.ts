@@ -204,10 +204,10 @@ const themeColors: DesignToken = {
                     $value: `{color.red.70}`,
                 },
                 glowPrimary: {
-                    $value: `{color.red.50At.20}`,
+                    $value: `{color.red.40At.20}`,
                 },
                 glowSecondary: {
-                    $value: `{color.red.50At.12}`,
+                    $value: `{color.red.40At.12}`,
                 },
                 primaryTextColor: {
                     $value: `{color.red.60}`,
@@ -422,10 +422,10 @@ const themeColors: DesignToken = {
                     $value: `{color.red.60}`,
                 },
                 glowPrimary: {
-                    $value: `{color.red.50At.20}`,
+                    $value: `{color.red.30At.20}`,
                 },
                 glowSecondary: {
-                    $value: `{color.red.50At.12}`,
+                    $value: `{color.red.30At.12}`,
                 },
                 primaryTextColor: {
                     $value: `{color.red.30}`,
