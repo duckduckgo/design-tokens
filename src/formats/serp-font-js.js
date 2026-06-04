@@ -72,7 +72,7 @@ function toSerpTypographyLine(line, prefix, includeAllTypography = false) {
     if (includeAllTypography) return line;
 
     const [, namePrefix, sourceStyleName, propertyName] = match;
-    const outputStyleName = STYLE_NAME_MAP.get(sourceStyleName);
+    const outputStyleName = sourceStyleName.startsWith('body-') ? sourceStyleName : STYLE_NAME_MAP.get(sourceStyleName);
 
     if (!outputStyleName) return null;
 
