@@ -1,8 +1,8 @@
 
 // Do not edit directly, this file was auto-generated.
 // Source: https://github.com/duckduckgo/design-tokens
-// Version: 0.27.0
-// Last updated: May 29, 2026 at 11:50 PM
+// Version: 0.28.0
+// Last updated: June 5, 2026 at 03:17 PM
 
 const dsFont = {
     /** FONT SETUP */
@@ -21,10 +21,16 @@ const dsFont = {
     '--ds-font-title-05-size': "24px",
     '--ds-font-title-06-line-height': "28px",
     '--ds-font-title-06-size': "20px",
+    '--ds-font-body-xxl-line-height': "32px",
+    '--ds-font-body-xxl-size': "24px",
+    '--ds-font-body-xl-line-height': "28px",
+    '--ds-font-body-xl-size': "20px",
     '--ds-font-body-lg-line-height': "24px",
     '--ds-font-body-lg-size': "16px",
     '--ds-font-body-md-line-height': "20px",
     '--ds-font-body-md-size': "14px",
+    '--ds-font-body-sm-line-height': "16px",
+    '--ds-font-body-sm-size': "12px",
     '--ds-font-button-label-01-line-height': "20px",
     '--ds-font-button-label-01-size': "18px",
     '--ds-font-button-label-02-line-height': "16px",
@@ -42,12 +48,21 @@ const dsFont = {
     '--ds-font-title-06-font-family': "var(--ds-font-family-display)",
     '--ds-font-title-06-letter-spacing': "var(--ds-font-letter-spacing-normal)",
     '--ds-font-title-06-weight': "var(--ds-font-weight-normal)",
+    '--ds-font-body-xxl-font-family': "var(--ds-font-family-display)",
+    '--ds-font-body-xxl-letter-spacing': "var(--ds-font-letter-spacing-normal)",
+    '--ds-font-body-xxl-weight': "var(--ds-font-weight-normal)",
+    '--ds-font-body-xl-font-family': "var(--ds-font-family-display)",
+    '--ds-font-body-xl-letter-spacing': "var(--ds-font-letter-spacing-normal)",
+    '--ds-font-body-xl-weight': "var(--ds-font-weight-normal)",
     '--ds-font-body-lg-font-family': "var(--ds-font-family-product)",
     '--ds-font-body-lg-letter-spacing': "var(--ds-font-letter-spacing-normal)",
     '--ds-font-body-lg-weight': "var(--ds-font-weight-normal)",
     '--ds-font-body-md-font-family': "var(--ds-font-family-product)",
     '--ds-font-body-md-letter-spacing': "var(--ds-font-letter-spacing-normal)",
     '--ds-font-body-md-weight': "var(--ds-font-weight-normal)",
+    '--ds-font-body-sm-font-family': "var(--ds-font-family-product)",
+    '--ds-font-body-sm-letter-spacing': "var(--ds-font-letter-spacing-normal)",
+    '--ds-font-body-sm-weight': "var(--ds-font-weight-normal)",
     '--ds-font-button-label-01-font-family': "var(--ds-font-family-product)",
     '--ds-font-button-label-01-letter-spacing': "var(--ds-font-letter-spacing-normal)",
     '--ds-font-button-label-01-weight': "var(--ds-font-weight-semibold)",

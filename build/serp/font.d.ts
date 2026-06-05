@@ -1,7 +1,7 @@
 // Do not edit directly, this file was auto-generated.
 // Source: https://github.com/duckduckgo/design-tokens
-// Version: 0.27.0
-// Last updated: May 29, 2026 at 11:50 PM
+// Version: 0.28.0
+// Last updated: June 5, 2026 at 03:17 PM
 
 declare module '@duckduckgo/design-tokens/build/serp/font' {
     export type DSFontKeys =
@@ -18,10 +18,16 @@ declare module '@duckduckgo/design-tokens/build/serp/font' {
         | '--ds-font-title-05-size'
         | '--ds-font-title-06-line-height'
         | '--ds-font-title-06-size'
+        | '--ds-font-body-xxl-line-height'
+        | '--ds-font-body-xxl-size'
+        | '--ds-font-body-xl-line-height'
+        | '--ds-font-body-xl-size'
         | '--ds-font-body-lg-line-height'
         | '--ds-font-body-lg-size'
         | '--ds-font-body-md-line-height'
         | '--ds-font-body-md-size'
+        | '--ds-font-body-sm-line-height'
+        | '--ds-font-body-sm-size'
         | '--ds-font-button-label-01-line-height'
         | '--ds-font-button-label-01-size'
         | '--ds-font-button-label-02-line-height'
@@ -39,12 +45,21 @@ declare module '@duckduckgo/design-tokens/build/serp/font' {
         | '--ds-font-title-06-font-family'
         | '--ds-font-title-06-letter-spacing'
         | '--ds-font-title-06-weight'
+        | '--ds-font-body-xxl-font-family'
+        | '--ds-font-body-xxl-letter-spacing'
+        | '--ds-font-body-xxl-weight'
+        | '--ds-font-body-xl-font-family'
+        | '--ds-font-body-xl-letter-spacing'
+        | '--ds-font-body-xl-weight'
         | '--ds-font-body-lg-font-family'
         | '--ds-font-body-lg-letter-spacing'
         | '--ds-font-body-lg-weight'
         | '--ds-font-body-md-font-family'
         | '--ds-font-body-md-letter-spacing'
         | '--ds-font-body-md-weight'
+        | '--ds-font-body-sm-font-family'
+        | '--ds-font-body-sm-letter-spacing'
+        | '--ds-font-body-sm-weight'
         | '--ds-font-button-label-01-font-family'
         | '--ds-font-button-label-01-letter-spacing'
         | '--ds-font-button-label-01-weight'
@@ -76,8 +91,8 @@ declare module '@duckduckgo/design-tokens/build/serp/font' {
         | '20px'
         | '16px'
         | '14px'
-        | '18px'
         | '12px'
+        | '18px'
         | 'uppercase'
         | '13px'
         | 'var(--ds-font-family-display)'
