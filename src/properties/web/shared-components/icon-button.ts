@@ -26,7 +26,7 @@ const iconButton: DesignToken = {
         },
         sm: {
             padding: {
-                $value: '10px',
+                $value: '{space.x02_5}',
             },
             iconSize: {
                 $value: '16px',
@@ -50,10 +50,10 @@ const iconButton: DesignToken = {
         },
         xl: {
             padding: {
-                $value: '{space.x04}',
+                $value: '{space.x05}',
             },
             iconSize: {
-                $value: '24px',
+                $value: '16px',
             },
         },
     },

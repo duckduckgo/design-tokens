@@ -11,7 +11,7 @@ const button: DesignToken = {
                 $value: '{space.x02}',
             },
             paddingY: {
-                $value: '{space.x1_5}',
+                $value: '{space.x_5}',
             },
             fontSize: {
                 $value: '{font.buttonLabel.03.size}',
@@ -31,10 +31,10 @@ const button: DesignToken = {
                 $value: '{radius.full}',
             },
             paddingX: {
-                $value: '{space.x04}',
+                $value: '{space.x03}',
             },
             paddingY: {
-                $value: '{space.x02}',
+                $value: '{space.x01}',
             },
             fontSize: {
                 $value: '{font.buttonLabel.03.size}',
@@ -54,10 +54,10 @@ const button: DesignToken = {
                 $value: '{radius.full}',
             },
             paddingX: {
-                $value: '{space.x05}',
+                $value: '{space.x03}',
             },
             paddingY: {
-                $value: '{space.x02}',
+                $value: '{space.x1_5}',
             },
             fontSize: {
                 $value: '{font.buttonLabel.03.size}',
@@ -77,7 +77,7 @@ const button: DesignToken = {
                 $value: '{radius.full}',
             },
             paddingX: {
-                $value: '{space.x06}',
+                $value: '{space.x05}',
             },
             paddingY: {
                 $value: '{space.x02}',
