@@ -152,7 +152,13 @@ const themeColors: DesignToken = {
             },
             controlRaised: {
                 primaryBackgroundColor: {
-                    $value: '{color.gray.0}',
+                    $value: '{color.white}',
+                },
+                secondaryBackgroundColor: {
+                    $value: '{color.gray.10}',
+                },
+                tertiaryBackgroundColor: {
+                    $value: '{color.gray.20}',
                 },
                 backdrop: {
                     $value: '{color.blackAt.9}',
@@ -373,7 +379,13 @@ const themeColors: DesignToken = {
             },
             controlRaised: {
                 primaryBackgroundColor: {
-                    $value: '{color.whiteAt.18}',
+                    $value: '{color.gray.90}',
+                },
+                secondaryBackgroundColor: {
+                    $value: '{color.gray.70}',
+                },
+                tertiaryBackgroundColor: {
+                    $value: '{color.gray.50}',
                 },
                 backdrop: {
                     $value: '{color.whiteAt.12}',
