@@ -1,7 +1,7 @@
 // Do not edit directly, this file was auto-generated.
 // Source: https://github.com/duckduckgo/design-tokens
-// Version: 0.29.0
-// Last updated: June 15, 2026 at 02:08 AM
+// Version: 0.30.0
+// Last updated: June 25, 2026 at 04:18 PM
 
 declare module '@duckduckgo/design-tokens/build/serp/color-palette' {
     export type DSColorPaletteKeys =
@@ -178,8 +178,8 @@ declare module '@duckduckgo/design-tokens/build/serp/color-palette' {
         | '#888888'
         | '#686868'
         | '#484848'
-        | '#383838'
-        | '#282828'
+        | '#333333'
+        | '#222222'
         | '#181818'
         | '#111111'
         | '#FBFAF9'
@@ -215,10 +215,10 @@ declare module '@duckduckgo/design-tokens/build/serp/color-palette' {
         | '#0A4739'
         | '#052F25'
         | '#082119'
-        | '#FFFAF9'
-        | '#FFEBE5'
-        | '#FFDACC'
-        | '#FFB294'
+        | '#FFF7F0'
+        | '#FFECDB'
+        | '#FFE4CC'
+        | '#FFB694'
         | '#FF8D5C'
         | '#F05F2B'
         | '#CC3B0A'
@@ -259,7 +259,7 @@ declare module '@duckduckgo/design-tokens/build/serp/color-palette' {
         | '#671421'
         | '#46111C'
         | '#2A0C14'
-        | '#39B25E';
+        | '#38B26A';
     const dsColorPalette: Record<DSColorPaletteKeys, DSColorPaletteValues>;
     export default dsColorPalette;
 }

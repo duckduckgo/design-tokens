@@ -1,8 +1,8 @@
 /**
  * Do not edit directly, this file was auto-generated.
  * Source: https://github.com/duckduckgo/design-tokens
- * Version: 0.29.0
- * Last updated: June 15, 2026 at 02:08 AM
+ * Version: 0.30.0
+ * Last updated: June 25, 2026 at 04:18 PM
  */
 
 .theme-light {
@@ -60,7 +60,9 @@
   --ds-control-subtle-primary-border-color: rgba(0, 0, 0, 0.12);
   --ds-control-subtle-secondary-border-color: rgba(0, 0, 0, 0.18);
   --ds-control-subtle-tertiary-border-color: rgba(0, 0, 0, 0.36);
-  --ds-control-raised-primary-background-color: #fafafa;
+  --ds-control-raised-primary-background-color: #ffffff;
+  --ds-control-raised-secondary-background-color: #f5f5f5;
+  --ds-control-raised-tertiary-background-color: #eeeeee;
   --ds-control-raised-backdrop: rgba(0, 0, 0, 0.09);
   --ds-input-primary-background-color: #ffffff;
   --ds-highlight-primary: rgba(250, 250, 250, 0.24);
@@ -81,7 +83,7 @@
   --ds-destructive-primary-content-color: #ffffff;
   --ds-destructive-secondary-content-color: rgba(255, 255, 255, 0.90);
   --ds-destructive-tertiary-content-color: rgba(255, 255, 255, 0.60);
-  --ds-status-green: #39B25E;
+  --ds-status-green: #38B26A;
   --ds-status-yellow: #FAB341;
   --ds-status-red: #D83544;
   --ds-status-gray: #888888;
@@ -142,7 +144,9 @@
   --ds-control-subtle-primary-border-color: rgba(255, 255, 255, 0.12);
   --ds-control-subtle-secondary-border-color: rgba(255, 255, 255, 0.18);
   --ds-control-subtle-tertiary-border-color: rgba(255, 255, 255, 0.36);
-  --ds-control-raised-primary-background-color: rgba(255, 255, 255, 0.18);
+  --ds-control-raised-primary-background-color: #222222;
+  --ds-control-raised-secondary-background-color: #484848;
+  --ds-control-raised-tertiary-background-color: #888888;
   --ds-control-raised-backdrop: rgba(255, 255, 255, 0.12);
   --ds-input-primary-background-color: #30302F;
   --ds-highlight-primary: rgba(255, 255, 255, 0.12);
@@ -163,7 +167,7 @@
   --ds-destructive-primary-content-color: #000000;
   --ds-destructive-secondary-content-color: rgba(0, 0, 0, 0.90);
   --ds-destructive-tertiary-content-color: rgba(0, 0, 0, 0.60);
-  --ds-status-green: #39B25E;
+  --ds-status-green: #38B26A;
   --ds-status-yellow: #FAB341;
   --ds-status-red: #D83544;
   --ds-status-gray: #888888;

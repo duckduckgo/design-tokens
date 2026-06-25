@@ -1,8 +1,8 @@
 
 // Do not edit directly, this file was auto-generated.
 // Source: https://github.com/duckduckgo/design-tokens
-// Version: 0.29.0
-// Last updated: June 15, 2026 at 02:08 AM
+// Version: 0.30.0
+// Last updated: June 25, 2026 at 04:18 PM
 
 const dsColorPalette = {
     /** BLACK */
@@ -59,8 +59,8 @@ const dsColorPalette = {
     '--ds-color-gray-50': '#888888',
     '--ds-color-gray-60': '#686868',
     '--ds-color-gray-70': '#484848',
-    '--ds-color-gray-80': '#383838',
-    '--ds-color-gray-90': '#282828',
+    '--ds-color-gray-80': '#333333',
+    '--ds-color-gray-90': '#222222',
     '--ds-color-gray-100': '#181818',
     '--ds-color-gray-111': '#111111',
 
@@ -104,10 +104,10 @@ const dsColorPalette = {
     '--ds-color-lilypad-100': '#082119',
 
     /** MANDARIN */
-    '--ds-color-mandarin-0': '#FFFAF9',
-    '--ds-color-mandarin-10': '#FFEBE5',
-    '--ds-color-mandarin-20': '#FFDACC',
-    '--ds-color-mandarin-30': '#FFB294',
+    '--ds-color-mandarin-0': '#FFF7F0',
+    '--ds-color-mandarin-10': '#FFECDB',
+    '--ds-color-mandarin-20': '#FFE4CC',
+    '--ds-color-mandarin-30': '#FFB694',
     '--ds-color-mandarin-40': '#FF8D5C',
     '--ds-color-mandarin-50': '#F05F2B',
     '--ds-color-mandarin-60': '#CC3B0A',
@@ -156,7 +156,7 @@ const dsColorPalette = {
     '--ds-color-red-100': '#2A0C14',
 
     /** GREEN */
-    '--ds-color-green-40': '#39B25E',
+    '--ds-color-green-40': '#38B26A',
 };
 
 export default dsColorPalette;

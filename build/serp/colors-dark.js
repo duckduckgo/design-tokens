@@ -1,16 +1,16 @@
 
 // Do not edit directly, this file was auto-generated.
 // Source: https://github.com/duckduckgo/design-tokens
-// Version: 0.29.0
-// Last updated: June 15, 2026 at 02:08 AM
+// Version: 0.30.0
+// Last updated: June 25, 2026 at 04:18 PM
 
 const dsThemeColorsDark = {
     /** SURFACE */
     '--ds-surface-backdrop': '#111111',
     '--ds-surface-canvas': '#181818',
-    '--ds-surface-primary': '#282828',
-    '--ds-surface-secondary': '#282828',
-    '--ds-surface-tertiary': '#282828',
+    '--ds-surface-primary': '#222222',
+    '--ds-surface-secondary': '#222222',
+    '--ds-surface-tertiary': '#222222',
     '--ds-surface-contrast': '#eeeeee',
     '--ds-surface-decoration-primary': 'rgba(255, 255, 255, 0.06)',
     '--ds-surface-decoration-secondary': 'rgba(255, 255, 255, 0.12)',
@@ -76,11 +76,13 @@ const dsThemeColorsDark = {
     '--ds-control-subtle-tertiary-border-color': 'rgba(255, 255, 255, 0.36)',
 
     /** CONTROL-RAISED */
-    '--ds-control-raised-primary-background-color': 'rgba(255, 255, 255, 0.18)',
+    '--ds-control-raised-primary-background-color': '#222222',
+    '--ds-control-raised-secondary-background-color': '#484848',
+    '--ds-control-raised-tertiary-background-color': '#888888',
     '--ds-control-raised-backdrop': 'rgba(255, 255, 255, 0.12)',
 
     /** INPUT */
-    '--ds-input-primary-background-color': '#383838',
+    '--ds-input-primary-background-color': '#333333',
 
     /** HIGHLIGHT */
     '--ds-highlight-primary': 'rgba(255, 255, 255, 0.12)',
@@ -109,7 +111,7 @@ const dsThemeColorsDark = {
     '--ds-destructive-tertiary-content-color': 'rgba(0, 0, 0, 0.60)',
 
     /** STATUS */
-    '--ds-status-green': '#39B25E',
+    '--ds-status-green': '#38B26A',
     '--ds-status-yellow': '#FAB341',
     '--ds-status-red': '#D83544',
     '--ds-status-gray': '#888888',

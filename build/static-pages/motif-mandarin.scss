@@ -1,17 +1,17 @@
 /**
  * Do not edit directly, this file was auto-generated.
  * Source: https://github.com/duckduckgo/design-tokens
- * Version: 0.29.0
- * Last updated: June 15, 2026 at 02:08 AM
+ * Version: 0.30.0
+ * Last updated: June 25, 2026 at 04:18 PM
  */
 
 .theme-light {
   .motif-mandarin {
     --ds-surface-backdrop: #ffffff;
-    --ds-surface-canvas: #FFFAF9;
-    --ds-surface-primary: #FFDACC;
-    --ds-surface-secondary: #FFEBE5;
-    --ds-surface-tertiary: #FFFAF9;
+    --ds-surface-canvas: #FFF7F0;
+    --ds-surface-primary: #FFE4CC;
+    --ds-surface-secondary: #FFECDB;
+    --ds-surface-tertiary: #FFF7F0;
     --ds-surface-contrast: rgba(41, 14, 10, 0.96);
     --ds-surface-decoration-primary: rgba(41, 14, 10, 0.06);
     --ds-surface-decoration-secondary: rgba(41, 14, 10, 0.12);
@@ -40,9 +40,9 @@
     --ds-accent-primary-content-color: #ffffff;
     --ds-accent-secondary-content-color: rgba(255, 255, 255, 0.72);
     --ds-accent-tertiary-content-color: rgba(255, 255, 255, 0.48);
-    --ds-accent-alt-primary: #FFEBE5;
-    --ds-accent-alt-secondary: #FFDACC;
-    --ds-accent-alt-tertiary: #FFB294;
+    --ds-accent-alt-primary: #FFECDB;
+    --ds-accent-alt-secondary: #FFE4CC;
+    --ds-accent-alt-tertiary: #FFB694;
     --ds-accent-alt-glow-primary: rgba(255, 141, 92, 0.20);
     --ds-accent-alt-glow-secondary: rgba(255, 141, 92, 0.12);
     --ds-accent-alt-primary-text-color: #9E2B08;
@@ -61,11 +61,11 @@
     --ds-control-subtle-primary-border-color: rgba(240, 95, 43, 0.12);
     --ds-control-subtle-secondary-border-color: rgba(240, 95, 43, 0.18);
     --ds-control-subtle-tertiary-border-color: rgba(240, 95, 43, 0.36);
-    --ds-control-raised-primary-background-color: #FFFAF9;
+    --ds-control-raised-primary-background-color: #FFF7F0;
     --ds-control-raised-backdrop: rgba(0, 0, 0, 0.09);
-    --ds-highlight-primary: rgba(255, 240, 249, 0.24);
-    --ds-tone-brighten-primary: rgba(255, 240, 249, 0.60);
-    --ds-tone-brighten-secondary: rgba(255, 240, 249, 0.84);
+    --ds-highlight-primary: rgba(255, 247, 240, 0.24);
+    --ds-tone-brighten-primary: rgba(255, 247, 240, 0.60);
+    --ds-tone-brighten-secondary: rgba(255, 247, 240, 0.84);
     --ds-tone-darken-primary: rgba(0, 0, 0, 0.03);
     --ds-shadow-primary-color: rgba(0, 0, 0, 0.06);
     --ds-shadow-secondary-color: rgba(0, 0, 0, 0.08);
@@ -84,18 +84,18 @@
     --ds-surface-decoration-primary: rgba(255, 255, 255, 0.06);
     --ds-surface-decoration-secondary: rgba(255, 255, 255, 0.12);
     --ds-surface-decoration-tertiary: rgba(255, 255, 255, 0.24);
-    --ds-container-primary-background-color: rgba(255, 240, 249, 0.03);
-    --ds-container-secondary-background-color: rgba(255, 240, 249, 0.06);
-    --ds-container-tertiary-background-color: rgba(255, 240, 249, 0.09);
-    --ds-container-primary-border-color: rgba(255, 240, 249, 0.06);
-    --ds-container-secondary-border-color: rgba(255, 240, 249, 0.09);
-    --ds-container-tertiary-border-color: rgba(255, 240, 249, 0.12);
-    --ds-text-primary: #FFFAF9;
-    --ds-text-secondary: rgba(255, 240, 249, 0.66);
-    --ds-text-tertiary: rgba(255, 240, 249, 0.36);
-    --ds-icons-primary: #FFFAF9;
-    --ds-icons-secondary: rgba(255, 240, 249, 0.48);
-    --ds-icons-tertiary: rgba(255, 240, 249, 0.24);
+    --ds-container-primary-background-color: rgba(255, 247, 240, 0.03);
+    --ds-container-secondary-background-color: rgba(255, 247, 240, 0.06);
+    --ds-container-tertiary-background-color: rgba(255, 247, 240, 0.09);
+    --ds-container-primary-border-color: rgba(255, 247, 240, 0.06);
+    --ds-container-secondary-border-color: rgba(255, 247, 240, 0.09);
+    --ds-container-tertiary-border-color: rgba(255, 247, 240, 0.12);
+    --ds-text-primary: #FFF7F0;
+    --ds-text-secondary: rgba(255, 247, 240, 0.66);
+    --ds-text-tertiary: rgba(255, 247, 240, 0.36);
+    --ds-icons-primary: #FFF7F0;
+    --ds-icons-secondary: rgba(255, 247, 240, 0.48);
+    --ds-icons-tertiary: rgba(255, 247, 240, 0.24);
     --ds-accent-primary: #FFD885;
     --ds-accent-secondary: #FFC95C;
     --ds-accent-tertiary: #FAB341;
@@ -111,29 +111,29 @@
     --ds-accent-alt-primary: #CC3B0A;
     --ds-accent-alt-secondary: #9E2B08;
     --ds-accent-alt-tertiary: #671907;
-    --ds-accent-alt-glow-primary: rgba(255, 178, 148, 0.20);
-    --ds-accent-alt-glow-secondary: rgba(255, 178, 148, 0.12);
-    --ds-accent-alt-primary-text-color: #FFDACC;
-    --ds-accent-alt-secondary-text-color: #FFB294;
+    --ds-accent-alt-glow-primary: rgba(255, 182, 148, 0.20);
+    --ds-accent-alt-glow-secondary: rgba(255, 182, 148, 0.12);
+    --ds-accent-alt-primary-text-color: #FFE4CC;
+    --ds-accent-alt-secondary-text-color: #FFB694;
     --ds-accent-alt-tertiary-text-color: #FF8D5C;
-    --ds-accent-alt-primary-content-color: #FFFAF9;
-    --ds-accent-alt-secondary-content-color: rgba(255, 240, 249, 0.72);
-    --ds-accent-alt-tertiary-content-color: rgba(255, 240, 249, 0.48);
-    --ds-control-primary-background-color: rgba(255, 235, 229, 0.12);
-    --ds-control-secondary-background-color: rgba(255, 235, 229, 0.18);
-    --ds-control-tertiary-background-color: rgba(255, 235, 229, 0.24);
-    --ds-control-primary-border-color: rgba(255, 235, 229, 0.36);
-    --ds-control-secondary-border-color: rgba(255, 235, 229, 0.64);
-    --ds-control-tertiary-border-color: rgba(255, 235, 229, 0.72);
-    --ds-control-quaternary-border-color: rgba(255, 235, 229, 0.80);
-    --ds-control-subtle-primary-border-color: rgba(255, 235, 229, 0.12);
-    --ds-control-subtle-secondary-border-color: rgba(255, 235, 229, 0.18);
-    --ds-control-subtle-tertiary-border-color: rgba(255, 235, 229, 0.36);
-    --ds-control-raised-primary-background-color: rgba(255, 240, 249, 0.18);
+    --ds-accent-alt-primary-content-color: #FFF7F0;
+    --ds-accent-alt-secondary-content-color: rgba(255, 247, 240, 0.72);
+    --ds-accent-alt-tertiary-content-color: rgba(255, 247, 240, 0.48);
+    --ds-control-primary-background-color: rgba(255, 236, 219, 0.12);
+    --ds-control-secondary-background-color: rgba(255, 236, 219, 0.18);
+    --ds-control-tertiary-background-color: rgba(255, 236, 219, 0.24);
+    --ds-control-primary-border-color: rgba(255, 236, 219, 0.36);
+    --ds-control-secondary-border-color: rgba(255, 236, 219, 0.64);
+    --ds-control-tertiary-border-color: rgba(255, 236, 219, 0.72);
+    --ds-control-quaternary-border-color: rgba(255, 236, 219, 0.80);
+    --ds-control-subtle-primary-border-color: rgba(255, 236, 219, 0.12);
+    --ds-control-subtle-secondary-border-color: rgba(255, 236, 219, 0.18);
+    --ds-control-subtle-tertiary-border-color: rgba(255, 236, 219, 0.36);
+    --ds-control-raised-primary-background-color: rgba(255, 247, 240, 0.18);
     --ds-control-raised-backdrop: rgba(255, 255, 255, 0.12);
-    --ds-highlight-primary: rgba(255, 240, 249, 0.12);
-    --ds-tone-brighten-primary: rgba(255, 235, 229, 0.06);
-    --ds-tone-brighten-secondary: rgba(255, 235, 229, 0.12);
+    --ds-highlight-primary: rgba(255, 247, 240, 0.12);
+    --ds-tone-brighten-primary: rgba(255, 236, 219, 0.06);
+    --ds-tone-brighten-secondary: rgba(255, 236, 219, 0.12);
     --ds-tone-darken-primary: rgba(0, 0, 0, 0.12);
     --ds-shadow-primary-color: rgba(0, 0, 0, 0.16);
     --ds-shadow-secondary-color: rgba(0, 0, 0, 0.24);

@@ -1,8 +1,8 @@
 
 // Do not edit directly, this file was auto-generated.
 // Source: https://github.com/duckduckgo/design-tokens
-// Version: 0.29.0
-// Last updated: June 15, 2026 at 02:08 AM
+// Version: 0.30.0
+// Last updated: June 25, 2026 at 04:18 PM
 
 const dsThemeColorsLight = {
     /** SURFACE */
@@ -76,7 +76,9 @@ const dsThemeColorsLight = {
     '--ds-control-subtle-tertiary-border-color': 'rgba(0, 0, 0, 0.36)',
 
     /** CONTROL-RAISED */
-    '--ds-control-raised-primary-background-color': '#fafafa',
+    '--ds-control-raised-primary-background-color': '#ffffff',
+    '--ds-control-raised-secondary-background-color': '#f5f5f5',
+    '--ds-control-raised-tertiary-background-color': '#eeeeee',
     '--ds-control-raised-backdrop': 'rgba(0, 0, 0, 0.09)',
 
     /** INPUT */
@@ -109,7 +111,7 @@ const dsThemeColorsLight = {
     '--ds-destructive-tertiary-content-color': 'rgba(255, 255, 255, 0.60)',
 
     /** STATUS */
-    '--ds-status-green': '#39B25E',
+    '--ds-status-green': '#38B26A',
     '--ds-status-yellow': '#FAB341',
     '--ds-status-red': '#D83544',
     '--ds-status-gray': '#888888',
