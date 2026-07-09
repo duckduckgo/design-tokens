@@ -1,8 +1,8 @@
 
 // Do not edit directly, this file was auto-generated.
 // Source: https://github.com/duckduckgo/design-tokens
-// Version: 0.30.0
-// Last updated: June 25, 2026 at 04:18 PM
+// Version: 0.31.0
+// Last updated: July 9, 2026 at 06:34 PM
 
 const dsTokensRadius = {
     '--ds-radius-full': '999px',

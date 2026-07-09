@@ -1,0 +1,4750 @@
+{
+  "Theme Color": {
+    "$type": "string",
+    "$value": "Pondwater",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:11246:58446",
+      "com.figma.scopes": [
+        "ALL_SCOPES"
+      ],
+      "com.figma.type": "string"
+    }
+  },
+  "Light": {
+    "Surface": {
+      "Backdrop": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            1,
+            1,
+            1
+          ],
+          "alpha": 1,
+          "hex": "#FFFFFF"
+        },
+        "$description": "Used for deep background layers (e.g., behind tab bars).",
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8146:32876",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.codeSyntax": {
+            "WEB": "--ds-surface-backdrop"
+          },
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:ff35302e84e472cc55acda93aecb901f40335d5d/-1:-1",
+            "targetVariableName": "Grayscale/RB-White",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Canvas": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.9607843160629272,
+            0.9843137264251709,
+            0.9960784316062927
+          ],
+          "alpha": 1,
+          "hex": "#F5FBFE"
+        },
+        "$description": "Used for high-level content areas such as Settings and other full-page views within the UI.",
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8146:32863",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.codeSyntax": {
+            "WEB": "--ds-surface-canvas"
+          },
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:3d81a66db161ba34079428204b12c4e9b13b607f/-1:-1",
+            "targetVariableName": "Pondwater/RB-Pondwater 0",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Primary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.7960784435272217,
+            0.9176470637321472,
+            1
+          ],
+          "alpha": 1,
+          "hex": "#CBEAFF"
+        },
+        "$description": "The main background of the UI.",
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8146:32890",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.codeSyntax": {
+            "WEB": "--ds-surface-primary"
+          },
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:b1f3a15ff620da73c3ce7529713375df1e9ed6e6/-1:-1",
+            "targetVariableName": "Pondwater/RB-Pondwater 20 (Primary)",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Secondary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.9019607901573181,
+            0.9647058844566345,
+            1
+          ],
+          "alpha": 1,
+          "hex": "#E6F6FF"
+        },
+        "$description": "Background for cards, side panels, or overlays.",
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8146:32860",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.codeSyntax": {
+            "WEB": "--ds-surface-secondary"
+          },
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:ce402172433437b8c6139165ecd216606600f1e8/-1:-1",
+            "targetVariableName": "Pondwater/RB-Pondwater 10",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Tertiary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.9607843160629272,
+            0.9843137264251709,
+            0.9960784316062927
+          ],
+          "alpha": 1,
+          "hex": "#F5FBFE"
+        },
+        "$description": "Used for input fields, form elements, and subtle background variations in nested components.",
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8146:32882",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.codeSyntax": {
+            "WEB": "--ds-surface-tertiary"
+          },
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:3d81a66db161ba34079428204b12c4e9b13b607f/-1:-1",
+            "targetVariableName": "Pondwater/RB-Pondwater 0",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Contrast": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.03529411926865578,
+            0.09803921729326248,
+            0.1764705926179886
+          ],
+          "alpha": 0.9599999785423279,
+          "hex": "#09192D"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:10803:34458",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.codeSyntax": {
+            "WEB": "--ds-surface-decoration-primary"
+          }
+        }
+      },
+      "Decoration-Base": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.003921568859368563,
+            0.0784313753247261,
+            0.1764705926179886
+          ],
+          "alpha": 1,
+          "hex": "#01142D"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8146:32879",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:3a1966de6832db0d2637ca0eccecc7a999b2503e/-1:-1",
+            "targetVariableName": "Pondwater/RB-Pondwater 100",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Decoration-Primary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.03529411926865578,
+            0.09803921729326248,
+            0.1764705926179886
+          ],
+          "alpha": 0.05999999865889549,
+          "hex": "#09192D"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8146:32855",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.codeSyntax": {
+            "WEB": "--ds-surface-decoration-primary"
+          }
+        }
+      },
+      "Decoration-Secondary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.03529411926865578,
+            0.09803921729326248,
+            0.1764705926179886
+          ],
+          "alpha": 0.09000000357627869,
+          "hex": "#09192D"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8146:32862",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.codeSyntax": {
+            "WEB": "--ds-surface-decoration-secondary"
+          }
+        }
+      },
+      "Decoration-Tertiary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.03529411926865578,
+            0.09803921729326248,
+            0.1764705926179886
+          ],
+          "alpha": 0.1599999964237213,
+          "hex": "#09192D"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8146:32875",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.codeSyntax": {
+            "WEB": "--ds-surface-decoration-tertiary"
+          }
+        }
+      }
+    },
+    "Container": {
+      "Base": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.003921568859368563,
+            0.0784313753247261,
+            0.1764705926179886
+          ],
+          "alpha": 1,
+          "hex": "#01142D"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8146:32888",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:3a1966de6832db0d2637ca0eccecc7a999b2503e/-1:-1",
+            "targetVariableName": "Pondwater/RB-Pondwater 100",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Fill-Primary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.03529411926865578,
+            0.09803921729326248,
+            0.1764705926179886
+          ],
+          "alpha": 0.009999999776482582,
+          "hex": "#09192D"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8146:32886",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.codeSyntax": {
+            "WEB": "--ds-container-primary-background-color"
+          }
+        }
+      },
+      "Fill-Secondary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.03529411926865578,
+            0.09803921729326248,
+            0.1764705926179886
+          ],
+          "alpha": 0.029999999329447746,
+          "hex": "#09192D"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8146:32867",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.codeSyntax": {
+            "WEB": "--ds-container-secondary-background-color"
+          }
+        }
+      },
+      "Fill-Tertiary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.03529411926865578,
+            0.09803921729326248,
+            0.1764705926179886
+          ],
+          "alpha": 0.05999999865889549,
+          "hex": "#09192D"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8146:32881",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.codeSyntax": {
+            "WEB": "--ds-container-tertiary-background-color"
+          }
+        }
+      },
+      "Border-Primary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.03529411926865578,
+            0.09803921729326248,
+            0.1764705926179886
+          ],
+          "alpha": 0.05999999865889549,
+          "hex": "#09192D"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8146:32873",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.codeSyntax": {
+            "WEB": "--ds-container-primary-border-color"
+          }
+        }
+      },
+      "Border-Secondary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.03529411926865578,
+            0.09803921729326248,
+            0.1764705926179886
+          ],
+          "alpha": 0.09000000357627869,
+          "hex": "#09192D"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8146:32868",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.codeSyntax": {
+            "WEB": "--ds-container-secondary-border-color"
+          }
+        }
+      },
+      "Border-Tertiary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.03529411926865578,
+            0.09803921729326248,
+            0.1764705926179886
+          ],
+          "alpha": 0.11999999731779099,
+          "hex": "#09192D"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8146:32884",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.codeSyntax": {
+            "WEB": "--ds-container-tertiary-border-color"
+          }
+        }
+      }
+    },
+    "Text": {
+      "Base": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.003921568859368563,
+            0.0784313753247261,
+            0.1764705926179886
+          ],
+          "alpha": 1,
+          "hex": "#01142D"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8146:32866",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:3a1966de6832db0d2637ca0eccecc7a999b2503e/-1:-1",
+            "targetVariableName": "Pondwater/RB-Pondwater 100",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Primary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.03529411926865578,
+            0.09803921729326248,
+            0.1764705926179886
+          ],
+          "alpha": 0.9599999785423279,
+          "hex": "#09192D"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8146:32845",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.codeSyntax": {
+            "WEB": "--ds-text-primary"
+          }
+        }
+      },
+      "Secondary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.03529411926865578,
+            0.09803921729326248,
+            0.1764705926179886
+          ],
+          "alpha": 0.6600000262260437,
+          "hex": "#09192D"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8146:32864",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.codeSyntax": {
+            "WEB": "--ds-text-secondary"
+          }
+        }
+      },
+      "Tertiary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.03529411926865578,
+            0.09803921729326248,
+            0.1764705926179886
+          ],
+          "alpha": 0.36000001430511475,
+          "hex": "#09192D"
+        },
+        "$description": "Does not pass accessibility for contrast. Only use for disabled states or incidental or purely decorative elements.",
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8146:32878",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.codeSyntax": {
+            "WEB": "--ds-text-tertiary"
+          }
+        }
+      }
+    },
+    "Icons": {
+      "Base": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.003921568859368563,
+            0.0784313753247261,
+            0.1764705926179886
+          ],
+          "alpha": 1,
+          "hex": "#01142D"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8146:32836",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:3a1966de6832db0d2637ca0eccecc7a999b2503e/-1:-1",
+            "targetVariableName": "Pondwater/RB-Pondwater 100",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Primary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.03529411926865578,
+            0.09803921729326248,
+            0.1764705926179886
+          ],
+          "alpha": 0.9599999785423279,
+          "hex": "#09192D"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8146:32850",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.codeSyntax": {
+            "WEB": "--ds-icons-primary"
+          }
+        }
+      },
+      "Secondary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.03529411926865578,
+            0.09803921729326248,
+            0.1764705926179886
+          ],
+          "alpha": 0.6000000238418579,
+          "hex": "#09192D"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8146:32858",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.codeSyntax": {
+            "WEB": "--ds-icons-secondary"
+          }
+        }
+      },
+      "Tertiary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.03529411926865578,
+            0.09803921729326248,
+            0.1764705926179886
+          ],
+          "alpha": 0.36000001430511475,
+          "hex": "#09192D"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8146:32861",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.codeSyntax": {
+            "WEB": "--ds-icons-tertiary"
+          }
+        }
+      }
+    },
+    "Accent": {
+      "Primary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.062745101749897,
+            0.45490196347236633,
+            0.800000011920929
+          ],
+          "alpha": 1,
+          "hex": "#1074CC"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8146:32870",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.codeSyntax": {
+            "WEB": "--ds-accent-primary"
+          },
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:7993e53be05578a1e750c9b0da2ea907a82530f7/-1:-1",
+            "targetVariableName": "Pondwater/RB-Pondwater 60 (Secondary)",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Secondary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.01568627543747425,
+            0.3686274588108063,
+            0.6980392336845398
+          ],
+          "alpha": 1,
+          "hex": "#045EB2"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8146:32843",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.codeSyntax": {
+            "WEB": "--ds-accent-secondary"
+          },
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:c3922ed257bd58d9ac0aefa43e1f855e90ef7962/-1:-1",
+            "targetVariableName": "Pondwater/RB-Pondwater 70",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Tertiary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.0117647061124444,
+            0.2549019753932953,
+            0.501960813999176
+          ],
+          "alpha": 1,
+          "hex": "#034180"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8146:32840",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.codeSyntax": {
+            "WEB": "--ds-accent-tertiary"
+          },
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:e48e89736af89844010642cad0c3df5622248ff1/-1:-1",
+            "targetVariableName": "Pondwater/RB-Pondwater 80",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Quaternary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.007843137718737125,
+            0.14509804546833038,
+            0.3019607961177826
+          ],
+          "alpha": 1,
+          "hex": "#02254D"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8146:32865",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.codeSyntax": {
+            "WEB": "--ds-accent-quaternary"
+          },
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:f1bc349baeaff1a531effcebead1435ffd34eb8a/-1:-1",
+            "targetVariableName": "Pondwater/RB-Pondwater 90",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Glow-Primary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.062745101749897,
+            0.45490196347236633,
+            0.800000011920929
+          ],
+          "alpha": 0.20000000298023224,
+          "hex": "#1074CC"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8146:32871",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.codeSyntax": {
+            "WEB": "--ds-accent-glow-primary"
+          }
+        }
+      },
+      "Glow-Secondary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.062745101749897,
+            0.45490196347236633,
+            0.800000011920929
+          ],
+          "alpha": 0.11999999731779099,
+          "hex": "#1074CC"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8146:32859",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.codeSyntax": {
+            "WEB": "--ds-accent-glow-secondary"
+          }
+        }
+      },
+      "Text-Primary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.062745101749897,
+            0.45490196347236633,
+            0.800000011920929
+          ],
+          "alpha": 1,
+          "hex": "#1074CC"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8146:32869",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:7993e53be05578a1e750c9b0da2ea907a82530f7/-1:-1",
+            "targetVariableName": "Pondwater/RB-Pondwater 60 (Secondary)",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Text-Secondary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.01568627543747425,
+            0.3686274588108063,
+            0.6980392336845398
+          ],
+          "alpha": 1,
+          "hex": "#045EB2"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8146:32854",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:c3922ed257bd58d9ac0aefa43e1f855e90ef7962/-1:-1",
+            "targetVariableName": "Pondwater/RB-Pondwater 70",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Text-Tertiary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.0117647061124444,
+            0.2549019753932953,
+            0.501960813999176
+          ],
+          "alpha": 1,
+          "hex": "#034180"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8146:32849",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:e48e89736af89844010642cad0c3df5622248ff1/-1:-1",
+            "targetVariableName": "Pondwater/RB-Pondwater 80",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Content-Primary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            1,
+            1,
+            1
+          ],
+          "alpha": 1,
+          "hex": "#FFFFFF"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8146:32846",
+          "com.figma.hiddenFromPublishing": true
+        }
+      },
+      "Content-Secondary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            1,
+            1,
+            1
+          ],
+          "alpha": 0.7200000286102295,
+          "hex": "#FFFFFF"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8146:32851",
+          "com.figma.hiddenFromPublishing": true
+        }
+      },
+      "Content-Tertiary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            1,
+            1,
+            1
+          ],
+          "alpha": 0.47999998927116394,
+          "hex": "#FFFFFF"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8146:32857",
+          "com.figma.hiddenFromPublishing": true
+        }
+      }
+    },
+    "Accent-Alt": {
+      "Primary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.9019607901573181,
+            0.9647058844566345,
+            1
+          ],
+          "alpha": 1,
+          "hex": "#E6F6FF"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8146:32844",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:ce402172433437b8c6139165ecd216606600f1e8/-1:-1",
+            "targetVariableName": "Pondwater/RB-Pondwater 10",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Secondary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.7960784435272217,
+            0.9176470637321472,
+            1
+          ],
+          "alpha": 1,
+          "hex": "#CBEAFF"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8146:32842",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:b1f3a15ff620da73c3ce7529713375df1e9ed6e6/-1:-1",
+            "targetVariableName": "Pondwater/RB-Pondwater 20 (Primary)",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Tertiary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.6313725709915161,
+            0.8156862854957581,
+            0.9686274528503418
+          ],
+          "alpha": 1,
+          "hex": "#A1D0F7"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8146:32874",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:919e33e71e958b917a15155f16bb78d2c02540a3/-1:-1",
+            "targetVariableName": "Pondwater/RB-Pondwater 30",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Glow-Primary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.46666666865348816,
+            0.7137255072593689,
+            0.9098039269447327
+          ],
+          "alpha": 0.20000000298023224,
+          "hex": "#77B6E8"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8146:32839",
+          "com.figma.hiddenFromPublishing": true
+        }
+      },
+      "Glow-Secondary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.46666666865348816,
+            0.7137255072593689,
+            0.9098039269447327
+          ],
+          "alpha": 0.11999999731779099,
+          "hex": "#77B6E8"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8146:32841",
+          "com.figma.hiddenFromPublishing": true
+        }
+      },
+      "Text-Primary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.01568627543747425,
+            0.3686274588108063,
+            0.6980392336845398
+          ],
+          "alpha": 1,
+          "hex": "#045EB2"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8146:32838",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ],
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:c3922ed257bd58d9ac0aefa43e1f855e90ef7962/-1:-1",
+            "targetVariableName": "Pondwater/RB-Pondwater 70",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Text-Secondary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.0117647061124444,
+            0.2549019753932953,
+            0.501960813999176
+          ],
+          "alpha": 1,
+          "hex": "#034180"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8146:32885",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ],
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:e48e89736af89844010642cad0c3df5622248ff1/-1:-1",
+            "targetVariableName": "Pondwater/RB-Pondwater 80",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Text-Tertiary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.007843137718737125,
+            0.14509804546833038,
+            0.3019607961177826
+          ],
+          "alpha": 1,
+          "hex": "#02254D"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8146:32856",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ],
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:f1bc349baeaff1a531effcebead1435ffd34eb8a/-1:-1",
+            "targetVariableName": "Pondwater/RB-Pondwater 90",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Content-Primary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.007843137718737125,
+            0.14509804546833038,
+            0.3019607961177826
+          ],
+          "alpha": 1,
+          "hex": "#02254D"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8146:32837",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:f1bc349baeaff1a531effcebead1435ffd34eb8a/-1:-1",
+            "targetVariableName": "Pondwater/RB-Pondwater 90",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Content-Secondary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.05882352963089943,
+            0.15294118225574493,
+            0.27843138575553894
+          ],
+          "alpha": 0.7200000286102295,
+          "hex": "#0F2747"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8146:32834",
+          "com.figma.hiddenFromPublishing": true
+        }
+      },
+      "Content-Tertiary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.05882352963089943,
+            0.15294118225574493,
+            0.27843138575553894
+          ],
+          "alpha": 0.47999998927116394,
+          "hex": "#0F2747"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8146:32835",
+          "com.figma.hiddenFromPublishing": true
+        }
+      }
+    },
+    "Accent-Fire": {
+      "Primary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.9421372413635254,
+            0.37419214844703674,
+            0.16766667366027832
+          ],
+          "alpha": 1,
+          "hex": "#F05F2B"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:11799:513",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:428a33fa61e86b6e66ce2aeafbdf6a96b77cb6e6/-1:-1",
+            "targetVariableName": "Mandarin/RB-Mandarin 50 (Primary)",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Secondary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.800000011920929,
+            0.23137255012989044,
+            0.03921568766236305
+          ],
+          "alpha": 1,
+          "hex": "#CC3B0A"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:11799:514",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:b6439bdaeacdb74ec65cfe7529b4f45482cb2d3f/-1:-1",
+            "targetVariableName": "Mandarin/RB-Mandarin 60",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Tertiary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.6196078658103943,
+            0.16862745583057404,
+            0.0313725508749485
+          ],
+          "alpha": 1,
+          "hex": "#9E2B08"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:11799:515",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:51807822ebf4b688f4ae2f35efb001584b61c5a2/-1:-1",
+            "targetVariableName": "Mandarin/RB-Mandarin 70",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Glow-Primary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.9411764740943909,
+            0.37254902720451355,
+            0.16862745583057404
+          ],
+          "alpha": 0.20000000298023224,
+          "hex": "#F05F2B"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:11799:516",
+          "com.figma.hiddenFromPublishing": true
+        }
+      },
+      "Glow-Secondary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.9411764740943909,
+            0.37254902720451355,
+            0.16862745583057404
+          ],
+          "alpha": 0.11999999731779099,
+          "hex": "#F05F2B"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:11799:517",
+          "com.figma.hiddenFromPublishing": true
+        }
+      },
+      "Text-Primary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.9421372413635254,
+            0.37419214844703674,
+            0.16766667366027832
+          ],
+          "alpha": 1,
+          "hex": "#F05F2B"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:11799:518",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ],
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:428a33fa61e86b6e66ce2aeafbdf6a96b77cb6e6/-1:-1",
+            "targetVariableName": "Mandarin/RB-Mandarin 50 (Primary)",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Text-Secondary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.800000011920929,
+            0.23137255012989044,
+            0.03921568766236305
+          ],
+          "alpha": 1,
+          "hex": "#CC3B0A"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:11799:519",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ],
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:b6439bdaeacdb74ec65cfe7529b4f45482cb2d3f/-1:-1",
+            "targetVariableName": "Mandarin/RB-Mandarin 60",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Text-Tertiary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.6196078658103943,
+            0.16862745583057404,
+            0.0313725508749485
+          ],
+          "alpha": 1,
+          "hex": "#9E2B08"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:11799:520",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ],
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:51807822ebf4b688f4ae2f35efb001584b61c5a2/-1:-1",
+            "targetVariableName": "Mandarin/RB-Mandarin 70",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Content-Primary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            1,
+            1,
+            1
+          ],
+          "alpha": 1,
+          "hex": "#FFFFFF"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:11799:521",
+          "com.figma.hiddenFromPublishing": true
+        }
+      },
+      "Content-Secondary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            1,
+            1,
+            1
+          ],
+          "alpha": 0.699999988079071,
+          "hex": "#FFFFFF"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:11799:522",
+          "com.figma.hiddenFromPublishing": true
+        }
+      },
+      "Content-Tertiary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            1,
+            1,
+            1
+          ],
+          "alpha": 0.5,
+          "hex": "#FFFFFF"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:11799:523",
+          "com.figma.hiddenFromPublishing": true
+        }
+      }
+    },
+    "Accent-Brand": {
+      "Primary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.9019607901573181,
+            0.9647058844566345,
+            1
+          ],
+          "alpha": 1,
+          "hex": "#E6F6FF"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:9983:36956",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:ce402172433437b8c6139165ecd216606600f1e8/-1:-1",
+            "targetVariableName": "Pondwater/RB-Pondwater 10",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Secondary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.7960784435272217,
+            0.9176470637321472,
+            1
+          ],
+          "alpha": 1,
+          "hex": "#CBEAFF"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:9983:36957",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:b1f3a15ff620da73c3ce7529713375df1e9ed6e6/-1:-1",
+            "targetVariableName": "Pondwater/RB-Pondwater 20 (Primary)",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Tertiary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.6313725709915161,
+            0.8156862854957581,
+            0.9686274528503418
+          ],
+          "alpha": 1,
+          "hex": "#A1D0F7"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:9983:36958",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:919e33e71e958b917a15155f16bb78d2c02540a3/-1:-1",
+            "targetVariableName": "Pondwater/RB-Pondwater 30",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Glow-Primary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.46666666865348816,
+            0.7137255072593689,
+            0.9098039269447327
+          ],
+          "alpha": 0.20000000298023224,
+          "hex": "#77B6E8"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:9983:36959",
+          "com.figma.hiddenFromPublishing": true
+        }
+      },
+      "Glow-Secondary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.46666666865348816,
+            0.7137255072593689,
+            0.9098039269447327
+          ],
+          "alpha": 0.11999999731779099,
+          "hex": "#77B6E8"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:9983:36960",
+          "com.figma.hiddenFromPublishing": true
+        }
+      },
+      "Text-Primary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.01568627543747425,
+            0.3686274588108063,
+            0.6980392336845398
+          ],
+          "alpha": 1,
+          "hex": "#045EB2"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:9983:36961",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ],
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:c3922ed257bd58d9ac0aefa43e1f855e90ef7962/-1:-1",
+            "targetVariableName": "Pondwater/RB-Pondwater 70",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Text-Secondary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.0117647061124444,
+            0.2549019753932953,
+            0.501960813999176
+          ],
+          "alpha": 1,
+          "hex": "#034180"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:9983:36962",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ],
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:e48e89736af89844010642cad0c3df5622248ff1/-1:-1",
+            "targetVariableName": "Pondwater/RB-Pondwater 80",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Text-Tertiary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.007843137718737125,
+            0.14509804546833038,
+            0.3019607961177826
+          ],
+          "alpha": 1,
+          "hex": "#02254D"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:9983:36963",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ],
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:f1bc349baeaff1a531effcebead1435ffd34eb8a/-1:-1",
+            "targetVariableName": "Pondwater/RB-Pondwater 90",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Content-Primary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.007843137718737125,
+            0.14509804546833038,
+            0.3019607961177826
+          ],
+          "alpha": 1,
+          "hex": "#02254D"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:9983:36964",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:f1bc349baeaff1a531effcebead1435ffd34eb8a/-1:-1",
+            "targetVariableName": "Pondwater/RB-Pondwater 90",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Content-Secondary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.05882352963089943,
+            0.15294118225574493,
+            0.27843138575553894
+          ],
+          "alpha": 0.7200000286102295,
+          "hex": "#0F2747"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:9983:36965",
+          "com.figma.hiddenFromPublishing": true
+        }
+      },
+      "Content-Tertiary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.05882352963089943,
+            0.15294118225574493,
+            0.27843138575553894
+          ],
+          "alpha": 0.47999998927116394,
+          "hex": "#0F2747"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:9983:36966",
+          "com.figma.hiddenFromPublishing": true
+        }
+      }
+    },
+    "Control": {
+      "Base": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.062745101749897,
+            0.45490196347236633,
+            0.800000011920929
+          ],
+          "alpha": 1,
+          "hex": "#1074CC"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8146:32832",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:7993e53be05578a1e750c9b0da2ea907a82530f7/-1:-1",
+            "targetVariableName": "Pondwater/RB-Pondwater 60 (Secondary)",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Fill-Primary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.062745101749897,
+            0.45490196347236633,
+            0.800000011920929
+          ],
+          "alpha": 0.09000000357627869,
+          "hex": "#1074CC"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8146:32831",
+          "com.figma.hiddenFromPublishing": true
+        }
+      },
+      "Fill-Secondary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.062745101749897,
+            0.45490196347236633,
+            0.800000011920929
+          ],
+          "alpha": 0.11999999731779099,
+          "hex": "#1074CC"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8146:32829",
+          "com.figma.hiddenFromPublishing": true
+        }
+      },
+      "Fill-Tertiary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.062745101749897,
+            0.45490196347236633,
+            0.800000011920929
+          ],
+          "alpha": 0.18000000715255737,
+          "hex": "#1074CC"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8146:32828",
+          "com.figma.hiddenFromPublishing": true
+        }
+      },
+      "Border-Primary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.062745101749897,
+            0.45490196347236633,
+            0.800000011920929
+          ],
+          "alpha": 0.30000001192092896,
+          "hex": "#1074CC"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8146:32833",
+          "com.figma.hiddenFromPublishing": true
+        }
+      },
+      "Border-Secondary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.062745101749897,
+            0.45490196347236633,
+            0.800000011920929
+          ],
+          "alpha": 0.47999998927116394,
+          "hex": "#1074CC"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8146:32827",
+          "com.figma.hiddenFromPublishing": true
+        }
+      },
+      "Border-Tertiary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.062745101749897,
+            0.45490196347236633,
+            0.800000011920929
+          ],
+          "alpha": 0.6000000238418579,
+          "hex": "#1074CC"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8146:32883",
+          "com.figma.hiddenFromPublishing": true
+        }
+      },
+      "Border-Quaternary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.062745101749897,
+            0.45490196347236633,
+            0.800000011920929
+          ],
+          "alpha": 0.7200000286102295,
+          "hex": "#1074CC"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8146:32826",
+          "com.figma.hiddenFromPublishing": true
+        }
+      }
+    },
+    "Control-Subtle": {
+      "Fill-Primary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.062745101749897,
+            0.45490196347236633,
+            0.800000011920929
+          ],
+          "alpha": 0.029999999329447746,
+          "hex": "#1074CC"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:11660:513",
+          "com.figma.hiddenFromPublishing": true
+        }
+      },
+      "Fill-Secondary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.062745101749897,
+            0.45490196347236633,
+            0.800000011920929
+          ],
+          "alpha": 0.05999999865889549,
+          "hex": "#1074CC"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:11660:514",
+          "com.figma.hiddenFromPublishing": true
+        }
+      },
+      "Fill-Tertiary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.062745101749897,
+            0.45490196347236633,
+            0.800000011920929
+          ],
+          "alpha": 0.10000000149011612,
+          "hex": "#1074CC"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:11660:515",
+          "com.figma.hiddenFromPublishing": true
+        }
+      },
+      "Border-Primary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.062745101749897,
+            0.45490196347236633,
+            0.800000011920929
+          ],
+          "alpha": 0.11999999731779099,
+          "hex": "#1074CC"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:10796:518",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.codeSyntax": {
+            "WEB": "Light/Control-Subtle/Border-Primary"
+          }
+        }
+      },
+      "Border-Secondary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.062745101749897,
+            0.45490196347236633,
+            0.800000011920929
+          ],
+          "alpha": 0.18000000715255737,
+          "hex": "#1074CC"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:10800:34452",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.codeSyntax": {
+            "WEB": "Light/Control-Subtle/Border-Primary"
+          }
+        }
+      },
+      "Border-Tertiary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.062745101749897,
+            0.45490196347236633,
+            0.800000011920929
+          ],
+          "alpha": 0.36000001430511475,
+          "hex": "#1074CC"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:10800:34453",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.codeSyntax": {
+            "WEB": "Light/Control-Subtle/Border-Primary"
+          }
+        }
+      }
+    },
+    "Control-Raised": {
+      "Fill-Primary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.9607843160629272,
+            0.9843137264251709,
+            0.9960784316062927
+          ],
+          "alpha": 1,
+          "hex": "#F5FBFE"
+        },
+        "$description": "Used for input fields, form elements, and subtle background variations in nested components.",
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8146:32880",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:3d81a66db161ba34079428204b12c4e9b13b607f/-1:-1",
+            "targetVariableName": "Pondwater/RB-Pondwater 0",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Fill-Secondary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.9019607901573181,
+            0.9647058844566345,
+            1
+          ],
+          "alpha": 1,
+          "hex": "#E6F6FF"
+        },
+        "$description": "Used for input fields, form elements, and subtle background variations in nested components.",
+        "$extensions": {
+          "com.figma.variableId": "VariableID:11979:513",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:ce402172433437b8c6139165ecd216606600f1e8/-1:-1",
+            "targetVariableName": "Pondwater/RB-Pondwater 10",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Fill-Tertiary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.7960784435272217,
+            0.9176470637321472,
+            1
+          ],
+          "alpha": 1,
+          "hex": "#CBEAFF"
+        },
+        "$description": "Used for input fields, form elements, and subtle background variations in nested components.",
+        "$extensions": {
+          "com.figma.variableId": "VariableID:11979:514",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:b1f3a15ff620da73c3ce7529713375df1e9ed6e6/-1:-1",
+            "targetVariableName": "Pondwater/RB-Pondwater 20 (Primary)",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Backdrop": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0,
+            0,
+            0
+          ],
+          "alpha": 0.09000000357627869,
+          "hex": "#000000"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8146:32825",
+          "com.figma.hiddenFromPublishing": true
+        }
+      }
+    },
+    "Input": {
+      "Active": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.9607843160629272,
+            0.9843137264251709,
+            0.9960784316062927
+          ],
+          "alpha": 1,
+          "hex": "#F5FBFE"
+        },
+        "$description": "Used for input fields, form elements, and subtle background variations in nested components.",
+        "$extensions": {
+          "com.figma.variableId": "VariableID:11015:34885",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.codeSyntax": {
+            "WEB": "--ds-surface-tertiary"
+          },
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:3d81a66db161ba34079428204b12c4e9b13b607f/-1:-1",
+            "targetVariableName": "Pondwater/RB-Pondwater 0",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Resting": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.9607843160629272,
+            0.9843137264251709,
+            0.9960784316062927
+          ],
+          "alpha": 1,
+          "hex": "#F5FBFE"
+        },
+        "$description": "Used for input fields, form elements, and subtle background variations in nested components.",
+        "$extensions": {
+          "com.figma.variableId": "VariableID:11911:59564",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.codeSyntax": {
+            "WEB": "--ds-surface-tertiary"
+          },
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:3d81a66db161ba34079428204b12c4e9b13b607f/-1:-1",
+            "targetVariableName": "Pondwater/RB-Pondwater 0",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      }
+    },
+    "Highlight": {
+      "Primary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.9607843160629272,
+            0.9843137264251709,
+            0.9960784316062927
+          ],
+          "alpha": 0.23999999463558197,
+          "hex": "#F5FBFE"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8146:32830",
+          "com.figma.hiddenFromPublishing": true
+        }
+      }
+    },
+    "Tone": {
+      "Tint-Primary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.9607843160629272,
+            0.9843137264251709,
+            0.9960784316062927
+          ],
+          "alpha": 0.6000000238418579,
+          "hex": "#F5FBFE"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8146:32824",
+          "com.figma.hiddenFromPublishing": true
+        }
+      },
+      "Tint-Secondary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.9607843160629272,
+            0.9843137264251709,
+            0.9960784316062927
+          ],
+          "alpha": 0.8399999737739563,
+          "hex": "#F5FBFE"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:9594:513",
+          "com.figma.hiddenFromPublishing": true
+        }
+      },
+      "Shade-Primary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0,
+            0,
+            0
+          ],
+          "alpha": 0.029999999329447746,
+          "hex": "#000000"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8146:32823",
+          "com.figma.hiddenFromPublishing": true
+        }
+      }
+    },
+    "Shadow": {
+      "Primary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.007843137718737125,
+            0.14509804546833038,
+            0.3019607961177826
+          ],
+          "alpha": 0.05999999865889549,
+          "hex": "#02254D"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8146:32822",
+          "com.figma.hiddenFromPublishing": true
+        }
+      },
+      "Secondary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.007843137718737125,
+            0.14509804546833038,
+            0.3019607961177826
+          ],
+          "alpha": 0.07999999821186066,
+          "hex": "#02254D"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8146:32821",
+          "com.figma.hiddenFromPublishing": true
+        }
+      },
+      "Tertiary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.007843137718737125,
+            0.14509804546833038,
+            0.3019607961177826
+          ],
+          "alpha": 0.1599999964237213,
+          "hex": "#02254D"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8146:32820",
+          "com.figma.hiddenFromPublishing": true
+        }
+      }
+    },
+    "Destructive": {
+      "Primary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.8470588326454163,
+            0.2078431397676468,
+            0.2666666805744171
+          ],
+          "alpha": 1,
+          "hex": "#D83544"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8146:32853",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:6adf41d05131e9b0c75e5c71294bd862c1469513/-1:-1",
+            "targetVariableName": "Other/RB-Red 50",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Secondary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.7921568751335144,
+            0.16862745583057404,
+            0.239215686917305
+          ],
+          "alpha": 1,
+          "hex": "#CA2B3D"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8146:32877",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:9a591a2fd3ab5dddda372c6172bdbd0a056e43bf/-1:-1",
+            "targetVariableName": "Other/RB-Red 60",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Tertiary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.6274510025978088,
+            0.13333334028720856,
+            0.1921568661928177
+          ],
+          "alpha": 1,
+          "hex": "#A02231"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8146:32819",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:93dd58c0ddc3ba1d0e1c605b5eb28699e1987e97/-1:-1",
+            "targetVariableName": "Other/RB-Red 70",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Glow-Primary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.9647058844566345,
+            0.5568627715110779,
+            0.5607843399047852
+          ],
+          "alpha": 0.20000000298023224,
+          "hex": "#F68E8F"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8146:32818",
+          "com.figma.hiddenFromPublishing": true
+        }
+      },
+      "Glow-Secondary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.9647058844566345,
+            0.5568627715110779,
+            0.5607843399047852
+          ],
+          "alpha": 0.11999999731779099,
+          "hex": "#F68E8F"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8146:32817",
+          "com.figma.hiddenFromPublishing": true
+        }
+      },
+      "Text-Primary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.8470588326454163,
+            0.2078431397676468,
+            0.2666666805744171
+          ],
+          "alpha": 1,
+          "hex": "#D83544"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8146:32848",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:6adf41d05131e9b0c75e5c71294bd862c1469513/-1:-1",
+            "targetVariableName": "Other/RB-Red 50",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Text-Secondary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.7921568751335144,
+            0.16862745583057404,
+            0.239215686917305
+          ],
+          "alpha": 1,
+          "hex": "#CA2B3D"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8146:32816",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:9a591a2fd3ab5dddda372c6172bdbd0a056e43bf/-1:-1",
+            "targetVariableName": "Other/RB-Red 60",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Text-Tertiary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.6274510025978088,
+            0.13333334028720856,
+            0.1921568661928177
+          ],
+          "alpha": 1,
+          "hex": "#A02231"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8146:32815",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:93dd58c0ddc3ba1d0e1c605b5eb28699e1987e97/-1:-1",
+            "targetVariableName": "Other/RB-Red 70",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Content-Primary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            1,
+            1,
+            1
+          ],
+          "alpha": 1,
+          "hex": "#FFFFFF"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8146:32847",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:ff35302e84e472cc55acda93aecb901f40335d5d/-1:-1",
+            "targetVariableName": "Grayscale/RB-White",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Content-Secondary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            1,
+            1,
+            1
+          ],
+          "alpha": 0.8999999761581421,
+          "hex": "#FFFFFF"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8146:32814",
+          "com.figma.hiddenFromPublishing": true
+        }
+      },
+      "Content-Tertiary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            1,
+            1,
+            1
+          ],
+          "alpha": 0.6000000238418579,
+          "hex": "#FFFFFF"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8146:32872",
+          "com.figma.hiddenFromPublishing": true
+        }
+      }
+    },
+    "Status": {
+      "Green": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.21960784494876862,
+            0.6980392336845398,
+            0.4156862795352936
+          ],
+          "alpha": 1,
+          "hex": "#38B26A"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8146:32889",
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:6a857d05d0c9b9776f0df65cd54cef8da40fb3a5/-1:-1",
+            "targetVariableName": "Other/RB-Green 40",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Yellow": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.9803921580314636,
+            0.7019608020782471,
+            0.2549019753932953
+          ],
+          "alpha": 1,
+          "hex": "#FAB341"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:10839:513",
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:c1a7b272698f7ce594c7aeaf57f0b4cb33648dc6/-1:-1",
+            "targetVariableName": "Pollen/RB-Pollen 50",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Red": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.8470588326454163,
+            0.2078431397676468,
+            0.2666666805744171
+          ],
+          "alpha": 1,
+          "hex": "#D83544"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8146:32852",
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:6adf41d05131e9b0c75e5c71294bd862c1469513/-1:-1",
+            "targetVariableName": "Other/RB-Red 50",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Gray": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.5333330035209656,
+            0.5333330035209656,
+            0.5333330035209656
+          ],
+          "alpha": 1,
+          "hex": "#888888"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:10839:514",
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:c1fc696ec7aed4d6f2151a41121145e055d8d566/-1:-1",
+            "targetVariableName": "Grayscale/RB-Gray 50",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      }
+    },
+    "Status-Warning": {
+      "Primary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            1,
+            0.7882353067398071,
+            0.3607843220233917
+          ],
+          "alpha": 1,
+          "hex": "#FFC95C"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8146:32887",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL",
+            "STROKE",
+            "EFFECT_COLOR"
+          ],
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:1f2f8323f10ec75cf3ec45fed495ff8a409b1405/-1:-1",
+            "targetVariableName": "Pollen/RB-Pollen 40 (Secondary)",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Content-Primary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            1,
+            0.7882353067398071,
+            0.3607843220233917
+          ],
+          "alpha": 1,
+          "hex": "#FFC95C"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:9445:60614",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL",
+            "TEXT_FILL",
+            "STROKE"
+          ],
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:1f2f8323f10ec75cf3ec45fed495ff8a409b1405/-1:-1",
+            "targetVariableName": "Pollen/RB-Pollen 40 (Secondary)",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Fill-Primary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            1,
+            0.7882353067398071,
+            0.3607843220233917
+          ],
+          "alpha": 1,
+          "hex": "#FFC95C"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:9445:60615",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:1f2f8323f10ec75cf3ec45fed495ff8a409b1405/-1:-1",
+            "targetVariableName": "Pollen/RB-Pollen 40 (Secondary)",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      }
+    }
+  },
+  "Dark": {
+    "Surface": {
+      "Backdrop": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.06666667014360428,
+            0.06666667014360428,
+            0.06666667014360428
+          ],
+          "alpha": 1,
+          "hex": "#111111"
+        },
+        "$description": "Used for deep background layers (e.g., behind tab bars).",
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8149:887",
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:a35a0db42723d134d441c0956c3df6b1d97fddb6/-1:-1",
+            "targetVariableName": "Grayscale/RB-Gray 111",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Canvas": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.003921568859368563,
+            0.0784313753247261,
+            0.1764705926179886
+          ],
+          "alpha": 1,
+          "hex": "#01142D"
+        },
+        "$description": "Used for high-level content areas such as Settings and other full-page views within the UI.",
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8149:884",
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:3a1966de6832db0d2637ca0eccecc7a999b2503e/-1:-1",
+            "targetVariableName": "Pondwater/RB-Pondwater 100",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Primary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.003921568859368563,
+            0.0784313753247261,
+            0.1764705926179886
+          ],
+          "alpha": 1,
+          "hex": "#01142D"
+        },
+        "$description": "The main background of the UI.",
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8149:898",
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:3a1966de6832db0d2637ca0eccecc7a999b2503e/-1:-1",
+            "targetVariableName": "Pondwater/RB-Pondwater 100",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Secondary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.007843137718737125,
+            0.14509804546833038,
+            0.3019607961177826
+          ],
+          "alpha": 1,
+          "hex": "#02254D"
+        },
+        "$description": "Background for cards, side panels, or overlays.",
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8149:850",
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:f1bc349baeaff1a531effcebead1435ffd34eb8a/-1:-1",
+            "targetVariableName": "Pondwater/RB-Pondwater 90",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Tertiary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.0117647061124444,
+            0.2549019753932953,
+            0.501960813999176
+          ],
+          "alpha": 1,
+          "hex": "#034180"
+        },
+        "$description": "Used for input fields, form elements, and subtle background variations in nested components.",
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8149:893",
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:e48e89736af89844010642cad0c3df5622248ff1/-1:-1",
+            "targetVariableName": "Pondwater/RB-Pondwater 80",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Contrast": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            1,
+            1,
+            1
+          ],
+          "alpha": 0.9599999785423279,
+          "hex": "#FFFFFF"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:10803:34459"
+        }
+      },
+      "Decoration-Base": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            1,
+            1,
+            1
+          ],
+          "alpha": 1,
+          "hex": "#FFFFFF"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8149:888",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:ff35302e84e472cc55acda93aecb901f40335d5d/-1:-1",
+            "targetVariableName": "Grayscale/RB-White",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Decoration-Primary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            1,
+            1,
+            1
+          ],
+          "alpha": 0.05999999865889549,
+          "hex": "#FFFFFF"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8149:852"
+        }
+      },
+      "Decoration-Secondary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            1,
+            1,
+            1
+          ],
+          "alpha": 0.11999999731779099,
+          "hex": "#FFFFFF"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8149:896"
+        }
+      },
+      "Decoration-Tertiary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            1,
+            1,
+            1
+          ],
+          "alpha": 0.23999999463558197,
+          "hex": "#FFFFFF"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8149:892"
+        }
+      }
+    },
+    "Container": {
+      "Base": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.9607843160629272,
+            0.9843137264251709,
+            0.9960784316062927
+          ],
+          "alpha": 1,
+          "hex": "#F5FBFE"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8149:863",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:3d81a66db161ba34079428204b12c4e9b13b607f/-1:-1",
+            "targetVariableName": "Pondwater/RB-Pondwater 0",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Fill-Primary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.9607843160629272,
+            0.9843137264251709,
+            0.9960784316062927
+          ],
+          "alpha": 0.029999999329447746,
+          "hex": "#F5FBFE"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8149:880"
+        }
+      },
+      "Fill-Secondary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.9607843160629272,
+            0.9843137264251709,
+            0.9960784316062927
+          ],
+          "alpha": 0.05999999865889549,
+          "hex": "#F5FBFE"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8149:879"
+        }
+      },
+      "Fill-Tertiary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.9607843160629272,
+            0.9843137264251709,
+            0.9960784316062927
+          ],
+          "alpha": 0.09000000357627869,
+          "hex": "#F5FBFE"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8149:885"
+        }
+      },
+      "Border-Primary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.9607843160629272,
+            0.9843137264251709,
+            0.9960784316062927
+          ],
+          "alpha": 0.05999999865889549,
+          "hex": "#F5FBFE"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8149:878"
+        }
+      },
+      "Border-Secondary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.9607843160629272,
+            0.9843137264251709,
+            0.9960784316062927
+          ],
+          "alpha": 0.09000000357627869,
+          "hex": "#F5FBFE"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8149:895"
+        }
+      },
+      "Border-Tertiary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.9607843160629272,
+            0.9843137264251709,
+            0.9960784316062927
+          ],
+          "alpha": 0.11999999731779099,
+          "hex": "#F5FBFE"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8149:877"
+        }
+      }
+    },
+    "Text": {
+      "Base": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.9607843160629272,
+            0.9843137264251709,
+            0.9960784316062927
+          ],
+          "alpha": 1,
+          "hex": "#F5FBFE"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8149:874",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:3d81a66db161ba34079428204b12c4e9b13b607f/-1:-1",
+            "targetVariableName": "Pondwater/RB-Pondwater 0",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Primary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.9607843160629272,
+            0.9843137264251709,
+            0.9960784316062927
+          ],
+          "alpha": 1,
+          "hex": "#F5FBFE"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8149:866",
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:3d81a66db161ba34079428204b12c4e9b13b607f/-1:-1",
+            "targetVariableName": "Pondwater/RB-Pondwater 0",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Secondary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.9607843160629272,
+            0.9843137264251709,
+            0.9960784316062927
+          ],
+          "alpha": 0.6600000262260437,
+          "hex": "#F5FBFE"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8149:865"
+        }
+      },
+      "Tertiary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.9607843160629272,
+            0.9843137264251709,
+            0.9960784316062927
+          ],
+          "alpha": 0.36000001430511475,
+          "hex": "#F5FBFE"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8149:882"
+        }
+      }
+    },
+    "Icons": {
+      "Base": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.9607843160629272,
+            0.9843137264251709,
+            0.9960784316062927
+          ],
+          "alpha": 1,
+          "hex": "#F5FBFE"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8149:868",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:3d81a66db161ba34079428204b12c4e9b13b607f/-1:-1",
+            "targetVariableName": "Pondwater/RB-Pondwater 0",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Primary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.9607843160629272,
+            0.9843137264251709,
+            0.9960784316062927
+          ],
+          "alpha": 1,
+          "hex": "#F5FBFE"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8149:860",
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:3d81a66db161ba34079428204b12c4e9b13b607f/-1:-1",
+            "targetVariableName": "Pondwater/RB-Pondwater 0",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Secondary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.9607843160629272,
+            0.9843137264251709,
+            0.9960784316062927
+          ],
+          "alpha": 0.47999998927116394,
+          "hex": "#F5FBFE"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8149:845"
+        }
+      },
+      "Tertiary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.9607843160629272,
+            0.9843137264251709,
+            0.9960784316062927
+          ],
+          "alpha": 0.23999999463558197,
+          "hex": "#F5FBFE"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8149:864"
+        }
+      }
+    },
+    "Accent": {
+      "Primary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.4588235318660736,
+            0.7137255072593689,
+            0.9215686321258545
+          ],
+          "alpha": 1,
+          "hex": "#75B6EB"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8149:872",
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:008323945a2e14e0de55c1321ee33782fa77a875/-1:-1",
+            "targetVariableName": "Pondwater/RB-Pondwater 40 (Secondary)",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Secondary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.26274511218070984,
+            0.5921568870544434,
+            0.8784313797950745
+          ],
+          "alpha": 1,
+          "hex": "#4397E0"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8149:862",
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:028c818a9213201c6e55bbda0b2ad7e5e6c37462/-1:-1",
+            "targetVariableName": "Pondwater/RB-Pondwater 50",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Tertiary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.062745101749897,
+            0.45490196347236633,
+            0.800000011920929
+          ],
+          "alpha": 1,
+          "hex": "#1074CC"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8149:899",
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:7993e53be05578a1e750c9b0da2ea907a82530f7/-1:-1",
+            "targetVariableName": "Pondwater/RB-Pondwater 60 (Secondary)",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Quaternary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.062745101749897,
+            0.45490196347236633,
+            0.800000011920929
+          ],
+          "alpha": 1,
+          "hex": "#1074CC"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8149:861",
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:7993e53be05578a1e750c9b0da2ea907a82530f7/-1:-1",
+            "targetVariableName": "Pondwater/RB-Pondwater 60 (Secondary)",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Glow-Primary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.46666666865348816,
+            0.7137255072593689,
+            0.9098039269447327
+          ],
+          "alpha": 0.20000000298023224,
+          "hex": "#77B6E8"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8149:859"
+        }
+      },
+      "Glow-Secondary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.46666666865348816,
+            0.7137255072593689,
+            0.9098039269447327
+          ],
+          "alpha": 0.11999999731779099,
+          "hex": "#77B6E8"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8149:875"
+        }
+      },
+      "Text-Primary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.4588235318660736,
+            0.7137255072593689,
+            0.9215686321258545
+          ],
+          "alpha": 1,
+          "hex": "#75B6EB"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8149:883",
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:008323945a2e14e0de55c1321ee33782fa77a875/-1:-1",
+            "targetVariableName": "Pondwater/RB-Pondwater 40 (Secondary)",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Text-Secondary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.26274511218070984,
+            0.5921568870544434,
+            0.8784313797950745
+          ],
+          "alpha": 1,
+          "hex": "#4397E0"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8149:870",
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:028c818a9213201c6e55bbda0b2ad7e5e6c37462/-1:-1",
+            "targetVariableName": "Pondwater/RB-Pondwater 50",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Text-Tertiary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.062745101749897,
+            0.45490196347236633,
+            0.800000011920929
+          ],
+          "alpha": 1,
+          "hex": "#1074CC"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8149:897",
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:7993e53be05578a1e750c9b0da2ea907a82530f7/-1:-1",
+            "targetVariableName": "Pondwater/RB-Pondwater 60 (Secondary)",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Content-Primary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.003921568859368563,
+            0.0784313753247261,
+            0.1764705926179886
+          ],
+          "alpha": 1,
+          "hex": "#01142D"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8149:894",
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:3a1966de6832db0d2637ca0eccecc7a999b2503e/-1:-1",
+            "targetVariableName": "Pondwater/RB-Pondwater 100",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Content-Secondary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.03529411926865578,
+            0.09803921729326248,
+            0.1764705926179886
+          ],
+          "alpha": 0.7200000286102295,
+          "hex": "#09192D"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8149:857"
+        }
+      },
+      "Content-Tertiary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.03529411926865578,
+            0.09803921729326248,
+            0.1764705926179886
+          ],
+          "alpha": 0.47999998927116394,
+          "hex": "#09192D"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8149:858"
+        }
+      }
+    },
+    "Accent-Alt": {
+      "Primary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.062745101749897,
+            0.45490196347236633,
+            0.800000011920929
+          ],
+          "alpha": 1,
+          "hex": "#1074CC"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8149:854",
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:7993e53be05578a1e750c9b0da2ea907a82530f7/-1:-1",
+            "targetVariableName": "Pondwater/RB-Pondwater 60 (Secondary)",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Secondary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.01568627543747425,
+            0.3686274588108063,
+            0.6980392336845398
+          ],
+          "alpha": 1,
+          "hex": "#045EB2"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8149:856",
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:c3922ed257bd58d9ac0aefa43e1f855e90ef7962/-1:-1",
+            "targetVariableName": "Pondwater/RB-Pondwater 70",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Tertiary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.0117647061124444,
+            0.2549019753932953,
+            0.501960813999176
+          ],
+          "alpha": 1,
+          "hex": "#034180"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8149:853",
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:e48e89736af89844010642cad0c3df5622248ff1/-1:-1",
+            "targetVariableName": "Pondwater/RB-Pondwater 80",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Glow-Primary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.6313725709915161,
+            0.8117647171020508,
+            0.9686274528503418
+          ],
+          "alpha": 0.20000000298023224,
+          "hex": "#A1CFF7"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8149:851"
+        }
+      },
+      "Glow-Secondary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.6313725709915161,
+            0.8117647171020508,
+            0.9686274528503418
+          ],
+          "alpha": 0.11999999731779099,
+          "hex": "#A1CFF7"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8149:849"
+        }
+      },
+      "Text-Primary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.7960784435272217,
+            0.9176470637321472,
+            1
+          ],
+          "alpha": 1,
+          "hex": "#CBEAFF"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8149:881",
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:b1f3a15ff620da73c3ce7529713375df1e9ed6e6/-1:-1",
+            "targetVariableName": "Pondwater/RB-Pondwater 20 (Primary)",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Text-Secondary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.6313725709915161,
+            0.8156862854957581,
+            0.9686274528503418
+          ],
+          "alpha": 1,
+          "hex": "#A1D0F7"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8149:847",
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:919e33e71e958b917a15155f16bb78d2c02540a3/-1:-1",
+            "targetVariableName": "Pondwater/RB-Pondwater 30",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Text-Tertiary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.4588235318660736,
+            0.7137255072593689,
+            0.9215686321258545
+          ],
+          "alpha": 1,
+          "hex": "#75B6EB"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8149:891",
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:008323945a2e14e0de55c1321ee33782fa77a875/-1:-1",
+            "targetVariableName": "Pondwater/RB-Pondwater 40 (Secondary)",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Content-Primary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.9607843160629272,
+            0.9843137264251709,
+            0.9960784316062927
+          ],
+          "alpha": 1,
+          "hex": "#F5FBFE"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8149:848",
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:3d81a66db161ba34079428204b12c4e9b13b607f/-1:-1",
+            "targetVariableName": "Pondwater/RB-Pondwater 0",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Content-Secondary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.9607843160629272,
+            0.9843137264251709,
+            0.9960784316062927
+          ],
+          "alpha": 0.7200000286102295,
+          "hex": "#F5FBFE"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8149:846"
+        }
+      },
+      "Content-Tertiary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.9607843160629272,
+            0.9843137264251709,
+            0.9960784316062927
+          ],
+          "alpha": 0.47999998927116394,
+          "hex": "#F5FBFE"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8149:873"
+        }
+      }
+    },
+    "Accent-Fire": {
+      "Primary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            1,
+            0.5520000457763672,
+            0.36000001430511475
+          ],
+          "alpha": 1,
+          "hex": "#FF8D5C"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:11800:529",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:565509bf610957d479a096ab1d8a7ca0d93f868d/-1:-1",
+            "targetVariableName": "Mandarin/RB-Mandarin 40 (Primary)",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Secondary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.9421372413635254,
+            0.37419214844703674,
+            0.16766667366027832
+          ],
+          "alpha": 1,
+          "hex": "#F05F2B"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:11800:530",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:428a33fa61e86b6e66ce2aeafbdf6a96b77cb6e6/-1:-1",
+            "targetVariableName": "Mandarin/RB-Mandarin 50 (Primary)",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Tertiary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.800000011920929,
+            0.23137255012989044,
+            0.03921568766236305
+          ],
+          "alpha": 1,
+          "hex": "#CC3B0A"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:11800:531",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:b6439bdaeacdb74ec65cfe7529b4f45482cb2d3f/-1:-1",
+            "targetVariableName": "Mandarin/RB-Mandarin 60",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Glow-Primary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            1,
+            0.5529412031173706,
+            0.3607843220233917
+          ],
+          "alpha": 0.20000000298023224,
+          "hex": "#FF8D5C"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:11800:532",
+          "com.figma.hiddenFromPublishing": true
+        }
+      },
+      "Glow-Secondary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            1,
+            0.5529412031173706,
+            0.3607843220233917
+          ],
+          "alpha": 0.11999999731779099,
+          "hex": "#FF8D5C"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:11800:533",
+          "com.figma.hiddenFromPublishing": true
+        }
+      },
+      "Text-Primary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            1,
+            0.5520000457763672,
+            0.36000001430511475
+          ],
+          "alpha": 1,
+          "hex": "#FF8D5C"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:11800:534",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ],
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:565509bf610957d479a096ab1d8a7ca0d93f868d/-1:-1",
+            "targetVariableName": "Mandarin/RB-Mandarin 40 (Primary)",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Text-Secondary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.9421372413635254,
+            0.37419214844703674,
+            0.16766667366027832
+          ],
+          "alpha": 1,
+          "hex": "#F05F2B"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:11800:535",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ],
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:428a33fa61e86b6e66ce2aeafbdf6a96b77cb6e6/-1:-1",
+            "targetVariableName": "Mandarin/RB-Mandarin 50 (Primary)",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Text-Tertiary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.800000011920929,
+            0.23137255012989044,
+            0.03921568766236305
+          ],
+          "alpha": 1,
+          "hex": "#CC3B0A"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:11800:536",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ],
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:b6439bdaeacdb74ec65cfe7529b4f45482cb2d3f/-1:-1",
+            "targetVariableName": "Mandarin/RB-Mandarin 60",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Content-Primary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            1,
+            1,
+            1
+          ],
+          "alpha": 1,
+          "hex": "#FFFFFF"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:11800:537",
+          "com.figma.hiddenFromPublishing": true
+        }
+      },
+      "Content-Secondary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            1,
+            1,
+            1
+          ],
+          "alpha": 0.699999988079071,
+          "hex": "#FFFFFF"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:11800:538",
+          "com.figma.hiddenFromPublishing": true
+        }
+      },
+      "Content-Tertiary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            1,
+            1,
+            1
+          ],
+          "alpha": 0.5,
+          "hex": "#FFFFFF"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:11800:539",
+          "com.figma.hiddenFromPublishing": true
+        }
+      }
+    },
+    "Accent-Brand": {
+      "Primary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.9019607901573181,
+            0.9647058844566345,
+            1
+          ],
+          "alpha": 1,
+          "hex": "#E6F6FF"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:9984:36967",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:ce402172433437b8c6139165ecd216606600f1e8/-1:-1",
+            "targetVariableName": "Pondwater/RB-Pondwater 10",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Secondary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.7960784435272217,
+            0.9176470637321472,
+            1
+          ],
+          "alpha": 1,
+          "hex": "#CBEAFF"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:9984:36968",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:b1f3a15ff620da73c3ce7529713375df1e9ed6e6/-1:-1",
+            "targetVariableName": "Pondwater/RB-Pondwater 20 (Primary)",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Tertiary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.6313725709915161,
+            0.8156862854957581,
+            0.9686274528503418
+          ],
+          "alpha": 1,
+          "hex": "#A1D0F7"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:9984:36969",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:919e33e71e958b917a15155f16bb78d2c02540a3/-1:-1",
+            "targetVariableName": "Pondwater/RB-Pondwater 30",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Glow-Primary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.46666666865348816,
+            0.7137255072593689,
+            0.9098039269447327
+          ],
+          "alpha": 0.20000000298023224,
+          "hex": "#77B6E8"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:9984:36970",
+          "com.figma.hiddenFromPublishing": true
+        }
+      },
+      "Glow-Secondary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.46666666865348816,
+            0.7137255072593689,
+            0.9098039269447327
+          ],
+          "alpha": 0.11999999731779099,
+          "hex": "#77B6E8"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:9984:36971",
+          "com.figma.hiddenFromPublishing": true
+        }
+      },
+      "Text-Primary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.01568627543747425,
+            0.3686274588108063,
+            0.6980392336845398
+          ],
+          "alpha": 1,
+          "hex": "#045EB2"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:9984:36972",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ],
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:c3922ed257bd58d9ac0aefa43e1f855e90ef7962/-1:-1",
+            "targetVariableName": "Pondwater/RB-Pondwater 70",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Text-Secondary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.0117647061124444,
+            0.2549019753932953,
+            0.501960813999176
+          ],
+          "alpha": 1,
+          "hex": "#034180"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:9984:36973",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ],
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:e48e89736af89844010642cad0c3df5622248ff1/-1:-1",
+            "targetVariableName": "Pondwater/RB-Pondwater 80",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Text-Tertiary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.007843137718737125,
+            0.14509804546833038,
+            0.3019607961177826
+          ],
+          "alpha": 1,
+          "hex": "#02254D"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:9984:36974",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.scopes": [
+            "ALL_SCOPES"
+          ],
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:f1bc349baeaff1a531effcebead1435ffd34eb8a/-1:-1",
+            "targetVariableName": "Pondwater/RB-Pondwater 90",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Content-Primary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.007843137718737125,
+            0.14509804546833038,
+            0.3019607961177826
+          ],
+          "alpha": 1,
+          "hex": "#02254D"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:9984:36975",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:f1bc349baeaff1a531effcebead1435ffd34eb8a/-1:-1",
+            "targetVariableName": "Pondwater/RB-Pondwater 90",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Content-Secondary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.05882352963089943,
+            0.15294118225574493,
+            0.27843138575553894
+          ],
+          "alpha": 0.7200000286102295,
+          "hex": "#0F2747"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:9984:36976",
+          "com.figma.hiddenFromPublishing": true
+        }
+      },
+      "Content-Tertiary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.05882352963089943,
+            0.15294118225574493,
+            0.27843138575553894
+          ],
+          "alpha": 0.47999998927116394,
+          "hex": "#0F2747"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:9984:36977",
+          "com.figma.hiddenFromPublishing": true
+        }
+      }
+    },
+    "Control": {
+      "Base": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.9019607901573181,
+            0.9647058844566345,
+            1
+          ],
+          "alpha": 1,
+          "hex": "#E6F6FF"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8149:855",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:ce402172433437b8c6139165ecd216606600f1e8/-1:-1",
+            "targetVariableName": "Pondwater/RB-Pondwater 10",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Fill-Primary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.9019607901573181,
+            0.9647058844566345,
+            1
+          ],
+          "alpha": 0.11999999731779099,
+          "hex": "#E6F6FF"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8149:844"
+        }
+      },
+      "Fill-Secondary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.9019607901573181,
+            0.9647058844566345,
+            1
+          ],
+          "alpha": 0.18000000715255737,
+          "hex": "#E6F6FF"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8149:890"
+        }
+      },
+      "Fill-Tertiary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.9019607901573181,
+            0.9647058844566345,
+            1
+          ],
+          "alpha": 0.23999999463558197,
+          "hex": "#E6F6FF"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8149:843"
+        }
+      },
+      "Border-Primary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.9019607901573181,
+            0.9647058844566345,
+            1
+          ],
+          "alpha": 0.36000001430511475,
+          "hex": "#E6F6FF"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8149:889"
+        }
+      },
+      "Border-Secondary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.9019607901573181,
+            0.9647058844566345,
+            1
+          ],
+          "alpha": 0.6399999856948853,
+          "hex": "#E6F6FF"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8149:869"
+        }
+      },
+      "Border-Tertiary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.9019607901573181,
+            0.9647058844566345,
+            1
+          ],
+          "alpha": 0.7200000286102295,
+          "hex": "#E6F6FF"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8149:842"
+        }
+      },
+      "Border-Quaternary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.9019607901573181,
+            0.9647058844566345,
+            1
+          ],
+          "alpha": 0.800000011920929,
+          "hex": "#E6F6FF"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8149:840"
+        }
+      }
+    },
+    "Control-Subtle": {
+      "Border-Primary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.9019607901573181,
+            0.9647058844566345,
+            1
+          ],
+          "alpha": 0.11999999731779099,
+          "hex": "#E6F6FF"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:10798:34451"
+        }
+      },
+      "Border-Secondary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.9019607901573181,
+            0.9647058844566345,
+            1
+          ],
+          "alpha": 0.18000000715255737,
+          "hex": "#E6F6FF"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:10801:34456"
+        }
+      },
+      "Border-Tertiary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.9019607901573181,
+            0.9647058844566345,
+            1
+          ],
+          "alpha": 0.36000001430511475,
+          "hex": "#E6F6FF"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:10801:34457"
+        }
+      }
+    },
+    "Control-Raised": {
+      "Fill-Primary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.007843137718737125,
+            0.14509804546833038,
+            0.3019607961177826
+          ],
+          "alpha": 1,
+          "hex": "#02254D"
+        },
+        "$description": "Used for input fields, form elements, and subtle background variations in nested components.",
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8149:839",
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:f1bc349baeaff1a531effcebead1435ffd34eb8a/-1:-1",
+            "targetVariableName": "Pondwater/RB-Pondwater 90",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Fill-Secondary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.01568627543747425,
+            0.3686274588108063,
+            0.6980392336845398
+          ],
+          "alpha": 1,
+          "hex": "#045EB2"
+        },
+        "$description": "Used for input fields, form elements, and subtle background variations in nested components.",
+        "$extensions": {
+          "com.figma.variableId": "VariableID:11979:515",
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:c3922ed257bd58d9ac0aefa43e1f855e90ef7962/-1:-1",
+            "targetVariableName": "Pondwater/RB-Pondwater 70",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Fill-Tertiary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.26274511218070984,
+            0.5921568870544434,
+            0.8784313797950745
+          ],
+          "alpha": 1,
+          "hex": "#4397E0"
+        },
+        "$description": "Used for input fields, form elements, and subtle background variations in nested components.",
+        "$extensions": {
+          "com.figma.variableId": "VariableID:11979:516",
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:028c818a9213201c6e55bbda0b2ad7e5e6c37462/-1:-1",
+            "targetVariableName": "Pondwater/RB-Pondwater 50",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Backdrop": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            1,
+            1,
+            1
+          ],
+          "alpha": 0.11999999731779099,
+          "hex": "#FFFFFF"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8149:838"
+        }
+      }
+    },
+    "Input": {
+      "Active": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.0117647061124444,
+            0.2549019753932953,
+            0.501960813999176
+          ],
+          "alpha": 1,
+          "hex": "#034180"
+        },
+        "$description": "Used for input fields, form elements, and subtle background variations in nested components.",
+        "$extensions": {
+          "com.figma.variableId": "VariableID:11015:34886",
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:e48e89736af89844010642cad0c3df5622248ff1/-1:-1",
+            "targetVariableName": "Pondwater/RB-Pondwater 80",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Resting": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.0117647061124444,
+            0.2549019753932953,
+            0.501960813999176
+          ],
+          "alpha": 1,
+          "hex": "#034180"
+        },
+        "$description": "Used for input fields, form elements, and subtle background variations in nested components.",
+        "$extensions": {
+          "com.figma.variableId": "VariableID:11911:59563",
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:e48e89736af89844010642cad0c3df5622248ff1/-1:-1",
+            "targetVariableName": "Pondwater/RB-Pondwater 80",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      }
+    },
+    "Highlight": {
+      "Primary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.9607843160629272,
+            0.9843137264251709,
+            0.9960784316062927
+          ],
+          "alpha": 0.11999999731779099,
+          "hex": "#F5FBFE"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8149:837"
+        }
+      }
+    },
+    "Tone": {
+      "Tint-Primary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.9019607901573181,
+            0.9647058844566345,
+            1
+          ],
+          "alpha": 0.05999999865889549,
+          "hex": "#E6F6FF"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8149:836"
+        }
+      },
+      "Tint-Secondary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.9019607901573181,
+            0.9647058844566345,
+            1
+          ],
+          "alpha": 0.11999999731779099,
+          "hex": "#E6F6FF"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:9594:514"
+        }
+      },
+      "Shade-Primary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0,
+            0,
+            0
+          ],
+          "alpha": 0.11999999731779099,
+          "hex": "#000000"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8149:834"
+        }
+      }
+    },
+    "Shadow": {
+      "Primary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0,
+            0,
+            0
+          ],
+          "alpha": 0.1599999964237213,
+          "hex": "#000000"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8149:832"
+        }
+      },
+      "Secondary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0,
+            0,
+            0
+          ],
+          "alpha": 0.23999999463558197,
+          "hex": "#000000"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8149:833"
+        }
+      },
+      "Tertiary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0,
+            0,
+            0
+          ],
+          "alpha": 0.3199999928474426,
+          "hex": "#000000"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8149:831"
+        }
+      }
+    },
+    "Destructive": {
+      "Primary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.8470588326454163,
+            0.2078431397676468,
+            0.2666666805744171
+          ],
+          "alpha": 1,
+          "hex": "#D83544"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8149:835",
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:6adf41d05131e9b0c75e5c71294bd862c1469513/-1:-1",
+            "targetVariableName": "Other/RB-Red 50",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Secondary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.7921568751335144,
+            0.16862745583057404,
+            0.239215686917305
+          ],
+          "alpha": 1,
+          "hex": "#CA2B3D"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8149:841",
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:9a591a2fd3ab5dddda372c6172bdbd0a056e43bf/-1:-1",
+            "targetVariableName": "Other/RB-Red 60",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Tertiary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.6274510025978088,
+            0.13333334028720856,
+            0.1921568661928177
+          ],
+          "alpha": 1,
+          "hex": "#A02231"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8149:876",
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:93dd58c0ddc3ba1d0e1c605b5eb28699e1987e97/-1:-1",
+            "targetVariableName": "Other/RB-Red 70",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Glow-Primary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.9254902005195618,
+            0.26274511218070984,
+            0.30980393290519714
+          ],
+          "alpha": 0.20000000298023224,
+          "hex": "#EC434F"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8149:830"
+        }
+      },
+      "Glow-Secondary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.9254902005195618,
+            0.26274511218070984,
+            0.30980393290519714
+          ],
+          "alpha": 0.11999999731779099,
+          "hex": "#EC434F"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8149:871"
+        }
+      },
+      "Text-Primary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.8470588326454163,
+            0.2078431397676468,
+            0.2666666805744171
+          ],
+          "alpha": 1,
+          "hex": "#D83544"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8149:829",
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:6adf41d05131e9b0c75e5c71294bd862c1469513/-1:-1",
+            "targetVariableName": "Other/RB-Red 50",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Text-Secondary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.7921568751335144,
+            0.16862745583057404,
+            0.239215686917305
+          ],
+          "alpha": 1,
+          "hex": "#CA2B3D"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8149:886",
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:9a591a2fd3ab5dddda372c6172bdbd0a056e43bf/-1:-1",
+            "targetVariableName": "Other/RB-Red 60",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Text-Tertiary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.6274510025978088,
+            0.13333334028720856,
+            0.1921568661928177
+          ],
+          "alpha": 1,
+          "hex": "#A02231"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8149:827",
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:93dd58c0ddc3ba1d0e1c605b5eb28699e1987e97/-1:-1",
+            "targetVariableName": "Other/RB-Red 70",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Content-Primary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0,
+            0,
+            0
+          ],
+          "alpha": 1,
+          "hex": "#000000"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8149:828",
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:78d9cdcc72267934e35de7a2ed404c61d353a0c8/-1:-1",
+            "targetVariableName": "Grayscale/RB-Black",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Content-Secondary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0,
+            0,
+            0
+          ],
+          "alpha": 0.8999999761581421,
+          "hex": "#000000"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8149:826"
+        }
+      },
+      "Content-Tertiary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0,
+            0,
+            0
+          ],
+          "alpha": 0.6000000238418579,
+          "hex": "#000000"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8149:825"
+        }
+      }
+    },
+    "Status": {
+      "Green": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.21960784494876862,
+            0.6980392336845398,
+            0.4156862795352936
+          ],
+          "alpha": 1,
+          "hex": "#38B26A"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8156:33513",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:6a857d05d0c9b9776f0df65cd54cef8da40fb3a5/-1:-1",
+            "targetVariableName": "Other/RB-Green 40",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Yellow": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.9803921580314636,
+            0.7019608020782471,
+            0.2549019753932953
+          ],
+          "alpha": 1,
+          "hex": "#FAB341"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:10839:515",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:c1a7b272698f7ce594c7aeaf57f0b4cb33648dc6/-1:-1",
+            "targetVariableName": "Pollen/RB-Pollen 50",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Red": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.8470588326454163,
+            0.2078431397676468,
+            0.2666666805744171
+          ],
+          "alpha": 1,
+          "hex": "#D83544"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8156:33511",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:6adf41d05131e9b0c75e5c71294bd862c1469513/-1:-1",
+            "targetVariableName": "Other/RB-Red 50",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Gray": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.5333330035209656,
+            0.5333330035209656,
+            0.5333330035209656
+          ],
+          "alpha": 1,
+          "hex": "#888888"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:10839:520",
+          "com.figma.hiddenFromPublishing": true,
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:c1fc696ec7aed4d6f2151a41121145e055d8d566/-1:-1",
+            "targetVariableName": "Grayscale/RB-Gray 50",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      }
+    },
+    "Status-Warning": {
+      "Primary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            1,
+            0.7882353067398071,
+            0.3607843220233917
+          ],
+          "alpha": 1,
+          "hex": "#FFC95C"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:8156:33512",
+          "com.figma.scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL",
+            "STROKE",
+            "EFFECT_COLOR"
+          ],
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:1f2f8323f10ec75cf3ec45fed495ff8a409b1405/-1:-1",
+            "targetVariableName": "Pollen/RB-Pollen 40 (Secondary)",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Content-Primary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            1,
+            0.7882353067398071,
+            0.3607843220233917
+          ],
+          "alpha": 1,
+          "hex": "#FFC95C"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:9445:60616",
+          "com.figma.scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL",
+            "TEXT_FILL",
+            "STROKE"
+          ],
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:1f2f8323f10ec75cf3ec45fed495ff8a409b1405/-1:-1",
+            "targetVariableName": "Pollen/RB-Pollen 40 (Secondary)",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      },
+      "Fill-Primary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            1,
+            0.7882353067398071,
+            0.3607843220233917
+          ],
+          "alpha": 1,
+          "hex": "#FFC95C"
+        },
+        "$extensions": {
+          "com.figma.variableId": "VariableID:9445:60617",
+          "com.figma.scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ],
+          "com.figma.aliasData": {
+            "targetVariableId": "VariableID:1f2f8323f10ec75cf3ec45fed495ff8a409b1405/-1:-1",
+            "targetVariableName": "Pollen/RB-Pollen 40 (Secondary)",
+            "targetVariableSetId": "VariableCollectionId:a240a80c1eaeabf6561dbced2ed0c6ee538d5d76/-1:-1",
+            "targetVariableSetName": "Color Palette (Rebrand)"
+          }
+        }
+      }
+    }
+  },
+  "$extensions": {
+    "com.figma.modeName": "Pondwater"
+  }
+}

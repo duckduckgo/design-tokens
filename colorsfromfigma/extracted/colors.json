@@ -1,0 +1,704 @@
+{
+  "Grayscale": {
+    "RB-White": {
+      "value": {
+        "alpha": 1,
+        "hex": "#FFFFFF"
+      },
+      "codeSyntax": "var(--ds-color-white)"
+    },
+    "RB-Gray 0": {
+      "value": {
+        "alpha": 1,
+        "hex": "#FAFAFA"
+      },
+      "codeSyntax": "var(--ds-color-gray-0)"
+    },
+    "RB-Gray 10": {
+      "value": {
+        "alpha": 1,
+        "hex": "#F5F5F5"
+      },
+      "codeSyntax": "var(--ds-color-gray-10)"
+    },
+    "RB-Gray 20": {
+      "value": {
+        "alpha": 1,
+        "hex": "#EEEEEE"
+      },
+      "codeSyntax": "var(--ds-color-gray-20)"
+    },
+    "RB-Gray 30": {
+      "value": {
+        "alpha": 1,
+        "hex": "#CCCCCC"
+      },
+      "codeSyntax": "var(--ds-color-gray-30)"
+    },
+    "RB-Gray 40": {
+      "value": {
+        "alpha": 1,
+        "hex": "#AAAAAA"
+      },
+      "codeSyntax": "var(--ds-color-gray-40)"
+    },
+    "RB-Gray 50": {
+      "value": {
+        "alpha": 1,
+        "hex": "#888888"
+      },
+      "codeSyntax": "var(--ds-color-gray-50)"
+    },
+    "RB-Gray 60": {
+      "value": {
+        "alpha": 1,
+        "hex": "#686868"
+      },
+      "codeSyntax": "var(--ds-color-gray-60)"
+    },
+    "RB-Gray 70": {
+      "value": {
+        "alpha": 1,
+        "hex": "#484848"
+      },
+      "codeSyntax": "var(--ds-color-gray-70)"
+    },
+    "RB-Gray 80": {
+      "value": {
+        "alpha": 1,
+        "hex": "#333333"
+      },
+      "codeSyntax": "var(--ds-color-gray-80)"
+    },
+    "RB-Gray 90": {
+      "value": {
+        "alpha": 1,
+        "hex": "#222222"
+      },
+      "codeSyntax": "var(--ds-color-gray-90)"
+    },
+    "RB-Gray 100": {
+      "value": {
+        "alpha": 1,
+        "hex": "#181818"
+      },
+      "codeSyntax": "var(--ds-color-gray-100)"
+    },
+    "RB-Gray 111": {
+      "value": {
+        "alpha": 1,
+        "hex": "#111111"
+      },
+      "codeSyntax": "var(--ds-color-gray-111)"
+    },
+    "RB-Black": {
+      "value": {
+        "alpha": 1,
+        "hex": "#000000"
+      },
+      "codeSyntax": "var(--ds-color-black)"
+    }
+  },
+  "Eggshell": {
+    "RB-Eggshell 0": {
+      "value": {
+        "alpha": 1,
+        "hex": "#FBFAF9"
+      },
+      "codeSyntax": "var(--ds-color-eggshell-0)"
+    },
+    "RB-Eggshell 10 (Primary)": {
+      "value": {
+        "alpha": 1,
+        "hex": "#F7F5F2"
+      },
+      "codeSyntax": "var(--ds-color-eggshell-10)"
+    },
+    "RB-Eggshell 20": {
+      "value": {
+        "alpha": 1,
+        "hex": "#ECEBE7"
+      },
+      "codeSyntax": "var(--ds-color-eggshell-20)"
+    },
+    "RB-Eggshell 30": {
+      "value": {
+        "alpha": 1,
+        "hex": "#D1CECB"
+      },
+      "codeSyntax": "var(--ds-color-eggshell-30)"
+    },
+    "RB-Eggshell 40": {
+      "value": {
+        "alpha": 1,
+        "hex": "#B2B0AD"
+      },
+      "codeSyntax": "var(--ds-color-eggshell-40)"
+    },
+    "RB-Eggshell 50": {
+      "value": {
+        "alpha": 1,
+        "hex": "#8A8886"
+      },
+      "codeSyntax": "var(--ds-color-eggshell-50)"
+    },
+    "RB-Eggshell 60": {
+      "value": {
+        "alpha": 1,
+        "hex": "#6B6968"
+      },
+      "codeSyntax": "var(--ds-color-eggshell-60)"
+    },
+    "RB-Eggshell 70": {
+      "value": {
+        "alpha": 1,
+        "hex": "#454443"
+      },
+      "codeSyntax": "var(--ds-color-eggshell-60)"
+    },
+    "RB-Eggshell 80": {
+      "value": {
+        "alpha": 1,
+        "hex": "#30302F"
+      },
+      "codeSyntax": "var(--ds-color-eggshell-80)"
+    },
+    "RB-Eggshell 90": {
+      "value": {
+        "alpha": 1,
+        "hex": "#242323"
+      },
+      "codeSyntax": "var(--ds-color-eggshell-90)"
+    },
+    "RB-Eggshell 100": {
+      "value": {
+        "alpha": 1,
+        "hex": "#181817"
+      },
+      "codeSyntax": "var(--ds-color-eggshell-100)"
+    }
+  },
+  "Mandarin": {
+    "RB-Mandarin 0": {
+      "value": {
+        "alpha": 1,
+        "hex": "#FFF7F0"
+      },
+      "codeSyntax": "var(--ds-color-mandarin-0)"
+    },
+    "RB-Mandarin 10": {
+      "value": {
+        "alpha": 1,
+        "hex": "#FFECDB"
+      },
+      "codeSyntax": "var(--ds-color-mandarin-10)"
+    },
+    "RB-Mandarin 20": {
+      "value": {
+        "alpha": 1,
+        "hex": "#FFE4CC"
+      },
+      "codeSyntax": "var(--ds-color-mandarin-20)"
+    },
+    "RB-Mandarin 30": {
+      "value": {
+        "alpha": 1,
+        "hex": "#FFB694"
+      },
+      "codeSyntax": "var(--ds-color-mandarin-30)"
+    },
+    "RB-Mandarin 40 (Primary)": {
+      "value": {
+        "alpha": 1,
+        "hex": "#FF8D5C"
+      },
+      "codeSyntax": "var(--ds-color-mandarin-40)"
+    },
+    "RB-Mandarin 50 (Primary)": {
+      "value": {
+        "alpha": 1,
+        "hex": "#F05F2B"
+      },
+      "codeSyntax": "var(--ds-color-mandarin-50)"
+    },
+    "RB-Mandarin 60": {
+      "value": {
+        "alpha": 1,
+        "hex": "#CC3B0A"
+      },
+      "codeSyntax": "var(--ds-color-mandarin-60)"
+    },
+    "RB-Mandarin 70": {
+      "value": {
+        "alpha": 1,
+        "hex": "#9E2B08"
+      },
+      "codeSyntax": "var(--ds-color-mandarin-70)"
+    },
+    "RB-Mandarin 80 (Primary)": {
+      "value": {
+        "alpha": 1,
+        "hex": "#671907"
+      },
+      "codeSyntax": "var(--ds-color-mandarin-80)"
+    },
+    "RB-Mandarin 90": {
+      "value": {
+        "alpha": 1,
+        "hex": "#47140B"
+      },
+      "codeSyntax": "var(--ds-color-mandarin-90)"
+    },
+    "RB-Mandarin 100": {
+      "value": {
+        "alpha": 1,
+        "hex": "#290E0A"
+      },
+      "codeSyntax": "var(--ds-color-mandarin-100)"
+    }
+  },
+  "Pondwater": {
+    "RB-Pondwater 0": {
+      "value": {
+        "alpha": 1,
+        "hex": "#F5FBFE"
+      },
+      "codeSyntax": "var(--ds-color-pondwater-0)"
+    },
+    "RB-Pondwater 10": {
+      "value": {
+        "alpha": 1,
+        "hex": "#E6F6FF"
+      },
+      "codeSyntax": "var(--ds-color-pondwater-10)"
+    },
+    "RB-Pondwater 20 (Primary)": {
+      "value": {
+        "alpha": 1,
+        "hex": "#CBEAFF"
+      },
+      "codeSyntax": "var(--ds-color-pondwater-20)"
+    },
+    "RB-Pondwater 30": {
+      "value": {
+        "alpha": 1,
+        "hex": "#A1D0F7"
+      },
+      "codeSyntax": "var(--ds-color-pondwater-30)"
+    },
+    "RB-Pondwater 40 (Secondary)": {
+      "value": {
+        "alpha": 1,
+        "hex": "#75B6EB"
+      },
+      "codeSyntax": "var(--ds-color-pondwater-40)"
+    },
+    "RB-Pondwater 50": {
+      "value": {
+        "alpha": 1,
+        "hex": "#4397E0"
+      },
+      "codeSyntax": "var(--ds-color-pondwater-50)"
+    },
+    "RB-Pondwater 60 (Secondary)": {
+      "value": {
+        "alpha": 1,
+        "hex": "#1074CC"
+      },
+      "codeSyntax": "var(--ds-color-pondwater-60)"
+    },
+    "RB-Pondwater 70": {
+      "value": {
+        "alpha": 1,
+        "hex": "#045EB2"
+      },
+      "codeSyntax": "var(--ds-color-pondwater-70)"
+    },
+    "RB-Pondwater 80": {
+      "value": {
+        "alpha": 1,
+        "hex": "#034180"
+      },
+      "codeSyntax": "var(--ds-color-pondwater-80)"
+    },
+    "RB-Pondwater 90": {
+      "value": {
+        "alpha": 1,
+        "hex": "#02254D"
+      },
+      "codeSyntax": "var(--ds-color-pondwater-90)"
+    },
+    "RB-Pondwater 100": {
+      "value": {
+        "alpha": 1,
+        "hex": "#01142D"
+      },
+      "codeSyntax": "var(--ds-color-pondwater-100)"
+    }
+  },
+  "Lilypad": {
+    "RB-Lilypad 0": {
+      "value": {
+        "alpha": 1,
+        "hex": "#F8FCF9"
+      },
+      "codeSyntax": "var(--ds-color-lilypad-0)"
+    },
+    "RB-Lilypad 10": {
+      "value": {
+        "alpha": 1,
+        "hex": "#E2F3E9"
+      },
+      "codeSyntax": "var(--ds-color-lilypad-10)"
+    },
+    "RB-Lilypad 20 (Secondary)": {
+      "value": {
+        "alpha": 1,
+        "hex": "#CFEBDA"
+      },
+      "codeSyntax": "var(--ds-color-lilypad-20)"
+    },
+    "RB-Lilypad 30": {
+      "value": {
+        "alpha": 1,
+        "hex": "#AED5C2"
+      },
+      "codeSyntax": "var(--ds-color-lilypad-30)"
+    },
+    "RB-Lilypad 40 (Secondary)": {
+      "value": {
+        "alpha": 1,
+        "hex": "#84BBA8"
+      },
+      "codeSyntax": "var(--ds-color-lilypad-40)"
+    },
+    "RB-Lilypad 50": {
+      "value": {
+        "alpha": 1,
+        "hex": "#589D88"
+      },
+      "codeSyntax": "var(--ds-color-lilypad-50)"
+    },
+    "RB-Lilypad 60 (Secondary)": {
+      "value": {
+        "alpha": 1,
+        "hex": "#247A64"
+      },
+      "codeSyntax": "var(--ds-color-lilypad-60)"
+    },
+    "RB-Lilypad 70": {
+      "value": {
+        "alpha": 1,
+        "hex": "#11604D"
+      },
+      "codeSyntax": "var(--ds-color-lilypad-70)"
+    },
+    "RB-Lilypad 80": {
+      "value": {
+        "alpha": 1,
+        "hex": "#0A4739"
+      },
+      "codeSyntax": "var(--ds-color-lilypad-80)"
+    },
+    "RB-Lilypad 90": {
+      "value": {
+        "alpha": 1,
+        "hex": "#052F25"
+      },
+      "codeSyntax": "var(--ds-color-lilypad-90)"
+    },
+    "RB-Lilypad 100": {
+      "value": {
+        "alpha": 1,
+        "hex": "#082119"
+      },
+      "codeSyntax": "var(--ds-color-lilypad-100)"
+    }
+  },
+  "Blossom": {
+    "RB-Blossom 0": {
+      "value": {
+        "alpha": 1,
+        "hex": "#FBF7FF"
+      },
+      "codeSyntax": "var(--ds-color-blossom-0)"
+    },
+    "RB-Blossom 10": {
+      "value": {
+        "alpha": 1,
+        "hex": "#F5EDFF"
+      },
+      "codeSyntax": "var(--ds-color-blossom-10)"
+    },
+    "RB-Blossom 20 (Secondary)": {
+      "value": {
+        "alpha": 1,
+        "hex": "#EADAFD"
+      },
+      "codeSyntax": "var(--ds-color-blossom-20)"
+    },
+    "RB-Blossom 30": {
+      "value": {
+        "alpha": 1,
+        "hex": "#D3B9EB"
+      },
+      "codeSyntax": "var(--ds-color-blossom-30)"
+    },
+    "RB-Blossom 40 (Secondary)": {
+      "value": {
+        "alpha": 1,
+        "hex": "#C19EDB"
+      },
+      "codeSyntax": "var(--ds-color-blossom-40)"
+    },
+    "RB-Blossom 50": {
+      "value": {
+        "alpha": 1,
+        "hex": "#9F6EB8"
+      },
+      "codeSyntax": "var(--ds-color-blossom-50)"
+    },
+    "RB-Blossom 60": {
+      "value": {
+        "alpha": 1,
+        "hex": "#7D4794"
+      },
+      "codeSyntax": "var(--ds-color-blossom-60)"
+    },
+    "RB-Blossom 70": {
+      "value": {
+        "alpha": 1,
+        "hex": "#682A7A"
+      },
+      "codeSyntax": "var(--ds-color-blossom-70)"
+    },
+    "RB-Blossom 80 (Secondary)": {
+      "value": {
+        "alpha": 1,
+        "hex": "#521A61"
+      },
+      "codeSyntax": "var(--ds-color-blossom-80)"
+    },
+    "RB-Blossom 90": {
+      "value": {
+        "alpha": 1,
+        "hex": "#3E0E47"
+      },
+      "codeSyntax": "var(--ds-color-blossom-90)"
+    },
+    "RB-Blossom 100": {
+      "value": {
+        "alpha": 1,
+        "hex": "#230829"
+      },
+      "codeSyntax": "var(--ds-color-blossom-100)"
+    }
+  },
+  "Pollen": {
+    "RB-Pollen 0": {
+      "value": {
+        "alpha": 1,
+        "hex": "#FFFBF0"
+      },
+      "codeSyntax": "var(--ds-color-pollen-0)"
+    },
+    "RB-Pollen 10": {
+      "value": {
+        "alpha": 1,
+        "hex": "#FEF4DA"
+      },
+      "codeSyntax": "var(--ds-color-pollen-10)"
+    },
+    "RB-Pollen 20 (Secondary)": {
+      "value": {
+        "alpha": 1,
+        "hex": "#FFEAB8"
+      },
+      "codeSyntax": "var(--ds-color-pollen-20)"
+    },
+    "RB-Pollen 30 (Secondary)": {
+      "value": {
+        "alpha": 1,
+        "hex": "#FFD885"
+      },
+      "codeSyntax": "var(--ds-color-pollen-30)"
+    },
+    "RB-Pollen 40 (Secondary)": {
+      "value": {
+        "alpha": 1,
+        "hex": "#FFC95C"
+      },
+      "codeSyntax": "var(--ds-color-pollen-40)"
+    },
+    "RB-Pollen 50": {
+      "value": {
+        "alpha": 1,
+        "hex": "#FAB341"
+      },
+      "codeSyntax": "var(--ds-color-pollen-50)"
+    },
+    "RB-Pollen 60": {
+      "value": {
+        "alpha": 1,
+        "hex": "#F5A031"
+      },
+      "codeSyntax": "var(--ds-color-pollen-60)"
+    },
+    "RB-Pollen 70": {
+      "value": {
+        "alpha": 1,
+        "hex": "#B66A1F"
+      },
+      "codeSyntax": "var(--ds-color-pollen-70)"
+    },
+    "RB-Pollen 80": {
+      "value": {
+        "alpha": 1,
+        "hex": "#783B13"
+      },
+      "codeSyntax": "var(--ds-color-pollen-80)"
+    },
+    "RB-Pollen 90": {
+      "value": {
+        "alpha": 1,
+        "hex": "#47210A"
+      },
+      "codeSyntax": "var(--ds-color-pollen-90)"
+    },
+    "RB-Pollen 100": {
+      "value": {
+        "alpha": 1,
+        "hex": "#240F04"
+      },
+      "codeSyntax": "var(--ds-color-pollen-100)"
+    }
+  },
+  "Other": {
+    "RB-Red 0": {
+      "value": {
+        "alpha": 1,
+        "hex": "#FCECF0"
+      },
+      "codeSyntax": "var(--ds-color-red-0)"
+    },
+    "RB-Red 10": {
+      "value": {
+        "alpha": 1,
+        "hex": "#FAD8DC"
+      },
+      "codeSyntax": "var(--ds-color-red-10)"
+    },
+    "RB-Red 20": {
+      "value": {
+        "alpha": 1,
+        "hex": "#F7AAAD"
+      },
+      "codeSyntax": "var(--ds-color-red-20)"
+    },
+    "RB-Red 30": {
+      "value": {
+        "alpha": 1,
+        "hex": "#F06565"
+      },
+      "codeSyntax": "var(--ds-color-red-30)"
+    },
+    "RB-Red 40": {
+      "value": {
+        "alpha": 1,
+        "hex": "#E44D55"
+      },
+      "codeSyntax": "var(--ds-color-red-40)"
+    },
+    "RB-Red 50": {
+      "value": {
+        "alpha": 1,
+        "hex": "#D83544"
+      },
+      "codeSyntax": "var(--ds-color-red-50)"
+    },
+    "RB-Red 60": {
+      "value": {
+        "alpha": 1,
+        "hex": "#CA2B3D"
+      },
+      "codeSyntax": "var(--ds-color-red-60)"
+    },
+    "RB-Red 70": {
+      "value": {
+        "alpha": 1,
+        "hex": "#A02231"
+      },
+      "codeSyntax": "var(--ds-color-red-70)"
+    },
+    "RB-Red 80": {
+      "value": {
+        "alpha": 1,
+        "hex": "#671421"
+      },
+      "codeSyntax": "var(--ds-color-red-80)"
+    },
+    "RB-Red 90": {
+      "value": {
+        "alpha": 1,
+        "hex": "#46111C"
+      },
+      "codeSyntax": "var(--ds-color-red-90)"
+    },
+    "RB-Red 100": {
+      "value": {
+        "alpha": 1,
+        "hex": "#2A0C14"
+      },
+      "codeSyntax": "var(--ds-color-red-100)"
+    },
+    "RB-Green 20": {
+      "value": {
+        "alpha": 1,
+        "hex": "#81D59E"
+      },
+      "codeSyntax": "var(--ds-color-green-40)"
+    },
+    "RB-Green 30": {
+      "value": {
+        "alpha": 1,
+        "hex": "#5EC987"
+      },
+      "codeSyntax": "var(--ds-color-green-40)"
+    },
+    "RB-Green 40": {
+      "value": {
+        "alpha": 1,
+        "hex": "#38B26A"
+      },
+      "codeSyntax": "var(--ds-color-green-40)"
+    },
+    "RB-Green 50": {
+      "value": {
+        "alpha": 1,
+        "hex": "#269B61"
+      },
+      "codeSyntax": "var(--ds-color-green-40)"
+    },
+    "RB-Green 60": {
+      "value": {
+        "alpha": 1,
+        "hex": "#138356"
+      },
+      "codeSyntax": "var(--ds-color-green-40)"
+    },
+    "RB-Green 70": {
+      "value": {
+        "alpha": 1,
+        "hex": "#006B4B"
+      },
+      "codeSyntax": "var(--ds-color-green-40)"
+    },
+    "RB-Green 80": {
+      "value": {
+        "alpha": 1,
+        "hex": "#00523F"
+      },
+      "codeSyntax": "var(--ds-color-green-40)"
+    }
+  }
+}
