@@ -1,0 +1,1400 @@
+{
+  "Light": {
+    "Surface.Backdrop": {
+      "value": {
+        "alpha": 1,
+        "hex": "#FFFFFF"
+      },
+      "codeSyntax": "--ds-surface-backdrop"
+    },
+    "Surface.Canvas": {
+      "value": {
+        "alpha": 1,
+        "hex": "#FFF7F0"
+      },
+      "codeSyntax": "--ds-surface-canvas"
+    },
+    "Surface.Primary": {
+      "value": {
+        "alpha": 1,
+        "hex": "#FFE4CC"
+      },
+      "codeSyntax": "--ds-surface-primary"
+    },
+    "Surface.Secondary": {
+      "value": {
+        "alpha": 1,
+        "hex": "#FFECDB"
+      },
+      "codeSyntax": "--ds-surface-secondary"
+    },
+    "Surface.Tertiary": {
+      "value": {
+        "alpha": 1,
+        "hex": "#FFF7F0"
+      },
+      "codeSyntax": "--ds-surface-tertiary"
+    },
+    "Surface.Contrast": {
+      "value": {
+        "alpha": 0.96,
+        "hex": "#290E0A"
+      },
+      "codeSyntax": "--ds-surface-decoration-primary"
+    },
+    "Surface.Decoration-Base": {
+      "value": {
+        "alpha": 1,
+        "hex": "#290E0A"
+      }
+    },
+    "Surface.Decoration-Primary": {
+      "value": {
+        "alpha": 0.06,
+        "hex": "#290E0A"
+      },
+      "codeSyntax": "--ds-surface-decoration-primary"
+    },
+    "Surface.Decoration-Secondary": {
+      "value": {
+        "alpha": 0.09,
+        "hex": "#290E0A"
+      },
+      "codeSyntax": "--ds-surface-decoration-secondary"
+    },
+    "Surface.Decoration-Tertiary": {
+      "value": {
+        "alpha": 0.16,
+        "hex": "#290E0A"
+      },
+      "codeSyntax": "--ds-surface-decoration-tertiary"
+    },
+    "Container.Base": {
+      "value": {
+        "alpha": 1,
+        "hex": "#290E0A"
+      }
+    },
+    "Container.Fill-Primary": {
+      "value": {
+        "alpha": 0.01,
+        "hex": "#290E0A"
+      },
+      "codeSyntax": "--ds-container-primary-background-color"
+    },
+    "Container.Fill-Secondary": {
+      "value": {
+        "alpha": 0.03,
+        "hex": "#290E0A"
+      },
+      "codeSyntax": "--ds-container-secondary-background-color"
+    },
+    "Container.Fill-Tertiary": {
+      "value": {
+        "alpha": 0.06,
+        "hex": "#290E0A"
+      },
+      "codeSyntax": "--ds-container-tertiary-background-color"
+    },
+    "Container.Border-Primary": {
+      "value": {
+        "alpha": 0.06,
+        "hex": "#290E0A"
+      },
+      "codeSyntax": "--ds-container-primary-border-color"
+    },
+    "Container.Border-Secondary": {
+      "value": {
+        "alpha": 0.09,
+        "hex": "#290E0A"
+      },
+      "codeSyntax": "--ds-container-secondary-border-color"
+    },
+    "Container.Border-Tertiary": {
+      "value": {
+        "alpha": 0.12,
+        "hex": "#290E0A"
+      },
+      "codeSyntax": "--ds-container-tertiary-border-color"
+    },
+    "Text.Base": {
+      "value": {
+        "alpha": 1,
+        "hex": "#290E0A"
+      }
+    },
+    "Text.Primary": {
+      "value": {
+        "alpha": 0.96,
+        "hex": "#290E0A"
+      },
+      "codeSyntax": "--ds-text-primary"
+    },
+    "Text.Secondary": {
+      "value": {
+        "alpha": 0.66,
+        "hex": "#290E0A"
+      },
+      "codeSyntax": "--ds-text-secondary"
+    },
+    "Text.Tertiary": {
+      "value": {
+        "alpha": 0.36,
+        "hex": "#290E0A"
+      },
+      "codeSyntax": "--ds-text-tertiary"
+    },
+    "Icons.Base": {
+      "value": {
+        "alpha": 1,
+        "hex": "#290E0A"
+      }
+    },
+    "Icons.Primary": {
+      "value": {
+        "alpha": 0.96,
+        "hex": "#290E0A"
+      },
+      "codeSyntax": "--ds-icons-primary"
+    },
+    "Icons.Secondary": {
+      "value": {
+        "alpha": 0.6,
+        "hex": "#290E0A"
+      },
+      "codeSyntax": "--ds-icons-secondary"
+    },
+    "Icons.Tertiary": {
+      "value": {
+        "alpha": 0.36,
+        "hex": "#290E0A"
+      },
+      "codeSyntax": "--ds-icons-tertiary"
+    },
+    "Accent.Primary": {
+      "value": {
+        "alpha": 1,
+        "hex": "#F05F2B"
+      },
+      "codeSyntax": "--ds-accent-primary"
+    },
+    "Accent.Secondary": {
+      "value": {
+        "alpha": 1,
+        "hex": "#CC3B0A"
+      },
+      "codeSyntax": "--ds-accent-secondary"
+    },
+    "Accent.Tertiary": {
+      "value": {
+        "alpha": 1,
+        "hex": "#9E2B08"
+      },
+      "codeSyntax": "--ds-accent-tertiary"
+    },
+    "Accent.Quaternary": {
+      "value": {
+        "alpha": 1,
+        "hex": "#671907"
+      },
+      "codeSyntax": "--ds-accent-quaternary"
+    },
+    "Accent.Glow-Primary": {
+      "value": {
+        "alpha": 0.2,
+        "hex": "#F05F2B"
+      },
+      "codeSyntax": "--ds-accent-glow-primary"
+    },
+    "Accent.Glow-Secondary": {
+      "value": {
+        "alpha": 0.12,
+        "hex": "#F05F2B"
+      },
+      "codeSyntax": "--ds-accent-glow-secondary"
+    },
+    "Accent.Text-Primary": {
+      "value": {
+        "alpha": 1,
+        "hex": "#F05F2B"
+      }
+    },
+    "Accent.Text-Secondary": {
+      "value": {
+        "alpha": 1,
+        "hex": "#CC3B0A"
+      }
+    },
+    "Accent.Text-Tertiary": {
+      "value": {
+        "alpha": 1,
+        "hex": "#9E2B08"
+      }
+    },
+    "Accent.Content-Primary": {
+      "value": {
+        "alpha": 1,
+        "hex": "#FFFFFF"
+      }
+    },
+    "Accent.Content-Secondary": {
+      "value": {
+        "alpha": 0.72,
+        "hex": "#FFFFFF"
+      }
+    },
+    "Accent.Content-Tertiary": {
+      "value": {
+        "alpha": 0.48,
+        "hex": "#FFFFFF"
+      }
+    },
+    "Accent-Alt.Primary": {
+      "value": {
+        "alpha": 1,
+        "hex": "#FFECDB"
+      }
+    },
+    "Accent-Alt.Secondary": {
+      "value": {
+        "alpha": 1,
+        "hex": "#FFE4CC"
+      }
+    },
+    "Accent-Alt.Tertiary": {
+      "value": {
+        "alpha": 1,
+        "hex": "#FF8D5C"
+      }
+    },
+    "Accent-Alt.Glow-Primary": {
+      "value": {
+        "alpha": 0.2,
+        "hex": "#FF8D5C"
+      }
+    },
+    "Accent-Alt.Glow-Secondary": {
+      "value": {
+        "alpha": 0.12,
+        "hex": "#FF8D5C"
+      }
+    },
+    "Accent-Alt.Text-Primary": {
+      "value": {
+        "alpha": 1,
+        "hex": "#9E2B08"
+      }
+    },
+    "Accent-Alt.Text-Secondary": {
+      "value": {
+        "alpha": 1,
+        "hex": "#671907"
+      }
+    },
+    "Accent-Alt.Text-Tertiary": {
+      "value": {
+        "alpha": 1,
+        "hex": "#47140B"
+      }
+    },
+    "Accent-Alt.Content-Primary": {
+      "value": {
+        "alpha": 1,
+        "hex": "#47140B"
+      }
+    },
+    "Accent-Alt.Content-Secondary": {
+      "value": {
+        "alpha": 0.72,
+        "hex": "#47140B"
+      }
+    },
+    "Accent-Alt.Content-Tertiary": {
+      "value": {
+        "alpha": 0.48,
+        "hex": "#47140B"
+      }
+    },
+    "Accent-Fire.Primary": {
+      "value": {
+        "alpha": 1,
+        "hex": "#F05F2B"
+      }
+    },
+    "Accent-Fire.Secondary": {
+      "value": {
+        "alpha": 1,
+        "hex": "#CC3B0A"
+      }
+    },
+    "Accent-Fire.Tertiary": {
+      "value": {
+        "alpha": 1,
+        "hex": "#9E2B08"
+      }
+    },
+    "Accent-Fire.Glow-Primary": {
+      "value": {
+        "alpha": 0.2,
+        "hex": "#F05F2B"
+      }
+    },
+    "Accent-Fire.Glow-Secondary": {
+      "value": {
+        "alpha": 0.12,
+        "hex": "#F05F2B"
+      }
+    },
+    "Accent-Fire.Text-Primary": {
+      "value": {
+        "alpha": 1,
+        "hex": "#F05F2B"
+      }
+    },
+    "Accent-Fire.Text-Secondary": {
+      "value": {
+        "alpha": 1,
+        "hex": "#CC3B0A"
+      }
+    },
+    "Accent-Fire.Text-Tertiary": {
+      "value": {
+        "alpha": 1,
+        "hex": "#9E2B08"
+      }
+    },
+    "Accent-Fire.Content-Primary": {
+      "value": {
+        "alpha": 1,
+        "hex": "#FFFFFF"
+      }
+    },
+    "Accent-Fire.Content-Secondary": {
+      "value": {
+        "alpha": 0.7,
+        "hex": "#FFFFFF"
+      }
+    },
+    "Accent-Fire.Content-Tertiary": {
+      "value": {
+        "alpha": 0.5,
+        "hex": "#FFFFFF"
+      }
+    },
+    "Accent-Brand.Primary": {
+      "value": {
+        "alpha": 1,
+        "hex": "#FFECDB"
+      }
+    },
+    "Accent-Brand.Secondary": {
+      "value": {
+        "alpha": 1,
+        "hex": "#FFE4CC"
+      }
+    },
+    "Accent-Brand.Tertiary": {
+      "value": {
+        "alpha": 1,
+        "hex": "#FF8D5C"
+      }
+    },
+    "Accent-Brand.Glow-Primary": {
+      "value": {
+        "alpha": 0.2,
+        "hex": "#FF8D5C"
+      }
+    },
+    "Accent-Brand.Glow-Secondary": {
+      "value": {
+        "alpha": 0.12,
+        "hex": "#FF8D5C"
+      }
+    },
+    "Accent-Brand.Text-Primary": {
+      "value": {
+        "alpha": 1,
+        "hex": "#9E2B08"
+      }
+    },
+    "Accent-Brand.Text-Secondary": {
+      "value": {
+        "alpha": 1,
+        "hex": "#671907"
+      }
+    },
+    "Accent-Brand.Text-Tertiary": {
+      "value": {
+        "alpha": 1,
+        "hex": "#47140B"
+      }
+    },
+    "Accent-Brand.Content-Primary": {
+      "value": {
+        "alpha": 1,
+        "hex": "#47140B"
+      }
+    },
+    "Accent-Brand.Content-Secondary": {
+      "value": {
+        "alpha": 0.72,
+        "hex": "#47140B"
+      }
+    },
+    "Accent-Brand.Content-Tertiary": {
+      "value": {
+        "alpha": 0.48,
+        "hex": "#47140B"
+      }
+    },
+    "Control.Base": {
+      "value": {
+        "alpha": 1,
+        "hex": "#F05F2B"
+      }
+    },
+    "Control.Fill-Primary": {
+      "value": {
+        "alpha": 0.09,
+        "hex": "#F05F2B"
+      }
+    },
+    "Control.Fill-Secondary": {
+      "value": {
+        "alpha": 0.12,
+        "hex": "#F05F2B"
+      }
+    },
+    "Control.Fill-Tertiary": {
+      "value": {
+        "alpha": 0.18,
+        "hex": "#F05F2B"
+      }
+    },
+    "Control.Border-Primary": {
+      "value": {
+        "alpha": 0.3,
+        "hex": "#F05F2B"
+      }
+    },
+    "Control.Border-Secondary": {
+      "value": {
+        "alpha": 0.48,
+        "hex": "#F05F2B"
+      }
+    },
+    "Control.Border-Tertiary": {
+      "value": {
+        "alpha": 0.6,
+        "hex": "#F05F2B"
+      }
+    },
+    "Control.Border-Quaternary": {
+      "value": {
+        "alpha": 0.72,
+        "hex": "#F05F2B"
+      }
+    },
+    "Control-Subtle.Fill-Primary": {
+      "value": {
+        "alpha": 0.03,
+        "hex": "#F05F2B"
+      }
+    },
+    "Control-Subtle.Fill-Secondary": {
+      "value": {
+        "alpha": 0.06,
+        "hex": "#F05F2B"
+      }
+    },
+    "Control-Subtle.Fill-Tertiary": {
+      "value": {
+        "alpha": 0.1,
+        "hex": "#F05F2B"
+      }
+    },
+    "Control-Subtle.Border-Primary": {
+      "value": {
+        "alpha": 0.12,
+        "hex": "#F05F2B"
+      },
+      "codeSyntax": "Light/Control-Subtle/Border-Primary"
+    },
+    "Control-Subtle.Border-Secondary": {
+      "value": {
+        "alpha": 0.18,
+        "hex": "#F05F2B"
+      },
+      "codeSyntax": "Light/Control-Subtle/Border-Primary"
+    },
+    "Control-Subtle.Border-Tertiary": {
+      "value": {
+        "alpha": 0.36,
+        "hex": "#F05F2B"
+      },
+      "codeSyntax": "Light/Control-Subtle/Border-Primary"
+    },
+    "Control-Raised.Fill-Primary": {
+      "value": {
+        "alpha": 1,
+        "hex": "#FFF7F0"
+      }
+    },
+    "Control-Raised.Fill-Secondary": {
+      "value": {
+        "alpha": 1,
+        "hex": "#FFECDB"
+      }
+    },
+    "Control-Raised.Fill-Tertiary": {
+      "value": {
+        "alpha": 1,
+        "hex": "#FFE4CC"
+      }
+    },
+    "Control-Raised.Backdrop": {
+      "value": {
+        "alpha": 0.09,
+        "hex": "#000000"
+      }
+    },
+    "Input.Active": {
+      "value": {
+        "alpha": 1,
+        "hex": "#FFF7F0"
+      },
+      "codeSyntax": "--ds-surface-tertiary"
+    },
+    "Input.Resting": {
+      "value": {
+        "alpha": 1,
+        "hex": "#FFF7F0"
+      },
+      "codeSyntax": "--ds-surface-tertiary"
+    },
+    "Highlight.Primary": {
+      "value": {
+        "alpha": 0.24,
+        "hex": "#FFFAF9"
+      }
+    },
+    "Tone.Tint-Primary": {
+      "value": {
+        "alpha": 0.6,
+        "hex": "#FFFAF9"
+      }
+    },
+    "Tone.Tint-Secondary": {
+      "value": {
+        "alpha": 0.84,
+        "hex": "#FFFAF9"
+      }
+    },
+    "Tone.Shade-Primary": {
+      "value": {
+        "alpha": 0.03,
+        "hex": "#000000"
+      }
+    },
+    "Shadow.Primary": {
+      "value": {
+        "alpha": 0.06,
+        "hex": "#000000"
+      }
+    },
+    "Shadow.Secondary": {
+      "value": {
+        "alpha": 0.08,
+        "hex": "#000000"
+      }
+    },
+    "Shadow.Tertiary": {
+      "value": {
+        "alpha": 0.16,
+        "hex": "#000000"
+      }
+    },
+    "Destructive.Primary": {
+      "value": {
+        "alpha": 1,
+        "hex": "#D83544"
+      }
+    },
+    "Destructive.Secondary": {
+      "value": {
+        "alpha": 1,
+        "hex": "#CA2B3D"
+      }
+    },
+    "Destructive.Tertiary": {
+      "value": {
+        "alpha": 1,
+        "hex": "#A02231"
+      }
+    },
+    "Destructive.Glow-Primary": {
+      "value": {
+        "alpha": 0.2,
+        "hex": "#F68E8F"
+      }
+    },
+    "Destructive.Glow-Secondary": {
+      "value": {
+        "alpha": 0.12,
+        "hex": "#F68E8F"
+      }
+    },
+    "Destructive.Text-Primary": {
+      "value": {
+        "alpha": 1,
+        "hex": "#D83544"
+      }
+    },
+    "Destructive.Text-Secondary": {
+      "value": {
+        "alpha": 1,
+        "hex": "#CA2B3D"
+      }
+    },
+    "Destructive.Text-Tertiary": {
+      "value": {
+        "alpha": 1,
+        "hex": "#A02231"
+      }
+    },
+    "Destructive.Content-Primary": {
+      "value": {
+        "alpha": 1,
+        "hex": "#FFFFFF"
+      }
+    },
+    "Destructive.Content-Secondary": {
+      "value": {
+        "alpha": 0.9,
+        "hex": "#FFFFFF"
+      }
+    },
+    "Destructive.Content-Tertiary": {
+      "value": {
+        "alpha": 0.6,
+        "hex": "#FFFFFF"
+      }
+    },
+    "Status.Green": {
+      "value": {
+        "alpha": 1,
+        "hex": "#38B26A"
+      }
+    },
+    "Status.Yellow": {
+      "value": {
+        "alpha": 1,
+        "hex": "#FAB341"
+      }
+    },
+    "Status.Red": {
+      "value": {
+        "alpha": 1,
+        "hex": "#D83544"
+      }
+    },
+    "Status.Gray": {
+      "value": {
+        "alpha": 1,
+        "hex": "#888888"
+      }
+    },
+    "Status-Warning.Primary": {
+      "value": {
+        "alpha": 1,
+        "hex": "#FFC95C"
+      }
+    },
+    "Status-Warning.Content-Primary": {
+      "value": {
+        "alpha": 1,
+        "hex": "#FFC95C"
+      }
+    },
+    "Status-Warning.Fill-Primary": {
+      "value": {
+        "alpha": 1,
+        "hex": "#FFC95C"
+      }
+    }
+  },
+  "Dark": {
+    "Surface.Backdrop": {
+      "value": {
+        "alpha": 1,
+        "hex": "#111111"
+      }
+    },
+    "Surface.Canvas": {
+      "value": {
+        "alpha": 1,
+        "hex": "#290E0A"
+      }
+    },
+    "Surface.Primary": {
+      "value": {
+        "alpha": 1,
+        "hex": "#290E0A"
+      }
+    },
+    "Surface.Secondary": {
+      "value": {
+        "alpha": 1,
+        "hex": "#47140B"
+      }
+    },
+    "Surface.Tertiary": {
+      "value": {
+        "alpha": 1,
+        "hex": "#671907"
+      }
+    },
+    "Surface.Contrast": {
+      "value": {
+        "alpha": 0.96,
+        "hex": "#FFFFFF"
+      }
+    },
+    "Surface.Decoration-Base": {
+      "value": {
+        "alpha": 1,
+        "hex": "#FFFFFF"
+      }
+    },
+    "Surface.Decoration-Primary": {
+      "value": {
+        "alpha": 0.06,
+        "hex": "#FFFFFF"
+      }
+    },
+    "Surface.Decoration-Secondary": {
+      "value": {
+        "alpha": 0.12,
+        "hex": "#FFFFFF"
+      }
+    },
+    "Surface.Decoration-Tertiary": {
+      "value": {
+        "alpha": 0.24,
+        "hex": "#FFFFFF"
+      }
+    },
+    "Container.Base": {
+      "value": {
+        "alpha": 1,
+        "hex": "#FFF7F0"
+      }
+    },
+    "Container.Fill-Primary": {
+      "value": {
+        "alpha": 0.03,
+        "hex": "#FFFAF9"
+      }
+    },
+    "Container.Fill-Secondary": {
+      "value": {
+        "alpha": 0.06,
+        "hex": "#FFFAF9"
+      }
+    },
+    "Container.Fill-Tertiary": {
+      "value": {
+        "alpha": 0.09,
+        "hex": "#FFFAF9"
+      }
+    },
+    "Container.Border-Primary": {
+      "value": {
+        "alpha": 0.06,
+        "hex": "#FFFAF9"
+      }
+    },
+    "Container.Border-Secondary": {
+      "value": {
+        "alpha": 0.09,
+        "hex": "#FFFAF9"
+      }
+    },
+    "Container.Border-Tertiary": {
+      "value": {
+        "alpha": 0.12,
+        "hex": "#FFFAF9"
+      }
+    },
+    "Text.Base": {
+      "value": {
+        "alpha": 1,
+        "hex": "#FFF7F0"
+      }
+    },
+    "Text.Primary": {
+      "value": {
+        "alpha": 1,
+        "hex": "#FFF7F0"
+      }
+    },
+    "Text.Secondary": {
+      "value": {
+        "alpha": 0.66,
+        "hex": "#FFFAF9"
+      }
+    },
+    "Text.Tertiary": {
+      "value": {
+        "alpha": 0.36,
+        "hex": "#FFFAF9"
+      }
+    },
+    "Icons.Base": {
+      "value": {
+        "alpha": 1,
+        "hex": "#FFF7F0"
+      }
+    },
+    "Icons.Primary": {
+      "value": {
+        "alpha": 1,
+        "hex": "#FFF7F0"
+      }
+    },
+    "Icons.Secondary": {
+      "value": {
+        "alpha": 0.48,
+        "hex": "#FFFAF9"
+      }
+    },
+    "Icons.Tertiary": {
+      "value": {
+        "alpha": 0.24,
+        "hex": "#FFFAF9"
+      }
+    },
+    "Accent.Primary": {
+      "value": {
+        "alpha": 1,
+        "hex": "#FFD885"
+      }
+    },
+    "Accent.Secondary": {
+      "value": {
+        "alpha": 1,
+        "hex": "#FFC95C"
+      }
+    },
+    "Accent.Tertiary": {
+      "value": {
+        "alpha": 1,
+        "hex": "#FAB341"
+      }
+    },
+    "Accent.Quaternary": {
+      "value": {
+        "alpha": 1,
+        "hex": "#F5A031"
+      }
+    },
+    "Accent.Glow-Primary": {
+      "value": {
+        "alpha": 0.2,
+        "hex": "#FFC95C"
+      }
+    },
+    "Accent.Glow-Secondary": {
+      "value": {
+        "alpha": 0.12,
+        "hex": "#FFC95C"
+      }
+    },
+    "Accent.Text-Primary": {
+      "value": {
+        "alpha": 1,
+        "hex": "#FFD885"
+      }
+    },
+    "Accent.Text-Secondary": {
+      "value": {
+        "alpha": 1,
+        "hex": "#FFC95C"
+      }
+    },
+    "Accent.Text-Tertiary": {
+      "value": {
+        "alpha": 1,
+        "hex": "#FAB341"
+      }
+    },
+    "Accent.Content-Primary": {
+      "value": {
+        "alpha": 1,
+        "hex": "#240F04"
+      }
+    },
+    "Accent.Content-Secondary": {
+      "value": {
+        "alpha": 0.72,
+        "hex": "#1A0B03"
+      }
+    },
+    "Accent.Content-Tertiary": {
+      "value": {
+        "alpha": 0.48,
+        "hex": "#1A0B03"
+      }
+    },
+    "Accent-Alt.Primary": {
+      "value": {
+        "alpha": 1,
+        "hex": "#CC3B0A"
+      }
+    },
+    "Accent-Alt.Secondary": {
+      "value": {
+        "alpha": 1,
+        "hex": "#9E2B08"
+      }
+    },
+    "Accent-Alt.Tertiary": {
+      "value": {
+        "alpha": 1,
+        "hex": "#671907"
+      }
+    },
+    "Accent-Alt.Glow-Primary": {
+      "value": {
+        "alpha": 0.2,
+        "hex": "#FFB294"
+      }
+    },
+    "Accent-Alt.Glow-Secondary": {
+      "value": {
+        "alpha": 0.12,
+        "hex": "#FFB294"
+      }
+    },
+    "Accent-Alt.Text-Primary": {
+      "value": {
+        "alpha": 1,
+        "hex": "#FFE4CC"
+      }
+    },
+    "Accent-Alt.Text-Secondary": {
+      "value": {
+        "alpha": 1,
+        "hex": "#FFB694"
+      }
+    },
+    "Accent-Alt.Text-Tertiary": {
+      "value": {
+        "alpha": 1,
+        "hex": "#FF8D5C"
+      }
+    },
+    "Accent-Alt.Content-Primary": {
+      "value": {
+        "alpha": 1,
+        "hex": "#FFF7F0"
+      }
+    },
+    "Accent-Alt.Content-Secondary": {
+      "value": {
+        "alpha": 0.72,
+        "hex": "#FFFAF9"
+      }
+    },
+    "Accent-Alt.Content-Tertiary": {
+      "value": {
+        "alpha": 0.48,
+        "hex": "#FFFAF9"
+      }
+    },
+    "Accent-Fire.Primary": {
+      "value": {
+        "alpha": 1,
+        "hex": "#FF8D5C"
+      }
+    },
+    "Accent-Fire.Secondary": {
+      "value": {
+        "alpha": 1,
+        "hex": "#F05F2B"
+      }
+    },
+    "Accent-Fire.Tertiary": {
+      "value": {
+        "alpha": 1,
+        "hex": "#CC3B0A"
+      }
+    },
+    "Accent-Fire.Glow-Primary": {
+      "value": {
+        "alpha": 0.2,
+        "hex": "#FF8D5C"
+      }
+    },
+    "Accent-Fire.Glow-Secondary": {
+      "value": {
+        "alpha": 0.12,
+        "hex": "#FF8D5C"
+      }
+    },
+    "Accent-Fire.Text-Primary": {
+      "value": {
+        "alpha": 1,
+        "hex": "#FF8D5C"
+      }
+    },
+    "Accent-Fire.Text-Secondary": {
+      "value": {
+        "alpha": 1,
+        "hex": "#F05F2B"
+      }
+    },
+    "Accent-Fire.Text-Tertiary": {
+      "value": {
+        "alpha": 1,
+        "hex": "#CC3B0A"
+      }
+    },
+    "Accent-Fire.Content-Primary": {
+      "value": {
+        "alpha": 1,
+        "hex": "#FFFFFF"
+      }
+    },
+    "Accent-Fire.Content-Secondary": {
+      "value": {
+        "alpha": 0.7,
+        "hex": "#FFFFFF"
+      }
+    },
+    "Accent-Fire.Content-Tertiary": {
+      "value": {
+        "alpha": 0.5,
+        "hex": "#FFFFFF"
+      }
+    },
+    "Accent-Brand.Primary": {
+      "value": {
+        "alpha": 1,
+        "hex": "#FFECDB"
+      }
+    },
+    "Accent-Brand.Secondary": {
+      "value": {
+        "alpha": 1,
+        "hex": "#FFE4CC"
+      }
+    },
+    "Accent-Brand.Tertiary": {
+      "value": {
+        "alpha": 1,
+        "hex": "#FF8D5C"
+      }
+    },
+    "Accent-Brand.Glow-Primary": {
+      "value": {
+        "alpha": 0.2,
+        "hex": "#FF8D5C"
+      }
+    },
+    "Accent-Brand.Glow-Secondary": {
+      "value": {
+        "alpha": 0.12,
+        "hex": "#FF8D5C"
+      }
+    },
+    "Accent-Brand.Text-Primary": {
+      "value": {
+        "alpha": 1,
+        "hex": "#9E2B08"
+      }
+    },
+    "Accent-Brand.Text-Secondary": {
+      "value": {
+        "alpha": 1,
+        "hex": "#671907"
+      }
+    },
+    "Accent-Brand.Text-Tertiary": {
+      "value": {
+        "alpha": 1,
+        "hex": "#47140B"
+      }
+    },
+    "Accent-Brand.Content-Primary": {
+      "value": {
+        "alpha": 1,
+        "hex": "#47140B"
+      }
+    },
+    "Accent-Brand.Content-Secondary": {
+      "value": {
+        "alpha": 0.72,
+        "hex": "#47140B"
+      }
+    },
+    "Accent-Brand.Content-Tertiary": {
+      "value": {
+        "alpha": 0.48,
+        "hex": "#47140B"
+      }
+    },
+    "Control.Base": {
+      "value": {
+        "alpha": 1,
+        "hex": "#FFECDB"
+      }
+    },
+    "Control.Fill-Primary": {
+      "value": {
+        "alpha": 0.12,
+        "hex": "#FFEBE5"
+      }
+    },
+    "Control.Fill-Secondary": {
+      "value": {
+        "alpha": 0.18,
+        "hex": "#FFEBE5"
+      }
+    },
+    "Control.Fill-Tertiary": {
+      "value": {
+        "alpha": 0.24,
+        "hex": "#FFEBE5"
+      }
+    },
+    "Control.Border-Primary": {
+      "value": {
+        "alpha": 0.36,
+        "hex": "#FFEBE5"
+      }
+    },
+    "Control.Border-Secondary": {
+      "value": {
+        "alpha": 0.64,
+        "hex": "#FFEBE5"
+      }
+    },
+    "Control.Border-Tertiary": {
+      "value": {
+        "alpha": 0.72,
+        "hex": "#FFEBE5"
+      }
+    },
+    "Control.Border-Quaternary": {
+      "value": {
+        "alpha": 0.8,
+        "hex": "#FFEBE5"
+      }
+    },
+    "Control-Subtle.Border-Primary": {
+      "value": {
+        "alpha": 0.12,
+        "hex": "#FFEBE5"
+      }
+    },
+    "Control-Subtle.Border-Secondary": {
+      "value": {
+        "alpha": 0.18,
+        "hex": "#FFEBE5"
+      }
+    },
+    "Control-Subtle.Border-Tertiary": {
+      "value": {
+        "alpha": 0.36,
+        "hex": "#FFEBE5"
+      }
+    },
+    "Control-Raised.Fill-Primary": {
+      "value": {
+        "alpha": 1,
+        "hex": "#47140B"
+      }
+    },
+    "Control-Raised.Fill-Secondary": {
+      "value": {
+        "alpha": 1,
+        "hex": "#9E2B08"
+      }
+    },
+    "Control-Raised.Fill-Tertiary": {
+      "value": {
+        "alpha": 1,
+        "hex": "#F05F2B"
+      }
+    },
+    "Control-Raised.Backdrop": {
+      "value": {
+        "alpha": 0.12,
+        "hex": "#FFFFFF"
+      }
+    },
+    "Input.Active": {
+      "value": {
+        "alpha": 1,
+        "hex": "#671907"
+      }
+    },
+    "Input.Resting": {
+      "value": {
+        "alpha": 1,
+        "hex": "#671907"
+      }
+    },
+    "Highlight.Primary": {
+      "value": {
+        "alpha": 0.12,
+        "hex": "#FFFAF9"
+      }
+    },
+    "Tone.Tint-Primary": {
+      "value": {
+        "alpha": 0.06,
+        "hex": "#FFEBE5"
+      }
+    },
+    "Tone.Tint-Secondary": {
+      "value": {
+        "alpha": 0.12,
+        "hex": "#FFEBE5"
+      }
+    },
+    "Tone.Shade-Primary": {
+      "value": {
+        "alpha": 0.12,
+        "hex": "#000000"
+      }
+    },
+    "Shadow.Primary": {
+      "value": {
+        "alpha": 0.16,
+        "hex": "#000000"
+      }
+    },
+    "Shadow.Secondary": {
+      "value": {
+        "alpha": 0.24,
+        "hex": "#000000"
+      }
+    },
+    "Shadow.Tertiary": {
+      "value": {
+        "alpha": 0.32,
+        "hex": "#000000"
+      }
+    },
+    "Destructive.Primary": {
+      "value": {
+        "alpha": 1,
+        "hex": "#D83544"
+      }
+    },
+    "Destructive.Secondary": {
+      "value": {
+        "alpha": 1,
+        "hex": "#CA2B3D"
+      }
+    },
+    "Destructive.Tertiary": {
+      "value": {
+        "alpha": 1,
+        "hex": "#A02231"
+      }
+    },
+    "Destructive.Glow-Primary": {
+      "value": {
+        "alpha": 0.2,
+        "hex": "#EC434F"
+      }
+    },
+    "Destructive.Glow-Secondary": {
+      "value": {
+        "alpha": 0.12,
+        "hex": "#EC434F"
+      }
+    },
+    "Destructive.Text-Primary": {
+      "value": {
+        "alpha": 1,
+        "hex": "#D83544"
+      }
+    },
+    "Destructive.Text-Secondary": {
+      "value": {
+        "alpha": 1,
+        "hex": "#CA2B3D"
+      }
+    },
+    "Destructive.Text-Tertiary": {
+      "value": {
+        "alpha": 1,
+        "hex": "#A02231"
+      }
+    },
+    "Destructive.Content-Primary": {
+      "value": {
+        "alpha": 1,
+        "hex": "#000000"
+      }
+    },
+    "Destructive.Content-Secondary": {
+      "value": {
+        "alpha": 0.9,
+        "hex": "#000000"
+      }
+    },
+    "Destructive.Content-Tertiary": {
+      "value": {
+        "alpha": 0.6,
+        "hex": "#000000"
+      }
+    },
+    "Status.Green": {
+      "value": {
+        "alpha": 1,
+        "hex": "#38B26A"
+      }
+    },
+    "Status.Yellow": {
+      "value": {
+        "alpha": 1,
+        "hex": "#FAB341"
+      }
+    },
+    "Status.Red": {
+      "value": {
+        "alpha": 1,
+        "hex": "#D83544"
+      }
+    },
+    "Status.Gray": {
+      "value": {
+        "alpha": 1,
+        "hex": "#888888"
+      }
+    },
+    "Status-Warning.Primary": {
+      "value": {
+        "alpha": 1,
+        "hex": "#FFC95C"
+      }
+    },
+    "Status-Warning.Content-Primary": {
+      "value": {
+        "alpha": 1,
+        "hex": "#FFC95C"
+      }
+    },
+    "Status-Warning.Fill-Primary": {
+      "value": {
+        "alpha": 1,
+        "hex": "#FFC95C"
+      }
+    }
+  }
+}
