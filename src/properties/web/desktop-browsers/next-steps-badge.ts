@@ -1,6 +1,6 @@
 import { DesignToken } from 'style-dictionary/types';
 
-const nextStepsBadge: DesignToken = {
+const nextStepsBadgeTokens: DesignToken = {
     $type: 'color',
     'next-steps-badge': {
         background: { $value: '{color.pollen.30}' },
@@ -8,4 +8,4 @@ const nextStepsBadge: DesignToken = {
     },
 };
 
-export default nextStepsBadge;
+export default nextStepsBadgeTokens;

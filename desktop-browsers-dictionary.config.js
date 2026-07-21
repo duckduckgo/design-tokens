@@ -34,24 +34,24 @@ export default {
                 {
                     destination: 'desktop-browsers/tokens.css',
                     format: 'css/variables-shadow-dom',
-                    // Exclude base/colors and desktop-browsers/onboarding tokens,
-                    // except for the specific Pollen palette values consumed downstream
-                    // (e.g. the New Tab Page Next Steps badge): Pollen 30 and 90.
-                    filter: (token) => {
-                        const isAllowedPollen =
-                            token.filePath?.includes('base/colors') &&
-                            token.path?.[0] === 'color' &&
-                            token.path?.[1] === 'pollen' &&
-                            ['30', '90'].includes(String(token.path?.[2]));
-                        if (isAllowedPollen) return true;
-                        return (
-                            !token.filePath?.includes('base/colors') &&
-                            !token.filePath?.includes('desktop-browsers/onboarding') &&
-                            !token.filePath?.includes('theme/colors')
-                        );
-                    },
+                    // base/colors and theme/colors are intentionally not exposed here;
+                    // onboarding and next-steps-badge are emitted as standalone files below.
+                    filter: (token) =>
+                        !token.filePath?.includes('base/colors') &&
+                        !token.filePath?.includes('desktop-browsers/onboarding') &&
+                        !token.filePath?.includes('desktop-browsers/next-steps-badge') &&
+                        !token.filePath?.includes('theme/colors'),
                     options: {
                         outputReferences: true,
+                        showFileHeader: true,
+                    },
+                },
+                {
+                    destination: 'desktop-browsers/next-steps-badge.css',
+                    format: 'css/variables-shadow-dom',
+                    filter: (token) => token.filePath?.includes('desktop-browsers/next-steps-badge'),
+                    options: {
+                        outputReferences: false,
                         showFileHeader: true,
                     },
                 },
