@@ -10,6 +10,7 @@ export default {
         'dist/src/properties/web/desktop-browsers/theme.js',
         'dist/src/properties/web/base/colors.{js,json}',
         'dist/src/properties/web/desktop-browsers/onboarding.{js,json}',
+        'dist/src/properties/web/desktop-browsers/next-steps-badge.{js,json}',
     ],
     hooks: {
         formats: {
@@ -33,11 +34,22 @@ export default {
                 {
                     destination: 'desktop-browsers/tokens.css',
                     format: 'css/variables-shadow-dom',
-                    // Exclude base/colors and desktop-browsers/onboarding tokens
-                    filter: (token) =>
-                        !token.filePath?.includes('base/colors') &&
-                        !token.filePath?.includes('desktop-browsers/onboarding') &&
-                        !token.filePath?.includes('theme/colors'),
+                    // Exclude base/colors and desktop-browsers/onboarding tokens,
+                    // except for the specific Pollen palette values consumed downstream
+                    // (e.g. the New Tab Page Next Steps badge): Pollen 30 and 90.
+                    filter: (token) => {
+                        const isAllowedPollen =
+                            token.filePath?.includes('base/colors') &&
+                            token.path?.[0] === 'color' &&
+                            token.path?.[1] === 'pollen' &&
+                            ['30', '90'].includes(String(token.path?.[2]));
+                        if (isAllowedPollen) return true;
+                        return (
+                            !token.filePath?.includes('base/colors') &&
+                            !token.filePath?.includes('desktop-browsers/onboarding') &&
+                            !token.filePath?.includes('theme/colors')
+                        );
+                    },
                     options: {
                         outputReferences: true,
                         showFileHeader: true,
