@@ -10,6 +10,7 @@ export default {
         'dist/src/properties/web/desktop-browsers/theme.js',
         'dist/src/properties/web/base/colors.{js,json}',
         'dist/src/properties/web/desktop-browsers/onboarding.{js,json}',
+        'dist/src/properties/web/desktop-browsers/next-steps-badge.{js,json}',
     ],
     hooks: {
         formats: {
@@ -33,13 +34,24 @@ export default {
                 {
                     destination: 'desktop-browsers/tokens.css',
                     format: 'css/variables-shadow-dom',
-                    // Exclude base/colors and desktop-browsers/onboarding tokens
+                    // base/colors and theme/colors are intentionally not exposed here;
+                    // onboarding and next-steps-badge are emitted as standalone files below.
                     filter: (token) =>
                         !token.filePath?.includes('base/colors') &&
                         !token.filePath?.includes('desktop-browsers/onboarding') &&
+                        !token.filePath?.includes('desktop-browsers/next-steps-badge') &&
                         !token.filePath?.includes('theme/colors'),
                     options: {
                         outputReferences: true,
+                        showFileHeader: true,
+                    },
+                },
+                {
+                    destination: 'desktop-browsers/next-steps-badge.css',
+                    format: 'css/variables-shadow-dom',
+                    filter: (token) => token.filePath?.includes('desktop-browsers/next-steps-badge'),
+                    options: {
+                        outputReferences: false,
                         showFileHeader: true,
                     },
                 },

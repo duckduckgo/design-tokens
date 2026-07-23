@@ -1,8 +1,8 @@
 
 // Do not edit directly, this file was auto-generated.
 // Source: https://github.com/duckduckgo/design-tokens
-// Version: 0.31.0
-// Last updated: July 9, 2026 at 06:34 PM
+// Version: 0.32.0
+// Last updated: July 23, 2026 at 03:38 PM
 
 // This is the full type stack established for use in static-pages.
 // This is only to be imported when building features that need more font styles than the basics from SERP.
