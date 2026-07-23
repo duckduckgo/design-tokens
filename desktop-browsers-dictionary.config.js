@@ -10,7 +10,7 @@ export default {
         'dist/src/properties/web/desktop-browsers/theme.js',
         'dist/src/properties/web/base/colors.{js,json}',
         'dist/src/properties/web/desktop-browsers/onboarding.{js,json}',
-        'dist/src/properties/web/desktop-browsers/ntp-components.{js,json}',
+        'dist/src/properties/web/desktop-browsers/ntp.{js,json}',
     ],
     hooks: {
         formats: {
@@ -35,11 +35,11 @@ export default {
                     destination: 'desktop-browsers/tokens.css',
                     format: 'css/variables-shadow-dom',
                     // base/colors and theme/colors are intentionally not exposed here;
-                    // onboarding and ntp-components are emitted as standalone files below.
+                    // onboarding and ntp are emitted as standalone files below.
                     filter: (token) =>
                         !token.filePath?.includes('base/colors') &&
                         !token.filePath?.includes('desktop-browsers/onboarding') &&
-                        !token.filePath?.includes('desktop-browsers/ntp-components') &&
+                        !token.filePath?.includes('desktop-browsers/ntp') &&
                         !token.filePath?.includes('theme/colors'),
                     options: {
                         outputReferences: true,
@@ -47,9 +47,9 @@ export default {
                     },
                 },
                 {
-                    destination: 'desktop-browsers/ntp-components.css',
+                    destination: 'desktop-browsers/ntp.css',
                     format: 'css/variables-shadow-dom',
-                    filter: (token) => token.filePath?.includes('desktop-browsers/ntp-components'),
+                    filter: (token) => token.filePath?.includes('desktop-browsers/ntp'),
                     options: {
                         outputReferences: false,
                         showFileHeader: true,
