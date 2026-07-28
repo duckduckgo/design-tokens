@@ -13,15 +13,17 @@ const ntpComponentsTokens: DesignToken = {
             },
         },
         btn: {
-            light: {
-                rest: { $value: '{color.pondwater.60}' },
-                hover: { $value: '{color.pondwater.70}' },
-                active: { $value: '{color.pondwater.80}' },
-            },
-            dark: {
-                rest: { $value: '{color.pondwater.40}' },
-                hover: { $value: '{color.pondwater.50}' },
-                active: { $value: '{color.pondwater.60}' },
+            primary: {
+                light: {
+                    rest: { $value: '{color.pondwater.60}' },
+                    hover: { $value: '{color.pondwater.70}' },
+                    active: { $value: '{color.pondwater.80}' },
+                },
+                dark: {
+                    rest: { $value: '{color.pondwater.40}' },
+                    hover: { $value: '{color.pondwater.50}' },
+                    active: { $value: '{color.pondwater.60}' },
+                },
             },
             dismiss: {
                 light: {
