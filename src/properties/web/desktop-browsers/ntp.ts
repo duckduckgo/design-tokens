@@ -9,11 +9,6 @@ const ntpComponentsTokens: DesignToken = {
         },
         light: {
             button: {
-                primary: {
-                    rest: { backgroundColor: { $value: '{color.pondwater.60}' } },
-                    hover: { backgroundColor: { $value: '{color.pondwater.70}' } },
-                    active: { backgroundColor: { $value: '{color.pondwater.80}' } },
-                },
                 secondary: {
                     rest: { backgroundColor: { $value: '{color.blackAt.6}' } },
                 },
@@ -31,11 +26,6 @@ const ntpComponentsTokens: DesignToken = {
                 borderColor: { $value: '{color.whiteAt.3}' },
             },
             button: {
-                primary: {
-                    rest: { backgroundColor: { $value: '{color.pondwater.40}' } },
-                    hover: { backgroundColor: { $value: '{color.pondwater.50}' } },
-                    active: { backgroundColor: { $value: '{color.pondwater.60}' } },
-                },
                 secondary: {
                     rest: { backgroundColor: { $value: '{color.whiteAt.6}' } },
                 },

@@ -607,16 +607,16 @@ const theme: DesignToken = {
                         },
                     },
                     primary: {
-                        $value: '#8fabf9',
+                        $value: '#75b6eb',
                     },
                     quaternary: {
                         $value: '#2b55ca',
                     },
                     secondary: {
-                        $value: '#7295f6',
+                        $value: '#4397e0',
                     },
                     tertiary: {
-                        $value: '#557ff3',
+                        $value: '#1074cc',
                     },
                     text: {
                         primary: {
@@ -874,16 +874,16 @@ const theme: DesignToken = {
                         },
                     },
                     primary: {
-                        $value: '#3869ef',
+                        $value: '#1074cc',
                     },
                     quaternary: {
                         $value: '#14307e',
                     },
                     secondary: {
-                        $value: '#2b55ca',
+                        $value: '#045eb2',
                     },
                     tertiary: {
-                        $value: '#1e42a4',
+                        $value: '#034180',
                     },
                     text: {
                         primary: {
