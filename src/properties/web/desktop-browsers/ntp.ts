@@ -9,9 +9,6 @@ const ntpComponentsTokens: DesignToken = {
         },
         light: {
             button: {
-                secondary: {
-                    rest: { backgroundColor: { $value: '{color.blackAt.6}' } },
-                },
                 dismiss: {
                     rest: {
                         borderColor: { $value: '{color.blackAt.9}' },
@@ -26,9 +23,6 @@ const ntpComponentsTokens: DesignToken = {
                 borderColor: { $value: '{color.whiteAt.3}' },
             },
             button: {
-                secondary: {
-                    rest: { backgroundColor: { $value: '{color.whiteAt.6}' } },
-                },
                 dismiss: {
                     rest: {
                         borderColor: { $value: '{color.whiteAt.9}' },
