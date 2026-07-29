@@ -1,7 +1,6 @@
 import { transformGroups, logBrokenReferenceLevels, logVerbosityLevels, logWarningLevels } from 'style-dictionary/enums';
 import cssVariablesShadowDom from './src/formats/css-variables-shadow-dom.js';
 import onboardingThemeClasses from './src/formats/css-onboarding-theme-classes.js';
-import ntpThemeAttrs from './src/formats/css-ntp-theme-attrs.js';
 import fileHeader from './dist/src/utils/file-header.js';
 
 export default {
@@ -17,7 +16,6 @@ export default {
         formats: {
             'css/variables-shadow-dom': cssVariablesShadowDom,
             'onboarding-theme-classes': onboardingThemeClasses,
-            'ntp-theme-attrs': ntpThemeAttrs,
         },
     },
     log: {
@@ -50,7 +48,7 @@ export default {
                 },
                 {
                     destination: 'desktop-browsers/ntp.css',
-                    format: 'ntp-theme-attrs',
+                    format: 'css/variables-shadow-dom',
                     filter: (token) => token.filePath?.includes('desktop-browsers/ntp'),
                     options: {
                         outputReferences: false,
