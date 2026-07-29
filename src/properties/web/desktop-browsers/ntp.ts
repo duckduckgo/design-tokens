@@ -8,39 +8,43 @@ const ntpComponentsTokens: DesignToken = {
             color: { $value: '{color.pollen.90}' },
         },
         light: {
-            btn: {
+            button: {
                 primary: {
-                    rest: { $value: '{color.pondwater.60}' },
-                    hover: { $value: '{color.pondwater.70}' },
-                    active: { $value: '{color.pondwater.80}' },
+                    rest: { backgroundColor: { $value: '{color.pondwater.60}' } },
+                    hover: { backgroundColor: { $value: '{color.pondwater.70}' } },
+                    active: { backgroundColor: { $value: '{color.pondwater.80}' } },
                 },
                 secondary: {
-                    rest: { $value: '{color.blackAt.6}' },
+                    rest: { backgroundColor: { $value: '{color.blackAt.6}' } },
                 },
                 dismiss: {
-                    border: { $value: '{color.blackAt.9}' },
-                    color: { $value: '{color.blackAt.60}' },
-                    hover: { $value: '{color.blackAt.9}' },
+                    rest: {
+                        borderColor: { $value: '{color.blackAt.9}' },
+                        color: { $value: '{color.blackAt.60}' },
+                    },
+                    hover: { backgroundColor: { $value: '{color.blackAt.9}' } },
                 },
             },
         },
         dark: {
             card: {
-                border: { $value: '{color.whiteAt.3}' },
+                borderColor: { $value: '{color.whiteAt.3}' },
             },
-            btn: {
+            button: {
                 primary: {
-                    rest: { $value: '{color.pondwater.40}' },
-                    hover: { $value: '{color.pondwater.50}' },
-                    active: { $value: '{color.pondwater.60}' },
+                    rest: { backgroundColor: { $value: '{color.pondwater.40}' } },
+                    hover: { backgroundColor: { $value: '{color.pondwater.50}' } },
+                    active: { backgroundColor: { $value: '{color.pondwater.60}' } },
                 },
                 secondary: {
-                    rest: { $value: '{color.whiteAt.6}' },
+                    rest: { backgroundColor: { $value: '{color.whiteAt.6}' } },
                 },
                 dismiss: {
-                    border: { $value: '{color.whiteAt.9}' },
-                    color: { $value: '{color.whiteAt.60}' },
-                    hover: { $value: '{color.whiteAt.18}' },
+                    rest: {
+                        borderColor: { $value: '{color.whiteAt.9}' },
+                        color: { $value: '{color.whiteAt.60}' },
+                    },
+                    hover: { backgroundColor: { $value: '{color.whiteAt.18}' } },
                 },
             },
         },
