@@ -25,6 +25,14 @@ const ntpComponentsTokens: DesignToken = {
                     active: { $value: '{color.pondwater.60}' },
                 },
             },
+            secondary: {
+                light: {
+                    rest: { $value: '{color.blackAt.6}' },
+                },
+                dark: {
+                    rest: { $value: '{color.whiteAt.6}' },
+                },
+            },
             dismiss: {
                 light: {
                     border: { $value: '{color.blackAt.9}' },
