@@ -600,10 +600,10 @@ const theme: DesignToken = {
                     },
                     glow: {
                         primary: {
-                            $value: '#7295f633',
+                            $value: '#75b6eb33',
                         },
                         secondary: {
-                            $value: '#7295f61e',
+                            $value: '#75b6eb1e',
                         },
                     },
                     primary: {
@@ -867,10 +867,10 @@ const theme: DesignToken = {
                     },
                     glow: {
                         primary: {
-                            $value: '#3969ef33',
+                            $value: '#1074cc33',
                         },
                         secondary: {
-                            $value: '#3969ef1e',
+                            $value: '#1074cc1e',
                         },
                     },
                     primary: {
