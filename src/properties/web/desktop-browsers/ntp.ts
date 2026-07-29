@@ -37,10 +37,12 @@ const ntpComponentsTokens: DesignToken = {
                 light: {
                     border: { $value: '{color.blackAt.9}' },
                     color: { $value: '{color.blackAt.60}' },
+                    hover: { $value: '{color.blackAt.9}' },
                 },
                 dark: {
                     border: { $value: '{color.whiteAt.9}' },
                     color: { $value: '{color.whiteAt.60}' },
+                    hover: { $value: '{color.whiteAt.18}' },
                 },
             },
         },
