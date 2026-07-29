@@ -2,18 +2,41 @@ import { DesignToken } from 'style-dictionary/types';
 
 const ntpComponentsTokens: DesignToken = {
     $type: 'color',
-    'next-steps-badge': {
-        background: { $value: '{color.pollen.30}' },
-        color: { $value: '{color.pollen.90}' },
-    },
-    'ntp-dismiss-btn': {
+    ntp: {
+        'next-steps-badge': {
+            background: { $value: '{color.pollen.30}' },
+            color: { $value: '{color.pollen.90}' },
+        },
         light: {
-            border: { $value: '{color.blackAt.9}' },
-            color: { $value: '{color.blackAt.60}' },
+            button: {
+                secondary: {
+                    rest: { backgroundColor: { $value: '{color.blackAt.6}' } },
+                },
+                dismiss: {
+                    rest: {
+                        borderColor: { $value: '{color.blackAt.9}' },
+                        color: { $value: '{color.blackAt.60}' },
+                    },
+                    hover: { backgroundColor: { $value: '{color.blackAt.9}' } },
+                },
+            },
         },
         dark: {
-            border: { $value: '{color.whiteAt.9}' },
-            color: { $value: '{color.whiteAt.60}' },
+            card: {
+                borderColor: { $value: '{color.whiteAt.3}' },
+            },
+            button: {
+                secondary: {
+                    rest: { backgroundColor: { $value: '{color.whiteAt.6}' } },
+                },
+                dismiss: {
+                    rest: {
+                        borderColor: { $value: '{color.whiteAt.9}' },
+                        color: { $value: '{color.whiteAt.60}' },
+                    },
+                    hover: { backgroundColor: { $value: '{color.whiteAt.18}' } },
+                },
+            },
         },
     },
 };
