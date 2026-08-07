@@ -212,6 +212,37 @@ const theme: DesignToken = {
                         $value: '#eeeff73d',
                     },
                 },
+                input: {
+                    textPrimary: {
+                        $value: 'rgba(238, 239, 247, 0.96)',
+                    },
+                    textSecondary: {
+                        $value: 'rgba(238, 239, 247, 0.66)',
+                    },
+                    iconsPrimary: {
+                        $value: 'rgba(238, 239, 247, 0.78)',
+                    },
+                    iconsSecondary: {
+                        $value: 'rgba(238, 239, 247, 0.48)',
+                    },
+                    fieldPrimaryBackgroundColor: {
+                        $value: '#414762',
+                    },
+                    fieldSecondaryBackgroundColor: {
+                        $value: '#181b2f',
+                    },
+                    control: {
+                        primaryBackgroundColor: {
+                            $value: '#4d5475',
+                        },
+                        secondaryBackgroundColor: {
+                            $value: '#2b2f45',
+                        },
+                        shadowPrimary: {
+                            $value: '#24273a',
+                        },
+                    },
+                },
                 shadow: {
                     primary: {
                         $value: '#00000028',
@@ -477,6 +508,37 @@ const theme: DesignToken = {
                     },
                     tertiary: {
                         $value: '#212d455b',
+                    },
+                },
+                input: {
+                    textPrimary: {
+                        $value: 'rgba(5, 6, 20, 0.96)',
+                    },
+                    textSecondary: {
+                        $value: 'rgba(5, 6, 20, 0.6)',
+                    },
+                    iconsPrimary: {
+                        $value: 'rgba(33, 45, 69, 0.84)',
+                    },
+                    iconsSecondary: {
+                        $value: 'rgba(33, 45, 69, 0.6)',
+                    },
+                    fieldPrimaryBackgroundColor: {
+                        $value: '#f7f8fc',
+                    },
+                    fieldSecondaryBackgroundColor: {
+                        $value: '#c1c5d5',
+                    },
+                    control: {
+                        primaryBackgroundColor: {
+                            $value: '#f9fafd',
+                        },
+                        secondaryBackgroundColor: {
+                            $value: '#d3d6e4',
+                        },
+                        shadowPrimary: {
+                            $value: '#c8cbd9',
+                        },
                     },
                 },
                 shadow: {
@@ -748,6 +810,37 @@ const theme: DesignToken = {
                         $value: '#ffffff3d',
                     },
                 },
+                input: {
+                    textPrimary: {
+                        $value: '#ffffff',
+                    },
+                    textSecondary: {
+                        $value: 'rgba(255, 255, 255, 0.7)',
+                    },
+                    iconsPrimary: {
+                        $value: 'rgba(255, 255, 255, 0.78)',
+                    },
+                    iconsSecondary: {
+                        $value: 'rgba(255, 255, 255, 0.48)',
+                    },
+                    fieldPrimaryBackgroundColor: {
+                        $value: '#3d3d3d',
+                    },
+                    fieldSecondaryBackgroundColor: {
+                        $value: '#090909',
+                    },
+                    control: {
+                        primaryBackgroundColor: {
+                            $value: '#424242',
+                        },
+                        secondaryBackgroundColor: {
+                            $value: '#1c1c1c',
+                        },
+                        shadowPrimary: {
+                            $value: '#181818',
+                        },
+                    },
+                },
                 shadow: {
                     primary: {
                         $value: '#00000028',
@@ -1013,6 +1106,37 @@ const theme: DesignToken = {
                     },
                     tertiary: {
                         $value: '#0000005b',
+                    },
+                },
+                input: {
+                    textPrimary: {
+                        $value: 'rgba(0, 0, 0, 0.96)',
+                    },
+                    textSecondary: {
+                        $value: 'rgba(0, 0, 0, 0.6)',
+                    },
+                    iconsPrimary: {
+                        $value: 'rgba(0, 0, 0, 0.84)',
+                    },
+                    iconsSecondary: {
+                        $value: 'rgba(0, 0, 0, 0.6)',
+                    },
+                    fieldPrimaryBackgroundColor: {
+                        $value: '#ffffff',
+                    },
+                    fieldSecondaryBackgroundColor: {
+                        $value: '#ebebeb',
+                    },
+                    control: {
+                        primaryBackgroundColor: {
+                            $value: '#ffffff',
+                        },
+                        secondaryBackgroundColor: {
+                            $value: '#eeeeee',
+                        },
+                        shadowPrimary: {
+                            $value: '#e2e2e2',
+                        },
                     },
                 },
                 shadow: {
@@ -1284,6 +1408,37 @@ const theme: DesignToken = {
                         $value: '#fdfaf73d',
                     },
                 },
+                input: {
+                    textPrimary: {
+                        $value: 'rgba(254, 252, 251, 0.96)',
+                    },
+                    textSecondary: {
+                        $value: 'rgba(254, 252, 251, 0.66)',
+                    },
+                    iconsPrimary: {
+                        $value: 'rgba(253, 250, 247, 0.78)',
+                    },
+                    iconsSecondary: {
+                        $value: 'rgba(253, 250, 247, 0.48)',
+                    },
+                    fieldPrimaryBackgroundColor: {
+                        $value: '#4a463f',
+                    },
+                    fieldSecondaryBackgroundColor: {
+                        $value: '#21201c',
+                    },
+                    control: {
+                        primaryBackgroundColor: {
+                            $value: '#5e5950',
+                        },
+                        secondaryBackgroundColor: {
+                            $value: '#37342f',
+                        },
+                        shadowPrimary: {
+                            $value: '#2e2c27',
+                        },
+                    },
+                },
                 shadow: {
                     primary: {
                         $value: '#00000028',
@@ -1549,6 +1704,37 @@ const theme: DesignToken = {
                     },
                     tertiary: {
                         $value: '#17150f5b',
+                    },
+                },
+                input: {
+                    textPrimary: {
+                        $value: 'rgba(23, 21, 15, 0.96)',
+                    },
+                    textSecondary: {
+                        $value: 'rgba(23, 21, 15, 0.6)',
+                    },
+                    iconsPrimary: {
+                        $value: 'rgba(23, 21, 15, 0.84)',
+                    },
+                    iconsSecondary: {
+                        $value: 'rgba(23, 21, 15, 0.66)',
+                    },
+                    fieldPrimaryBackgroundColor: {
+                        $value: '#fbfaf9',
+                    },
+                    fieldSecondaryBackgroundColor: {
+                        $value: '#e1d9ca',
+                    },
+                    control: {
+                        primaryBackgroundColor: {
+                            $value: '#fcfcfb',
+                        },
+                        secondaryBackgroundColor: {
+                            $value: '#efeae1',
+                        },
+                        shadowPrimary: {
+                            $value: '#e3ded6',
+                        },
                     },
                 },
                 shadow: {
@@ -1820,6 +2006,37 @@ const theme: DesignToken = {
                         $value: '#e6f2ea3d',
                     },
                 },
+                input: {
+                    textPrimary: {
+                        $value: 'rgba(242, 248, 244, 0.96)',
+                    },
+                    textSecondary: {
+                        $value: 'rgba(242, 248, 244, 0.66)',
+                    },
+                    iconsPrimary: {
+                        $value: 'rgba(230, 242, 234, 0.78)',
+                    },
+                    iconsSecondary: {
+                        $value: 'rgba(230, 242, 234, 0.48)',
+                    },
+                    fieldPrimaryBackgroundColor: {
+                        $value: '#2d4d3e',
+                    },
+                    fieldSecondaryBackgroundColor: {
+                        $value: '#11271f',
+                    },
+                    control: {
+                        primaryBackgroundColor: {
+                            $value: '#38614e',
+                        },
+                        secondaryBackgroundColor: {
+                            $value: '#203b30',
+                        },
+                        shadowPrimary: {
+                            $value: '#1b3228',
+                        },
+                    },
+                },
                 shadow: {
                     primary: {
                         $value: '#00000028',
@@ -2085,6 +2302,37 @@ const theme: DesignToken = {
                     },
                     tertiary: {
                         $value: '#0625045b',
+                    },
+                },
+                input: {
+                    textPrimary: {
+                        $value: 'rgba(4, 28, 3, 0.96)',
+                    },
+                    textSecondary: {
+                        $value: 'rgba(4, 28, 3, 0.6)',
+                    },
+                    iconsPrimary: {
+                        $value: 'rgba(6, 37, 4, 0.84)',
+                    },
+                    iconsSecondary: {
+                        $value: 'rgba(6, 37, 4, 0.6)',
+                    },
+                    fieldPrimaryBackgroundColor: {
+                        $value: '#f8fcf7',
+                    },
+                    fieldSecondaryBackgroundColor: {
+                        $value: '#cddfc8',
+                    },
+                    control: {
+                        primaryBackgroundColor: {
+                            $value: '#fafdf9',
+                        },
+                        secondaryBackgroundColor: {
+                            $value: '#e4eee2',
+                        },
+                        shadowPrimary: {
+                            $value: '#d9e2d7',
+                        },
                     },
                 },
                 shadow: {
@@ -2356,6 +2604,37 @@ const theme: DesignToken = {
                         $value: '#fdeace3d',
                     },
                 },
+                input: {
+                    textPrimary: {
+                        $value: 'rgba(255, 245, 229, 0.96)',
+                    },
+                    textSecondary: {
+                        $value: 'rgba(255, 245, 229, 0.66)',
+                    },
+                    iconsPrimary: {
+                        $value: 'rgba(253, 234, 206, 0.78)',
+                    },
+                    iconsSecondary: {
+                        $value: 'rgba(253, 234, 206, 0.48)',
+                    },
+                    fieldPrimaryBackgroundColor: {
+                        $value: '#6e350c',
+                    },
+                    fieldSecondaryBackgroundColor: {
+                        $value: '#371306',
+                    },
+                    control: {
+                        primaryBackgroundColor: {
+                            $value: '#8a420f',
+                        },
+                        secondaryBackgroundColor: {
+                            $value: '#55240c',
+                        },
+                        shadowPrimary: {
+                            $value: '#471e0a',
+                        },
+                    },
+                },
                 shadow: {
                     primary: {
                         $value: '#00000028',
@@ -2621,6 +2900,37 @@ const theme: DesignToken = {
                     },
                     tertiary: {
                         $value: '#1a09005b',
+                    },
+                },
+                input: {
+                    textPrimary: {
+                        $value: 'rgba(26, 9, 0, 0.96)',
+                    },
+                    textSecondary: {
+                        $value: 'rgba(26, 9, 0, 0.6)',
+                    },
+                    iconsPrimary: {
+                        $value: 'rgba(26, 9, 0, 0.84)',
+                    },
+                    iconsSecondary: {
+                        $value: 'rgba(26, 9, 0, 0.66)',
+                    },
+                    fieldPrimaryBackgroundColor: {
+                        $value: '#fffcf7',
+                    },
+                    fieldSecondaryBackgroundColor: {
+                        $value: '#f9d6b2',
+                    },
+                    control: {
+                        primaryBackgroundColor: {
+                            $value: '#fffdf9',
+                        },
+                        secondaryBackgroundColor: {
+                            $value: '#fdebd3',
+                        },
+                        shadowPrimary: {
+                            $value: '#f0dfc8',
+                        },
                     },
                 },
                 shadow: {
@@ -2892,6 +3202,37 @@ const theme: DesignToken = {
                         $value: '#fffafe5b',
                     },
                 },
+                input: {
+                    textPrimary: {
+                        $value: 'rgba(255, 250, 254, 0.96)',
+                    },
+                    textSecondary: {
+                        $value: 'rgba(255, 250, 254, 0.66)',
+                    },
+                    iconsPrimary: {
+                        $value: 'rgba(255, 250, 254, 0.78)',
+                    },
+                    iconsSecondary: {
+                        $value: 'rgba(255, 250, 254, 0.66)',
+                    },
+                    fieldPrimaryBackgroundColor: {
+                        $value: '#73265e',
+                    },
+                    fieldSecondaryBackgroundColor: {
+                        $value: '#35082c',
+                    },
+                    control: {
+                        primaryBackgroundColor: {
+                            $value: '#923077',
+                        },
+                        secondaryBackgroundColor: {
+                            $value: '#5b1a4b',
+                        },
+                        shadowPrimary: {
+                            $value: '#4c163f',
+                        },
+                    },
+                },
                 shadow: {
                     primary: {
                         $value: '#00000028',
@@ -3157,6 +3498,37 @@ const theme: DesignToken = {
                     },
                     tertiary: {
                         $value: '#30031e5b',
+                    },
+                },
+                input: {
+                    textPrimary: {
+                        $value: 'rgba(48, 3, 30, 0.96)',
+                    },
+                    textSecondary: {
+                        $value: 'rgba(48, 3, 30, 0.6)',
+                    },
+                    iconsPrimary: {
+                        $value: 'rgba(48, 3, 30, 0.84)',
+                    },
+                    iconsSecondary: {
+                        $value: 'rgba(48, 3, 30, 0.66)',
+                    },
+                    fieldPrimaryBackgroundColor: {
+                        $value: '#fffafe',
+                    },
+                    fieldSecondaryBackgroundColor: {
+                        $value: '#f3cce9',
+                    },
+                    control: {
+                        primaryBackgroundColor: {
+                            $value: '#fffcfe',
+                        },
+                        secondaryBackgroundColor: {
+                            $value: '#f6e4f2',
+                        },
+                        shadowPrimary: {
+                            $value: '#ead9e6',
+                        },
                     },
                 },
                 shadow: {
@@ -3428,6 +3800,37 @@ const theme: DesignToken = {
                         $value: '#f7fbfd3d',
                     },
                 },
+                input: {
+                    textPrimary: {
+                        $value: 'rgba(247, 251, 253, 0.96)',
+                    },
+                    textSecondary: {
+                        $value: 'rgba(247, 251, 253, 0.66)',
+                    },
+                    iconsPrimary: {
+                        $value: 'rgba(247, 251, 253, 0.78)',
+                    },
+                    iconsSecondary: {
+                        $value: 'rgba(247, 251, 253, 0.48)',
+                    },
+                    fieldPrimaryBackgroundColor: {
+                        $value: '#324a62',
+                    },
+                    fieldSecondaryBackgroundColor: {
+                        $value: '#131f2b',
+                    },
+                    control: {
+                        primaryBackgroundColor: {
+                            $value: '#3c5976',
+                        },
+                        secondaryBackgroundColor: {
+                            $value: '#1f3347',
+                        },
+                        shadowPrimary: {
+                            $value: '#1a2b3c',
+                        },
+                    },
+                },
                 shadow: {
                     primary: {
                         $value: '#00000028',
@@ -3693,6 +4096,37 @@ const theme: DesignToken = {
                     },
                     tertiary: {
                         $value: '#060a0e5b',
+                    },
+                },
+                input: {
+                    textPrimary: {
+                        $value: 'rgba(6, 10, 14, 0.96)',
+                    },
+                    textSecondary: {
+                        $value: 'rgba(6, 10, 14, 0.6)',
+                    },
+                    iconsPrimary: {
+                        $value: 'rgba(6, 10, 14, 0.84)',
+                    },
+                    iconsSecondary: {
+                        $value: 'rgba(6, 10, 14, 0.6)',
+                    },
+                    fieldPrimaryBackgroundColor: {
+                        $value: '#eef7fc',
+                    },
+                    fieldSecondaryBackgroundColor: {
+                        $value: '#bdd2e5',
+                    },
+                    control: {
+                        primaryBackgroundColor: {
+                            $value: '#f3f9fd',
+                        },
+                        secondaryBackgroundColor: {
+                            $value: '#d2e5f4',
+                        },
+                        shadowPrimary: {
+                            $value: '#c7dae8',
+                        },
                     },
                 },
                 shadow: {
@@ -3964,6 +4398,37 @@ const theme: DesignToken = {
                         $value: '#f5f5fe3d',
                     },
                 },
+                input: {
+                    textPrimary: {
+                        $value: 'rgba(240, 240, 255, 0.96)',
+                    },
+                    textSecondary: {
+                        $value: 'rgba(245, 245, 254, 0.66)',
+                    },
+                    iconsPrimary: {
+                        $value: 'rgba(240, 240, 255, 0.78)',
+                    },
+                    iconsSecondary: {
+                        $value: 'rgba(245, 245, 254, 0.48)',
+                    },
+                    fieldPrimaryBackgroundColor: {
+                        $value: '#433371',
+                    },
+                    fieldSecondaryBackgroundColor: {
+                        $value: '#1b1236',
+                    },
+                    control: {
+                        primaryBackgroundColor: {
+                            $value: '#533f8d',
+                        },
+                        secondaryBackgroundColor: {
+                            $value: '#2f2259',
+                        },
+                        shadowPrimary: {
+                            $value: '#271d4b',
+                        },
+                    },
+                },
                 shadow: {
                     primary: {
                         $value: '#00000028',
@@ -4229,6 +4694,37 @@ const theme: DesignToken = {
                     },
                     tertiary: {
                         $value: '#07050d5b',
+                    },
+                },
+                input: {
+                    textPrimary: {
+                        $value: 'rgba(7, 5, 13, 0.96)',
+                    },
+                    textSecondary: {
+                        $value: 'rgba(7, 5, 13, 0.6)',
+                    },
+                    iconsPrimary: {
+                        $value: 'rgba(7, 5, 13, 0.84)',
+                    },
+                    iconsSecondary: {
+                        $value: 'rgba(7, 5, 13, 0.6)',
+                    },
+                    fieldPrimaryBackgroundColor: {
+                        $value: '#f7f7fd',
+                    },
+                    fieldSecondaryBackgroundColor: {
+                        $value: '#d4cfec',
+                    },
+                    control: {
+                        primaryBackgroundColor: {
+                            $value: '#f9f9fe',
+                        },
+                        secondaryBackgroundColor: {
+                            $value: '#e8e5f5',
+                        },
+                        shadowPrimary: {
+                            $value: '#dcdae9',
+                        },
                     },
                 },
                 shadow: {
