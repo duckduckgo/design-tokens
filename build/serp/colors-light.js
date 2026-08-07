@@ -1,8 +1,8 @@
 
 // Do not edit directly, this file was auto-generated.
 // Source: https://github.com/duckduckgo/design-tokens
-// Version: 0.34.0
-// Last updated: July 29, 2026 at 07:39 PM
+// Version: 0.35.0
+// Last updated: August 7, 2026 at 04:44 PM
 
 const dsThemeColorsLight = {
     /** SURFACE */
@@ -111,7 +111,7 @@ const dsThemeColorsLight = {
     '--ds-destructive-tertiary-content-color': 'rgba(255, 255, 255, 0.60)',
 
     /** STATUS */
-    '--ds-status-green': '#38B26A',
+    '--ds-status-green': '#269B61',
     '--ds-status-yellow': '#FAB341',
     '--ds-status-red': '#D83544',
     '--ds-status-gray': '#888888',

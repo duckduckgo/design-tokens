@@ -1,7 +1,7 @@
 // Do not edit directly, this file was auto-generated.
 // Source: https://github.com/duckduckgo/design-tokens
-// Version: 0.34.0
-// Last updated: July 29, 2026 at 07:39 PM
+// Version: 0.35.0
+// Last updated: August 7, 2026 at 04:44 PM
 
 declare module '@duckduckgo/design-tokens/build/serp/color-palette' {
     export type DSColorPaletteKeys =
@@ -131,7 +131,8 @@ declare module '@duckduckgo/design-tokens/build/serp/color-palette' {
         | '--ds-color-red-80'
         | '--ds-color-red-90'
         | '--ds-color-red-100'
-        | '--ds-color-green-40';
+        | '--ds-color-green-40'
+        | '--ds-color-green-50';
     export type DSColorPaletteValues =
         | '#000000'
         | 'rgba(0, 0, 0, 0.01)'
@@ -259,7 +260,8 @@ declare module '@duckduckgo/design-tokens/build/serp/color-palette' {
         | '#671421'
         | '#46111C'
         | '#2A0C14'
-        | '#38B26A';
+        | '#38B26A'
+        | '#269B61';
     const dsColorPalette: Record<DSColorPaletteKeys, DSColorPaletteValues>;
     export default dsColorPalette;
 }

@@ -1,8 +1,8 @@
 /**
  * Do not edit directly, this file was auto-generated.
  * Source: https://github.com/duckduckgo/design-tokens
- * Version: 0.34.0
- * Last updated: July 29, 2026 at 07:39 PM
+ * Version: 0.35.0
+ * Last updated: August 7, 2026 at 04:44 PM
  */
 
 :root {
@@ -392,6 +392,7 @@
   --ds-color-red-40-at-12: rgba(228, 77, 85, 0.12);
   --ds-color-red-40-at-20: rgba(228, 77, 85, 0.20);
   --ds-color-green-40: #38B26A;
+  --ds-color-green-50: #269B61;
   --ds-font-family-display: 'DuckSansDisplay', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif; /* Use for titles and any text over 19px or more in font-size */
   --ds-font-family-product: 'DuckSansProduct', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif; /* Use for most body text, any usage 18px or smaller in font-size */
   --ds-font-family-monospace: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono', 'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro', 'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
@@ -1262,7 +1263,7 @@
   --ds-theme-light-destructive-primary-content-color: #ffffff;
   --ds-theme-light-destructive-secondary-content-color: rgba(255, 255, 255, 0.90);
   --ds-theme-light-destructive-tertiary-content-color: rgba(255, 255, 255, 0.60);
-  --ds-theme-light-status-green: #38B26A;
+  --ds-theme-light-status-green: #269B61;
   --ds-theme-light-status-yellow: #FAB341;
   --ds-theme-light-status-red: #D83544;
   --ds-theme-light-status-gray: #888888;

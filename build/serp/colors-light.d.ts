@@ -1,7 +1,7 @@
 // Do not edit directly, this file was auto-generated.
 // Source: https://github.com/duckduckgo/design-tokens
-// Version: 0.34.0
-// Last updated: July 29, 2026 at 07:39 PM
+// Version: 0.35.0
+// Last updated: August 7, 2026 at 04:44 PM
 
 declare module '@duckduckgo/design-tokens/build/serp/colors-light' {
     export type DSThemeColorsLightKeys =
@@ -136,7 +136,7 @@ declare module '@duckduckgo/design-tokens/build/serp/colors-light' {
         | '#671421'
         | 'rgba(255, 255, 255, 0.90)'
         | 'rgba(255, 255, 255, 0.60)'
-        | '#38B26A'
+        | '#269B61'
         | '#FAB341'
         | '#888888'
         | '#1a0dab'
