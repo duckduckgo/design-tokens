@@ -7,7 +7,8 @@ const themeColors: DesignToken = {
     theme: {
         light: {
             surface: {
-                canvas: { $value: '{color.gray.20}' },
+                backdrop: { $value: '{color.gray.20}' },
+                canvas: { $value: '{color.white}' },
                 primary: { $value: '{color.white}' },
                 secondary: { $value: '{color.white}' },
                 tertiary: { $value: '{color.white}' },
@@ -15,6 +16,7 @@ const themeColors: DesignToken = {
         },
         dark: {
             surface: {
+                backdrop: { $value: '{color.gray.111}' },
                 canvas: { $value: '{color.gray.100}' },
                 primary: { $value: '{color.gray.90}' },
                 secondary: { $value: '{color.gray.90}' },
