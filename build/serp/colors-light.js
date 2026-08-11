@@ -1,8 +1,8 @@
 
 // Do not edit directly, this file was auto-generated.
 // Source: https://github.com/duckduckgo/design-tokens
-// Version: 0.36.0
-// Last updated: August 8, 2026 at 12:01 AM
+// Version: 0.37.0
+// Last updated: August 11, 2026 at 06:15 PM
 
 const dsThemeColorsLight = {
     /** SURFACE */
