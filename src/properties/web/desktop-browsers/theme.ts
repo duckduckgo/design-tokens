@@ -238,6 +238,9 @@ const theme: DesignToken = {
                         secondaryBackgroundColor: {
                             $value: '#2b2f45',
                         },
+                        tertiaryBackgroundColor: {
+                            $value: 'rgba(0, 0, 0, 0.36)',
+                        },
                         shadowPrimary: {
                             $value: '#24273a',
                         },
@@ -535,6 +538,9 @@ const theme: DesignToken = {
                         },
                         secondaryBackgroundColor: {
                             $value: '#d3d6e4',
+                        },
+                        tertiaryBackgroundColor: {
+                            $value: 'rgba(0, 0, 0, 0.06)',
                         },
                         shadowPrimary: {
                             $value: '#c8cbd9',
@@ -836,6 +842,9 @@ const theme: DesignToken = {
                         secondaryBackgroundColor: {
                             $value: '#1c1c1c',
                         },
+                        tertiaryBackgroundColor: {
+                            $value: 'rgba(0, 0, 0, 0.36)',
+                        },
                         shadowPrimary: {
                             $value: '#181818',
                         },
@@ -1133,6 +1142,9 @@ const theme: DesignToken = {
                         },
                         secondaryBackgroundColor: {
                             $value: '#eeeeee',
+                        },
+                        tertiaryBackgroundColor: {
+                            $value: 'rgba(0, 0, 0, 0.06)',
                         },
                         shadowPrimary: {
                             $value: '#e2e2e2',
@@ -1434,6 +1446,9 @@ const theme: DesignToken = {
                         secondaryBackgroundColor: {
                             $value: '#37342f',
                         },
+                        tertiaryBackgroundColor: {
+                            $value: 'rgba(0, 0, 0, 0.36)',
+                        },
                         shadowPrimary: {
                             $value: '#2e2c27',
                         },
@@ -1731,6 +1746,9 @@ const theme: DesignToken = {
                         },
                         secondaryBackgroundColor: {
                             $value: '#efeae1',
+                        },
+                        tertiaryBackgroundColor: {
+                            $value: 'rgba(0, 0, 0, 0.06)',
                         },
                         shadowPrimary: {
                             $value: '#e3ded6',
@@ -2032,6 +2050,9 @@ const theme: DesignToken = {
                         secondaryBackgroundColor: {
                             $value: '#203b30',
                         },
+                        tertiaryBackgroundColor: {
+                            $value: 'rgba(0, 0, 0, 0.36)',
+                        },
                         shadowPrimary: {
                             $value: '#1b3228',
                         },
@@ -2329,6 +2350,9 @@ const theme: DesignToken = {
                         },
                         secondaryBackgroundColor: {
                             $value: '#e4eee2',
+                        },
+                        tertiaryBackgroundColor: {
+                            $value: 'rgba(0, 0, 0, 0.06)',
                         },
                         shadowPrimary: {
                             $value: '#d9e2d7',
@@ -2630,6 +2654,9 @@ const theme: DesignToken = {
                         secondaryBackgroundColor: {
                             $value: '#55240c',
                         },
+                        tertiaryBackgroundColor: {
+                            $value: 'rgba(0, 0, 0, 0.36)',
+                        },
                         shadowPrimary: {
                             $value: '#471e0a',
                         },
@@ -2927,6 +2954,9 @@ const theme: DesignToken = {
                         },
                         secondaryBackgroundColor: {
                             $value: '#fdebd3',
+                        },
+                        tertiaryBackgroundColor: {
+                            $value: 'rgba(0, 0, 0, 0.06)',
                         },
                         shadowPrimary: {
                             $value: '#f0dfc8',
@@ -3228,6 +3258,9 @@ const theme: DesignToken = {
                         secondaryBackgroundColor: {
                             $value: '#5b1a4b',
                         },
+                        tertiaryBackgroundColor: {
+                            $value: 'rgba(0, 0, 0, 0.36)',
+                        },
                         shadowPrimary: {
                             $value: '#4c163f',
                         },
@@ -3525,6 +3558,9 @@ const theme: DesignToken = {
                         },
                         secondaryBackgroundColor: {
                             $value: '#f6e4f2',
+                        },
+                        tertiaryBackgroundColor: {
+                            $value: 'rgba(0, 0, 0, 0.06)',
                         },
                         shadowPrimary: {
                             $value: '#ead9e6',
@@ -3826,6 +3862,9 @@ const theme: DesignToken = {
                         secondaryBackgroundColor: {
                             $value: '#1f3347',
                         },
+                        tertiaryBackgroundColor: {
+                            $value: 'rgba(0, 0, 0, 0.36)',
+                        },
                         shadowPrimary: {
                             $value: '#1a2b3c',
                         },
@@ -4123,6 +4162,9 @@ const theme: DesignToken = {
                         },
                         secondaryBackgroundColor: {
                             $value: '#d2e5f4',
+                        },
+                        tertiaryBackgroundColor: {
+                            $value: 'rgba(0, 0, 0, 0.06)',
                         },
                         shadowPrimary: {
                             $value: '#c7dae8',
@@ -4424,6 +4466,9 @@ const theme: DesignToken = {
                         secondaryBackgroundColor: {
                             $value: '#2f2259',
                         },
+                        tertiaryBackgroundColor: {
+                            $value: 'rgba(0, 0, 0, 0.36)',
+                        },
                         shadowPrimary: {
                             $value: '#271d4b',
                         },
@@ -4721,6 +4766,9 @@ const theme: DesignToken = {
                         },
                         secondaryBackgroundColor: {
                             $value: '#e8e5f5',
+                        },
+                        tertiaryBackgroundColor: {
+                            $value: 'rgba(0, 0, 0, 0.06)',
                         },
                         shadowPrimary: {
                             $value: '#dcdae9',
