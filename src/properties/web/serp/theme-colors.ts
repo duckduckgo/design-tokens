@@ -13,6 +13,16 @@ const themeColors: DesignToken = {
                 secondary: { $value: '{color.white}' },
                 tertiary: { $value: '{color.white}' },
             },
+            link: {
+                primary: { $value: '#1a0dab', comment: 'Matches --sds-color-palette-blue-hyperlink' },
+                primaryVisited: { $value: '#6C00A2', comment: 'Matches --sds-color-palette-purple-hyperlink' },
+                secondary: { $value: '#666666', comment: 'Matches --sds-color-palette-gray-70' },
+                secondaryHover: { $value: '#444444', comment: 'Matches --sds-color-palette-gray-80' },
+                header: {
+                    $value: '#1635B6',
+                    comment: 'For the SERP Duckbar links',
+                },
+            },
         },
         dark: {
             surface: {
@@ -22,6 +32,17 @@ const themeColors: DesignToken = {
                 secondary: { $value: '{color.gray.90}' },
                 tertiary: { $value: '{color.gray.90}' },
                 contrast: { $value: '{color.gray.20}' },
+            },
+
+            link: {
+                primary: { $value: '#adc2fc', comment: 'Matches --sds-color-palette-blue-10' },
+                primaryVisited: { $value: '#A591DC', comment: 'Matches --sds-color-palette-purple-20' },
+                secondary: { $value: '#aaaaaa', comment: 'Matches --sds-color-palette-gray-50' },
+                secondaryHover: { $value: '#cccccc', comment: 'Matches --sds-color-palette-gray-40' },
+                header: {
+                    $value: '#adc2fc',
+                    comment: 'For the SERP Duckbar links',
+                },
             },
             input: {
                 primaryBackgroundColor: {
