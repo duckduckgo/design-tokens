@@ -1,7 +1,7 @@
 // Do not edit directly, this file was auto-generated.
 // Source: https://github.com/duckduckgo/design-tokens
-// Version: 0.37.0
-// Last updated: August 11, 2026 at 06:15 PM
+// Version: 0.38.0
+// Last updated: August 12, 2026 at 10:40 PM
 
 declare module '@duckduckgo/design-tokens/build/serp/colors-dark' {
     export type DSThemeColorsDarkKeys =
@@ -89,7 +89,8 @@ declare module '@duckduckgo/design-tokens/build/serp/colors-dark' {
         | '--ds-link-primary'
         | '--ds-link-primary-visited'
         | '--ds-link-secondary'
-        | '--ds-link-secondary-hover';
+        | '--ds-link-secondary-hover'
+        | '--ds-link-header';
     export type DSThemeColorsDarkValues =
         | '#111111'
         | '#181818'

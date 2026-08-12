@@ -1,7 +1,7 @@
 // Do not edit directly, this file was auto-generated.
 // Source: https://github.com/duckduckgo/design-tokens
-// Version: 0.37.0
-// Last updated: August 11, 2026 at 06:15 PM
+// Version: 0.38.0
+// Last updated: August 12, 2026 at 10:40 PM
 
 declare module '@duckduckgo/design-tokens/build/duckai/extra-colors' {
     export type DuckaiExtraColorsKeys =
