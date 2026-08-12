@@ -1,8 +1,8 @@
 
 // Do not edit directly, this file was auto-generated.
 // Source: https://github.com/duckduckgo/design-tokens
-// Version: 0.38.0
-// Last updated: August 12, 2026 at 10:40 PM
+// Version: 0.39.0
+// Last updated: August 12, 2026 at 11:13 PM
 
 const dsColorPalette = {
     /** BLACK */
@@ -156,8 +156,10 @@ const dsColorPalette = {
     '--ds-color-red-100': '#2A0C14',
 
     /** GREEN */
+    '--ds-color-green-30': '#5EC987',
     '--ds-color-green-40': '#38B26A',
     '--ds-color-green-50': '#269B61',
+    '--ds-color-green-60': '#138356',
 };
 
 export default dsColorPalette;

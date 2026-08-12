@@ -155,8 +155,10 @@ const colors: DesignToken = {
             100: { $value: '#2A0C14' },
         },
         green: {
+            30: { $value: '#5EC987' },
             40: { $value: '#38B26A' }, // status green
             50: { $value: '#269B61' },
+            60: { $value: '#138356' },
         },
     },
 };
