@@ -2401,6 +2401,18 @@ const theme: DesignToken = {
         },
         ntpCustomBackground: {
             dark: {
+                container: {
+                    border: {
+                        secondary: {
+                            $value: 'rgba(255, 255, 255, 0.12)',
+                        },
+                    },
+                    fill: {
+                        secondary: {
+                            $value: 'rgba(0, 0, 0, 0.36)',
+                        },
+                    },
+                },
                 input: {
                     textPrimary: {
                         $value: 'rgba(0, 0, 0, 0.84)',
@@ -2427,13 +2439,36 @@ const theme: DesignToken = {
                         secondaryBackgroundColor: {
                             $value: 'rgba(255, 255, 255, 0.18)',
                         },
+                        tertiaryBackgroundColor: {
+                            $value: 'rgba(0, 0, 0, 0.36)',
+                        },
                         shadowPrimary: {
                             $value: 'transparent',
                         },
                     },
                 },
+                shadow: {
+                    primary: {
+                        $value: 'rgba(0, 0, 0, 0.06)',
+                    },
+                    secondary: {
+                        $value: 'rgba(0, 0, 0, 0.08)',
+                    },
+                },
             },
             light: {
+                container: {
+                    border: {
+                        secondary: {
+                            $value: 'rgba(255, 255, 255, 0.48)',
+                        },
+                    },
+                    fill: {
+                        secondary: {
+                            $value: 'rgba(255, 255, 255, 0.42)',
+                        },
+                    },
+                },
                 input: {
                     textPrimary: {
                         $value: 'rgba(0, 0, 0, 0.96)',
@@ -2460,9 +2495,20 @@ const theme: DesignToken = {
                         secondaryBackgroundColor: {
                             $value: 'rgba(0, 0, 0, 0.06)',
                         },
+                        tertiaryBackgroundColor: {
+                            $value: 'rgba(0, 0, 0, 0.06)',
+                        },
                         shadowPrimary: {
                             $value: 'rgba(0, 0, 0, 0.06)',
                         },
+                    },
+                },
+                shadow: {
+                    primary: {
+                        $value: 'rgba(0, 0, 0, 0.06)',
+                    },
+                    secondary: {
+                        $value: 'rgba(0, 0, 0, 0.08)',
                     },
                 },
             },
