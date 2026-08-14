@@ -235,7 +235,7 @@ const themeColors: DesignToken = {
                 },
             },
             status: {
-                green: { $value: `{color.green.50}` },
+                green: { $value: `{color.green.40}` },
                 greenText: { $value: `{color.green.60}` },
                 yellow: { $value: '{color.pollen.50}' },
                 red: { $value: '{color.red.50}' },
