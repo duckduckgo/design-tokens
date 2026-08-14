@@ -2399,6 +2399,74 @@ const theme: DesignToken = {
                 },
             },
         },
+        ntpCustomBackground: {
+            dark: {
+                input: {
+                    textPrimary: {
+                        $value: 'rgba(0, 0, 0, 0.84)',
+                    },
+                    textSecondary: {
+                        $value: 'rgba(0, 0, 0, 0.6)',
+                    },
+                    iconsPrimary: {
+                        $value: 'rgba(0, 0, 0, 0.84)',
+                    },
+                    iconsSecondary: {
+                        $value: 'rgba(0, 0, 0, 0.6)',
+                    },
+                    fieldPrimaryBackgroundColor: {
+                        $value: 'rgba(255, 255, 255, 0.24)',
+                    },
+                    fieldSecondaryBackgroundColor: {
+                        $value: 'rgba(255, 255, 255, 0.3)',
+                    },
+                    control: {
+                        primaryBackgroundColor: {
+                            $value: 'rgba(0, 0, 0, 0.6)',
+                        },
+                        secondaryBackgroundColor: {
+                            $value: 'rgba(255, 255, 255, 0.18)',
+                        },
+                        shadowPrimary: {
+                            $value: 'transparent',
+                        },
+                    },
+                },
+            },
+            light: {
+                input: {
+                    textPrimary: {
+                        $value: 'rgba(0, 0, 0, 0.96)',
+                    },
+                    textSecondary: {
+                        $value: 'rgba(0, 0, 0, 0.6)',
+                    },
+                    iconsPrimary: {
+                        $value: 'rgba(0, 0, 0, 0.84)',
+                    },
+                    iconsSecondary: {
+                        $value: 'rgba(0, 0, 0, 0.6)',
+                    },
+                    fieldPrimaryBackgroundColor: {
+                        $value: 'rgba(255, 255, 255, 0.54)',
+                    },
+                    fieldSecondaryBackgroundColor: {
+                        $value: 'rgba(0, 0, 0, 0.18)',
+                    },
+                    control: {
+                        primaryBackgroundColor: {
+                            $value: 'rgba(255, 255, 255, 0.6)',
+                        },
+                        secondaryBackgroundColor: {
+                            $value: 'rgba(0, 0, 0, 0.06)',
+                        },
+                        shadowPrimary: {
+                            $value: 'rgba(0, 0, 0, 0.06)',
+                        },
+                    },
+                },
+            },
+        },
         orange: {
             dark: {
                 accent: {
