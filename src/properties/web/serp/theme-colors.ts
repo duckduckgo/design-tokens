@@ -7,7 +7,6 @@ const themeColors: DesignToken = {
     theme: {
         light: {
             surface: {
-                backdrop: { $value: '{color.gray.20}' },
                 canvas: { $value: '{color.white}' },
                 primary: { $value: '{color.white}' },
                 secondary: { $value: '{color.white}' },
@@ -26,14 +25,12 @@ const themeColors: DesignToken = {
         },
         dark: {
             surface: {
-                backdrop: { $value: '{color.gray.111}' },
                 canvas: { $value: '{color.gray.100}' },
                 primary: { $value: '{color.gray.90}' },
                 secondary: { $value: '{color.gray.90}' },
                 tertiary: { $value: '{color.gray.90}' },
                 contrast: { $value: '{color.gray.20}' },
             },
-
             link: {
                 primary: { $value: '#adc2fc', comment: 'Matches --sds-color-palette-blue-10' },
                 primaryVisited: { $value: '#A591DC', comment: 'Matches --sds-color-palette-purple-20' },
