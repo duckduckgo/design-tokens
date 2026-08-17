@@ -2399,7 +2399,7 @@ const theme: DesignToken = {
                 },
             },
         },
-        ntpCustomBackground: {
+        ntpOnCustomBackground: {
             dark: {
                 container: {
                     border: {
