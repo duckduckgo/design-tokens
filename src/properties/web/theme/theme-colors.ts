@@ -11,10 +11,10 @@ const themeColors: DesignToken = {
         light: {
             surface: {
                 backdrop: {
-                    $value: '{color.eggshell.0}',
+                    $value: '{color.white}',
                 },
                 canvas: {
-                    $value: '{color.white}',
+                    $value: '{color.eggshell.0}',
                 },
                 primary: {
                     $value: '{color.eggshell.20}',
@@ -245,10 +245,10 @@ const themeColors: DesignToken = {
         dark: {
             surface: {
                 backdrop: {
-                    $value: '{color.eggshell.100}',
+                    $value: '{color.gray.111}',
                 },
                 canvas: {
-                    $value: '{color.gray.111}',
+                    $value: '{color.eggshell.100}',
                 },
                 primary: {
                     $value: '{color.eggshell.100}',
