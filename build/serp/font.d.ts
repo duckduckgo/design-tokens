@@ -1,7 +1,7 @@
 // Do not edit directly, this file was auto-generated.
 // Source: https://github.com/duckduckgo/design-tokens
-// Version: 0.41.0
-// Last updated: August 17, 2026 at 07:16 PM
+// Version: 0.42.0
+// Last updated: August 19, 2026 at 05:50 PM
 
 declare module '@duckduckgo/design-tokens/build/serp/font' {
     export type DSFontKeys =
