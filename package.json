@@ -5,7 +5,7 @@
         "build"
     ],
     "type": "module",
-    "node": "22",
+    "node": "24",
     "scripts": {
         "build": "npm run clean && npm run lint && tsc && npm run build:dictionary",
         "build:dictionary": "style-dictionary build --config serp-style-dictionary.config.js && style-dictionary build --config static-pages-dictionary.config.js && style-dictionary build --config desktop-browsers-dictionary.config.js && style-dictionary build --config duckai-style-dictionary.config.js && npm run build:serp-types && npm run build:duckai-types",
@@ -26,7 +26,7 @@
         "es-toolkit": "^1.42.0",
         "eslint": "^9.20.1",
         "prettier": "^3.5.1",
-        "style-dictionary": "^4.3.0",
+        "style-dictionary": "^5.5.3",
         "typescript": "^5.7.3",
         "typescript-eslint": "^8.24.1"
     },
