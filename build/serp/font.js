@@ -1,8 +1,8 @@
 
 // Do not edit directly, this file was auto-generated.
 // Source: https://github.com/duckduckgo/design-tokens
-// Version: 0.43.0
-// Last updated: September 10, 2026 at 11:39 PM
+// Version: 0.43.1
+// Last updated: September 10, 2026 at 11:47 PM
 
 const dsFont = {
     /** FONT SETUP */
@@ -17,31 +17,31 @@ const dsFont = {
     '--ds-font-letter-spacing-wide': "2px",
 
     /** TYPESTACK DEFINITIONS */
-    '--ds-font-title-05-line-height': "32px",
-    '--ds-font-title-05-size': "24px",
-    '--ds-font-title-06-line-height': "28px",
-    '--ds-font-title-06-size': "20px",
-    '--ds-font-body-xxl-line-height': "32px",
-    '--ds-font-body-xxl-size': "24px",
-    '--ds-font-body-xl-line-height': "28px",
-    '--ds-font-body-xl-size': "20px",
-    '--ds-font-body-lg-line-height': "24px",
-    '--ds-font-body-lg-size': "16px",
-    '--ds-font-body-md-line-height': "20px",
-    '--ds-font-body-md-size': "14px",
-    '--ds-font-body-sm-line-height': "16px",
-    '--ds-font-body-sm-size': "12px",
-    '--ds-font-button-label-01-line-height': "20px",
-    '--ds-font-button-label-01-size': "18px",
-    '--ds-font-button-label-02-line-height': "16px",
-    '--ds-font-button-label-02-size': "16px",
-    '--ds-font-button-label-03-line-height': "16px",
-    '--ds-font-button-label-03-size': "14px",
-    '--ds-font-label-01-line-height': "12px",
-    '--ds-font-label-01-size': "12px",
+    '--ds-font-title-05-line-height': "2.22222rem",
+    '--ds-font-title-05-size': "1.66667rem",
+    '--ds-font-title-06-line-height': "1.94444rem",
+    '--ds-font-title-06-size': "1.38889rem",
+    '--ds-font-body-xxl-line-height': "2.22222rem",
+    '--ds-font-body-xxl-size': "1.66667rem",
+    '--ds-font-body-xl-line-height': "1.94444rem",
+    '--ds-font-body-xl-size': "1.38889rem",
+    '--ds-font-body-lg-line-height': "1.66667rem",
+    '--ds-font-body-lg-size': "1.11111rem",
+    '--ds-font-body-md-line-height': "1.38889rem",
+    '--ds-font-body-md-size': "0.97222rem",
+    '--ds-font-body-sm-line-height': "1.11111rem",
+    '--ds-font-body-sm-size': "0.83333rem",
+    '--ds-font-button-label-01-line-height': "1.38889rem",
+    '--ds-font-button-label-01-size': "1.25rem",
+    '--ds-font-button-label-02-line-height': "1.11111rem",
+    '--ds-font-button-label-02-size': "1.11111rem",
+    '--ds-font-button-label-03-line-height': "1.11111rem",
+    '--ds-font-button-label-03-size': "0.97222rem",
+    '--ds-font-label-01-line-height': "0.83333rem",
+    '--ds-font-label-01-size': "0.83333rem",
     '--ds-font-label-01-text-transform': "uppercase",
-    '--ds-font-caption-01-line-height': "16px",
-    '--ds-font-caption-01-size': "13px",
+    '--ds-font-caption-01-line-height': "1.11111rem",
+    '--ds-font-caption-01-size': "0.90278rem",
     '--ds-font-title-05-font-family': "var(--ds-font-family-display)",
     '--ds-font-title-05-letter-spacing': "var(--ds-font-letter-spacing-normal)",
     '--ds-font-title-05-weight': "var(--ds-font-weight-normal)",

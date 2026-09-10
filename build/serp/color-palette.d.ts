@@ -1,7 +1,7 @@
 // Do not edit directly, this file was auto-generated.
 // Source: https://github.com/duckduckgo/design-tokens
-// Version: 0.43.0
-// Last updated: September 10, 2026 at 11:39 PM
+// Version: 0.43.1
+// Last updated: September 10, 2026 at 11:47 PM
 
 declare module '@duckduckgo/design-tokens/build/serp/color-palette' {
     export type DSColorPaletteKeys =
