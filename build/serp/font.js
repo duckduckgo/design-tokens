@@ -1,13 +1,13 @@
 
 // Do not edit directly, this file was auto-generated.
 // Source: https://github.com/duckduckgo/design-tokens
-// Version: 0.42.0
-// Last updated: August 19, 2026 at 05:50 PM
+// Version: 0.43.0
+// Last updated: September 10, 2026 at 11:39 PM
 
 const dsFont = {
     /** FONT SETUP */
-    '--ds-font-family-display': "'DuckSansDisplay', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif", // Use for titles and any text over 19px or more in font-size
-    '--ds-font-family-product': "'DuckSansProduct', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif", // Use for most body text, any usage 18px or smaller in font-size
+    '--ds-font-family-display': "'DuckSansDisplay', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif", // * Use for titles and any text over 19px or more in font-size
+    '--ds-font-family-product': "'DuckSansProduct', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif", // * Use for most body text, any usage 18px or smaller in font-size
     '--ds-font-family-monospace': "ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono', 'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro', 'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace",
     '--ds-font-weight-normal': "400",
     '--ds-font-weight-semibold': "500",
