@@ -3,6 +3,7 @@ import serpBaseTokensTs from './src/formats/serp-base-tokens-js.js';
 import serpColorsTs from './src/formats/serp-colors-js.js';
 import serpFontJs from './src/formats/serp-font-js.js';
 import serpThemesTs from './src/formats/serp-themes-js.js';
+import serpSizeRem from './src/transforms/serp-size-rem.js';
 import fileHeader from './dist/src/utils/file-header.js';
 
 export default {
@@ -21,6 +22,9 @@ export default {
             'serp-font-js': serpFontJs,
             'serp-themes-ts': serpThemesTs,
         },
+        transforms: {
+            [serpSizeRem.name]: serpSizeRem,
+        },
     },
     log: {
         warnings: logWarningLevels.warn, // 'warn' | 'error' | 'disabled'
@@ -33,6 +37,8 @@ export default {
         serp: {
             prefix: 'ds',
             transformGroup: transformGroups.css,
+            // SERP-only: convert px sizes (above 2px) to rem, compensating for the 90% base font-size.
+            transforms: [serpSizeRem.name],
             buildPath: 'build/',
             files: [
                 {
