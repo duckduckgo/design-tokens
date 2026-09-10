@@ -47,8 +47,12 @@ export default async function serpBaseTokensTs({ dictionary, platform, file, opt
             }
             case 'number':
                 return String(Number(originalValue));
-            default:
-                return `'${token.value ?? originalValue}'`;
+            default: {
+                // Use the transformed value (DTCG tokens expose it on `$value`) so platform
+                // transforms such as the SERP px->rem conversion are reflected in the output.
+                const resolvedValue = token.$value ?? token.value ?? originalValue;
+                return `'${resolvedValue}'`;
+            }
         }
     }
 
