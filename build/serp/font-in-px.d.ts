@@ -3,8 +3,8 @@
 // Version: 0.44.0
 // Last updated: September 11, 2026 at 05:13 PM
 
-declare module '@duckduckgo/design-tokens/build/serp/font' {
-    export type DSFontKeys =
+declare module '@duckduckgo/design-tokens/build/serp/font-in-px' {
+    export type DSFontInPxKeys =
         | '--ds-font-family-display'
         | '--ds-font-family-product'
         | '--ds-font-family-monospace'
@@ -75,7 +75,7 @@ declare module '@duckduckgo/design-tokens/build/serp/font' {
         | '--ds-font-caption-01-font-family'
         | '--ds-font-caption-01-letter-spacing'
         | '--ds-font-caption-01-weight';
-    export type DSFontValues =
+    export type DSFontInPxValues =
         | '\'DuckSansDisplay\', -apple-system, BlinkMacSystemFont, \'Segoe UI\', Roboto, Oxygen-Sans, Ubuntu, Cantarell, \'Helvetica Neue\', Arial, \'Noto Sans\', sans-serif'
         | '\'DuckSansProduct\', -apple-system, BlinkMacSystemFont, \'Segoe UI\', Roboto, Oxygen-Sans, Ubuntu, Cantarell, \'Helvetica Neue\', Arial, \'Noto Sans\', sans-serif'
         | 'ui-monospace, Menlo, Monaco, \'Cascadia Mono\', \'Segoe UI Mono\', \'Roboto Mono\', \'Oxygen Mono\', \'Ubuntu Monospace\', \'Source Code Pro\', \'Fira Mono\', \'Droid Sans Mono\', \'Courier New\', monospace'
@@ -85,22 +85,22 @@ declare module '@duckduckgo/design-tokens/build/serp/font' {
         | '-1px'
         | '0'
         | '2px'
-        | '2.22222rem'
-        | '1.66667rem'
-        | '1.94444rem'
-        | '1.38889rem'
-        | '1.11111rem'
-        | '0.97222rem'
-        | '0.83333rem'
-        | '1.25rem'
+        | '32px'
+        | '24px'
+        | '28px'
+        | '20px'
+        | '16px'
+        | '14px'
+        | '12px'
+        | '18px'
         | 'uppercase'
-        | '0.90278rem'
+        | '13px'
         | 'var(--ds-font-family-display)'
         | 'var(--ds-font-letter-spacing-normal)'
         | 'var(--ds-font-weight-normal)'
         | 'var(--ds-font-family-product)'
         | 'var(--ds-font-weight-semibold)'
         | 'var(--ds-font-weight-bold)';
-    const dsFont: Record<DSFontKeys, DSFontValues>;
-    export default dsFont;
+    const dsFontInPx: Record<DSFontInPxKeys, DSFontInPxValues>;
+    export default dsFontInPx;
 }

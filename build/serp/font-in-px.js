@@ -4,10 +4,10 @@
 // Version: 0.44.0
 // Last updated: September 11, 2026 at 05:13 PM
 
-// This is the full type stack established for use in static-pages.
-// This is only to be imported when building features that need more font styles than the basics from SERP.
+// SERP font tokens with pixel values, intended for documentation sites.
+// The primary SERP font export (font.js) outputs rem values instead.
 
-const dsFullFontStack = {
+const dsFontInPx = {
     /** FONT SETUP */
     '--ds-font-family-display': "'DuckSansDisplay', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif", // * Use for titles and any text over 19px or more in font-size
     '--ds-font-family-product': "'DuckSansProduct', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif", // * Use for most body text, any usage 18px or smaller in font-size
@@ -20,57 +20,31 @@ const dsFullFontStack = {
     '--ds-font-letter-spacing-wide': "2px",
 
     /** TYPESTACK DEFINITIONS */
-    '--ds-font-title-01-line-height': "4.44444rem",
-    '--ds-font-title-01-size': "4.44444rem",
-    '--ds-font-title-02-line-height': "3.61111rem",
-    '--ds-font-title-02-size': "3.61111rem",
-    '--ds-font-title-03-line-height': "3.05556rem",
-    '--ds-font-title-03-size': "3.05556rem",
-    '--ds-font-title-04-line-height': "2.77778rem",
-    '--ds-font-title-04-size': "2.5rem",
-    '--ds-font-title-05-line-height': "2.22222rem",
-    '--ds-font-title-05-size': "1.66667rem",
-    '--ds-font-title-06-line-height': "1.94444rem",
-    '--ds-font-title-06-size': "1.38889rem",
-    '--ds-font-body-xxl-line-height': "2.22222rem",
-    '--ds-font-body-xxl-size': "1.66667rem",
-    '--ds-font-body-xl-line-height': "1.94444rem",
-    '--ds-font-body-xl-size': "1.38889rem",
-    '--ds-font-body-lg-line-height': "1.66667rem",
-    '--ds-font-body-lg-size': "1.11111rem",
-    '--ds-font-body-md-line-height': "1.38889rem",
-    '--ds-font-body-md-size': "0.97222rem",
-    '--ds-font-body-sm-line-height': "1.11111rem",
-    '--ds-font-body-sm-size': "0.83333rem",
-    '--ds-font-eyebrow-01-line-height': "1.38889rem",
-    '--ds-font-eyebrow-01-size': "1.25rem",
-    '--ds-font-eyebrow-01-text-transform': "uppercase",
-    '--ds-font-eyebrow-02-line-height': "1.11111rem",
-    '--ds-font-eyebrow-02-size': "0.97222rem",
-    '--ds-font-eyebrow-02-text-transform': "uppercase",
-    '--ds-font-button-label-01-line-height': "1.38889rem",
-    '--ds-font-button-label-01-size': "1.25rem",
-    '--ds-font-button-label-02-line-height': "1.11111rem",
-    '--ds-font-button-label-02-size': "1.11111rem",
-    '--ds-font-button-label-03-line-height': "1.11111rem",
-    '--ds-font-button-label-03-size': "0.97222rem",
-    '--ds-font-label-01-line-height': "0.83333rem",
-    '--ds-font-label-01-size': "0.83333rem",
+    '--ds-font-title-05-line-height': "32px",
+    '--ds-font-title-05-size': "24px",
+    '--ds-font-title-06-line-height': "28px",
+    '--ds-font-title-06-size': "20px",
+    '--ds-font-body-xxl-line-height': "32px",
+    '--ds-font-body-xxl-size': "24px",
+    '--ds-font-body-xl-line-height': "28px",
+    '--ds-font-body-xl-size': "20px",
+    '--ds-font-body-lg-line-height': "24px",
+    '--ds-font-body-lg-size': "16px",
+    '--ds-font-body-md-line-height': "20px",
+    '--ds-font-body-md-size': "14px",
+    '--ds-font-body-sm-line-height': "16px",
+    '--ds-font-body-sm-size': "12px",
+    '--ds-font-button-label-01-line-height': "20px",
+    '--ds-font-button-label-01-size': "18px",
+    '--ds-font-button-label-02-line-height': "16px",
+    '--ds-font-button-label-02-size': "16px",
+    '--ds-font-button-label-03-line-height': "16px",
+    '--ds-font-button-label-03-size': "14px",
+    '--ds-font-label-01-line-height': "12px",
+    '--ds-font-label-01-size': "12px",
     '--ds-font-label-01-text-transform': "uppercase",
-    '--ds-font-caption-01-line-height': "1.11111rem",
-    '--ds-font-caption-01-size': "0.90278rem",
-    '--ds-font-title-01-font-family': "var(--ds-font-family-display)",
-    '--ds-font-title-01-letter-spacing': "var(--ds-font-letter-spacing-narrow)",
-    '--ds-font-title-01-weight': "var(--ds-font-weight-normal)",
-    '--ds-font-title-02-font-family': "var(--ds-font-family-display)",
-    '--ds-font-title-02-letter-spacing': "var(--ds-font-letter-spacing-narrow)",
-    '--ds-font-title-02-weight': "var(--ds-font-weight-normal)",
-    '--ds-font-title-03-font-family': "var(--ds-font-family-display)",
-    '--ds-font-title-03-letter-spacing': "var(--ds-font-letter-spacing-narrow)",
-    '--ds-font-title-03-weight': "var(--ds-font-weight-normal)",
-    '--ds-font-title-04-font-family': "var(--ds-font-family-display)",
-    '--ds-font-title-04-letter-spacing': "var(--ds-font-letter-spacing-narrow)",
-    '--ds-font-title-04-weight': "var(--ds-font-weight-normal)",
+    '--ds-font-caption-01-line-height': "16px",
+    '--ds-font-caption-01-size': "13px",
     '--ds-font-title-05-font-family': "var(--ds-font-family-display)",
     '--ds-font-title-05-letter-spacing': "var(--ds-font-letter-spacing-normal)",
     '--ds-font-title-05-weight': "var(--ds-font-weight-normal)",
@@ -92,12 +66,6 @@ const dsFullFontStack = {
     '--ds-font-body-sm-font-family': "var(--ds-font-family-product)",
     '--ds-font-body-sm-letter-spacing': "var(--ds-font-letter-spacing-normal)",
     '--ds-font-body-sm-weight': "var(--ds-font-weight-normal)",
-    '--ds-font-eyebrow-01-font-family': "var(--ds-font-family-product)",
-    '--ds-font-eyebrow-01-letter-spacing': "var(--ds-font-letter-spacing-wide)",
-    '--ds-font-eyebrow-01-weight': "var(--ds-font-weight-semibold)",
-    '--ds-font-eyebrow-02-font-family': "var(--ds-font-family-product)",
-    '--ds-font-eyebrow-02-letter-spacing': "var(--ds-font-letter-spacing-wide)",
-    '--ds-font-eyebrow-02-weight': "var(--ds-font-weight-semibold)",
     '--ds-font-button-label-01-font-family': "var(--ds-font-family-product)",
     '--ds-font-button-label-01-letter-spacing': "var(--ds-font-letter-spacing-normal)",
     '--ds-font-button-label-01-weight': "var(--ds-font-weight-semibold)",
@@ -115,4 +83,4 @@ const dsFullFontStack = {
     '--ds-font-caption-01-weight': "var(--ds-font-weight-normal)",
 };
 
-export default dsFullFontStack;
+export default dsFontInPx;

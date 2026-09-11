@@ -1,17 +1,17 @@
 /**
  * Do not edit directly, this file was auto-generated.
  * Source: https://github.com/duckduckgo/design-tokens
- * Version: 0.43.1
- * Last updated: September 10, 2026 at 11:47 PM
+ * Version: 0.44.0
+ * Last updated: September 11, 2026 at 05:13 PM
  */
 
 :root {
-  --ds-icon-button-xxs-icon-size: 1.11111rem;
-  --ds-icon-button-xs-icon-size: 1.11111rem;
-  --ds-icon-button-sm-icon-size: 1.11111rem;
-  --ds-icon-button-md-icon-size: 1.11111rem;
-  --ds-icon-button-lg-icon-size: 1.11111rem;
-  --ds-icon-button-xl-icon-size: 1.11111rem;
+  --ds-icon-button-xxs-icon-size: 16px;
+  --ds-icon-button-xs-icon-size: 16px;
+  --ds-icon-button-sm-icon-size: 16px;
+  --ds-icon-button-md-icon-size: 16px;
+  --ds-icon-button-lg-icon-size: 16px;
+  --ds-icon-button-xl-icon-size: 16px;
   --ds-icon-button-border-radius: var(--ds-radius-full);
   --ds-icon-button-xxs-padding: var(--ds-space-x1-5);
   --ds-icon-button-xs-padding: var(--ds-space-x02);

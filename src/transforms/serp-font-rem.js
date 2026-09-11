@@ -1,17 +1,19 @@
 /**
  * Custom Style Dictionary transform (SERP only).
  *
- * Converts pixel-based size values to rem for the SERP platform. The SERP
- * project applies a base font-size of 90% (1rem = 0.9 * 16px = 14.4px), so a
+ * Converts pixel-based SERP *font* token values (font sizes / line-heights) to rem.
+ * Only tokens under the `font` group are affected — spacing, radius, and other
+ * dimensions are intentionally left in px.
+ *
+ * The SERP project applies a base font-size of 90% (1rem = 0.9 * 16px = 14.4px), so a
  * naive `px / 16` conversion would render ~10% too small. Dividing by 14.4
  * (i.e. the standard `px / 16` scaled up by 1 / 0.9 ≈ 1.111) keeps the rendered
  * result identical to the original pixel values.
  *
  * Rules:
- *   - Only values expressed as a plain pixel string (e.g. '16px', '-1px') are considered.
- *   - Values with an absolute size of 2px or less are left untouched (e.g. hairline
- *     borders / letter-spacing), matching the requirement to only convert values ABOVE 2px.
- *   - The `space.pxInRem` base token is left untouched; it is a conversion constant, not a size.
+ *   - Only font tokens whose value is a plain pixel string (e.g. '16px') are considered.
+ *   - Values with an absolute size of 2px or less are left untouched (e.g. letter-spacing),
+ *     matching the requirement to only convert values ABOVE 2px.
  */
 
 // Standard browser root font-size, in px.
@@ -37,15 +39,15 @@ function isPxValue(value) {
     return typeof value === 'string' && PX_VALUE.test(value.trim());
 }
 
-function isBaseConversionToken(token) {
-    return Array.isArray(token.path) && token.path.includes('pxInRem');
+function isFontToken(token) {
+    return Array.isArray(token.path) && token.path[0] === 'font';
 }
 
-const serpSizeRem = {
-    name: 'serp/size/rem',
+const serpFontRem = {
+    name: 'serp/font/rem',
     type: 'value',
     transitive: true,
-    filter: (token, options) => !isBaseConversionToken(token) && isPxValue(getValue(token, options)),
+    filter: (token, options) => isFontToken(token) && isPxValue(getValue(token, options)),
     transform: (token, _config, options) => {
         const px = parseFloat(getValue(token, options));
 
@@ -59,4 +61,4 @@ const serpSizeRem = {
     },
 };
 
-export default serpSizeRem;
+export default serpFontRem;
