@@ -5,10 +5,10 @@ import fileHeader from './dist/src/utils/file-header.js';
 
 export default {
     source: [
+        'dist/src/properties/base/colors.js',
         'dist/src/properties/web/theme/colors.js',
         'dist/src/properties/web/base/*.{js,json}',
-        'dist/src/properties/web/desktop-browsers/theme.js',
-        'dist/src/properties/web/base/colors.{js,json}',
+        'dist/src/properties/native-apps/theme.js',
         'dist/src/properties/web/desktop-browsers/onboarding.{js,json}',
         'dist/src/properties/web/desktop-browsers/ntp.{js,json}',
     ],

@@ -67,7 +67,7 @@ export default {
         },
     },
     source: [
-        'dist/src/properties/web/base/colors.{js,json}',
+        'dist/src/properties/base/colors.{js,json}',
         'dist/src/properties/web/base/*.{js,json}',
         'dist/src/properties/web/theme/*.{js,json}',
         'dist/src/properties/web/components/*.{js,json}',
