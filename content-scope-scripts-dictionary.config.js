@@ -7,10 +7,10 @@ export default {
     source: [
         'dist/src/properties/web/theme/colors.js',
         'dist/src/properties/web/base/*.{js,json}',
-        'dist/src/properties/web/desktop-browsers/theme.js',
+        'dist/src/properties/web/content-scope-scripts/theme.js',
         'dist/src/properties/web/base/colors.{js,json}',
-        'dist/src/properties/web/desktop-browsers/onboarding.{js,json}',
-        'dist/src/properties/web/desktop-browsers/ntp.{js,json}',
+        'dist/src/properties/web/content-scope-scripts/onboarding.{js,json}',
+        'dist/src/properties/web/content-scope-scripts/ntp.{js,json}',
     ],
     hooks: {
         formats: {
@@ -32,14 +32,14 @@ export default {
             buildPath: 'build/',
             files: [
                 {
-                    destination: 'desktop-browsers/tokens.css',
+                    destination: 'content-scope-scripts/tokens.css',
                     format: 'css/variables-shadow-dom',
                     // base/colors and theme/colors are intentionally not exposed here;
                     // onboarding and ntp are emitted as standalone files below.
                     filter: (token) =>
                         !token.filePath?.includes('base/colors') &&
-                        !token.filePath?.includes('desktop-browsers/onboarding') &&
-                        !token.filePath?.includes('desktop-browsers/ntp') &&
+                        !token.filePath?.includes('content-scope-scripts/onboarding') &&
+                        !token.filePath?.includes('content-scope-scripts/ntp') &&
                         !token.filePath?.includes('theme/colors'),
                     options: {
                         outputReferences: true,
@@ -47,16 +47,16 @@ export default {
                     },
                 },
                 {
-                    destination: 'desktop-browsers/ntp.css',
+                    destination: 'content-scope-scripts/ntp.css',
                     format: 'css/variables-shadow-dom',
-                    filter: (token) => token.filePath?.includes('desktop-browsers/ntp'),
+                    filter: (token) => token.filePath?.includes('content-scope-scripts/ntp'),
                     options: {
                         outputReferences: false,
                         showFileHeader: true,
                     },
                 },
                 {
-                    destination: 'desktop-browsers/onboarding.css',
+                    destination: 'content-scope-scripts/onboarding.css',
                     format: 'onboarding-theme-classes',
                     options: {
                         outputReferences: false,
