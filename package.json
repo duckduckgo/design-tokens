@@ -5,7 +5,7 @@
         "build"
     ],
     "type": "module",
-    "node": "24",
+    "node": "24.14.1",
     "scripts": {
         "build": "npm run clean && npm run lint && tsc && npm run build:dictionary",
         "build:dictionary": "style-dictionary build --config serp-style-dictionary.config.js && style-dictionary build --config static-pages-dictionary.config.js && style-dictionary build --config desktop-browsers-dictionary.config.js && style-dictionary build --config duckai-style-dictionary.config.js && npm run build:serp-types && npm run build:duckai-types",
@@ -34,5 +34,8 @@
         "singleQuote": true,
         "printWidth": 140,
         "tabWidth": 4
+    },
+    "engines": {
+        "node": ">=24.14.1"
     }
 }
