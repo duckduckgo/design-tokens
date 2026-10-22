@@ -118,29 +118,6 @@ const button: DesignToken = {
                 $value: '{font.buttonLabel.02.lineHeight}',
             },
         },
-        xl: {
-            borderRadius: {
-                $value: '{radius.full}',
-            },
-            paddingX: {
-                $value: '{space.x07}',
-            },
-            paddingY: {
-                $value: '{space.x03}',
-            },
-            fontSize: {
-                $value: '{font.buttonLabel.01.size}',
-            },
-            fontWeight: {
-                $value: '{font.buttonLabel.01.weight}',
-            },
-            letterSpacing: {
-                $value: '{font.buttonLabel.01.letterSpacing}',
-            },
-            lineHeight: {
-                $value: '{font.buttonLabel.01.lineHeight}',
-            },
-        },
     },
 };
 export default button;

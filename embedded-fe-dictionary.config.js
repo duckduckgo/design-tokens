@@ -1,16 +1,16 @@
 import { transformGroups, logBrokenReferenceLevels, logVerbosityLevels, logWarningLevels } from 'style-dictionary/enums';
-import cssVariablesShadowDom from './src/formats/css-variables-shadow-dom.js';
-import onboardingThemeClasses from './src/formats/css-onboarding-theme-classes.js';
+import cssVariablesShadowDom from './src/formats/embedded-fe-variables-shadow-dom.js';
+import onboardingThemeClasses from './src/formats/embedded-fe-onboarding-theme-classes.js';
 import fileHeader from './dist/src/utils/file-header.js';
 
 export default {
     source: [
         'dist/src/properties/web/theme/colors.js',
         'dist/src/properties/web/base/*.{js,json}',
-        'dist/src/properties/web/desktop-browsers/theme.js',
+        'dist/src/properties/web/embedded-fe/theme.js',
         'dist/src/properties/web/base/colors.{js,json}',
-        'dist/src/properties/web/desktop-browsers/onboarding.{js,json}',
-        'dist/src/properties/web/desktop-browsers/ntp.{js,json}',
+        'dist/src/properties/web/embedded-fe/onboarding.{js,json}',
+        'dist/src/properties/web/embedded-fe/ntp.{js,json}',
     ],
     hooks: {
         formats: {
@@ -32,14 +32,14 @@ export default {
             buildPath: 'build/',
             files: [
                 {
-                    destination: 'desktop-browsers/tokens.css',
+                    destination: 'embedded-fe/tokens.css',
                     format: 'css/variables-shadow-dom',
                     // base/colors and theme/colors are intentionally not exposed here;
                     // onboarding and ntp are emitted as standalone files below.
                     filter: (token) =>
                         !token.filePath?.includes('base/colors') &&
-                        !token.filePath?.includes('desktop-browsers/onboarding') &&
-                        !token.filePath?.includes('desktop-browsers/ntp') &&
+                        !token.filePath?.includes('embedded-fe/onboarding') &&
+                        !token.filePath?.includes('embedded-fe/ntp') &&
                         !token.filePath?.includes('theme/colors'),
                     options: {
                         outputReferences: true,
@@ -47,16 +47,16 @@ export default {
                     },
                 },
                 {
-                    destination: 'desktop-browsers/ntp.css',
+                    destination: 'embedded-fe/ntp.css',
                     format: 'css/variables-shadow-dom',
-                    filter: (token) => token.filePath?.includes('desktop-browsers/ntp'),
+                    filter: (token) => token.filePath?.includes('embedded-fe/ntp'),
                     options: {
                         outputReferences: false,
                         showFileHeader: true,
                     },
                 },
                 {
-                    destination: 'desktop-browsers/onboarding.css',
+                    destination: 'embedded-fe/onboarding.css',
                     format: 'onboarding-theme-classes',
                     options: {
                         outputReferences: false,
