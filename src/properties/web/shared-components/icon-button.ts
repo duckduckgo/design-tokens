@@ -48,14 +48,6 @@ const iconButton: DesignToken = {
                 $value: '16px',
             },
         },
-        xl: {
-            padding: {
-                $value: '{space.x05}',
-            },
-            iconSize: {
-                $value: '16px',
-            },
-        },
     },
 };
 export default iconButton;
