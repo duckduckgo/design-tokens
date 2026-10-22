@@ -2,6 +2,67 @@
 
 Generated from release tags. Each section expands to show token-level changes.
 
+## ✨ [0.45.0](https://github.com/duckduckgo/design-tokens/releases/tag/v0.45.0) - 2026.10.21
+
+The `desktop-browsers` platform has been renamed to `embedded-fe` in preparation for adding Native Apps consumers. content-scope-scripts and privacy-dashboard will need to import from `build/embedded-fe/` instead of `build/desktop-browsers/`. File names and values are unchanged. The `xl` button and icon-button sizes have been removed from SERP and Static Pages. The minimum Node version is now 24.20.0 ([#47](https://github.com/duckduckgo/design-tokens/pull/47)).
+
+### Token Updates
+
+#### SERP
+
+<details>
+<summary>✂️ Removed values (17)</summary>
+
+- `xl` button size removed (14): `--ds-button-xl-border-radius`, `--ds-button-xl-padding-x`, `--ds-button-xl-padding-y`, `--ds-button-xl-font-size`, `--ds-button-xl-line-height`, `--ds-button-xl-font-weight`, `--ds-button-xl-letter-spacing` from `button.css`, plus their `ds-button-xl-*` equivalents in `tokens.json`
+    - `--ds-button-xl-padding-x` (was `var(--ds-space-x07)`)
+    - `ds-button-xl-padding-x` (was `28px`)
+    - `ds-button-xl-font-size` (was `1.25rem`)
+- `--ds-icon-button-xl-icon-size` (was `16px`)
+- `--ds-icon-button-xl-padding` (was `var(--ds-space-x05)`)
+- `ds-icon-button-xl-padding` (was `20px`)
+
+</details>
+
+#### Static Pages
+
+<details>
+<summary>✂️ Removed values (9)</summary>
+
+- `--ds-button-xl-border-radius` (was `999px`)
+- `--ds-button-xl-padding-x` (was `28px`)
+- `--ds-button-xl-padding-y` (was `12px`)
+- `--ds-button-xl-font-size` (was `18px`)
+- `--ds-button-xl-font-weight` (was `500`)
+- `--ds-button-xl-letter-spacing` (was `0`)
+- `--ds-button-xl-line-height` (was `20px`)
+- `--ds-icon-button-xl-padding` (was `20px`)
+- `--ds-icon-button-xl-icon-size` (was `16px`)
+
+</details>
+
+#### Embedded FE
+
+<details>
+<summary>♻️ Updated values (1492)</summary>
+
+- Moved from `build/desktop-browsers/` (1492 tokens across `tokens.css`, `ntp.css` and `onboarding.css`; values unchanged)
+
+</details>
+
+<details>
+<summary>🛠️ Dev updates</summary>
+
+- Node: `"node": "24"` field replaced by `engines.node` `>=24.20.0` and a `.node-version` file (`24.20.0`)
+- Renamed config `desktop-browsers-dictionary.config.js` > `embedded-fe-dictionary.config.js`, and the `build:dictionary`, `lint` and `lint:fix` scripts updated to match
+- Renamed format `src/formats/css-variables-shadow-dom.js` > `src/formats/embedded-fe-variables-shadow-dom.js`
+- Renamed format `src/formats/css-onboarding-theme-classes.js` > `src/formats/embedded-fe-onboarding-theme-classes.js`
+- Moved `src/properties/web/desktop-browsers/` (`ntp.ts`, `onboarding.ts`, `theme.ts`) > `src/properties/web/embedded-fe/`
+- Removed the `xl` size from `src/properties/web/shared-components/button.ts` and `icon-button.ts`
+- Removed unused `verify-tokens.js`
+- Added `CHANGELOG.md` and the changelog skill. Release instructions added to the README
+
+</details>
+
 ## ✨ [0.44.0](https://github.com/duckduckgo/design-tokens/releases/tag/v0.44.0) - 2026.09.11
 
 SERP rem output now applies to font values only. Spacing, radius, button and icon-button sizes are back to px, as they were before 0.43.1. A new `build/serp/font-in-px.js` provides px font values for documentation sites ([#46](https://github.com/duckduckgo/design-tokens/pull/46)).
