@@ -12,7 +12,6 @@ A repo to generate style variables for all the things. But we're starting with s
   - [Table of Contents](#table-of-contents)
   - [Getting started](#getting-started)
   - [What is a Design Token?](#what-is-a-design-token)
-  - [What surfaces consume this library?](#what-surfaces-consume-this-library)
   - [Token Types](#token-types)
     - [Option Tokens](#option-tokens)
     - [Semantic Tokens](#semantic-tokens)
@@ -21,7 +20,9 @@ A repo to generate style variables for all the things. But we're starting with s
     - [Option \& Semantic Tokens](#option--semantic-tokens)
       - [Prefix](#prefix)
     - [Component Tokens](#component-tokens-1)
-    - [Browser themes (for macOS, Windows, and Embedded FE)](#browser-themes-for-macos-windows-and-embedded-fe)
+  - [What surfaces consume this library?](#what-surfaces-consume-this-library)
+  - [How to best consume this library](#how-to-best-consume-this-library)
+  - [Building \& Updating Browser themes (for macOS, Windows, and Embedded FE)](#building--updating-browser-themes-for-macos-windows-and-embedded-fe)
   - [Release Process](#release-process)
 
 ## Getting started
@@ -39,16 +40,6 @@ Then check out what is output to `build` folder
 ## What is a Design Token?
 
 **Top level answer:** A key-value pair representing a design decision in code.
-
-## What surfaces consume this library?
-- SERP: DuckDuckGo search engine results page
-- Duck.ai: DuckDuckGo's Ai tool
-- Marketing pages: Homepage, Hiring, App download pages, Subscription sales pages
-- Embedded FE: DuckDuckGo's Mac & Windows desktop browser new tab page, Privacy dashboard
-
-**Coming soon!**
-- MacOS DDG browser
-- Windows DDG browser
 
 ## Token Types
 
@@ -99,7 +90,20 @@ These are tokens that can get detailed about specific components like buttons,
 
 <!-- <incoming> -->
 
-### Browser themes (for macOS, Windows, and Embedded FE)
+## What surfaces consume this library?
+- SERP: DuckDuckGo search engine results page
+- Duck.ai: DuckDuckGo's Ai tool
+- Marketing pages: Homepage, Hiring, App download pages, Subscription sales pages
+- Embedded FE: DuckDuckGo's Mac & Windows desktop browser new tab page, Privacy dashboard
+
+**Coming soon!**
+- MacOS DDG browser
+- Windows DDG browser
+
+## How to best consume this library
+It is recommended to lock to specific version, then update when ready instead of using semver notation like ^.
+
+## Building & Updating Browser themes (for macOS, Windows, and Embedded FE)
 
 The Desktop Browsers' theme colors (`src/properties/native-apps/theme.ts`) are automatically generated from an export of the Global Colors & Styles theme in Figma.
 
@@ -111,5 +115,6 @@ node scripts/convert-figma-theme-export-to-tokens.ts --input theme-variables.jso
 
 ## Release Process
 
+1. Update Changelog: As last commit on a branch you intend to merge then release, run the Changelog Claude skill. `/changelog update` will provide a formatted output of all changes to be included. Take a look at this before committing.
 1. Navigate to https://github.com/duckduckgo/design-tokens/actions/workflows/release.yml
-2. Click _Run workflow_ and type in the version number to release. For example, `1.0.0`
+2. Click _Run workflow_ and type in the version number to release. For example, `0.45.0`. Most releases will be minor. Use patches for experiments for ease of importing & testing.

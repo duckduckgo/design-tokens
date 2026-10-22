@@ -1,6 +1,6 @@
 ---
 name: changelog
-description: Write or update CHANGELOG.md entries for this design-tokens repo from its tagged releases. It diffs real token values in the built outputs between tags, then summarises new, updated and removed tokens per platform along with dependency and dev changes. Use when asked to write release notes, a changelog, "what changed in vX", to backfill the changelog for past tags, or to draft notes for unreleased changes.
+description: Write or update CHANGELOG.md entries for this design-tokens repo from its tagged releases. It diffs real token values in the built outputs between tags, then summarises new, updated and removed tokens per platform along with dependency and dev changes. Use when asked to write release notes, a changelog, "what changed in vX", to backfill the changelog for past tags, to draft notes for unreleased changes, or (`update`) to write the next version's entry as the last step before cutting a release.
 ---
 
 # Changelog
@@ -12,7 +12,7 @@ Writes entries in `CHANGELOG.md` at the repo root, newest version first, one ent
 - `.github/workflows/release.yml` commits `Bump version to X` on `main`, then builds that snapshot onto the orphan **`releases`** branch, commits it as `vX` with `build/` force-added, and tags that commit.
 - So **every tag contains the compiled `build/` outputs**. Token changes are diffed straight from those files, without rebuilding.
 - A release's commits are the `main` commits after the previous `Bump version to …` commit, up to and including this release's bump. The early tags (≤ v0.1.0) have no bump commits, so the script falls back to tag dates.
-- `build/<dir>` is the **platform**: `serp`, `static-pages`, `content-scope-scripts`, `duckai`, `apple-browsers` (and later `android`/`windows` under native apps).
+- `build/<dir>` is the **platform**: `serp`, `static-pages`, `embedded-fe`, `duckai`, `apple-browsers` (and later `android`/`windows` under native apps).
 
 ## Step 1: Decide which versions to write
 
@@ -20,13 +20,33 @@ Writes entries in `CHANGELOG.md` at the repo root, newest version first, one ent
 - A version (`v0.44.0` or `0.44.0`): just that one. If it already exists in the file, replace that entry.
 - "all" / "backfill": every tag missing from the file. List the tags with `node .claude/skills/changelog/scripts/release-diff.mjs --list`. For many tags, spread the work across subagents (one per few tags, each returning its entry's markdown), then assemble them in order yourself.
 - "unreleased": run `npm run build` first, then use `WORKTREE` as the version. This compares the local `build/` and working tree against the latest tag. Write it under `## ✨ Unreleased`.
+- "update" (optionally followed by `patch`, `minor`, `major` or an exact `x.y.z`): pre-release mode. See [Pre-release: `update`](#pre-release-update) below.
+
+## Pre-release: `update`
+
+Run this as the last step before cutting a release. It writes the entry for the version that's about to be tagged, so the changelog ships in that release.
+
+1. Work out the version.
+    - An exact `x.y.z` argument is used as given.
+    - Otherwise run `node .claude/skills/changelog/scripts/release-diff.mjs --next <patch|minor|major>`. The default is `minor`, which is how almost every release here has been bumped.
+    - Check that the version is newer than the latest tag (`--list`). If `package.json`'s `version` doesn't match the latest tag, say so, because the release workflow bumps it from there.
+2. Check where you are. The release workflow builds from `main`, so the changelog needs to be committed and merged to `main` before the workflow runs.
+    - Say which branch you're on (`git branch --show-current`).
+    - Say whether there are uncommitted changes (`git status --short`), since `WORKTREE` includes them.
+    - If `HEAD` isn't up to date with `origin/main`, warn that the entry may miss or include changes that differ from what gets released.
+3. Run `npm run build`, so `build/` matches the source, then collect the data with `node .claude/skills/changelog/scripts/release-diff.mjs WORKTREE`. This compares against the latest tag.
+4. Write the entry exactly as in Step 3, with the new version and **today's date** in the heading. The release link won't resolve until the tag exists. If there's a `## ✨ Unreleased` entry, replace it with this one. If an entry for this version already exists (a second run), regenerate it in place.
+5. Finish with the version written and these next steps:
+    - Commit `CHANGELOG.md` and get it onto `main`. Only commit if asked.
+    - Run the **Release** workflow with version `x.y.z`, and use exactly that number. Running it with a different version would leave a mismatched heading.
 
 ## Step 2: Collect the data
 
 ```bash
 node .claude/skills/changelog/scripts/release-diff.mjs <tag>          # vs. the previous tag
 node .claude/skills/changelog/scripts/release-diff.mjs <to> <from>    # explicit range
-node .claude/skills/changelog/scripts/release-diff.mjs WORKTREE       # unreleased
+node .claude/skills/changelog/scripts/release-diff.mjs WORKTREE       # unreleased / update
+node .claude/skills/changelog/scripts/release-diff.mjs --next minor   # next version after the latest tag
 ```
 
 The output can be large, so redirect it to a file in the scratchpad and query it with `node -e`/`jq` rather than reading the whole thing. Fields:
@@ -97,13 +117,18 @@ Rules:
 
 - **Heading**: `## ✨ ` + the version linked to its GitHub release + `-` + the tag date from `date` with dots instead of dashes (`YYYY.MM.DD`). Use `## ✨ Unreleased` for `WORKTREE`.
 - **Short summary**: write it from the commits/PRs plus what the diff shows. Lead with consumer impact ("SERP font sizes now ship in rem").
-- **Token Updates**: the `### Token Updates` header goes after the summary. Under it, add one `#### <Platform>` heading per platform that has token changes in this release, in this order: SERP, Static Pages, Desktop Browsers, Duck.ai, Apple Browsers (any new platform goes last, title-cased). Leave out platforms with no changes. If no platform changed, leave out `### Token Updates` entirely. Use the literal emoji (🌱 ♻️ ✂️ 🛠️), not `:shortcodes:`.
+- **Token Updates**: the `### Token Updates` header goes after the summary. Under it, add one `#### <Platform>` heading per platform that has token changes in this release, in this order: SERP, Static Pages, Embedded FE / Desktop Browsers, Duck.ai, Apple Browsers (any new platform goes last, title-cased). Leave out platforms with no changes. If no platform changed, leave out `### Token Updates` entirely. Use the literal emoji (🌱 ♻️ ✂️ 🛠️), not `:shortcodes:`.
 - **Expandable sections**: under each platform heading, add the 🌱 New, ♻️ Updated and ✂️ Removed `<details>` sections in that order, each with that platform's count in its `<summary>` (use the `tokens.added/changed/removed[platform]` lengths, adjusted for renames). Leave out a section the platform has nothing in. Never leave an empty `<details>`. Each list item is `` `token-name`: `old` > `new` ``, with the value in code spans and `>` between old and new values.
-- **Platform headings**: the platform is `build/<dir>`. Display names: `serp` = SERP, `static-pages` = Static Pages, `content-scope-scripts` = Content Scope Scripts, `duckai` = Duck.ai, `apple-browsers` = Apple Browsers.
+- **Platform headings**: the platform is `build/<dir>`. Display names: `serp` = SERP, `static-pages` = Static Pages, `embedded-fe` = Embedded FE, `desktop-browsers` = Desktop Browsers (its name in releases up to v0.44.0; it was briefly `content-scope-scripts` before any release), `duckai` = Duck.ai, `apple-browsers` = Apple Browsers.
 - **Scope**: when the same token changes differently across outputs (e.g. `.theme-light` vs `.theme-dark`, a motif, or `colors-light.js` vs `colors-dark.js`), add the scope after the name: `` `--ds-surface-primary` (.theme-dark): … ``. Leave it out when every output agrees.
 - **New or removed outputs**: list each one in its section by path with its token count. Don't also list the tokens it carries one by one (`onlyInNewOutput` / `onlyInRemovedOutput`). Skip `.d.ts` files unless one is the only new file.
 - **Mechanical mass changes**: when one `changePatterns` entry on a platform covers more than about 15 changes (a px > rem switch, float-precision drift after a tool upgrade, hex casing), write one bullet that names the pattern, the count and its cause, with 2–3 examples nested under it, instead of listing them all. List everything that doesn't fit a pattern individually.
 - **Renames**: a removed token and an added token on the same platform with the same value is probably a rename. Show it once under ♻️ as `` `old-name` > `new-name` (renamed) `` rather than in both 🌱 and ✂️.
+- **Renamed platforms**: one platform can lose all its outputs while a new one gains the same tokens (e.g. `desktop-browsers` > `embedded-fe`). When that happens, report it as a rename, not as thousands of removals and additions:
+    - In the summary, say so plainly, including the new import paths.
+    - Under the new platform's heading, add one ♻️ bullet: `Moved from build/desktop-browsers/ (N tokens, values unchanged)`.
+    - List only the tokens whose names or values actually differ.
+    - Leave out the old platform's heading.
 - **Dev updates**: one 🛠️ `<details>` after all the platforms, not split by platform. List these first: Node (`node` / `engines`), dependency and devDependency additions, removals and version changes, and CI workflow changes. Skip the `version` bump itself. Then list new, removed or renamed files under `src/formats/` and `src/transforms/`, new or changed `*-dictionary.config.js` (say what changed in one clause), new build scripts in `scripts/` or `package.json` scripts, and source-property file moves (`src/properties/`). An added path paired with a removed path that has similar contents is a move or rename, so say so. If there are none, omit the section.
 - Values are copied exactly as built. Don't round or reformat them.
 

@@ -384,6 +384,19 @@ if (args[0] === '--list') {
     process.exit(0);
 }
 
+// Prints the version that follows the latest tag: patch | minor (default) | major.
+if (args[0] === '--next') {
+    const bump = args[1] ?? 'minor';
+    const [major, minor, patch] = tags[0].replace(/^v/, '').split('.').map(Number);
+    const next = { major: [major + 1, 0, 0], minor: [major, minor + 1, 0], patch: [major, minor, patch + 1] }[bump];
+    if (!next) {
+        console.error(`Unknown bump: ${bump} (use patch, minor or major)`);
+        process.exit(1);
+    }
+    console.log(next.join('.'));
+    process.exit(0);
+}
+
 const toRef = args[0] ?? tags[0];
 let fromRef = args[1];
 if (!fromRef) {
