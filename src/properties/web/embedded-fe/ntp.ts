@@ -39,7 +39,7 @@ const ntpComponentsTokens: DesignToken = {
             },
         },
     },
-    // Partial theme for NTP custom color/gradient/image backgrounds. Content-scope-scripts
+    // Partial theme for NTP custom color/gradient/image backgrounds. embedded-fe
     // remaps these when body[data-rebrand="true"]:not([data-background-kind="default"]) matches.
     'color-theme': {
         ntpOnCustomBackground: {

@@ -1,8 +1,8 @@
 
 // Do not edit directly, this file was auto-generated.
 // Source: https://github.com/duckduckgo/design-tokens
-// Version: 0.44.0
-// Last updated: September 11, 2026 at 05:13 PM
+// Version: 0.45.0
+// Last updated: October 22, 2026 at 03:47 AM
 
 export const duckaiExtraColors = {
     /** COLOR */

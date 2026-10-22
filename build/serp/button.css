@@ -1,8 +1,8 @@
 /**
  * Do not edit directly, this file was auto-generated.
  * Source: https://github.com/duckduckgo/design-tokens
- * Version: 0.44.0
- * Last updated: September 11, 2026 at 05:13 PM
+ * Version: 0.45.0
+ * Last updated: October 22, 2026 at 03:46 AM
  */
 
 :root {
@@ -31,11 +31,6 @@
   --ds-button-lg-padding-y: var(--ds-space-x03);
   --ds-button-lg-font-size: var(--ds-font-button-label-02-size);
   --ds-button-lg-line-height: var(--ds-font-button-label-02-line-height);
-  --ds-button-xl-border-radius: var(--ds-radius-full);
-  --ds-button-xl-padding-x: var(--ds-space-x07);
-  --ds-button-xl-padding-y: var(--ds-space-x03);
-  --ds-button-xl-font-size: var(--ds-font-button-label-01-size);
-  --ds-button-xl-line-height: var(--ds-font-button-label-01-line-height);
   --ds-button-xxs-font-weight: var(--ds-font-button-label-03-weight);
   --ds-button-xxs-letter-spacing: var(--ds-font-button-label-03-letter-spacing);
   --ds-button-xs-font-weight: var(--ds-font-button-label-03-weight);
@@ -46,6 +41,4 @@
   --ds-button-md-letter-spacing: var(--ds-font-button-label-02-letter-spacing);
   --ds-button-lg-font-weight: var(--ds-font-button-label-02-weight);
   --ds-button-lg-letter-spacing: var(--ds-font-button-label-02-letter-spacing);
-  --ds-button-xl-font-weight: var(--ds-font-button-label-01-weight);
-  --ds-button-xl-letter-spacing: var(--ds-font-button-label-01-letter-spacing);
 }
