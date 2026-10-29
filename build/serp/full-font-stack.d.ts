@@ -1,7 +1,7 @@
 // Do not edit directly, this file was auto-generated.
 // Source: https://github.com/duckduckgo/design-tokens
-// Version: 0.45.0
-// Last updated: October 22, 2026 at 03:47 AM
+// Version: 0.46.0
+// Last updated: October 29, 2026 at 11:03 PM
 
 declare module '@duckduckgo/design-tokens/build/serp/full-font-stack' {
     export type DSFullFontStackKeys =
@@ -53,6 +53,8 @@ declare module '@duckduckgo/design-tokens/build/serp/full-font-stack' {
         | '--ds-font-label-01-text-transform'
         | '--ds-font-caption-01-line-height'
         | '--ds-font-caption-01-size'
+        | '--ds-font-serp-organic-line-height'
+        | '--ds-font-serp-organic-size'
         | '--ds-font-title-01-font-family'
         | '--ds-font-title-01-letter-spacing'
         | '--ds-font-title-01-weight'
@@ -106,7 +108,10 @@ declare module '@duckduckgo/design-tokens/build/serp/full-font-stack' {
         | '--ds-font-label-01-weight'
         | '--ds-font-caption-01-font-family'
         | '--ds-font-caption-01-letter-spacing'
-        | '--ds-font-caption-01-weight';
+        | '--ds-font-caption-01-weight'
+        | '--ds-font-serp-organic-font-family'
+        | '--ds-font-serp-organic-letter-spacing'
+        | '--ds-font-serp-organic-weight';
     export type DSFullFontStackValues =
         | '\'DuckSansDisplay\', -apple-system, BlinkMacSystemFont, \'Segoe UI\', Roboto, Oxygen-Sans, Ubuntu, Cantarell, \'Helvetica Neue\', Arial, \'Noto Sans\', sans-serif'
         | '\'DuckSansProduct\', -apple-system, BlinkMacSystemFont, \'Segoe UI\', Roboto, Oxygen-Sans, Ubuntu, Cantarell, \'Helvetica Neue\', Arial, \'Noto Sans\', sans-serif'
@@ -117,21 +122,23 @@ declare module '@duckduckgo/design-tokens/build/serp/full-font-stack' {
         | '-1px'
         | '0'
         | '2px'
-        | '4.44444rem'
-        | '3.61111rem'
-        | '3.05556rem'
-        | '2.77778rem'
-        | '2.5rem'
-        | '2.22222rem'
-        | '1.66667rem'
-        | '1.94444rem'
-        | '1.38889rem'
-        | '1.11111rem'
-        | '0.97222rem'
-        | '0.83333rem'
-        | '1.25rem'
+        | '64px'
+        | '52px'
+        | '44px'
+        | '40px'
+        | '36px'
+        | '32px'
+        | '24px'
+        | '28px'
+        | '20px'
+        | '16px'
+        | '14px'
+        | '12px'
+        | '18px'
         | 'uppercase'
-        | '0.90278rem'
+        | '13px'
+        | '26px'
+        | '21px'
         | 'var(--ds-font-family-display)'
         | 'var(--ds-font-letter-spacing-narrow)'
         | 'var(--ds-font-weight-normal)'

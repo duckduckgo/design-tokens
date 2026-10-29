@@ -2,6 +2,54 @@
 
 Generated from release tags. Each section expands to show token-level changes.
 
+## ✨ [0.46.0](https://github.com/duckduckgo/design-tokens/releases/tag/v0.46.0) - 2026.10.29
+
+SERP font sizes and line heights are back in px. The rem conversion has been removed, so `build/serp/font-in-px.js` is no longer needed and has been removed. Consumers using it should switch to `build/serp/font.js` or `build/serp/full-font-stack.js`. SERP also gains a new `serp-organic` font style (21px / 26px) for organic results.
+
+### Token Updates
+
+#### SERP
+
+<details>
+<summary>🌱 New values (8)</summary>
+
+- `--ds-font-serp-organic-size`: `21px`
+- `--ds-font-serp-organic-line-height`: `26px`
+- `--ds-font-serp-organic-font-family`: `var(--ds-font-family-display)`
+- `--ds-font-serp-organic-letter-spacing`: `var(--ds-font-letter-spacing-normal)`
+- `--ds-font-serp-organic-weight`: `var(--ds-font-weight-normal)`
+- `ds-font-serp-organic-font-family`: `'DuckSansDisplay', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif`
+- `ds-font-serp-organic-letter-spacing`: `0`
+- `ds-font-serp-organic-weight`: `400`
+
+</details>
+
+<details>
+<summary>♻️ Updated values (46)</summary>
+
+- Font sizes and line heights switched from rem back to px (46), because the SERP rem transform was removed. The 10% up and down transformation resulted in font sizes with decimals/not actually aligned with typestack definitions. We will switch to rems once the 90% base font size is removed. Affects `font.js`, `full-font-stack.js` and `tokens.json`
+    - `--ds-font-title-05-size`: `1.66667rem` > `24px`
+    - `--ds-font-body-md-size`: `0.97222rem` > `14px`
+    - `ds-button-md-font-size`: `1.11111rem` > `16px`
+
+</details>
+
+<details>
+<summary>✂️ Removed values (70)</summary>
+
+- Removed output `build/serp/font-in-px.js` (70 tokens): its px values are now what `font.js` ships
+
+</details>
+
+<details>
+<summary>🛠️ Dev updates</summary>
+
+- Removed transform `src/transforms/serp-font-rem.js`
+- `serp-style-dictionary.config.js`: drops the font rem transform and the `serpFontPx` platform
+- New source file `src/properties/web/serp/typography.ts` (SERP organic font definitions)
+
+</details>
+
 ## ✨ [0.45.0](https://github.com/duckduckgo/design-tokens/releases/tag/v0.45.0) - 2026.10.21
 
 The `desktop-browsers` platform has been renamed to `embedded-fe` in preparation for adding Native Apps consumers. content-scope-scripts and privacy-dashboard will need to import from `build/embedded-fe/` instead of `build/desktop-browsers/`. File names and values are unchanged. The `xl` button and icon-button sizes have been removed from SERP and Static Pages. The minimum Node version is now 24.20.0 ([#47](https://github.com/duckduckgo/design-tokens/pull/47)).

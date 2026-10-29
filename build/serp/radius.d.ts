@@ -1,7 +1,7 @@
 // Do not edit directly, this file was auto-generated.
 // Source: https://github.com/duckduckgo/design-tokens
-// Version: 0.45.0
-// Last updated: October 22, 2026 at 03:47 AM
+// Version: 0.46.0
+// Last updated: October 29, 2026 at 11:03 PM
 
 declare module '@duckduckgo/design-tokens/build/serp/radius' {
     export type DSTokensRadiusKeys =
