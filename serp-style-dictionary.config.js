@@ -3,7 +3,6 @@ import serpBaseTokensTs from './src/formats/serp-base-tokens-js.js';
 import serpColorsTs from './src/formats/serp-colors-js.js';
 import serpFontJs from './src/formats/serp-font-js.js';
 import serpThemesTs from './src/formats/serp-themes-js.js';
-import serpFontRem from './src/transforms/serp-font-rem.js';
 import fileHeader from './dist/src/utils/file-header.js';
 
 export default {
@@ -22,9 +21,6 @@ export default {
             'serp-font-js': serpFontJs,
             'serp-themes-ts': serpThemesTs,
         },
-        transforms: {
-            [serpFontRem.name]: serpFontRem,
-        },
     },
     log: {
         warnings: logWarningLevels.warn, // 'warn' | 'error' | 'disabled'
@@ -37,8 +33,6 @@ export default {
         serp: {
             prefix: 'ds',
             transformGroup: transformGroups.css,
-            // SERP-only: convert px font sizes (above 2px) to rem, compensating for the 90% base font-size.
-            transforms: [serpFontRem.name],
             buildPath: 'build/',
             files: [
                 {
@@ -155,31 +149,6 @@ export default {
                     options: {
                         showFileHeader: true,
                         outputReferences: true,
-                    },
-                },
-            ],
-            options: {
-                ...fileHeader,
-            },
-        },
-        // SERP font tokens in px (for documentation sites). This platform intentionally
-        // omits the `serp/font/rem` transform so font values remain in pixels.
-        serpFontPx: {
-            prefix: 'ds',
-            transformGroup: transformGroups.css,
-            buildPath: 'build/',
-            files: [
-                {
-                    destination: 'serp/font-in-px.js',
-                    format: 'serp-font-js',
-                    options: {
-                        exportName: 'dsFontInPx',
-                        showFileHeader: true,
-                        outputReferences: true,
-                        topComment: [
-                            'SERP font tokens with pixel values, intended for documentation sites.',
-                            'The primary SERP font export (font.js) outputs rem values instead.',
-                        ],
                     },
                 },
             ],
