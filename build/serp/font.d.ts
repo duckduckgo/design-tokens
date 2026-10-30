@@ -1,7 +1,7 @@
 // Do not edit directly, this file was auto-generated.
 // Source: https://github.com/duckduckgo/design-tokens
-// Version: 0.46.0
-// Last updated: October 29, 2026 at 11:03 PM
+// Version: 0.47.0
+// Last updated: October 30, 2026 at 03:50 AM
 
 declare module '@duckduckgo/design-tokens/build/serp/font' {
     export type DSFontKeys =
@@ -39,6 +39,8 @@ declare module '@duckduckgo/design-tokens/build/serp/font' {
         | '--ds-font-label-01-text-transform'
         | '--ds-font-caption-01-line-height'
         | '--ds-font-caption-01-size'
+        | '--ds-font-serp-organic-line-height'
+        | '--ds-font-serp-organic-size'
         | '--ds-font-title-05-font-family'
         | '--ds-font-title-05-letter-spacing'
         | '--ds-font-title-05-weight'
@@ -74,7 +76,10 @@ declare module '@duckduckgo/design-tokens/build/serp/font' {
         | '--ds-font-label-01-weight'
         | '--ds-font-caption-01-font-family'
         | '--ds-font-caption-01-letter-spacing'
-        | '--ds-font-caption-01-weight';
+        | '--ds-font-caption-01-weight'
+        | '--ds-font-serp-organic-font-family'
+        | '--ds-font-serp-organic-letter-spacing'
+        | '--ds-font-serp-organic-weight';
     export type DSFontValues =
         | '\'DuckSansDisplay\', -apple-system, BlinkMacSystemFont, \'Segoe UI\', Roboto, Oxygen-Sans, Ubuntu, Cantarell, \'Helvetica Neue\', Arial, \'Noto Sans\', sans-serif'
         | '\'DuckSansProduct\', -apple-system, BlinkMacSystemFont, \'Segoe UI\', Roboto, Oxygen-Sans, Ubuntu, Cantarell, \'Helvetica Neue\', Arial, \'Noto Sans\', sans-serif'
@@ -95,6 +100,8 @@ declare module '@duckduckgo/design-tokens/build/serp/font' {
         | '18px'
         | 'uppercase'
         | '13px'
+        | '26px'
+        | '21px'
         | 'var(--ds-font-family-display)'
         | 'var(--ds-font-letter-spacing-normal)'
         | 'var(--ds-font-weight-normal)'

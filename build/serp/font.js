@@ -1,8 +1,8 @@
 
 // Do not edit directly, this file was auto-generated.
 // Source: https://github.com/duckduckgo/design-tokens
-// Version: 0.46.0
-// Last updated: October 29, 2026 at 11:03 PM
+// Version: 0.47.0
+// Last updated: October 30, 2026 at 03:50 AM
 
 const dsFont = {
     /** FONT SETUP */
@@ -42,6 +42,8 @@ const dsFont = {
     '--ds-font-label-01-text-transform': "uppercase",
     '--ds-font-caption-01-line-height': "16px",
     '--ds-font-caption-01-size': "13px",
+    '--ds-font-serp-organic-line-height': "26px",
+    '--ds-font-serp-organic-size': "21px",
     '--ds-font-title-05-font-family': "var(--ds-font-family-display)",
     '--ds-font-title-05-letter-spacing': "var(--ds-font-letter-spacing-normal)",
     '--ds-font-title-05-weight': "var(--ds-font-weight-normal)",
@@ -78,6 +80,9 @@ const dsFont = {
     '--ds-font-caption-01-font-family': "var(--ds-font-family-product)",
     '--ds-font-caption-01-letter-spacing': "var(--ds-font-letter-spacing-normal)",
     '--ds-font-caption-01-weight': "var(--ds-font-weight-normal)",
+    '--ds-font-serp-organic-font-family': "var(--ds-font-family-display)",
+    '--ds-font-serp-organic-letter-spacing': "var(--ds-font-letter-spacing-normal)",
+    '--ds-font-serp-organic-weight': "var(--ds-font-weight-normal)",
 };
 
 export default dsFont;
