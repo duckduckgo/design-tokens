@@ -2,6 +2,32 @@
 
 Generated from release tags. Each section expands to show token-level changes.
 
+## ✨ [0.47.0](https://github.com/duckduckgo/design-tokens/releases/tag/v0.47.0) - 2026.10.29
+
+The `serp-organic` font style added in 0.46.0 now also ships in `build/serp/font.js`, so consumers of the regular SERP font output can use it without switching to `full-font-stack.js`.
+
+### Token Updates
+
+#### SERP
+
+<details>
+<summary>🌱 New values (5)</summary>
+
+- `--ds-font-serp-organic-size` (font.js): `21px`
+- `--ds-font-serp-organic-line-height` (font.js): `26px`
+- `--ds-font-serp-organic-font-family` (font.js): `var(--ds-font-family-display)`
+- `--ds-font-serp-organic-letter-spacing` (font.js): `var(--ds-font-letter-spacing-normal)`
+- `--ds-font-serp-organic-weight` (font.js): `var(--ds-font-weight-normal)`
+
+</details>
+
+<details>
+<summary>🛠️ Dev updates</summary>
+
+- `src/formats/serp-font-js.js`: adds `serp-organic` to the styles included in `font.js`
+
+</details>
+
 ## ✨ [0.46.0](https://github.com/duckduckgo/design-tokens/releases/tag/v0.46.0) - 2026.10.29
 
 SERP font sizes and line heights are back in px. The rem conversion has been removed, so `build/serp/font-in-px.js` is no longer needed and has been removed. Consumers using it should switch to `build/serp/font.js` or `build/serp/full-font-stack.js`. SERP also gains a new `serp-organic` font style (21px / 26px) for organic results.
