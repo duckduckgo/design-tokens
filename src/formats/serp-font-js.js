@@ -12,6 +12,7 @@ const STYLE_NAME_MAP = new Map([
     ['button-label-01', 'button-label-01'],
     ['button-label-02', 'button-label-02'],
     ['button-label-03', 'button-label-03'],
+    ['serp-organic', 'serp-organic'],
 ]);
 
 function extractVariableLines(cssVariables) {
