@@ -12,7 +12,7 @@ const typography: DesignToken = {
                     $value: '{font.letterSpacing.normal}',
                 },
                 lineHeight: {
-                    $value: '20px',
+                    $value: '18px',
                 },
                 size: {
                     $value: '18px',
