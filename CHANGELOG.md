@@ -2,6 +2,162 @@
 
 Generated from release tags. Each section expands to show token-level changes.
 
+## ✨ [1.0.0](https://github.com/duckduckgo/design-tokens/releases/tag/v1.0.0) - 2026.11.02
+
+**Breaking:** typography is split into separate product (SERP) and marketing (Static Pages) type scales, and the shared web type styles are reduced to `label-01`–`label-04`. `button-label-02`/`-03` become `label-02`/`-03`, buttons now reference the `label-*` tokens, and `label-01` grows from `12px` to `18px` and is no longer uppercase. Many old styles (`title-05`/`06`, `body-xxl`–`body-sm`, `eyebrow-*`, `caption-01`, `button-label-01`) are renamed or removed, and Embedded FE now ships only the label styles. Check the per-platform lists below before upgrading.
+
+Embedded FE consumers should not use this version.
+
+### Token Updates
+
+#### SERP
+
+<details>
+<summary>🌱 New values (24)</summary>
+
+- `--ds-font-headline-*`: `16px` / `20px` line-height, product, bold
+- `--ds-font-body-*`: `14px` / `16px` line-height, product, normal weight
+- `--ds-font-label-04-*`: `12px` / `12px` line-height, product, bold
+- These ship in `full-font-stack.js`, with matching `ds-font-*` keys in `tokens.json`
+
+</details>
+
+<details>
+<summary>♻️ Updated values (61)</summary>
+
+- `--ds-font-body-md-*` > `--ds-font-body-long-*` (renamed, values unchanged, still in `font.js`)
+- `--ds-font-caption-01-*` > `--ds-font-footnote-*` (renamed, values unchanged, now only in `full-font-stack.js` and `tokens.json`)
+- `--ds-font-button-label-02-*` > `--ds-font-label-02-*` (renamed, values unchanged, now only in `full-font-stack.js` and `tokens.json`)
+- `--ds-font-button-label-03-*` > `--ds-font-label-03-*` (renamed, now only in `full-font-stack.js` and `tokens.json`)
+    - `--ds-font-label-03-line-height`: `16px` > `14px`
+- `--ds-font-label-01-size`: `12px` > `18px`
+- `--ds-font-label-01-line-height`: `12px` > `18px`
+- `--ds-font-title-01-size`: `64px` > `24px`
+- `--ds-font-title-01-line-height`: `64px` > `32px`
+- `--ds-font-title-02-size`: `52px` > `20px`
+- `--ds-font-title-02-line-height`: `52px` > `24px`
+- Button typography now references the `label-*` tokens (20 changes in `button.css`)
+    - `--ds-button-xxs-font-size`: `var(--ds-font-button-label-03-size)` > `var(--ds-font-label-03-size)`
+    - `--ds-button-md-font-weight`: `var(--ds-font-button-label-02-weight)` > `var(--ds-font-label-02-weight)`
+    - `--ds-button-lg-letter-spacing`: `var(--ds-font-button-label-02-letter-spacing)` > `var(--ds-font-label-02-letter-spacing)`
+- `ds-button-xxs-line-height` (tokens.json): `16px` > `14px`
+- `ds-button-xs-line-height` (tokens.json): `16px` > `14px`
+- `ds-button-sm-line-height` (tokens.json): `16px` > `14px`
+
+</details>
+
+<details>
+<summary>✂️ Removed values (91)</summary>
+
+- `--ds-font-title-03-*` (was `44px` / `44px`) and `--ds-font-title-04-*` (was `36px` / `40px`)
+- `--ds-font-title-05-*` (was `24px` / `32px`) and `--ds-font-title-06-*` (was `20px` / `28px`)
+- `--ds-font-body-xxl-*` (was `24px` / `32px`), `--ds-font-body-xl-*` (was `20px` / `28px`), `--ds-font-body-lg-*` (was `16px` / `24px`) and `--ds-font-body-sm-*` (was `12px` / `16px`)
+- `--ds-font-eyebrow-01-*` (was `18px` / `20px`, uppercase) and `--ds-font-eyebrow-02-*` (was `14px` / `16px`, uppercase)
+- `--ds-font-button-label-01-*` (was `18px` / `20px`, semibold)
+- `--ds-font-label-01-text-transform` (was `uppercase`)
+- These include the matching `ds-font-*` keys in `tokens.json`. `font.js` now carries only `label-01`, `body-long` and `serp-organic`.
+
+</details>
+
+#### Static Pages
+
+<details>
+<summary>🌱 New values (23)</summary>
+
+- `--ds-font-display-01-*`: `64px` / `64px` line-height, display, `-1px` letter-spacing
+- `--ds-font-display-02-*`: `52px` / `52px` line-height, display, `-1px` letter-spacing
+- `--ds-font-footnote-*`: `12px` / `16px` line-height, product, `400`
+- `--ds-font-label-04-*`: `12px` / `12px` line-height, product, `700` (also in `typography.scss`)
+
+</details>
+
+<details>
+<summary>♻️ Updated values (55)</summary>
+
+- `--ds-font-body-xl-*` > `--ds-font-lead-*` (renamed, values unchanged)
+- `--ds-font-body-lg-*` > `--ds-font-body-*` (renamed, values unchanged)
+- `--ds-font-eyebrow-01-*` > `--ds-font-overline-01-*` (renamed)
+    - `--ds-font-overline-01-size`: `18px` > `16px`
+    - `--ds-font-overline-01-line-height`: `20px` > `18px`
+- `--ds-font-eyebrow-02-*` > `--ds-font-overline-02-*` (renamed)
+    - `--ds-font-overline-02-line-height`: `16px` > `14px`
+- `--ds-font-button-label-02-*` > `--ds-font-label-02-*` (renamed, values unchanged)
+- `--ds-font-button-label-03-*` > `--ds-font-label-03-*` (renamed)
+    - `--ds-font-label-03-line-height`: `16px` > `14px`
+- `--ds-font-label-01-size`: `12px` > `18px`
+- `--ds-font-label-01-line-height`: `12px` > `18px`
+- `--ds-font-title-01-size`: `64px` > `44px`
+- `--ds-font-title-01-line-height`: `64px` > `44px`
+- `--ds-font-title-02-size`: `52px` > `36px`
+- `--ds-font-title-02-line-height`: `52px` > `44px`
+- `--ds-font-title-03-size`: `44px` > `28px`
+- `--ds-font-title-03-line-height`: `44px` > `36px`
+- `--ds-font-title-03-letter-spacing`: `-1px` > `0`
+- `--ds-font-title-04-size`: `36px` > `24px`
+- `--ds-font-title-04-line-height`: `40px` > `32px`
+- `--ds-font-title-04-letter-spacing`: `-1px` > `0`
+- `--ds-font-body-sm-size`: `12px` > `14px`
+- `--ds-font-body-sm-line-height`: `16px` > `20px`
+- `--ds-button-xxs-line-height`: `16px` > `14px`
+- `--ds-button-xs-line-height`: `16px` > `14px`
+- `--ds-button-sm-line-height`: `16px` > `14px`
+
+</details>
+
+<details>
+<summary>✂️ Removed values (86)</summary>
+
+- `--ds-font-title-05-*` (was `24px` / `32px`) and `--ds-font-title-06-*` (was `20px` / `28px`)
+- `--ds-font-body-xxl-*` (was `24px` / `32px`) and `--ds-font-body-md-*` (was `14px` / `20px`)
+- `--ds-font-button-label-01-*` (was `18px` / `20px`, `500`)
+- `--ds-font-caption-01-*` (was `13px` / `16px`)
+- `--ds-font-label-01-text-transform` (was `uppercase`)
+- `typography.scss` now carries only `label-01`–`label-04`. The `title-01`–`04`, `body-sm`, `lead`, `body` and `overline-*` styles are still in `tokens.scss` and `tokens.json`.
+
+</details>
+
+#### Embedded FE
+
+<details>
+<summary>🌱 New values (5)</summary>
+
+- `--ds-font-label-04-*`: `12px` / `12px` line-height, product, bold
+
+</details>
+
+<details>
+<summary>♻️ Updated values (12)</summary>
+
+- `--ds-font-button-label-02-*` > `--ds-font-label-02-*` (renamed, values unchanged)
+- `--ds-font-button-label-03-*` > `--ds-font-label-03-*` (renamed)
+    - `--ds-font-label-03-line-height`: `16px` > `14px`
+- `--ds-font-label-01-size`: `12px` > `18px`
+- `--ds-font-label-01-line-height`: `12px` > `18px`
+
+</details>
+
+<details>
+<summary>✂️ Removed values (78)</summary>
+
+- `--ds-font-title-01-*` through `--ds-font-title-06-*` (was `64px`/`64px`, `52px`/`52px`, `44px`/`44px`, `36px`/`40px`, `24px`/`32px`, `20px`/`28px`)
+- `--ds-font-body-xxl-*` through `--ds-font-body-sm-*` (was `24px`/`32px`, `20px`/`28px`, `16px`/`24px`, `14px`/`20px`, `12px`/`16px`)
+- `--ds-font-eyebrow-01-*` (was `18px` / `20px`) and `--ds-font-eyebrow-02-*` (was `14px` / `16px`)
+- `--ds-font-button-label-01-*` (was `18px` / `20px`)
+- `--ds-font-caption-01-*` (was `13px` / `16px`)
+- `--ds-font-label-01-text-transform` (was `uppercase`)
+
+</details>
+
+<details>
+<summary>🛠️ Dev updates</summary>
+
+- New `src/properties/web/static-pages/typography.ts`: marketing type scale (display, title, lead, body, footnote, overline)
+- `src/properties/web/serp/typography.ts`: adds the product type scale (title, headline, body, body-long, footnote)
+- `src/properties/web/base/typography.ts`: reduced to the shared `label-01`–`label-04` styles
+- `src/properties/web/shared-components/button.ts`: buttons reference `label-*` instead of `button-label-*`
+
+</details>
+
 ## ✨ [0.47.0](https://github.com/duckduckgo/design-tokens/releases/tag/v0.47.0) - 2026.10.29
 
 The `serp-organic` font style added in 0.46.0 now also ships in `build/serp/font.js`, so consumers of the regular SERP font output can use it without switching to `full-font-stack.js`.
