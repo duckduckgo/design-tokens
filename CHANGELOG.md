@@ -2,6 +2,66 @@
 
 Generated from release tags. Each section expands to show token-level changes.
 
+## ✨ [1.1.0](https://github.com/duckduckgo/design-tokens/releases/tag/v1.1.0) - 2026.11.12
+
+Fixes the typography outputs from 1.0.0. SERP's `build/serp/font.js` now ships the whole SERP type scale, so `build/serp/full-font-stack.js` is removed. Import `dsTypography` from `font.js` instead of `dsFullFontStack`. Static Pages' `build/static-pages/typography.scss` now includes the marketing type scale (`display-*`, `title-01`–`04`, `lead`, `body`, `body-sm`, `footnote`, `overline-*`), which 1.0.0 left out.
+
+### Token Updates
+
+#### SERP
+
+<details>
+<summary>🌱 New values (40)</summary>
+
+- `font.js` now includes the styles that were only in `full-font-stack.js`. Values are unchanged.
+- `--ds-font-title-01-*`: `24px` / `32px` line-height, display, normal weight, narrow spacing
+- `--ds-font-title-02-*`: `20px` / `24px` line-height, display, normal weight, narrow spacing
+- `--ds-font-headline-*`: `16px` / `20px` line-height, product, bold
+- `--ds-font-body-*`: `14px` / `16px` line-height, product, normal weight
+- `--ds-font-footnote-*`: `13px` / `16px` line-height, product, normal weight
+- `--ds-font-label-02-*`: `16px` / `16px` line-height, product, bold
+- `--ds-font-label-03-*`: `14px` / `14px` line-height, product, bold
+- `--ds-font-label-04-*`: `12px` / `12px` line-height, product, bold
+
+</details>
+
+<details>
+<summary>✂️ Removed values (64)</summary>
+
+- Removed output `build/serp/full-font-stack.js` (64 tokens, export `dsFullFontStack`). All of its styles are now in `build/serp/font.js`.
+
+</details>
+
+#### Static Pages
+
+<details>
+<summary>🌱 New values (62)</summary>
+
+- `typography.scss` now includes the Static Pages type scale:
+- `--ds-font-display-01-*`: `64px` / `64px` line-height, display, normal weight, narrow spacing
+- `--ds-font-display-02-*`: `52px` / `52px` line-height, display, normal weight, narrow spacing
+- `--ds-font-title-01-*`: `44px` / `44px` line-height, display, normal weight, narrow spacing
+- `--ds-font-title-02-*`: `36px` / `44px` line-height, display, normal weight, narrow spacing
+- `--ds-font-title-03-*`: `28px` / `36px` line-height, display, normal weight
+- `--ds-font-title-04-*`: `24px` / `32px` line-height, display, normal weight
+- `--ds-font-lead-*`: `20px` / `28px` line-height, display, normal weight
+- `--ds-font-body-*`: `16px` / `24px` line-height, product, normal weight
+- `--ds-font-body-sm-*`: `14px` / `20px` line-height, product, normal weight
+- `--ds-font-footnote-*`: `12px` / `16px` line-height, product, normal weight
+- `--ds-font-overline-01-*`: `16px` / `18px` line-height, product, semibold, wide spacing, `uppercase`
+- `--ds-font-overline-02-*`: `14px` / `14px` line-height, product, semibold, wide spacing, `uppercase`
+
+</details>
+
+<details>
+<summary>🛠️ Dev updates</summary>
+
+- `src/formats/serp-font-js.js`: outputs every typography token as-is. The style-name allowlist and the `includeAllTypography` / `topComment` options are removed.
+- `serp-style-dictionary.config.js`: drops the `serp/full-font-stack.js` output
+- `static-pages-dictionary.config.js`: the `typography.scss` typestack matcher now also picks up `static-pages/typography.*` tokens
+
+</details>
+
 ## ✨ [1.0.0](https://github.com/duckduckgo/design-tokens/releases/tag/v1.0.0) - 2026.11.02
 
 **Breaking:** typography is split into separate product (SERP) and marketing (Static Pages) type scales, and the shared web type styles are reduced to `label-01`–`label-04`. `button-label-02`/`-03` become `label-02`/`-03`, buttons now reference the `label-*` tokens, and `label-01` grows from `12px` to `18px` and is no longer uppercase. Many old styles (`title-05`/`06`, `body-xxl`–`body-sm`, `eyebrow-*`, `caption-01`, `button-label-01`) are renamed or removed, and Embedded FE now ships only the label styles. Check the per-platform lists below before upgrading.

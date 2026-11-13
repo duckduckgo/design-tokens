@@ -120,20 +120,6 @@ export default {
                     },
                 },
                 {
-                    destination: 'serp/full-font-stack.js',
-                    format: 'serp-font-js',
-                    options: {
-                        exportName: 'dsFullFontStack',
-                        showFileHeader: true,
-                        outputReferences: true,
-                        includeAllTypography: true,
-                        topComment: [
-                            'This is the full type stack established for use in static-pages.',
-                            'This is only to be imported when building features that need more font styles than the basics from SERP.',
-                        ],
-                    },
-                },
-                {
                     destination: 'serp/button.css',
                     format: formats.cssVariables,
                     filter: (token) => token.path[0] === 'button',

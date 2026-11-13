@@ -1,7 +1,7 @@
 // Do not edit directly, this file was auto-generated.
 // Source: https://github.com/duckduckgo/design-tokens
-// Version: 1.0.0
-// Last updated: November 11, 2026 at 01:09 AM
+// Version: 1.1.0
+// Last updated: November 13, 2026 at 04:55 AM
 
 declare module '@duckduckgo/design-tokens/build/serp/font' {
     export type DSFontKeys =
@@ -16,16 +16,56 @@ declare module '@duckduckgo/design-tokens/build/serp/font' {
         | '--ds-font-letter-spacing-wide'
         | '--ds-font-label-01-line-height'
         | '--ds-font-label-01-size'
+        | '--ds-font-label-02-line-height'
+        | '--ds-font-label-02-size'
+        | '--ds-font-label-03-line-height'
+        | '--ds-font-label-03-size'
+        | '--ds-font-label-04-line-height'
+        | '--ds-font-label-04-size'
+        | '--ds-font-title-01-line-height'
+        | '--ds-font-title-01-size'
+        | '--ds-font-title-02-line-height'
+        | '--ds-font-title-02-size'
+        | '--ds-font-headline-line-height'
+        | '--ds-font-headline-size'
+        | '--ds-font-body-line-height'
+        | '--ds-font-body-size'
         | '--ds-font-body-long-line-height'
         | '--ds-font-body-long-size'
+        | '--ds-font-footnote-line-height'
+        | '--ds-font-footnote-size'
         | '--ds-font-serp-organic-line-height'
         | '--ds-font-serp-organic-size'
         | '--ds-font-label-01-font-family'
         | '--ds-font-label-01-letter-spacing'
         | '--ds-font-label-01-weight'
+        | '--ds-font-label-02-font-family'
+        | '--ds-font-label-02-letter-spacing'
+        | '--ds-font-label-02-weight'
+        | '--ds-font-label-03-font-family'
+        | '--ds-font-label-03-letter-spacing'
+        | '--ds-font-label-03-weight'
+        | '--ds-font-label-04-font-family'
+        | '--ds-font-label-04-letter-spacing'
+        | '--ds-font-label-04-weight'
+        | '--ds-font-title-01-font-family'
+        | '--ds-font-title-01-letter-spacing'
+        | '--ds-font-title-01-weight'
+        | '--ds-font-title-02-font-family'
+        | '--ds-font-title-02-letter-spacing'
+        | '--ds-font-title-02-weight'
+        | '--ds-font-headline-font-family'
+        | '--ds-font-headline-letter-spacing'
+        | '--ds-font-headline-weight'
+        | '--ds-font-body-font-family'
+        | '--ds-font-body-letter-spacing'
+        | '--ds-font-body-weight'
         | '--ds-font-body-long-font-family'
         | '--ds-font-body-long-letter-spacing'
         | '--ds-font-body-long-weight'
+        | '--ds-font-footnote-font-family'
+        | '--ds-font-footnote-letter-spacing'
+        | '--ds-font-footnote-weight'
         | '--ds-font-serp-organic-font-family'
         | '--ds-font-serp-organic-letter-spacing'
         | '--ds-font-serp-organic-weight';
@@ -40,15 +80,21 @@ declare module '@duckduckgo/design-tokens/build/serp/font' {
         | '0'
         | '2px'
         | '18px'
-        | '20px'
+        | '16px'
         | '14px'
+        | '12px'
+        | '32px'
+        | '24px'
+        | '20px'
+        | '13px'
         | '26px'
         | '21px'
         | 'var(--ds-font-family-product)'
         | 'var(--ds-font-letter-spacing-normal)'
         | 'var(--ds-font-weight-bold)'
-        | 'var(--ds-font-weight-normal)'
-        | 'var(--ds-font-family-display)';
+        | 'var(--ds-font-family-display)'
+        | 'var(--ds-font-letter-spacing-narrow)'
+        | 'var(--ds-font-weight-normal)';
     const dsFont: Record<DSFontKeys, DSFontValues>;
     export default dsFont;
 }

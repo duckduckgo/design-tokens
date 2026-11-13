@@ -1,7 +1,7 @@
 // Do not edit directly, this file was auto-generated.
 // Source: https://github.com/duckduckgo/design-tokens
-// Version: 1.0.0
-// Last updated: November 11, 2026 at 01:09 AM
+// Version: 1.1.0
+// Last updated: November 13, 2026 at 04:55 AM
 
 declare module '@duckduckgo/design-tokens/build/serp/zindex' {
     export type DSTokensZindexKeys =

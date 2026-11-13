@@ -158,7 +158,7 @@ export default {
                             {
                                 pathPrefix: 'font',
                                 comment: 'Typestack definitions',
-                                tokenMatcher: (token) => /[\\/]base[\\/]typography\./.test(token.filePath ?? ''),
+                                tokenMatcher: (token) => /[\\/](base|static-pages)[\\/]typography\./.test(token.filePath ?? ''),
                             },
                         ],
                     },
