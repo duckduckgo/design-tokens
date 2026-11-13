@@ -2,19 +2,6 @@ import { fileHeader, formattedVariables } from 'style-dictionary/utils';
 
 const FONT_SETUP_PREFIXES = ['family', 'weight', 'letter-spacing'];
 
-const STYLE_NAME_MAP = new Map([
-    ['body-md', 'body-md'],
-    ['body-lg', 'body-lg'],
-    ['title-05', 'title-05'],
-    ['title-06', 'title-06'],
-    ['label-01', 'label-01'],
-    ['caption-01', 'caption-01'],
-    ['button-label-01', 'button-label-01'],
-    ['button-label-02', 'button-label-02'],
-    ['button-label-03', 'button-label-03'],
-    ['serp-organic', 'serp-organic'],
-]);
-
 function extractVariableLines(cssVariables) {
     return cssVariables.split('\n').filter((line) => line.trim() !== '' && line.trim() !== ':root {' && line.trim() !== '}');
 }
@@ -50,43 +37,14 @@ function isFontSetupVariable(variableName, prefix) {
     return FONT_SETUP_PREFIXES.some((segment) => variableName.startsWith(`--${prefix}-font-${segment}-`));
 }
 
-function normalizeTopComment(topComment) {
-    if (!topComment) return [];
-
-    const lines = Array.isArray(topComment) ? topComment : [topComment];
-    return lines
-        .map((line) => String(line).trim())
-        .filter(Boolean)
-        .map((line) => `// ${line}`);
-}
-
-function toSerpTypographyLine(line, prefix, includeAllTypography = false) {
-    const variableName = getVariableName(line);
-    if (!variableName) return null;
-
-    const match = variableName.match(
-        new RegExp(`^(--${prefix}-font-)(.+)-(font-family|letter-spacing|line-height|size|weight|text-transform)$`),
-    );
-
-    if (!match) return null;
-
-    if (includeAllTypography) return line;
-
-    const [, namePrefix, sourceStyleName, propertyName] = match;
-    const outputStyleName = sourceStyleName.startsWith('body-') ? sourceStyleName : STYLE_NAME_MAP.get(sourceStyleName);
-
-    if (!outputStyleName) return null;
-
-    const outputVariableName = `${namePrefix}${outputStyleName}-${propertyName}`;
-    return line.replace(variableName, outputVariableName);
+function isTypographyVariable(variableName, prefix) {
+    return new RegExp(`^--${prefix}-font-.+-(font-family|letter-spacing|line-height|size|weight|text-transform)$`).test(variableName);
 }
 
 export default async function serpFontJs({ dictionary, file, options, platform }) {
     const header = await fileHeader({ file, commentStyle: 'short' });
     const prefix = platform?.prefix || 'ds';
-    const { exportName = 'dsTypography', includeAllTypography = false, topComment } = options;
-    const topCommentLines = normalizeTopComment(topComment);
-    const topCommentBlock = topCommentLines.length > 0 ? `${topCommentLines.join('\n')}\n\n` : '';
+    const { exportName = 'dsTypography' } = options;
     const cssVariables = formattedVariables({
         format: 'css',
         dictionary,
@@ -104,13 +62,15 @@ export default async function serpFontJs({ dictionary, file, options, platform }
         .filter(Boolean);
 
     const typographyLines = variableLines
-        .map((line) => toSerpTypographyLine(line, prefix, includeAllTypography))
-        .filter(Boolean)
+        .filter((line) => {
+            const variableName = getVariableName(line);
+            return variableName ? isTypographyVariable(variableName, prefix) : false;
+        })
         .map(toObjectEntry)
         .filter(Boolean);
 
     return [
-        `${header}${topCommentBlock}const ${exportName} = {`,
+        `${header}const ${exportName} = {`,
         '    /** FONT SETUP */',
         ...fontSetupLines,
         '',
