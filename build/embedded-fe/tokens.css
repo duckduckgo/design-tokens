@@ -1,8 +1,8 @@
 /**
  * Do not edit directly, this file was auto-generated.
  * Source: https://github.com/duckduckgo/design-tokens
- * Version: 1.1.0
- * Last updated: November 13, 2026 at 04:55 AM
+ * Version: 1.2.0
+ * Last updated: November 20, 2026 at 05:53 AM
  */
 
 :root,
@@ -24,6 +24,11 @@
   --ds-font-label-03-size: 14px;
   --ds-font-label-04-line-height: 12px;
   --ds-font-label-04-size: 12px;
+  --ds-font-body-md-line-height: 20px;
+  --ds-font-body-md-size: 14px;
+  --ds-font-body-sm-line-height: 16px;
+  --ds-font-button-label-01-size: 18px;
+  --ds-font-button-label-03-size: 14px;
   --ds-radius-full: 999px; /** Used for most buttons */
   --ds-radius-x01: 4px;
   --ds-radius-x02: 8px;
@@ -389,7 +394,7 @@
   --ds-color-theme-default-light-surface-decoration-primary: rgba(0, 0, 0, 0.08627450980392157);
   --ds-color-theme-default-light-surface-decoration-secondary: rgba(0, 0, 0, 0.1568627450980392);
   --ds-color-theme-default-light-surface-decoration-tertiary: rgba(0, 0, 0, 0.23921568627450981);
-  --ds-color-theme-default-light-surface-primary: #f2f2f2;
+  --ds-color-theme-default-light-surface-primary: #f8f8f8;
   --ds-color-theme-default-light-surface-secondary: #fafafa;
   --ds-color-theme-default-light-surface-tertiary: #ffffff;
   --ds-color-theme-default-light-text-primary: rgba(0, 0, 0, 0.9568627450980393);
@@ -1345,4 +1350,8 @@
   --ds-font-label-04-font-family: var(--ds-font-family-product);
   --ds-font-label-04-letter-spacing: var(--ds-font-letter-spacing-normal);
   --ds-font-label-04-weight: var(--ds-font-weight-bold);
+  --ds-font-body-md-font-family: var(--ds-font-family-product);
+  --ds-font-body-md-letter-spacing: var(--ds-font-letter-spacing-normal);
+  --ds-font-button-label-03-font-family: var(--ds-font-family-product);
+  --ds-font-button-label-03-letter-spacing: var(--ds-font-letter-spacing-normal);
 }
