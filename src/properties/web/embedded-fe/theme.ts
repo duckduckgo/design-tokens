@@ -1169,7 +1169,7 @@ const theme: DesignToken = {
                         },
                     },
                     primary: {
-                        $value: '#f2f2f2',
+                        $value: '#f8f8f8',
                     },
                     secondary: {
                         $value: '#fafafa',
