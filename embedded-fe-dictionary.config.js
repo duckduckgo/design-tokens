@@ -8,6 +8,7 @@ export default {
         'dist/src/properties/web/theme/colors.js',
         'dist/src/properties/web/base/*.{js,json}',
         'dist/src/properties/web/embedded-fe/theme.js',
+        'dist/src/properties/web/embedded-fe/typography.js',
         'dist/src/properties/web/base/colors.{js,json}',
         'dist/src/properties/web/embedded-fe/onboarding.{js,json}',
         'dist/src/properties/web/embedded-fe/ntp.{js,json}',

@@ -105,12 +105,12 @@ It is recommended to lock to specific version, then update when ready instead of
 
 ## Building & Updating Browser themes (for macOS, Windows, and Embedded FE)
 
-The Desktop Browsers' theme colors (`src/properties/native-apps/theme.ts`) are automatically generated from an export of the Global Colors & Styles theme in Figma.
+The Desktop Browsers' theme colors (`src/properties/embedded-fe/theme.ts`) are automatically generated from an export of the Global Colors & Styles theme in Figma.
 
 To re-generate this file, obtain a Figma JSON export (e.g. `theme-variables.json`) and then run:
 
 ```
-node scripts/convert-figma-theme-export-to-tokens.ts --input theme-variables.json --output src/properties/native-apps/theme.ts
+node scripts/convert-figma-theme-export-to-tokens.ts --input theme-variables.json --output src/properties/embedded-fe/theme.ts
 ```
 
 ## Release Process

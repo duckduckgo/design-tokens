@@ -2,6 +2,46 @@
 
 Generated from release tags. Each section expands to show token-level changes.
 
+## ✨ [1.2.0](https://github.com/duckduckgo/design-tokens/releases/tag/v1.2.0) - 2026.11.19
+
+Embedded FE now ships the typography styles it actually uses (`body-md`, `body-sm`, `button-label-01` and `button-label-03`) in `build/embedded-fe/tokens.css`. The default theme's light `surface-primary` is now `#f8f8f8`. CI and releases now read the Node version from `.node-version`, and npm installs wait out a 7-day release cooldown ([#52](https://github.com/duckduckgo/design-tokens/pull/52)).
+
+### Token Updates
+
+#### Embedded FE
+
+<details>
+<summary>🌱 New values (9)</summary>
+
+- `--ds-font-body-md-size`: `14px`
+- `--ds-font-body-md-line-height`: `20px`
+- `--ds-font-body-md-font-family`: `var(--ds-font-family-product)`
+- `--ds-font-body-md-letter-spacing`: `var(--ds-font-letter-spacing-normal)`
+- `--ds-font-body-sm-line-height`: `16px`
+- `--ds-font-button-label-01-size`: `18px`
+- `--ds-font-button-label-03-size`: `14px`
+- `--ds-font-button-label-03-font-family`: `var(--ds-font-family-product)`
+- `--ds-font-button-label-03-letter-spacing`: `var(--ds-font-letter-spacing-normal)`
+
+</details>
+
+<details>
+<summary>♻️ Updated values (1)</summary>
+
+- `--ds-color-theme-default-light-surface-primary`: `#f2f2f2` > `#f8f8f8`
+
+</details>
+
+<details>
+<summary>🛠️ Dev updates</summary>
+
+- CI (`test.yml`, `release.yml`): Node version now read from `.node-version` (24.20.0) instead of pinned `22`
+- New `.npmrc`: `min-release-age=7`, `save-exact=true`, `package-lock=true`
+- New property file `src/properties/web/embedded-fe/typography.ts`
+- `embedded-fe-dictionary.config.js`: adds the Embedded FE typography source
+
+</details>
+
 ## ✨ [1.1.0](https://github.com/duckduckgo/design-tokens/releases/tag/v1.1.0) - 2026.11.12
 
 Fixes the typography outputs from 1.0.0. SERP's `build/serp/font.js` now ships the whole SERP type scale, so `build/serp/full-font-stack.js` is removed. Import `dsTypography` from `font.js` instead of `dsFullFontStack`. Static Pages' `build/static-pages/typography.scss` now includes the marketing type scale (`display-*`, `title-01`–`04`, `lead`, `body`, `body-sm`, `footnote`, `overline-*`), which 1.0.0 left out.
