@@ -2,6 +2,58 @@
 
 Generated from release tags. Each section expands to show token-level changes.
 
+## ✨ [1.3.0](https://github.com/duckduckgo/design-tokens/releases/tag/v1.3.0) - 2026.11.25
+
+Buttons now have min-height tokens for every size (`xxs` 28px through `lg` 48px) on SERP and Static Pages. The `lg` button label now uses `label-01` typography, so its font size and line height go from 16px to 18px.
+
+### Token Updates
+
+#### SERP
+
+<details>
+<summary>🌱 New values (5)</summary>
+
+- `--ds-button-xxs-min-height`: `28px`
+- `--ds-button-xs-min-height`: `32px`
+- `--ds-button-sm-min-height`: `36px`
+- `--ds-button-md-min-height`: `40px`
+- `--ds-button-lg-min-height`: `48px`
+
+</details>
+
+<details>
+<summary>♻️ Updated values (6)</summary>
+
+- `--ds-button-lg-font-size` (button.css): `var(--ds-font-label-02-size)` > `var(--ds-font-label-01-size)`
+- `--ds-button-lg-line-height` (button.css): `var(--ds-font-label-02-line-height)` > `var(--ds-font-label-01-line-height)`
+- `--ds-button-lg-font-weight` (button.css): `var(--ds-font-label-02-weight)` > `var(--ds-font-label-01-weight)`
+- `--ds-button-lg-letter-spacing` (button.css): `var(--ds-font-label-02-letter-spacing)` > `var(--ds-font-label-01-letter-spacing)`
+- `ds-button-lg-font-size` (tokens.json): `16px` > `18px`
+- `ds-button-lg-line-height` (tokens.json): `16px` > `18px`
+
+</details>
+
+#### Static Pages
+
+<details>
+<summary>🌱 New values (5)</summary>
+
+- `--ds-button-xxs-min-height`: `28px`
+- `--ds-button-xs-min-height`: `32px`
+- `--ds-button-sm-min-height`: `36px`
+- `--ds-button-md-min-height`: `40px`
+- `--ds-button-lg-min-height`: `48px`
+
+</details>
+
+<details>
+<summary>♻️ Updated values (2)</summary>
+
+- `--ds-button-lg-font-size`: `16px` > `18px`
+- `--ds-button-lg-line-height`: `16px` > `18px`
+
+</details>
+
 ## ✨ [1.2.0](https://github.com/duckduckgo/design-tokens/releases/tag/v1.2.0) - 2026.11.19
 
 Embedded FE now ships the typography styles it actually uses (`body-md`, `body-sm`, `button-label-01` and `button-label-03`) in `build/embedded-fe/tokens.css`. The default theme's light `surface-primary` is now `#f8f8f8`. CI and releases now read the Node version from `.node-version`, and npm installs wait out a 7-day release cooldown ([#52](https://github.com/duckduckgo/design-tokens/pull/52)).

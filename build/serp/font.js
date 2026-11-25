@@ -1,8 +1,8 @@
 
 // Do not edit directly, this file was auto-generated.
 // Source: https://github.com/duckduckgo/design-tokens
-// Version: 1.2.0
-// Last updated: November 20, 2026 at 05:53 AM
+// Version: 1.3.0
+// Last updated: November 25, 2026 at 08:47 PM
 
 const dsFont = {
     /** FONT SETUP */
