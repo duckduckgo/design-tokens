@@ -48,6 +48,10 @@ const button: DesignToken = {
             lineHeight: {
                 $value: '{font.label.03.lineHeight}',
             },
+
+            minHeight: {
+                $value: '28px',
+            },
         },
         sm: {
             borderRadius: {
@@ -70,6 +74,9 @@ const button: DesignToken = {
             },
             lineHeight: {
                 $value: '{font.label.03.lineHeight}',
+            },
+            minHeight: {
+                $value: '36px',
             },
         },
         md: {
@@ -94,6 +101,9 @@ const button: DesignToken = {
             lineHeight: {
                 $value: '{font.label.02.lineHeight}',
             },
+            minHeight: {
+                $value: '40px',
+            },
         },
         lg: {
             borderRadius: {
@@ -106,16 +116,19 @@ const button: DesignToken = {
                 $value: '{space.x03}',
             },
             fontSize: {
-                $value: '{font.label.02.size}',
+                $value: '{font.label.01.size}',
             },
             fontWeight: {
-                $value: '{font.label.02.weight}',
+                $value: '{font.label.01.weight}',
             },
             letterSpacing: {
-                $value: '{font.label.02.letterSpacing}',
+                $value: '{font.label.01.letterSpacing}',
             },
             lineHeight: {
-                $value: '{font.label.02.lineHeight}',
+                $value: '{font.label.01.lineHeight}',
+            },
+            minHeight: {
+                $value: '48px',
             },
         },
     },
