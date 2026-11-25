@@ -25,6 +25,9 @@ const button: DesignToken = {
             lineHeight: {
                 $value: '{font.label.03.lineHeight}',
             },
+            minHeight: {
+                $value: '28px',
+            },
         },
         xs: {
             borderRadius: {
@@ -48,9 +51,8 @@ const button: DesignToken = {
             lineHeight: {
                 $value: '{font.label.03.lineHeight}',
             },
-
             minHeight: {
-                $value: '28px',
+                $value: '32px',
             },
         },
         sm: {
